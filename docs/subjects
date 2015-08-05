@@ -1,0 +1,22 @@
+db.subjects.insert([
+{ subject: 'Toán', key : 'toan', status : 1},
+{ subject: 'Văn', key : 'van', status : 1},
+{ subject: 'Sử', key : 'su', status : 1},
+{ subject: 'Địa', key : 'dia', status : 1},
+{ subject: 'Lý', key : 'ly', status : 1},
+{ subject: 'Hóa', key : 'hoa', status : 1},
+{ subject: 'Sinh', key : 'sinh', status : 1},
+{ subject: 'Anh', key : 'anh', status : 1},
+{ subject: 'Nga', key : 'nga', status : 1},
+{ subject: 'Pháp', key : 'phap', status : 1},
+{ subject: 'Trung', key : 'trung', status : 1},
+{ subject: 'Đức', key : 'duc', status : 1},
+{ subject: 'Nhật', key : 'nhat', status : 1},
+{ subject: 'Họa', key : '', status : 0},
+{ subject: 'Kĩ thuật', key : '', status : 0},
+{ subject: 'Năng khiếu mẫu giáo', key : '', status : 0},
+{ subject: 'Năng khiếu nhạc', key : '', status : 0},
+{ subject: 'Năng khiếu báo chí', key : '', status : 0},
+{ subject: 'Vẽ', key : '', status : 0},
+{ subject: 'Năng khiếu Sân khấu', key : '', status : 0}
+])

@@ -13,3 +13,7 @@
 .ng-valid.ng-dirty {
 	border-color: #78FA89;
 }
+
+.subject-list>.btn{
+    margin: 5px 5px 5px 0px;
+}

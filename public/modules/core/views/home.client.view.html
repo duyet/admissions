@@ -7,42 +7,40 @@
 			</p>
 		</div>
 	</div>
-	<form class="form-inline" data-ng-submit="create()">
+	<form class="form-horizontal" data-ng-submit="query()">
 	<fieldset>
 	  <div class="form-group">
-	    <label class="sr-only" for="subject_group">Tổ Hợp Môn</label>
-	    <select 
+	    <label class="col-sm-2 control-label" for="subject_group">Tổ Hợp Môn</label>
+	    <div class="col-sm-10">
+		    <select 
+			    data-ng-model="subject_group" 
+			    id="subject_group" 
+			    class="form-control" required
+			    data-ng-options=" '['+item.block +'] '+item.subject_group for item in subjectgroups"
+		    >
+			</select>
+		</div>
+	  </div>
+	  <div class="form-group">
+	    <label class="col-sm-2 control-label" for="subject_group">Môn</label>
+	    <div class="col-sm-10 subject-list" >
+		    <a  data-ng-repeat="subject in subjects" class="btn btn-default" ng-class="{'btn-info': subject_group.subject_group.lastIndexOf(subject.subject) !== -1}">{{subject.subject}}</a>
+		</div>
+	  </div>
+	  <div class="form-group">
+	    <label class="col-sm-2 control-label" for="score_sum">Tổng Điểm</label>
+	    <div class="col-sm-10">
+	    	<input data-ng-model="score.score_sum" id="score_sum" type="number" step="0.01" class="form-control" placeholder="Tổng Điểm" required	>
+	    </div>
+	  </div>
 
-	    data-ng-model="subject_group" 
-	    id="subject_group" 
-	    class="form-control" required
-	    data-ng-options=" '['+item.block +'] '+item.subject_group for item in subjectgroups"
-
-	    >
-		  <!-- <option>Tổ Hợp Môn</option> -->
-		  <!-- <option>2</option>
-		  <option>3</option>
-		  <option>4</option>
-		  <option>5</option> -->
-		</select>
-	  </div>
 	  <div class="form-group">
-	    <label class="sr-only" for="score_1">Điểm Môn 1</label>
-	    <input data-ng-model="score_1" id="score_1" type="number" step="0.01" class="form-control" placeholder="{{subject_group.subject1 ? subject_group.subject1 : 'Điểm Môn 1' }}" required	i>
-	  </div>
-	  <div class="form-group">
-	    <label class="sr-only" for="score_2">Điểm Môn 2</label>
-	    <input data-ng-model="score_2" id="score_2" type="number" step="0.01" class="form-control" placeholder="{{subject_group.subject1 ? subject_group.subject2 : 'Điểm Môn 2' }}" required>
-	  </div>
-	  <div class="form-group">
-	    <label class="sr-only" for="score_3">Điểm Môn 3</label>
-	    <input data-ng-model="score_3" id="score_3" type="number" step="0.01" class="form-control" placeholder="{{subject_group.subject1 ? subject_group.subject3 : 'Điểm Môn 3' }}" required>
-	  </div>
-	  <div class="form-group">
-	    <label class="sr-only" for="score_priority">Điểm Ưu Tiên</label>
-	    <input data-ng-model="score_priority" id="score_priority" type="number" step="0.01" class="form-control" placeholder="Điểm Ưu Tiên" required>
+	    <label class="col-sm-2 control-label" for="score_priority">Điểm Ưu Tiên</label>
+	    <div class="col-sm-10">
+	    	<input data-ng-model="score.score_priority" id="score_priority" type="number" step="0.01" class="form-control" placeholder="Điểm Ưu Tiên" required>
+	    </div>
 	  </div>	  
-	  <button type="submit" class="btn btn-primary">Tìm</button>
+	  <p class="text-center"><button type="submit" class="btn btn-primary">Tìm</button></p>
 	  </fieldset>
 	</form>
 
