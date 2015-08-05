@@ -1,0 +1,23 @@
+<section data-ng-controller="FacultiesController" data-ng-init="find()">
+    <div class="page-header">
+        <h1>Faculties</h1>
+    </div>
+    <div class="list-group">
+        <a data-ng-repeat="faculty in faculties" data-ng-href="#!/faculties/{{faculty._id}}" class="list-group-item">
+			
+			<h4 class="list-group-item-heading" >[{{faculty.code}}] - {{faculty.name}}</h4>
+            <p>[{{faculty.school_code}}]  - {{faculty.school_name}}</p>
+            <p>[Group]  - {{faculty.group}}</p>
+            <p>[Quota]  - {{faculty.quota}}</p>
+            <small class="list-group-item-text">
+                Posted on
+                <span data-ng-bind="faculty.created | date:'medium'"></span>
+                by
+                <span data-ng-bind="faculty.user.displayName"></span>
+            </small>
+        </a>
+    </div>
+    <div class="alert alert-warning text-center" data-ng-hide="!faculties.$resolved || faculties.length">
+    	No Faculties yet, why don't you <a href="/#!/faculties/create">create one</a>?
+    </div>
+</section>
