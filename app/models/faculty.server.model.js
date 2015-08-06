@@ -4,6 +4,7 @@
  * Module dependencies.
  */
 var mongoose = require('mongoose'),
+	Candidate = mongoose.model('Candidate'),
 	Schema = mongoose.Schema;
 
 /**
@@ -50,12 +51,13 @@ var FacultySchema = new Schema({
 		required: 'Please fill Faculty quota',
 		trim: true
 	},
-	current: {
-		type: Number,
-		default: 0,
+	matriculate_list: [Schema.Types.Mixed],
+	//{
+	//	type: [Candidate],
+		//ref: 'Candidate'
 		//required: 'Please fill Faculty quota',
 		//trim: true
-	},
+	//},
 
 	created: {
 		type: Date,

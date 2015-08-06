@@ -16,6 +16,16 @@ var SchoolSchema = new Schema({
 		required: 'Please fill School name',
 		trim: true
 	},
+	code: {
+		type: String,
+		default: '',
+		required: 'Please fill School name',
+		trim: true
+	},
+	faculty_list:{
+		type: Schema.ObjectId,
+		ref: 'Faculty'
+	},
 	created: {
 		type: Date,
 		default: Date.now
