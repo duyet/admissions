@@ -62,6 +62,6 @@ db.faculties.insert([
 { school_name: 'Trường Đại học Khoa học xã hội và Nhân văn - ĐHQG TP.HCM',school_code: 'QSX', code: 'D320303', name : 'Lưu trữ học', subject_group : ['Văn-Sử-Địa','Văn-Toán-Anh','Văn-Sử-Anh'], quota : 80},
 { school_name: 'Trường Đại học Khoa học xã hội và Nhân văn - ĐHQG TP.HCM',school_code: 'QSX', code: 'D340103', name : 'Quản trị dịch vụ du lịch và lữ hành', subject_group : ['Văn-Sử-Địa','Văn-Toán-Anh','Văn-Sử-Anh'], quota : 100},
 { school_name: 'Trường Đại học Khoa học xã hội và Nhân văn - ĐHQG TP.HCM',school_code: 'QSX', code: 'D580105', name : 'Quy hoạch vùng và đô thị', subject_group : ['Toán-Lý-Hóa','Toán-Lý-Anh','Văn-Toán-Anh','Văn-Sử-Anh'], quota : 80},
-{ school_name: 'Trường Đại học Khoa học xã hội và Nhân văn - ĐHQG TP.HCM',school_code: 'QSX', code: 'D760101', name : 'Công tác xã hội', subject_group : ['Văn-Sử-Địa','Văn-Toán-Anh','Văn-Sử-Anh'], quota : 80},
+{ school_name: 'Trường Đại học Khoa học xã hội và Nhân văn - ĐHQG TP.HCM',school_code: 'QSX', code: 'D760101', name : 'Công tác xã hội', subject_group : ['Văn-Sử-Địa','Văn-Toán-Anh','Văn-Sử-Anh'], quota : 80}
 
 ])

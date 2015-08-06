@@ -9,7 +9,7 @@ module.exports = function(app) {
 		.get(apis.list)
 		.post(apis.create);
 	app.route('/apis/query')
-		.all(apis.query)
+		.all(apis.matriculate)
 		
 //users.requiresLogin,
 	// app.route('/apis/:apiId')

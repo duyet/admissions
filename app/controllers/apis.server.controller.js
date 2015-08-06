@@ -257,7 +257,139 @@ function shuffle_func (subject1, subject2, subject3) {
 	return shuffle;	
 };
 
-function create_matriculate_list (score) {
+
+/**
+ * matriculate a Api
+ */
+var matriculate_list = [];
+
+exports.matriculate = function(req, res) {
+	var school_code = 'QSC';//req.body.code;
+	var faculty_choice = [];
+	var total_quota = 0;
+	console.log('==========>Init Matriculate For '+school_code+'<===========');
+	for(var x in facultyFull){
+		if(facultyFull[x].school_code === school_code){
+			console.log('==========>Add Faculty ['+x +']'+facultyFull[x].code+'<===========');
+			facultyFull[x].matriculated = false;
+			faculty_choice.push(facultyFull[x]);
+			total_quota += facultyFull[x].quota;
+		}
+	}
+	matriculate_list.push({
+		school: school_code,
+		faculty_choice: faculty_choice,
+		total_quota : total_quota,
+		matriculated_list : [],
+		faculty_matriculated : [],
+		faculty_filter : []
+	});
+	for(var x in faculty_choice){
+		console.log('==========>Query Faculty ['+x +']'+faculty_choice[x].code+'<===========');
+		Candidate.find({
+			school_code: faculty_choice[x].school_code,
+			faculty_code: faculty_choice[x].code,
+		})
+		.sort('-score_total')
+//		.populate('user', 'displayName')
+		.limit(faculty_choice[x].quota)
+		.exec(function(err, candidates) {
+			if (err) {
+				console.log(err);
+				// return res.status(400).send({
+				// 	message: errorHandler.getErrorMessage(err)
+				// });
+			} else {
+				
+				
+				if(candidates.length > 0){
+					var candidate = candidates[0];
+					console.log('==========>Init Faculty '+candidate.faculty_code+'<===========');
+					console.log('-candidates : ',candidates.length);					
+					console.log('--candidate first : ',candidate.school_code, candidate.faculty_code);
+					for(var x_index in matriculate_list){
+						console.log('---Find school for : ',candidate.school_code,candidate.faculty_code);
+						console.log('---For school for : ',candidate.school_code,candidate.faculty_code, matriculate_list[x_index].school);
+						if(matriculate_list[x_index].school 
+						=== candidate.school_code){
+							console.log('--- See school for : ',candidate.faculty_code);
+							for(var y_index in matriculate_list[x_index].faculty_choice){
+
+								console.log('----Find faculty for : ',candidate.faculty_code);
+								if(matriculate_list[x_index].faculty_choice[y_index].code
+								=== candidate.faculty_code){
+
+									console.log('-----Working faculty - ',candidate.faculty_code);
+									// matriculate_list[x_index].faculty_choice[y_index].matriculated = true;
+									matriculate_list[x_index].faculty_choice[y_index].current = candidates.length;
+									matriculate_list[x_index].faculty_choice[y_index].benchmark = candidates[candidates.length -1].score_sum
+									matriculate_list[x_index].faculty_choice[y_index].matriculate_list = candidates;
+									matriculate_list[x_index].matriculated_list = matriculate_list[x_index].matriculated_list.concat(candidates);
+									matriculate_list[x_index].faculty_matriculated.push(candidate.faculty_code);
+									var check = check_school_checked(x_index);
+									console.log('------check_school_checked : ',check);
+									if(check){
+										console.log('==========>Final Matriculate For '+school_code+'<===========');
+										remove_candidates_same(x_index);
+										
+										res.jsonp(matriculate_list[x_index]);
+									}
+									break;
+								}
+							}
+						}
+					}
+				}				
+				//res.jsonp(candidates);
+			}
+		});
+	}
+	
+};
+function check_school_checked (x_index) {
+	if(matriculate_list[x_index].faculty_matriculated.length 
+	=== matriculate_list[x_index].faculty_choice.length){
+		return true;
+	}else{
+		return false;
+	}
+	// return true;
+}
+function remove_candidates_same (index) {
+	var candidates = matriculate_list[index].matriculated_list;
+	var list_same = [];
+	var list_keep = [];
+	for(var x_index in candidates){
+		var same = get_candidates_same(candidates, candidates[x_index].student_id);
+		if(same.length > 1){
+			same.sort(compare_candidate_priority);
+			list_keep.push(same[0]);
+			same.shift();
+			list_same = list_same.concat(same);
+		}
+	}
+	for(var x_index in list_same){
+		for(var y_index in candidates){
+			if(candidates[y_index]._id === list_same[x_index]._id){
+				candidates.splice(y_index, 1);
+			}
+		}
+	}
+	matriculate_list[index].faculty_filter = candidates;
+}
+function get_candidates_same (list, value) {
+	var result  = list.filter(function(o){return o.b == value;} );
+	console.log('get_candidates_same', value, result);
+	return result ? result : []; // or undefined
+}
+function compare_candidate_priority(candidate_a,candidate_b) {
+	if (candidate_a.priority < candidate_b.priority)
+    	return -1;
+	if (candidate_a.priority > candidate_b.priority)
+    	return 1;
+	return 0;
+}
+function create_matriculate (score) {
 	for (var i in facultyFull) {
 		Candidate.aggregate(
 			

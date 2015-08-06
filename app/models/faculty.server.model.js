@@ -51,6 +51,18 @@ var FacultySchema = new Schema({
 		required: 'Please fill Faculty quota',
 		trim: true
 	},
+	current: {
+		type: Number,
+		default: 0,
+		required: 'Please fill Faculty quota',
+		trim: true
+	},
+	benchmark: {
+		type: Number,
+		default: 0,
+		required: 'Please fill Faculty quota',
+		trim: true
+	},
 	matriculate_list: [Schema.Types.Mixed],
 	//{
 	//	type: [Candidate],
