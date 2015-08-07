@@ -1,0 +1,91 @@
+Fri Aug 07 2015 18:17:59 GMT+0700 (ICT) 
+
+ -------- Matriculate School [QSC] ---------- 
+
+ Times:  Fri Aug 07 2015 18:17:59 GMT+0700 (ICT) 
+
+-Faculty: D480101-More: 130-Benchmark: 21.25 
+
+-Faculty: D480102-More: 100-Benchmark: 15.25 
+
+-Faculty: D480103-More: 100-Benchmark: 20 
+
+-Faculty: D480103_CLC-More: 51-Benchmark: 16.5 
+
+-Faculty: D480104-More: 50-Benchmark: 22 
+
+-Faculty: D480104_TMDT-More: 33-Benchmark: 18 
+
+-Faculty: D480104_CTTT-More: 9-Benchmark: 19.5 
+
+-Faculty: D480104_CLC-More: 12-Benchmark: 16.75 
+
+-Faculty: D480201-More: 61-Benchmark: 20 
+
+-Faculty: D480299-More: 63-Benchmark: 21 
+
+-Faculty: D520214-More: 50-Benchmark: 19.25 
+
+-Faculty: D520214_CLC-More: 19-Benchmark: 16.75 
+
+ Times:  Fri Aug 07 2015 18:18:00 GMT+0700 (ICT) 
+
+-Faculty: D480101-Current: 63-Benchmark: 21.25 
+
+-Faculty: D480102-Current: 48-Benchmark: 15.25 
+
+-Faculty: D480103_CLC-Current: 12-Benchmark: 16.5 
+
+-Faculty: D480103-Current: 71-Benchmark: 20 
+
+-Faculty: D480104-Current: 16-Benchmark: 22.25 
+
+-Faculty: D480104_TMDT-Current: 14-Benchmark: 18.25 
+
+-Faculty: D480104_CTTT-Current: 5-Benchmark: 19.5 
+
+-Faculty: D480104_CLC-Current: 2-Benchmark: 18.75 
+
+-Faculty: D480299-Current: 33-Benchmark: 21 
+
+-Faculty: D480201-Current: 19-Benchmark: 21.25 
+
+-Faculty: D520214-Current: 13-Benchmark: 19.25 
+
+-Faculty: D520214_CLC-Current: 7-Benchmark: 16.75 
+
+ -------- Matriculate School [QSC] ---------- 
+
+ Times:  Fri Aug 07 2015 18:18:00 GMT+0700 (ICT) 
+
+-Faculty: D480101-More: 22-Benchmark: 20.25 
+
+-Faculty: D480104-More: 17-Benchmark: 19 
+
+ Times:  Fri Aug 07 2015 18:18:00 GMT+0700 (ICT) 
+
+-Faculty: D480101-Current: 85-Benchmark: 20.25 
+
+-Faculty: D480103-More: 3-Benchmark: 18 
+
+-Faculty: D480102-Current: 48-Benchmark: 15.25 
+
+-Faculty: D480103-Current: 73-Benchmark: 18 
+
+-Faculty: D480103_CLC-Current: 12-Benchmark: 16.5 
+
+-Faculty: D480104-Current: 32-Benchmark: 19 
+
+-Faculty: D480104_TMDT-Current: 14-Benchmark: 18.25 
+
+-Faculty: D480104_CTTT-Current: 5-Benchmark: 19.5 
+
+-Faculty: D480104_CLC-Current: 2-Benchmark: 18.75 
+
+-Faculty: D480201-Current: 19-Benchmark: 21.25 
+
+-Faculty: D480299-Current: 33-Benchmark: 21 
+
+-Faculty: D520214-Current: 13-Benchmark: 19.25 
+
+-Faculty: D520214_CLC-Current: 7-Benchmark: 16.75 

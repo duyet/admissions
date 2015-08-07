@@ -2,15 +2,15 @@ db.faculties.insert([
 { school_name: 'Trường Đại học Công nghệ Thông tin - ĐHQG TP.HCM',school_code: 'QSC', code: 'D480101', name : 'Khoa học máy tính', subject_group : ["Toán-Lý-Hóa","Toán-Lý-Anh"], quota : 130},
 { school_name: 'Trường Đại học Công nghệ Thông tin - ĐHQG TP.HCM',school_code: 'QSC', code: 'D480102', name : 'Truyền thông và mạng máy tính', subject_group : ["Toán-Lý-Hóa","Toán-Lý-Anh"], quota : 120},
 { school_name: 'Trường Đại học Công nghệ Thông tin - ĐHQG TP.HCM',school_code: 'QSC', code: 'D480103', name : 'Kỹ thuật phần mềm', subject_group : ["Toán-Lý-Hóa","Toán-Lý-Anh"], quota : 100},
-{ school_name: 'Trường Đại học Công nghệ Thông tin - ĐHQG TP.HCM',school_code: 'QSC', code: 'D480103', name : 'Kỹ thuật phần mềm chương trình chất lượng cao', subject_group : ["Toán-Lý-Hóa","Toán-Lý-Anh"], quota : 80},
+{ school_name: 'Trường Đại học Công nghệ Thông tin - ĐHQG TP.HCM',school_code: 'QSC', code: 'D480103_CLC', name : 'Kỹ thuật phần mềm chương trình chất lượng cao', subject_group : ["Toán-Lý-Hóa","Toán-Lý-Anh"], quota : 80},
 { school_name: 'Trường Đại học Công nghệ Thông tin - ĐHQG TP.HCM',school_code: 'QSC', code: 'D480104', name : 'Hệ thống thông tin', subject_group : ["Toán-Lý-Hóa","Toán-Lý-Anh"], quota : 50},
-{ school_name: 'Trường Đại học Công nghệ Thông tin - ĐHQG TP.HCM',school_code: 'QSC', code: 'D480104', name : 'Thương mại điện tử (ngành Hệ thống Thông tin)', subject_group : ["Toán-Lý-Hóa","Toán-Lý-Anh"], quota : 50},
-{ school_name: 'Trường Đại học Công nghệ Thông tin - ĐHQG TP.HCM',school_code: 'QSC', code: 'D480104', name : 'Hệ thống thông tin chương trình tiên tiến', subject_group : ["Toán-Lý-Hóa","Toán-Lý-Anh"], quota : 30},
-{ school_name: 'Trường Đại học Công nghệ Thông tin - ĐHQG TP.HCM',school_code: 'QSC', code: 'D480104', name : 'Hệ thống thông tin chương trình chất lượng cao', subject_group : ["Toán-Lý-Hóa","Toán-Lý-Anh"], quota : 30},
+{ school_name: 'Trường Đại học Công nghệ Thông tin - ĐHQG TP.HCM',school_code: 'QSC', code: 'D480104_TMDT', name : 'Thương mại điện tử (ngành Hệ thống Thông tin)', subject_group : ["Toán-Lý-Hóa","Toán-Lý-Anh"], quota : 50},
+{ school_name: 'Trường Đại học Công nghệ Thông tin - ĐHQG TP.HCM',school_code: 'QSC', code: 'D480104_CTTT', name : 'Hệ thống thông tin chương trình tiên tiến', subject_group : ["Toán-Lý-Hóa","Toán-Lý-Anh"], quota : 30},
+{ school_name: 'Trường Đại học Công nghệ Thông tin - ĐHQG TP.HCM',school_code: 'QSC', code: 'D480104_CLC', name : 'Hệ thống thông tin chương trình chất lượng cao', subject_group : ["Toán-Lý-Hóa","Toán-Lý-Anh"], quota : 30},
 { school_name: 'Trường Đại học Công nghệ Thông tin - ĐHQG TP.HCM',school_code: 'QSC', code: 'D480201', name : 'Công nghệ thông tin', subject_group : ["Toán-Lý-Hóa","Toán-Lý-Anh"], quota : 90},
 { school_name: 'Trường Đại học Công nghệ Thông tin - ĐHQG TP.HCM',school_code: 'QSC', code: 'D480299', name : 'An toàn thông tin', subject_group : ["Toán-Lý-Hóa","Toán-Lý-Anh"], quota : 90},
 { school_name: 'Trường Đại học Công nghệ Thông tin - ĐHQG TP.HCM',school_code: 'QSC', code: 'D520214', name : 'Kỹ thuật máy tính', subject_group : ["Toán-Lý-Hóa","Toán-Lý-Anh"], quota : 80},
-{ school_name: 'Trường Đại học Công nghệ Thông tin - ĐHQG TP.HCM',school_code: 'QSC', code: 'D520214', name : 'Kỹ thuật máy tính chương trình chất lượng cao', subject_group : ["Toán-Lý-Hóa","Toán-Lý-Anh"], quota : 50},
+{ school_name: 'Trường Đại học Công nghệ Thông tin - ĐHQG TP.HCM',school_code: 'QSC', code: 'D520214_CLC', name : 'Kỹ thuật máy tính chương trình chất lượng cao', subject_group : ["Toán-Lý-Hóa","Toán-Lý-Anh"], quota : 50},
 //])
 
 //db.faculties.insert([

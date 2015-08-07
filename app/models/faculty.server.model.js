@@ -64,6 +64,8 @@ var FacultySchema = new Schema({
 		trim: true
 	},
 	matriculate_list: [Schema.Types.Mixed],
+	candidate_apply: [Schema.Types.Mixed],
+	candidate_check: [Schema.Types.Mixed],
 	//{
 	//	type: [Candidate],
 		//ref: 'Candidate'
