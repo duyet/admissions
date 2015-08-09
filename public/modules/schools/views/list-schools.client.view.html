@@ -3,15 +3,36 @@
         <h1>Schools</h1>
     </div>
     <div class="list-group">
-        <a data-ng-repeat="school in schools" data-ng-href="#!/schools/{{school._id}}" class="list-group-item">
+        <!-- <a  class="list-group-item">
 			<small class="list-group-item-text">
 				Posted on
 				<span data-ng-bind="school.created | date:'medium'"></span>
 				by
 				<span data-ng-bind="school.user.displayName"></span>
 			</small>
-			<h4 class="list-group-item-heading" data-ng-bind="school.name"></h4>
-        </a>
+			
+        </a> -->
+        <div class="panel panel-default" data-ng-repeat="school in schools" data-ng-href="#!/schools/{{school._id}}">
+          <div class="panel-body">
+            <p>
+                <strong data-ng-bind="school.name"></strong>
+                <a class="btn btn-default" id="matriculate-{{school._id}}" 
+                ng-click="matriculate(school)"
+                ng-class="{'btn-warning' : school.doing == 0,'btn-success' : school.doing == 1,'btn-danger' : school.doing == 2}"
+
+                >
+                    <span class="glyphicon glyphicon-th-list" aria-hidden="true"></span>            
+                    Tính điểm chuẩn
+                </a>
+            </p>
+            <p><small class="list-group-item-text">
+                Posted on
+                <span data-ng-bind="school.created | date:'medium'"></span>
+                - Modified
+                <span data-ng-bind="school.user.modified"></span>
+            </small></p>
+          </div>
+        </div>
     </div>
     <div class="alert alert-warning text-center" data-ng-hide="!schools.$resolved || schools.length">
     	No Schools yet, why don't you <a href="/#!/schools/create">create one</a>?

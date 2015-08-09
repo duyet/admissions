@@ -65,6 +65,12 @@ var FacultySchema = new Schema({
 	},
 	matriculate_list: [Schema.Types.Mixed],
 	candidate_apply: [Schema.Types.Mixed],
+	// {
+	// 	type: Number,
+	// 	default: 0,
+	// 	required: 'Please fill Faculty quota',
+	// 	trim: true
+	// },
 	candidate_check: [Schema.Types.Mixed],
 	//{
 	//	type: [Candidate],
