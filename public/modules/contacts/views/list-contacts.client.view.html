@@ -1,0 +1,54 @@
+<div class="container">
+    <style type="text/css"> header, .skills { display: none; } #contact { margin-top: 138px; } </style>
+    <section data-ng-controller="ContactsController" data-ng-init="find()" id="contact">
+        <div class="page-header">
+            <h1>Contacts</h1>
+        </div>
+
+        <table class="table table-condensed table-bordered">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>School</th>
+                    <th>Student ID</th>
+                    <th>Message</th>
+                    <th>Created</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr data-ng-repeat="contact in contacts" class="{{ contact.seen ? 'active' : '' }}">
+                    <td data-ng-bind="$index + 1"></td>
+                    <td data-ng-bind="contact.name"></td>
+                    <td data-ng-bind="contact.email"></td>
+                    <td data-ng-bind="contact.school_code"></td>
+                    <td data-ng-bind="contact.student_id"></td>
+                    <td data-ng-bind="contact.message"></td>
+                    <td data-ng-bind="contact.created | date:'medium'"></td>
+                    <td>
+                        [<a href="javascript:;" data-ng-click="remove(contact)">delete</a>]
+                        [<a data-ng-href="#!/contact/{{contact._id}}/edit">edit</a>]
+                        [<a href="javascript:;" data-ng-click="seen(contact)">{{ contact.seen ? "unseen" : "seen" }}</a>]
+                    </td>
+                </tr>
+            </tbody>
+        </table>    
+
+        <div class="list-group">
+            <a data-ng-repeat="contact in contacts" data-ng-href="#!/contacts/{{contact._id}}" class="list-group-item">
+    			<small class="list-group-item-text">
+    				Posted on
+    				<span data-ng-bind="contact.created | date:'medium'"></span>
+    				by
+    				<span data-ng-bind="contact.user.displayName"></span>
+    			</small>
+    			<h4 class="list-group-item-heading" data-ng-bind="contact.name"></h4>
+            </a>
+        </div>
+        <div class="alert alert-warning text-center" data-ng-hide="!contacts.$resolved || contacts.length">
+        	No Contacts yet, why don't you <a href="/#!/contacts/create">create one</a>?
+        </div>
+    </section>
+</div>

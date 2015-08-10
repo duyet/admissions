@@ -1,0 +1,84 @@
+<div class="container">
+    <style type="text/css"> header, .skills { display: none; } #contact-form { margin-top: 138px; } </style>
+    <section data-ng-controller="ContactsController" id="contact-form">
+        <div class="page-header">
+            <h1>Liên hệ</h1>
+        </div>
+        <div class="col-md-12">
+
+            <div data-ng-show="thankYouMessage" class="alert alert-success">
+                Cảm ơn bạn đã liên hệ, chúng tôi sẽ liên hệ lại với bạn qua email khi cần thiết.
+            </div>
+
+            <form class="form-horizontal" data-ng-submit="create()" novalidate data-ng-show="!thankYouMessage">
+                <div data-ng-show="error" class="alert alert-danger">
+                    <strong data-ng-bind="error"></strong>
+                </div>
+
+                <fieldset>
+                    <div class="row">
+                        <div class="col-md-5">
+                            
+                            <div class="form-group">
+                                <label class="control-label" for="name">Họ và tên (*)</label>
+                                <div class="controls">
+                                    <input type="text" data-ng-model="name" id="name" class="form-control" placeholder="Name" required>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-md-5 col-md-offset-1">
+                            
+                            <div class="form-group">
+                                <label class="control-label" for="email">Email (*)</label>
+                                <div class="controls">
+                                    <input type="email" data-ng-model="email" id="email" class="form-control" placeholder="someone@gmail.com" required>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-5">
+                            
+                            <div class="form-group">
+                                <label class="control-label" for="school_code">Mã trường, tên trường</label>
+                                <div class="controls">
+                                    <input type="text" data-ng-model="school_code" id="school_code" class="form-control" placeholder="QSC" required>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-md-5 col-md-offset-1">
+                            
+                            <div class="form-group">
+                                <label class="control-label" for="student_id">Số báo danh</label>
+                                <div class="controls">
+                                    <input type="text" data-ng-model="student_id" id="student_id" class="form-control" placeholder="TTG0054213" required>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-11">
+                            <div class="form-group">
+                                <label class="control-label" for="message">Tin nhắn</label>
+                                <div class="controls">
+                                    <textarea class="form-control" id="message" data-ng-model="message"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <input type="submit" class="btn btn-default">
+                    </div>
+    				
+                </fieldset>
+            </form>
+        </div>
+    </section>
+</div>
