@@ -16,14 +16,20 @@ var SubjectgroupSchema = new Schema({
 		required: 'Please fill Subjectgroup name',
 		trim: true
 	},
+	status:{
+		type: Number,
+		default: 0,
+		//required: 'Please fill School name',
+		//trim: true
+	},
 	created: {
 		type: Date,
 		default: Date.now
 	},
-	user: {
-		type: Schema.ObjectId,
-		ref: 'User'
-	}
+	// user: {
+	// 	type: Schema.ObjectId,
+	// 	ref: 'User'
+	// }
 });
 
 mongoose.model('Subjectgroup', SubjectgroupSchema);

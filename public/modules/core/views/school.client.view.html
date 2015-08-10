@@ -37,9 +37,12 @@
                         </a>
                         </td>
                     </tr>
-                    <tr data-ng-show="school.faculty">    
+                    <tr ng-show="view_striped == school.code">    
                         <td colspan="9">
-                            <table class="table table-hover table-striped">
+                            <div class="alert alert-warning text-center" data-ng-hide="!schools.$resolved || school.faculty.length">
+                              Chưa có thông tin các Ngành!
+                            </div>
+                            <table class="table table-hover table-striped" ng-show="school.faculty.length > 0">
                                   <thead>
                                     <tr>
                                       <th>#</th>
@@ -62,7 +65,7 @@
                                       <td>{{faculty.matriculate}}/{{faculty.quota}}</td>
                                       <td>{{faculty.quota - faculty.matriculate}}/{{faculty.quota}}</td>
                                       <td>{{faculty.quota}}</td>
-                                      <td>{{faculty.candidate}}</td>
+                                      <td>{{faculty.candidate_apply}}</td>
                                                                        
                                     </tr>
                     
@@ -74,7 +77,7 @@
                 </table>
             </div>
             <div class="alert alert-warning text-center" data-ng-hide="!schools.$resolved || schools.length">
-            	Không có thông tin các trường!
+            	Chưa  có thông tin các trường!
             </div>
         <div>
     </section>

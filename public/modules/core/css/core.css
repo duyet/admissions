@@ -1,4 +1,4 @@
-/*.content {
+.content {
 	margin-top: 50px;
 }
 .undecorated-link:hover {
@@ -16,4 +16,7 @@
 
 .subject-list>.btn{
     margin: 5px 5px 5px 0px;
-}*/
+}
+.mr-10{
+	margin-right: 10px;
+}

@@ -1,40 +1,134 @@
 <section data-ng-controller="SchoolController" data-ng-init="findcandidates()">
-    <section class="section">
-        <div class="container">
+    <section class="section first">
+    <div class="container">
+        
             <div class="page-header">
                 <h1>Hồ Sơ</h1>
             </div>
-            
-            <div class="table-responsive">
+            <p>             
+              <a class="btn btn-default mr-10" role="button" ng-repeat="condition in conditions" ng-click="removeCondition(condition)">
+                {{condition.name}} <span class="glyphicon glyphicon-remove"></span>
+              </a>
+            </p>
+            <div class="input-group">
+              <input type="text" ng-model="query" class="form-control" placeholder="Nhập Số báo danh hoặc Họ và tên thí sinh...">
+              <span class="input-group-btn">
+                <button class="btn btn-info" type="button" ng-click="search()">Tìm kiếm</button>
+              </span>
+            </div><!-- /input-group -->
+
+            <nav class="pull-right" ng-show="pagination > 0">
+              <ul  class="pagination">
+                <li>
+                  <a href="#" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                  </a>
+                </li>
+                <!-- <li class="active"><a href="#">1</a></li> -->
+                <li ng-repeat="a in range(pagination) track by $index" ng-class="{'active' : pagination_active === $index + 1}">
+                <a ng-click="addPagination($index+1)" ng-show="$index < 20">{{$index+1}}</a>
+                <a ng-click="addPagination($index+1)" ng-show="$index == 20"> ... </a>
+                </li>
+                
+                <li>
+                <li>
+                  <a href="#" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+
+            <div class="">
                 <table class="table table-hover table-striped">
                   <thead>
                     <tr>
-                    <th>#</th>
-                    <th>Tên</th>
-                    <th>Số báo danh</th>
-                    <th>Trường</th>
-                    <th>Ngành</th>
-                    <th>Tổ hợp môn</th>
-                    <th>Ưu tiên</th>
+                    <th width="1%">#</th>
+                    <th width="19%">Họ và tên thí sinh</th>
+                    <th width="5%">Số báo danh</th>
+                    <th width="20%">
+                        <div class="btn-group" dropdown >
+                          <button type="button" id="dropdown-school" class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="" aria-expanded="">
+                            Trường <span class="caret"></span>
+                          </button>
+                          <ul class="dropdown-menu" aria-labelledby="dropdown-school">
+                            <li ng-repeat="choice in schools" ><a ng-click="addSchool(choice)">{{choice.name}}</a></li>
+                            
+                          </ul>
+                        </div>
+                    </th>
+                    <th width="20%">
+                      <div class="btn-group" dropdown>
+                          <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" ng-disabled="faculties.length == 0">
+                            Ngành <span class="caret"></span>
+                          </button>
+                          <ul class="dropdown-menu">
+                            <li ng-repeat="choice in faculties"><a ng-click="addFaculty(choice)">{{choice.name}}</a></li>                    
+                          </ul>
+                        </div>
+                    </th>
+                    <th width="10%">
+                      <div class="btn-group" dropdown>
+                          <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Tổ hợp môn <span class="caret"></span>
+                          </button>
+                          <ul class="dropdown-menu">
+                            <li ng-repeat="choice in Subjectgroups"><a ng-click="addSubjectgroup(choice)">{{choice.subject_group}}</a></li>
+                  
+                          </ul>
+                        </div>
+                    </th>
+                    <th>
+                      <div class="btn-group" dropdown>
+                          <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Ưu tiên <span class="caret"></span>
+                          </button>
+                          <ul class="dropdown-menu">
+                            <li ng-repeat="choice in [1,2,3,4]"><a ng-click="addPriority(choice)">{{choice}}</a></li>
+                  
+                          </ul>
+                        </div>
+                    </th>
                     <th>Tổng điểm</th>              
                     </tr>
                   </thead>
                   <tbody >
 
                     <tr data-ng-repeat="candidate in candidates">
-                      <td scope="row">{{$index+1}}</td>
+                      <td scope="row">{{$index+1+pagination_count}}</td>
                       <td>{{candidate.student_name}}</td>
                       <td>{{candidate.student_id}}</td>
                       <td>{{candidate.school_code}}</td>
                       <td>{{candidate.faculty}}</td>
                       <td>{{candidate.subject_group}}</td>
-                      <td>{{candidate.score_priority}}</td>
+                      <td>{{candidate.priority}}</td>
                       <td>{{candidate.score_sum}}</td>                  
                     </tr>
                     
                   </tbody>
                 </table>
             </div>
+            <nav class="pull-right" ng-show="pagination > 0">
+              <ul  class="pagination">
+                <li>
+                  <a href="#" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                  </a>
+                </li>
+                <!-- <li class="active"><a href="#">1</a></li> -->
+                <li ng-repeat="a in range(pagination) track by $index" ng-class="{'active' : pagination_active === $index + 1}">
+                <a ng-click="addPagination($index+1)" ng-show="$index < 20">{{$index+1}}</a>
+                <a ng-click="addPagination($index+1)" ng-show="$index == 20"> ... </a>
+                </li>
+                
+                <li>
+                <li>
+                  <a href="#" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
             <div class="alert alert-warning text-center" data-ng-hide="!schools.$resolved || schools.length">
             	Không có thông tin Thí sinh!
             </div>

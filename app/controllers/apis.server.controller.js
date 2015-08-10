@@ -278,7 +278,7 @@ function shuffle_func (subject1, subject2, subject3) {
 // 		} else {
 exports.domatriculate = function(req, res) {
 	if(_.has(req.body, 'school')){
-		matriculate.run_matriculate(req.body.school, res);
+		initialization.run_matriculate(req.body.school, res);
 	}else{
 		res.jsonp({
 			result:false, 
@@ -326,7 +326,7 @@ exports.viewfaculty = function(req, res) {
 			} else {
 				for(var x_index in faculties){
 					faculties[x_index].matriculate = _.size(faculties[x_index].matriculate_list);//.length
-					faculties[x_index].candidate = _.size(faculties[x_index].candidate_apply);//.length
+					//faculties[x_index].candidate = _.size(faculties[x_index].candidate_apply);//.length
 				}
 				res.jsonp({
 					result:true, 
@@ -344,10 +344,53 @@ exports.viewfaculty = function(req, res) {
 	//school
 }
 exports.findcandidates = function(req, res) {
-	//if(_.has(req.body, 'school')){
+	// console.log(rep.body.conditions)
+	var conditions = {'$and' : [{faculty_code:{'$ne' : null}},{faculty_code:{'$ne' : ""}}]};
+	if(_.has(req.body, 'conditions')){
+		console.log(req.body.conditions)
+		conditions = {};
+		for(var c_index in req.body.conditions){
+			if(req.body.conditions[c_index].type === 'school'){
+				conditions = _.extend(conditions,{school_code : req.body.conditions[c_index].value});
+			}
+			if(req.body.conditions[c_index].type === 'faculty'){
+				conditions = _.extend(conditions,{faculty : req.body.conditions[c_index].value});
+			}
+			if(req.body.conditions[c_index].type === 'priority'){
+				conditions = _.extend(conditions,{priority : req.body.conditions[c_index].value});
+			}
+			if(req.body.conditions[c_index].type === 'subjectgroup'){
+				var arr = req.body.conditions[c_index].value.split("-");
+				var group = shuffle_func(arr[0],arr[1],arr[2]);
+				conditions = _.extend(conditions,{subject_group : {'$in':group}});
+			}
+		}
+	}
+	if(_.has(req.body, 'query')){
+		console.log(req.body.query)
+		 var regex = new RegExp(req.body.query, "i");
+		conditions = _.extend(conditions,{'$or':[{student_id : regex},{student_name : regex}]});
+	}
+	console.log(conditions);
+	var nPerPage = 50;
+	var pageNumber = 0;
+	if(_.has(req.body, 'pagination_active')){
+		pageNumber = req.body.pagination_active;
+	}
+	Candidate
+		.count(conditions)
+		.exec(function(err, count_faculties) {
+			if (err) {
+				res.jsonp({
+					result:false, 
+					message:err.toString()
+				});
+			} else {
+	//.count
 		Candidate
-		.find({'$and' : [{faculty_code:{'$ne' : null}},{faculty_code:{'$ne' : ""}}]},{score_1:0, score_2: 0, score_3 : 0})
-		.limit(50)
+		.find(conditions,{score_1:0, score_2: 0, score_3 : 0})
+		.skip(pageNumber > 1 ? ((pageNumber-1)*nPerPage) : 0).limit(nPerPage)
+		.limit(nPerPage)
 		.sort('-score_sum')
 		.exec(function(err, faculties) {
 			if (err) {
@@ -356,15 +399,51 @@ exports.findcandidates = function(req, res) {
 					message:err.toString()
 				});
 			} else {
-				// for(var x_index in faculties){
+				var record = [];
+				for (var x_index = 0; x_index < faculties.length; x_index++) {
+				// 	Things[i]
+				// };
+				// for(var x_index = 0 ; in faculties){
+					var faculty_choice =  _.uniq(_.filter(facultyFull, function(object) {
+					  return object.code === faculties[x_index].faculty;
+					}));
+					var school_choice =  _.uniq(_.filter(schoolAll, function(object) {
+					  return object.code === faculties[x_index].school_code;
+					}));
+					var faculty = faculties[x_index].faculty
+					var school_code = faculties[x_index].school_code
+					if(faculty_choice.length > 0){
+						faculty = faculty_choice[0].name;
+					}
+					if(school_choice.length > 0){
+						school_code = school_choice[0].name;
+					}
+					//console.log(faculty_choice[0].name)
+						record.push({
+							faculty : faculty,
+							school_code: school_code,
+							subject_group: faculties[x_index].subject_group,
+							student_name: faculties[x_index].student_name,
+							student_id: faculties[x_index].student_id,
+							faculty_code: faculties[x_index].faculty_code,
+							score_sum: faculties[x_index].score_sum,
+							score_priority: faculties[x_index].score_priority,
+							priority: faculties[x_index].priority
+						});
+					// record.push(faculties[x_index]);
 				// 	faculties[x_index].matriculate = _.size(faculties[x_index].matriculate_list);//.length
 				// 	faculties[x_index].candidate = _.size(faculties[x_index].candidate_apply);//.length
-				// }
+				}
 				res.jsonp({
 					result:true, 
-					record: faculties,
+					record: record,
+					//length: count_faculties/50,//Candidate.where(conditions).count(),
+					length: _.ceil(count_faculties/50) > 20 ? 21 : _.ceil(count_faculties/50),//Candidate.where(conditions).count(),
+					pagination_active: pageNumber,
 					message:''
 				});
+			}
+		});
 			}
 		});
 	// }else{
@@ -798,3 +877,194 @@ function compare_candidate_code(candidate_a,candidate_b) {
 // 	});
 // 	};
 // }
+//initialization
+var initialization_list = [];
+
+var initialization = {
+	log : function (school_code,message) {
+		require('fs').appendFile(this.log_file+school_code+".txt"
+			,'\n\n [' +(Date()) + '][' +school_code+ ']\n' + message);
+		console.log('\n\n [' +(Date()) + '][' +school_code+ ']\n' + message);
+	},
+	log_test : function (school_code,message) {
+		require('fs').appendFile(this.log_file_test+school_code+"_test.txt",
+			'\n\n [' +(Date()) + '][' +school_code+ ']\n' + message);
+		console.log('\n\n [' +(Date()) + '][' +school_code+ ']\n' + message);
+	},
+	init_log : function (school_code) {
+		require('fs').unlink(this.log_file+school_code+".txt");
+		require('fs').writeFile(this.log_file+school_code+".txt",(Date())+' \n');
+		require('fs').unlink(this.log_file+school_code+"_test.txt");
+		require('fs').writeFile(this.log_file+school_code+"_test.txt",(Date())+' \n');
+	},
+	run_matriculate : function (school, res) {
+		this.res = res;
+		this.log_file = "/home/eroshaly/admissions/log_matriculate/matriculate_log_initialization_";
+		this.log_file_test = "/home/eroshaly/admissions/log_matriculate/matriculate_log_initialization_";
+		this.init_log(school);
+		this.init_matriculate(school);
+		this.log(school,'- Start School ['+school+']');
+	},
+	
+	init_data_faculty: function (school_code) {
+		this.log(school_code,'- init init data faculty ['+school_code+']');
+		var _this = this;
+		var this_school = _this.get_school(school_code);
+		Candidate.find({
+			school_code: school_code,
+		})
+		.exec(function(err, candidates) {
+			if (err) {
+				_this.log(school_code,'- ERROR'+err.toString());
+			}else{
+				this_school.resume = candidates.length;
+				var candidate_all = _.uniq(candidates, 'student_id');
+
+				_this.log(school_code,'- Candidate: '+candidate_all.length);
+				
+				this_school.candidate_all = candidate_all.length;
+
+				for(var s_index in this_school.faculty_choice){
+					var faculty_current = this_school.faculty_choice[s_index];
+					var faculty_candidate = get_faculty_same(candidates, this_school.faculty_choice[s_index].code);
+					faculty_current.candidate_apply = faculty_candidate.length;
+				}
+				_this.set_school(this_school.school);
+				_this.save_to_database(this_school.school);											
+			}
+		});
+	},
+	//get school function
+	get_school : function (school) {
+		for(var x_index in initialization_list){
+			if(initialization_list[x_index].school 
+			=== school){
+				return initialization_list[x_index];
+			}
+		}
+		return null;
+	},//set school function
+	set_school : function (school_object) {
+		for(var x_index in initialization_list){
+			if(initialization_list[x_index].school 
+			=== school_object.school){
+				initialization_list[x_index] = school_object;
+			}
+		}
+	},
+	//init matriculate function
+	init_matriculate : function (school) {
+		var _this = this;
+		this.log(school,'- init matriculate');
+		var faculty_choice =  _.uniq(_.filter(facultyFull, function(object) {
+				  return object.school_code === school;
+				}));
+		var total_quota = _.sum(faculty_choice, function(object) {
+									  return object.quota;
+									});
+		var current_school = {
+				school: school,
+				faculty_choice: faculty_choice,
+				total_quota : total_quota,
+				matriculated_list : [],
+				has_candidate : [],
+				faculty_final : [],
+				candidate_all: 0,
+				resume : 0,
+				save_to : true,
+				matriculated : 0
+			};
+		var create = true;
+		for(var x_index in initialization_list){
+		// 	---Find school
+			if(initialization_list[x_index].school 
+			=== school){
+				initialization_list[x_index] = current_school;
+				create = false;
+				break;
+			}
+		}
+		if(create){
+			initialization_list.push(current_school);			
+		}
+		this.init_data_faculty(current_school.school);
+	},
+	
+	//save to database
+	save_to_database: function (school_code) {
+		var this_school = this.get_school(school_code);
+		var _this = this;
+		this_school.faculty_final = [];
+		for(var s_index in this_school.faculty_choice){
+			this_school.faculty_choice[s_index].benchmark = 0;
+			//this_school.faculty_choice[s_index].benchmark = 0;
+			this_school.faculty_choice[s_index].save(function(err, faculty) {
+				if (err) {
+					_this.log(school_code,err.toString());
+				} else {
+					_this.log(school_code,'Save -'+faculty.school_code + ' - ' + faculty.code + ' - ' + Date());
+					this_school.faculty_final.push(faculty.code);
+					this_school.faculty_final = _.uniq(this_school.faculty_final);
+					_this.set_school(this_school);
+					if(this_school.save_to && this_school.faculty_final.length >= this_school.faculty_choice.length){
+						_this.log_test(school_code,'- save school database : '+faculty.code);
+						_this.log_test(school_code,'- save school database : '+this_school.faculty_final.toString());
+						// save_to
+						this_school.save_to = false;
+						_this.set_school(this_school);
+						_this.save_school_database(this_school.school);
+					}
+				}
+			});
+		}
+	},
+	//save to database
+	save_school_database: function (school_code) {
+		var this_school = this.get_school(school_code);
+		var _this = this;
+		//this_school.faculty_final = [];
+		this.log(school_code,'- save school database');
+		School
+		.findOne({code : school_code})
+		.exec(function(err, school) {
+			if (err) {
+				_this.log(school_code,err.toString());
+				_this.res.jsonp({
+					result:false, 
+					message:err.toString()
+				});
+			}else{
+				_this.log(school_code,'- save school success');
+				school.faculty_list = _.pluck(this_school.faculty_choice, 'code');
+				school.quota = this_school.total_quota;
+				school.status = 1;
+				school.resume = this_school.resume;
+				school.matriculated = this_school.matriculated;
+				school.candidate = this_school.candidate_all;
+				var benchmark = _.pluck(this_school.faculty_choice, 'benchmark');
+				if(benchmark.length > 0){
+					var benchmark_sort = _.sortBy(benchmark);
+					school.largest_benchmark = benchmark_sort[benchmark_sort.length-1];
+					school.smallest_benchmark = benchmark_sort[0];
+				}
+				school.modified = Date();				
+				school.save(function(err, result) {
+					if (err) {
+						_this.log(school_code,err.toString());
+						_this.res.jsonp({
+							result:false, 
+							message:err.toString()
+						});
+					} else {
+						_this.log(school_code,'- save school success final');
+						_this.res.jsonp({
+							result:true, 
+							message:''
+						});
+						return
+					}
+				});
+			}
+		});
+	}
+}

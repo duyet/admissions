@@ -20,10 +20,16 @@ var SubjectSchema = new Schema({
 		type: Date,
 		default: Date.now
 	},
-	user: {
-		type: Schema.ObjectId,
-		ref: 'User'
-	}
+	status:{
+		type: Number,
+		default: 0,
+		//required: 'Please fill School name',
+		//trim: true
+	},
+	// user: {
+	// 	type: Schema.ObjectId,
+	// 	ref: 'User'
+	// }
 });
 
 mongoose.model('Subject', SubjectSchema);

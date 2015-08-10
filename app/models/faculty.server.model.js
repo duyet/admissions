@@ -70,7 +70,12 @@ var FacultySchema = new Schema({
 		required: 'Please fill Faculty quota',
 		trim: true
 	},
-	candidate_apply: [Schema.Types.Mixed],
+	candidate_apply: {
+		type: Number,
+		default: 0,
+		required: 'Please fill Faculty quota',
+		trim: true
+	},
 	candidate:{
 		type: Number,
 		default: 0,
