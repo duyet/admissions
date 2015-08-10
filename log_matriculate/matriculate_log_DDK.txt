@@ -1,0 +1,4995 @@
+Mon Aug 10 2015 13:59:12 GMT+0700 (ICT) 
+T)][DDK]
+- init matriculate
+
+ [Mon Aug 10 2015 13:59:12 GMT+0700 (ICT)][DDK]
+- init init data faculty [DDK]
+
+ [Mon Aug 10 2015 13:59:12 GMT+0700 (ICT)][DDK]
+- Start School [DDK]
+
+ [Mon Aug 10 2015 13:59:13 GMT+0700 (ICT)][DDK]
+-Faculty: D420201-More: 39-Benchmark: 10.75 
+
+
+ [Mon Aug 10 2015 13:59:13 GMT+0700 (ICT)][DDK]
+-Faculty: D540101-More: 33-Benchmark: 15.75 
+
+
+ [Mon Aug 10 2015 13:59:13 GMT+0700 (ICT)][DDK]
+-Faculty: D510202-More: 87-Benchmark: 19.25 
+
+
+ [Mon Aug 10 2015 13:59:13 GMT+0700 (ICT)][DDK]
+-Faculty: D510105-More: 29-Benchmark: 18.75 
+
+
+ [Mon Aug 10 2015 13:59:13 GMT+0700 (ICT)][DDK]
+-Faculty: D480201-More: 143-Benchmark: 13.5 
+
+
+ [Mon Aug 10 2015 13:59:13 GMT+0700 (ICT)][DDK]
+-Faculty: D580301-More: 69-Benchmark: 17 
+
+
+ [Mon Aug 10 2015 13:59:13 GMT+0700 (ICT)][DDK]
+-Faculty: D580205-More: 85-Benchmark: 17 
+
+
+ [Mon Aug 10 2015 13:59:13 GMT+0700 (ICT)][DDK]
+-Faculty: D520201-More: 112-Benchmark: 18.75 
+
+
+ [Mon Aug 10 2015 13:59:13 GMT+0700 (ICT)][DDK]
+-Faculty: D520216-More: 62-Benchmark: 14.75 
+
+
+ [Mon Aug 10 2015 13:59:13 GMT+0700 (ICT)][DDK]
+-Faculty: D520201LT-More: 1-Benchmark: 21.5 
+
+
+ [Mon Aug 10 2015 13:59:13 GMT+0700 (ICT)][DDK]
+-Faculty: D520301-More: 38-Benchmark: 19 
+
+
+ [Mon Aug 10 2015 13:59:13 GMT+0700 (ICT)][DDK]
+-Faculty: D520122-More: 25-Benchmark: 19 
+
+
+ [Mon Aug 10 2015 13:59:13 GMT+0700 (ICT)][DDK]
+-Faculty: D580202-More: 32-Benchmark: 16.25 
+
+
+ [Mon Aug 10 2015 13:59:13 GMT+0700 (ICT)][DDK]
+-Faculty: D580201-More: 128-Benchmark: 15 
+
+
+ [Mon Aug 10 2015 13:59:13 GMT+0700 (ICT)][DDK]
+-Faculty: D580201LT-More: 1-Benchmark: 21.75 
+
+
+ [Mon Aug 10 2015 13:59:13 GMT+0700 (ICT)][DDK]
+-Faculty: D520114-More: 60-Benchmark: 14.75 
+
+
+ [Mon Aug 10 2015 13:59:13 GMT+0700 (ICT)][DDK]
+-Faculty: D520103-More: 106-Benchmark: 19 
+
+
+ [Mon Aug 10 2015 13:59:13 GMT+0700 (ICT)][DDK]
+-Faculty: D520604-More: 50-Benchmark: 17.25 
+
+
+ [Mon Aug 10 2015 13:59:13 GMT+0700 (ICT)][DDK]
+-Faculty: D520103LT-More: 1-Benchmark: 17 
+
+
+ [Mon Aug 10 2015 13:59:13 GMT+0700 (ICT)][DDK]
+-Faculty: D520320-More: 49-Benchmark: 18 
+
+
+ [Mon Aug 10 2015 13:59:13 GMT+0700 (ICT)][DDK]
+-Faculty: D520209-More: 150-Benchmark: 18.25 
+
+
+ [Mon Aug 10 2015 13:59:13 GMT+0700 (ICT)][DDK]
+-Faculty: D520115-More: 86-Benchmark: 19 
+
+
+ [Mon Aug 10 2015 13:59:13 GMT+0700 (ICT)][DDK]
+-Faculty: D520320LT-More: 1-Benchmark: 18 
+
+
+ [Mon Aug 10 2015 13:59:14 GMT+0700 (ICT)][DDK]
+-Faculty: D510601-More: 43-Benchmark: 18 
+
+
+ [Mon Aug 10 2015 13:59:13 GMT+0700 (ICT)][DDK]
+-Faculty: D580208-More: 37-Benchmark: 18.75 
+
+
+ [Mon Aug 10 2015 13:59:14 GMT+0700 (ICT)][DDK]
+-Faculty: D140214-More: 22-Benchmark: 18.5 
+
+
+ [Mon Aug 10 2015 13:59:14 GMT+0700 (ICT)][DDK]
+-Faculty: D340301-More: 10-Benchmark: 15.25 
+
+
+ [Mon Aug 10 2015 13:59:14 GMT+0700 (ICT)][DDK]
+-Faculty: D340121-More: 19-Benchmark: 13.25 
+
+
+ [Mon Aug 10 2015 13:59:14 GMT+0700 (ICT)][DDK]
+-Faculty: D850101-More: 60-Benchmark: 18.25 
+
+
+ [Mon Aug 10 2015 13:59:14 GMT+0700 (ICT)][DDK]
+-Faculty: D380101-More: 29-Benchmark: 13 
+
+
+ [Mon Aug 10 2015 13:59:14 GMT+0700 (ICT)][DDK]
+-Faculty: D310101-More: 12-Benchmark: 13.25 
+
+
+ [Mon Aug 10 2015 13:59:14 GMT+0700 (ICT)][DDK]
+-Faculty: D380107-More: 22-Benchmark: 14.5 
+
+
+ [Mon Aug 10 2015 13:59:14 GMT+0700 (ICT)][DDK]
+-Faculty: D310205-More: 4-Benchmark: 11 
+
+
+ [Mon Aug 10 2015 13:59:14 GMT+0700 (ICT)][DDK]
+-Faculty: D340115-More: 17-Benchmark: 13.25 
+
+
+ [Mon Aug 10 2015 13:59:14 GMT+0700 (ICT)][DDK]
+-Faculty: D340103-More: 10-Benchmark: 13.75 
+
+
+ [Mon Aug 10 2015 13:59:14 GMT+0700 (ICT)][DDK]
+-Faculty: D340101-More: 19-Benchmark: 14 
+
+
+ [Mon Aug 10 2015 13:59:14 GMT+0700 (ICT)][DDK]
+-Faculty: D340103LT-More: 1-Benchmark: 17.5 
+
+
+ [Mon Aug 10 2015 13:59:14 GMT+0700 (ICT)][DDK]
+-Faculty: D340404-More: 16-Benchmark: 15.75 
+
+
+ [Mon Aug 10 2015 13:59:14 GMT+0700 (ICT)][DDK]
+-Faculty: D340201-More: 6-Benchmark: 16.75 
+
+
+ [Mon Aug 10 2015 13:59:14 GMT+0700 (ICT)][DDK]
+-Faculty: D340201LT-More: 1-Benchmark: 21.5 
+
+
+ [Mon Aug 10 2015 13:59:14 GMT+0700 (ICT)][DDK]
+-Faculty: D460201-More: 2-Benchmark: 17.25 
+
+
+ [Mon Aug 10 2015 13:59:14 GMT+0700 (ICT)][DDK]
+-Faculty: D320101-More: 53-Benchmark: 12.25 
+
+
+ [Mon Aug 10 2015 13:59:14 GMT+0700 (ICT)][DDK]
+-Faculty: D340107-More: 24-Benchmark: 14 
+
+
+ [Mon Aug 10 2015 13:59:14 GMT+0700 (ICT)][DDK]
+-Faculty: D480201-More: 114-Benchmark: 17.25 
+
+
+ [Mon Aug 10 2015 13:59:14 GMT+0700 (ICT)][DDK]
+-Faculty: D420201-More: 39-Benchmark: 10.75 
+
+
+ [Mon Aug 10 2015 13:59:14 GMT+0700 (ICT)][DDK]
+-Faculty: D310501-More: 9-Benchmark: 9.25 
+
+
+ [Mon Aug 10 2015 13:59:14 GMT+0700 (ICT)][DDK]
+-Faculty: D760101-More: 30-Benchmark: 14.5 
+
+
+ [Mon Aug 10 2015 13:59:14 GMT+0700 (ICT)][DDK]
+-Faculty: D140202-More: 48-Benchmark: 16 
+
+
+ [Mon Aug 10 2015 13:59:14 GMT+0700 (ICT)][DDK]
+-Faculty: D140205-More: 29-Benchmark: 14.75 
+
+
+ [Mon Aug 10 2015 13:59:14 GMT+0700 (ICT)][DDK]
+-Faculty: D140219-More: 35-Benchmark: 16.5 
+
+
+ [Mon Aug 10 2015 13:59:14 GMT+0700 (ICT)][DDK]
+-Faculty: D140212-More: 28-Benchmark: 13.5 
+
+
+ [Mon Aug 10 2015 13:59:14 GMT+0700 (ICT)][DDK]
+-Faculty: D850101-More: 65-Benchmark: 18.25 
+
+
+ [Mon Aug 10 2015 13:59:14 GMT+0700 (ICT)][DDK]
+-Faculty: D140217-More: 34-Benchmark: 16.5 
+
+
+ [Mon Aug 10 2015 13:59:14 GMT+0700 (ICT)][DDK]
+-Faculty: D140218-More: 21-Benchmark: 16.75 
+
+
+ [Mon Aug 10 2015 13:59:14 GMT+0700 (ICT)][DDK]
+-Faculty: D140213-More: 38-Benchmark: 15.25 
+
+
+ [Mon Aug 10 2015 13:59:14 GMT+0700 (ICT)][DDK]
+-Faculty: D140209-More: 42-Benchmark: 15 
+
+
+ [Mon Aug 10 2015 13:59:14 GMT+0700 (ICT)][DDK]
+-Faculty: D140210-More: 16-Benchmark: 12.75 
+
+
+ [Mon Aug 10 2015 13:59:14 GMT+0700 (ICT)][DDK]
+-Faculty: D310401-More: 27-Benchmark: 11.75 
+
+
+ [Mon Aug 10 2015 13:59:14 GMT+0700 (ICT)][DDK]
+-Faculty: D140211-More: 25-Benchmark: 19.25 
+
+
+ [Mon Aug 10 2015 13:59:14 GMT+0700 (ICT)][DDK]
+-Faculty: D220330-More: 13-Benchmark: 11.5 
+
+
+ [Mon Aug 10 2015 13:59:14 GMT+0700 (ICT)][DDK]
+-Faculty: D220340-More: 7-Benchmark: 8.75 
+
+
+ [Mon Aug 10 2015 13:59:14 GMT+0700 (ICT)][DDK]
+-Faculty: D220213-More: 31-Benchmark: 23.5 
+
+
+ [Mon Aug 10 2015 13:59:14 GMT+0700 (ICT)][DDK]
+-Faculty: D220113-More: 38-Benchmark: 14.5 
+
+
+ [Mon Aug 10 2015 13:59:14 GMT+0700 (ICT)][DDK]
+-Faculty: D220210-More: 87-Benchmark: 23.25 
+
+
+ [Mon Aug 10 2015 13:59:14 GMT+0700 (ICT)][DDK]
+-Faculty: D220201-More: 520-Benchmark: 21.5 
+
+
+ [Mon Aug 10 2015 13:59:14 GMT+0700 (ICT)][DDK]
+-Faculty: D220202-More: 51-Benchmark: 21.5 
+
+
+ [Mon Aug 10 2015 13:59:14 GMT+0700 (ICT)][DDK]
+-Faculty: D220203-More: 30-Benchmark: 22.75 
+
+
+ [Mon Aug 10 2015 13:59:14 GMT+0700 (ICT)][DDK]
+-Faculty: D220209-More: 63-Benchmark: 23.5 
+
+
+ [Mon Aug 10 2015 13:59:14 GMT+0700 (ICT)][DDK]
+-Faculty: D220204-More: 73-Benchmark: 23.25 
+
+
+ [Mon Aug 10 2015 13:59:14 GMT+0700 (ICT)][DDK]
+-Faculty: D220212-More: 67-Benchmark: 23 
+
+
+ [Mon Aug 10 2015 13:59:14 GMT+0700 (ICT)][DDK]
+-Faculty: D140231-More: 106-Benchmark: 22 
+
+
+ [Mon Aug 10 2015 13:59:14 GMT+0700 (ICT)][DDK]
+-Faculty: D140234-More: 6-Benchmark: 22.75 
+
+
+ [Mon Aug 10 2015 13:59:14 GMT+0700 (ICT)][DDK]
+
+- remove candidates same for School
+
+ [Mon Aug 10 2015 14:00:19 GMT+0700 (ICT)][DDK]
+-Faculty: D480201CLC1-Current: 0-Benchmark: 21.75 
+
+
+ [Mon Aug 10 2015 13:59:14 GMT+0700 (ICT)][DDK]
+-Faculty: D140233-More: 16-Benchmark: 22.25 
+
+
+ [Mon Aug 10 2015 14:00:19 GMT+0700 (ICT)][DDK]
+-Faculty: D420201-Current: 81-Benchmark: 19 
+
+
+ [Mon Aug 10 2015 14:00:19 GMT+0700 (ICT)][DDK]
+-Faculty: D420201LT-Current: 0-Benchmark: 0 
+
+
+ [Mon Aug 10 2015 14:00:19 GMT+0700 (ICT)][DDK]
+-Faculty: D480201CLC2-Current: 0-Benchmark: 20.75 
+
+
+ [Mon Aug 10 2015 14:00:19 GMT+0700 (ICT)][DDK]
+-Faculty: D480201-Current: 239-Benchmark: 20.75 
+
+
+ [Mon Aug 10 2015 14:00:19 GMT+0700 (ICT)][DDK]
+-Faculty: D540101-Current: 50-Benchmark: 19.75 
+
+
+ [Mon Aug 10 2015 14:00:19 GMT+0700 (ICT)][DDK]
+-Faculty: D480201LT-Current: 1-Benchmark: 19.75 
+
+
+ [Mon Aug 10 2015 14:00:19 GMT+0700 (ICT)][DDK]
+-Faculty: D510202-Current: 64-Benchmark: 20 
+
+
+ [Mon Aug 10 2015 14:00:19 GMT+0700 (ICT)][DDK]
+-Faculty: D540101LT-Current: 0-Benchmark: 19.75 
+
+
+ [Mon Aug 10 2015 14:00:19 GMT+0700 (ICT)][DDK]
+-Faculty: D510105-Current: 37-Benchmark: 19.5 
+
+
+ [Mon Aug 10 2015 14:00:19 GMT+0700 (ICT)][DDK]
+-Faculty: D510202LT-Current: 0-Benchmark: 17 
+
+
+ [Mon Aug 10 2015 14:00:19 GMT+0700 (ICT)][DDK]
+-Faculty: D905206-Current: 0-Benchmark: 30.25 
+
+
+ [Mon Aug 10 2015 14:00:19 GMT+0700 (ICT)][DDK]
+-Faculty: PFIEV-Current: 0-Benchmark: 42.75 
+
+
+ [Mon Aug 10 2015 14:00:19 GMT+0700 (ICT)][DDK]
+-Faculty: D580102-Current: 0-Benchmark: 22.75 
+
+
+ [Mon Aug 10 2015 14:00:19 GMT+0700 (ICT)][DDK]
+-Faculty: D905216-Current: 0-Benchmark: 24.5 
+
+
+ [Mon Aug 10 2015 14:00:19 GMT+0700 (ICT)][DDK]
+-Faculty: D580301-Current: 46-Benchmark: 19.5 
+
+
+ [Mon Aug 10 2015 14:00:19 GMT+0700 (ICT)][DDK]
+-Faculty: D580205CLC-Current: 0-Benchmark: 20.25 
+
+
+ [Mon Aug 10 2015 14:00:19 GMT+0700 (ICT)][DDK]
+-Faculty: D580205-Current: 79-Benchmark: 19.5 
+
+
+ [Mon Aug 10 2015 14:00:19 GMT+0700 (ICT)][DDK]
+-Faculty: D520201CLC-Current: 0-Benchmark: 22.25 
+
+
+ [Mon Aug 10 2015 14:00:19 GMT+0700 (ICT)][DDK]
+-Faculty: D520216-Current: 38-Benchmark: 20 
+
+
+ [Mon Aug 10 2015 14:00:19 GMT+0700 (ICT)][DDK]
+-Faculty: D580205LT-Current: 0-Benchmark: 18.75 
+
+
+ [Mon Aug 10 2015 14:00:19 GMT+0700 (ICT)][DDK]
+-Faculty: D520201-Current: 60-Benchmark: 20 
+
+
+ [Mon Aug 10 2015 14:00:19 GMT+0700 (ICT)][DDK]
+-Faculty: D520216CLC-Current: 0-Benchmark: 20.75 
+
+
+ [Mon Aug 10 2015 14:00:19 GMT+0700 (ICT)][DDK]
+-Faculty: D520301-Current: 31-Benchmark: 19.75 
+
+
+ [Mon Aug 10 2015 14:00:19 GMT+0700 (ICT)][DDK]
+-Faculty: D520201LT-Current: 1-Benchmark: 21.5 
+
+
+ [Mon Aug 10 2015 14:00:19 GMT+0700 (ICT)][DDK]
+-Faculty: D520122-Current: 29-Benchmark: 20 
+
+
+ [Mon Aug 10 2015 14:00:19 GMT+0700 (ICT)][DDK]
+-Faculty: D520301LT-Current: 0-Benchmark: 0 
+
+
+ [Mon Aug 10 2015 14:00:19 GMT+0700 (ICT)][DDK]
+-Faculty: D580201-Current: 93-Benchmark: 19.75 
+
+
+ [Mon Aug 10 2015 14:00:19 GMT+0700 (ICT)][DDK]
+-Faculty: D580201LT-Current: 0-Benchmark: 21.75 
+
+
+ [Mon Aug 10 2015 14:00:19 GMT+0700 (ICT)][DDK]
+-Faculty: D580202-Current: 42-Benchmark: 18.25 
+
+
+ [Mon Aug 10 2015 14:00:19 GMT+0700 (ICT)][DDK]
+-Faculty: D520114LT-Current: 0-Benchmark: 20 
+
+
+ [Mon Aug 10 2015 14:00:19 GMT+0700 (ICT)][DDK]
+-Faculty: D520114-Current: 31-Benchmark: 19.75 
+
+
+ [Mon Aug 10 2015 14:00:19 GMT+0700 (ICT)][DDK]
+-Faculty: D520103-Current: 62-Benchmark: 20.5 
+
+
+ [Mon Aug 10 2015 14:00:19 GMT+0700 (ICT)][DDK]
+-Faculty: D520604-Current: 31-Benchmark: 19.5 
+
+
+ [Mon Aug 10 2015 14:00:19 GMT+0700 (ICT)][DDK]
+-Faculty: D520103LT-Current: 1-Benchmark: 17 
+
+
+ [Mon Aug 10 2015 14:00:19 GMT+0700 (ICT)][DDK]
+-Faculty: D520209-Current: 91-Benchmark: 20.25 
+
+
+ [Mon Aug 10 2015 14:00:19 GMT+0700 (ICT)][DDK]
+-Faculty: D520320-Current: 42-Benchmark: 19.75 
+
+
+ [Mon Aug 10 2015 14:00:19 GMT+0700 (ICT)][DDK]
+-Faculty: D520209LT-Current: 0-Benchmark: 21.25 
+
+
+ [Mon Aug 10 2015 14:00:19 GMT+0700 (ICT)][DDK]
+-Faculty: D520320LT-Current: 1-Benchmark: 18 
+
+
+ [Mon Aug 10 2015 14:00:19 GMT+0700 (ICT)][DDK]
+-Faculty: D520115LT-Current: 0-Benchmark: 19.75 
+
+
+ [Mon Aug 10 2015 14:00:19 GMT+0700 (ICT)][DDK]
+-Faculty: D520115-Current: 81-Benchmark: 20 
+
+
+ [Mon Aug 10 2015 14:00:19 GMT+0700 (ICT)][DDK]
+-Faculty: D580208-Current: 34-Benchmark: 19.75 
+
+
+ [Mon Aug 10 2015 14:00:19 GMT+0700 (ICT)][DDK]
+-Faculty: D510601-Current: 31-Benchmark: 20 
+
+
+ [Mon Aug 10 2015 14:00:19 GMT+0700 (ICT)][DDK]
+-Faculty: D850101-Current: 121-Benchmark: 19.75 
+
+
+ [Mon Aug 10 2015 14:00:19 GMT+0700 (ICT)][DDK]
+-Faculty: D140214-Current: 39-Benchmark: 19.5 
+
+
+ [Mon Aug 10 2015 14:00:19 GMT+0700 (ICT)][DDK]
+-Faculty: D340405LT-Current: 0-Benchmark: 16 
+
+
+ [Mon Aug 10 2015 14:00:19 GMT+0700 (ICT)][DDK]
+-Faculty: D340405-Current: 0-Benchmark: 13.5 
+
+
+ [Mon Aug 10 2015 14:00:19 GMT+0700 (ICT)][DDK]
+-Faculty: D340301LT-Current: 0-Benchmark: 21 
+
+
+ [Mon Aug 10 2015 14:00:19 GMT+0700 (ICT)][DDK]
+-Faculty: D340302-Current: 0-Benchmark: 19 
+
+
+ [Mon Aug 10 2015 14:00:19 GMT+0700 (ICT)][DDK]
+-Faculty: D340301-Current: 10-Benchmark: 19 
+
+
+ [Mon Aug 10 2015 14:00:19 GMT+0700 (ICT)][DDK]
+-Faculty: D340120-Current: 0-Benchmark: 19.75 
+
+
+ [Mon Aug 10 2015 14:00:19 GMT+0700 (ICT)][DDK]
+-Faculty: D340121-Current: 17-Benchmark: 19 
+
+
+ [Mon Aug 10 2015 14:00:19 GMT+0700 (ICT)][DDK]
+-Faculty: D340121LT-Current: 0-Benchmark: 19.5 
+
+
+ [Mon Aug 10 2015 14:00:19 GMT+0700 (ICT)][DDK]
+-Faculty: D380101-Current: 26-Benchmark: 19 
+
+
+ [Mon Aug 10 2015 14:00:19 GMT+0700 (ICT)][DDK]
+-Faculty: D310101-Current: 16-Benchmark: 19 
+
+
+ [Mon Aug 10 2015 14:00:19 GMT+0700 (ICT)][DDK]
+-Faculty: D340115-Current: 10-Benchmark: 18.5 
+
+
+ [Mon Aug 10 2015 14:00:19 GMT+0700 (ICT)][DDK]
+-Faculty: D380107-Current: 10-Benchmark: 19.5 
+
+
+ [Mon Aug 10 2015 14:00:19 GMT+0700 (ICT)][DDK]
+-Faculty: D340103-Current: 13-Benchmark: 18.5 
+
+
+ [Mon Aug 10 2015 14:00:19 GMT+0700 (ICT)][DDK]
+-Faculty: D310205-Current: 4-Benchmark: 15.25 
+
+
+ [Mon Aug 10 2015 14:00:19 GMT+0700 (ICT)][DDK]
+-Faculty: D340103LT-Current: 0-Benchmark: 17.5 
+
+
+ [Mon Aug 10 2015 14:00:19 GMT+0700 (ICT)][DDK]
+-Faculty: D340107-Current: 14-Benchmark: 19.75 
+
+
+ [Mon Aug 10 2015 14:00:19 GMT+0700 (ICT)][DDK]
+-Faculty: D340101-Current: 27-Benchmark: 18.75 
+
+
+ [Mon Aug 10 2015 14:00:19 GMT+0700 (ICT)][DDK]
+-Faculty: D340201-Current: 9-Benchmark: 18.75 
+
+
+ [Mon Aug 10 2015 14:00:19 GMT+0700 (ICT)][DDK]
+-Faculty: D340201LT-Current: 1-Benchmark: 21.5 
+
+
+ [Mon Aug 10 2015 14:00:19 GMT+0700 (ICT)][DDK]
+-Faculty: D460201-Current: 3-Benchmark: 17.75 
+
+
+ [Mon Aug 10 2015 14:00:19 GMT+0700 (ICT)][DDK]
+-Faculty: D320101-Current: 30-Benchmark: 17 
+
+
+ [Mon Aug 10 2015 14:00:19 GMT+0700 (ICT)][DDK]
+-Faculty: D420201-Current: 81-Benchmark: 19 
+
+
+ [Mon Aug 10 2015 14:00:19 GMT+0700 (ICT)][DDK]
+-Faculty: D480201-Current: 239-Benchmark: 20.75 
+
+
+ [Mon Aug 10 2015 14:00:19 GMT+0700 (ICT)][DDK]
+-Faculty: D760101-Current: 20-Benchmark: 16.25 
+
+
+ [Mon Aug 10 2015 14:00:19 GMT+0700 (ICT)][DDK]
+-Faculty: D310501-Current: 12-Benchmark: 15 
+
+
+ [Mon Aug 10 2015 14:00:19 GMT+0700 (ICT)][DDK]
+-Faculty: D440217-Current: 0-Benchmark: 19 
+
+
+ [Mon Aug 10 2015 14:00:19 GMT+0700 (ICT)][DDK]
+-Faculty: D140205-Current: 19-Benchmark: 16.5 
+
+
+ [Mon Aug 10 2015 14:00:19 GMT+0700 (ICT)][DDK]
+-Faculty: D140201-Current: 0-Benchmark: 0 
+
+
+ [Mon Aug 10 2015 14:00:19 GMT+0700 (ICT)][DDK]
+-Faculty: D140202-Current: 34-Benchmark: 18.25 
+
+
+ [Mon Aug 10 2015 14:00:19 GMT+0700 (ICT)][DDK]
+-Faculty: D440112-Current: 0-Benchmark: 14.5 
+
+
+ [Mon Aug 10 2015 14:00:19 GMT+0700 (ICT)][DDK]
+-Faculty: D440301-Current: 0-Benchmark: 16.75 
+
+
+ [Mon Aug 10 2015 14:00:19 GMT+0700 (ICT)][DDK]
+-Faculty: D220310-Current: 0-Benchmark: 19.5 
+
+
+ [Mon Aug 10 2015 14:00:19 GMT+0700 (ICT)][DDK]
+-Faculty: D850101-Current: 121-Benchmark: 19.75 
+
+
+ [Mon Aug 10 2015 13:59:13 GMT+0700 (ICT)][DDK]
+-Faculty: D480201LT-More: 1-Benchmark: 19.75 
+
+
+ [Mon Aug 10 2015 14:00:19 GMT+0700 (ICT)][DDK]
+-Faculty: D140219-Current: 18-Benchmark: 19.25 
+
+
+ [Mon Aug 10 2015 14:00:19 GMT+0700 (ICT)][DDK]
+-Faculty: C140221-Current: 0-Benchmark: 40.75 
+
+
+ [Mon Aug 10 2015 14:00:19 GMT+0700 (ICT)][DDK]
+-Faculty: D140212-Current: 16-Benchmark: 21.5 
+
+
+ [Mon Aug 10 2015 14:00:19 GMT+0700 (ICT)][DDK]
+-Faculty: D140218-Current: 17-Benchmark: 18.5 
+
+
+ [Mon Aug 10 2015 14:00:19 GMT+0700 (ICT)][DDK]
+-Faculty: D140217-Current: 14-Benchmark: 19.25 
+
+
+ [Mon Aug 10 2015 14:00:19 GMT+0700 (ICT)][DDK]
+-Faculty: D140213-Current: 34-Benchmark: 18.5 
+
+
+ [Mon Aug 10 2015 14:00:19 GMT+0700 (ICT)][DDK]
+-Faculty: D140210-Current: 21-Benchmark: 16 
+
+
+ [Mon Aug 10 2015 14:00:19 GMT+0700 (ICT)][DDK]
+-Faculty: D140211-Current: 11-Benchmark: 21.5 
+
+
+ [Mon Aug 10 2015 14:00:19 GMT+0700 (ICT)][DDK]
+-Faculty: D140209-Current: 23-Benchmark: 21 
+
+
+ [Mon Aug 10 2015 14:00:19 GMT+0700 (ICT)][DDK]
+-Faculty: D460112-Current: 0-Benchmark: 15.75 
+
+
+ [Mon Aug 10 2015 14:00:19 GMT+0700 (ICT)][DDK]
+-Faculty: D340404-Current: 14-Benchmark: 19.25 
+
+
+ [Mon Aug 10 2015 14:00:19 GMT+0700 (ICT)][DDK]
+-Faculty: D440102-Current: 0-Benchmark: 16.75 
+
+
+ [Mon Aug 10 2015 14:00:19 GMT+0700 (ICT)][DDK]
+-Faculty: D220340-Current: 9-Benchmark: 14.5 
+
+
+ [Mon Aug 10 2015 14:00:19 GMT+0700 (ICT)][DDK]
+-Faculty: D310401-Current: 23-Benchmark: 16.5 
+
+
+ [Mon Aug 10 2015 14:00:19 GMT+0700 (ICT)][DDK]
+-Faculty: D220113-Current: 23-Benchmark: 16.5 
+
+
+ [Mon Aug 10 2015 14:00:19 GMT+0700 (ICT)][DDK]
+-Faculty: D220213-Current: 35-Benchmark: 24.25 
+
+
+ [Mon Aug 10 2015 14:00:19 GMT+0700 (ICT)][DDK]
+-Faculty: D220330-Current: 17-Benchmark: 15 
+
+
+ [Mon Aug 10 2015 14:00:19 GMT+0700 (ICT)][DDK]
+-Faculty: D220202-Current: 74-Benchmark: 22.75 
+
+
+ [Mon Aug 10 2015 14:00:19 GMT+0700 (ICT)][DDK]
+-Faculty: D220201-Current: 295-Benchmark: 24.5 
+
+
+ [Mon Aug 10 2015 14:00:19 GMT+0700 (ICT)][DDK]
+-Faculty: D220209-Current: 43-Benchmark: 25.5 
+
+
+ [Mon Aug 10 2015 14:00:19 GMT+0700 (ICT)][DDK]
+-Faculty: D220203-Current: 26-Benchmark: 23.5 
+
+
+ [Mon Aug 10 2015 14:00:19 GMT+0700 (ICT)][DDK]
+-Faculty: D220210-Current: 56-Benchmark: 24.75 
+
+
+ [Mon Aug 10 2015 14:00:19 GMT+0700 (ICT)][DDK]
+-Faculty: D220204-Current: 63-Benchmark: 24.75 
+
+
+ [Mon Aug 10 2015 14:00:19 GMT+0700 (ICT)][DDK]
+-Faculty: D140231-Current: 58-Benchmark: 24 
+
+
+ [Mon Aug 10 2015 14:00:19 GMT+0700 (ICT)][DDK]
+-Faculty: D140233-Current: 26-Benchmark: 22.75 
+
+
+ [Mon Aug 10 2015 14:00:19 GMT+0700 (ICT)][DDK]
+-Faculty: D140234-Current: 6-Benchmark: 23.5 
+
+
+ [Mon Aug 10 2015 14:00:19 GMT+0700 (ICT)][DDK]
+-Faculty: D220212-Current: 52-Benchmark: 24 
+
+
+ [Mon Aug 10 2015 14:00:19 GMT+0700 (ICT)][DDK]
+-Faculty: C510301-Current: 0-Benchmark: 19 
+
+
+ [Mon Aug 10 2015 14:00:19 GMT+0700 (ICT)][DDK]
+-Faculty: C510102-Current: 0-Benchmark: 12 
+
+
+ [Mon Aug 10 2015 14:00:19 GMT+0700 (ICT)][DDK]
+-Faculty: C510302LT-Current: 0-Benchmark: 15.5 
+
+
+ [Mon Aug 10 2015 14:00:19 GMT+0700 (ICT)][DDK]
+-Faculty: C510302-Current: 0-Benchmark: 18.5 
+
+
+ [Mon Aug 10 2015 14:00:19 GMT+0700 (ICT)][DDK]
+-Faculty: C510401-Current: 0-Benchmark: 19 
+
+
+ [Mon Aug 10 2015 14:00:19 GMT+0700 (ICT)][DDK]
+-Faculty: C510101-Current: 0-Benchmark: 18.25 
+
+
+ [Mon Aug 10 2015 14:00:19 GMT+0700 (ICT)][DDK]
+-Faculty: C510205-Current: 0-Benchmark: 13.5 
+
+
+ [Mon Aug 10 2015 14:00:19 GMT+0700 (ICT)][DDK]
+-Faculty: C510201-Current: 0-Benchmark: 12.25 
+
+
+ [Mon Aug 10 2015 14:00:19 GMT+0700 (ICT)][DDK]
+-Faculty: C510301LT-Current: 0-Benchmark: 16.25 
+
+
+ [Mon Aug 10 2015 14:00:19 GMT+0700 (ICT)][DDK]
+-Faculty: C510201LT-Current: 0-Benchmark: 15.5 
+
+
+ [Mon Aug 10 2015 14:00:19 GMT+0700 (ICT)][DDK]
+-Faculty: C480201-Current: 0-Benchmark: 13 
+
+
+ [Mon Aug 10 2015 14:00:19 GMT+0700 (ICT)][DDK]
+-Faculty: C510406-Current: 0-Benchmark: 14.25 
+
+
+ [Mon Aug 10 2015 14:00:19 GMT+0700 (ICT)][DDK]
+-Faculty: C510203-Current: 0-Benchmark: 12.5 
+
+
+ [Mon Aug 10 2015 14:00:19 GMT+0700 (ICT)][DDK]
+-Faculty: C510104-Current: 0-Benchmark: 15.25 
+
+
+ [Mon Aug 10 2015 14:00:19 GMT+0700 (ICT)][DDK]
+-Faculty: C510104LT-Current: 0-Benchmark: 15.5 
+
+
+ [Mon Aug 10 2015 14:00:19 GMT+0700 (ICT)][DDK]
+-Faculty: C510206-Current: 0-Benchmark: 16.5 
+
+
+ [Mon Aug 10 2015 14:00:19 GMT+0700 (ICT)][DDK]
+-Faculty: C510205LT-Current: 0-Benchmark: 15.5 
+
+
+ [Mon Aug 10 2015 14:00:19 GMT+0700 (ICT)][DDK]
+-Faculty: C420201-Current: 0-Benchmark: 11 
+
+
+ [Mon Aug 10 2015 14:00:19 GMT+0700 (ICT)][DDK]
+-Faculty: C540102-Current: 0-Benchmark: 16 
+
+
+ [Mon Aug 10 2015 14:00:19 GMT+0700 (ICT)][DDK]
+-Faculty: C340405-Current: 0-Benchmark: 18.5 
+
+
+ [Mon Aug 10 2015 14:00:19 GMT+0700 (ICT)][DDK]
+-Faculty: C480201LT-Current: 0-Benchmark: 12.25 
+
+
+ [Mon Aug 10 2015 14:00:19 GMT+0700 (ICT)][DDK]
+-Faculty: C510103LT-Current: 0-Benchmark: 0 
+
+
+ [Mon Aug 10 2015 14:00:19 GMT+0700 (ICT)][DDK]
+-Faculty: C580302-Current: 0-Benchmark: 9.25 
+
+
+ [Mon Aug 10 2015 14:00:19 GMT+0700 (ICT)][DDK]
+-Faculty: C480201-Current: 0-Benchmark: 13 
+
+
+ [Mon Aug 10 2015 14:00:19 GMT+0700 (ICT)][DDK]
+-Faculty: C510304-Current: 0-Benchmark: 15.5 
+
+
+ [Mon Aug 10 2015 14:00:19 GMT+0700 (ICT)][DDK]
+-Faculty: C480201LT-Current: 0-Benchmark: 12.25 
+
+
+ [Mon Aug 10 2015 14:00:19 GMT+0700 (ICT)][DDK]
+-Faculty: C480104-Current: 0-Benchmark: 15.5 
+
+
+ [Mon Aug 10 2015 14:00:19 GMT+0700 (ICT)][DDK]
+-Faculty: C340301LT-Current: 0-Benchmark: 0 
+
+
+ [Mon Aug 10 2015 14:00:19 GMT+0700 (ICT)][DDK]
+-Faculty: C340301-Current: 0-Benchmark: 16 
+
+
+ [Mon Aug 10 2015 14:00:19 GMT+0700 (ICT)][DDK]
+-Faculty: C480101-Current: 0-Benchmark: 15.5 
+
+
+ [Mon Aug 10 2015 14:00:19 GMT+0700 (ICT)][DDK]
+-Faculty: C340115-Current: 0-Benchmark: 17.25 
+
+
+ [Mon Aug 10 2015 14:00:19 GMT+0700 (ICT)][DDK]
+-Faculty: C480202-Current: 0-Benchmark: 14.5 
+
+
+ [Mon Aug 10 2015 14:00:19 GMT+0700 (ICT)][DDK]
+-Faculty: C510103-Current: 0-Benchmark: 14 
+
+
+ [Mon Aug 10 2015 14:00:19 GMT+0700 (ICT)][DDK]
+-Faculty: C340101-Current: 0-Benchmark: 17.25 
+
+
+ [Mon Aug 10 2015 14:00:19 GMT+0700 (ICT)][DDK]
+-Faculty: C480102-Current: 0-Benchmark: 17.75 
+
+
+ [Mon Aug 10 2015 14:00:19 GMT+0700 (ICT)][DDK]
+-Faculty: D480201KT-Current: 0-Benchmark: 0 
+
+
+ [Mon Aug 10 2015 14:00:19 GMT+0700 (ICT)][DDK]
+-Faculty: C510102KT-Current: 0-Benchmark: 0 
+
+
+ [Mon Aug 10 2015 14:00:19 GMT+0700 (ICT)][DDK]
+-Faculty: C420201KT-Current: 0-Benchmark: 0 
+
+
+ [Mon Aug 10 2015 14:00:19 GMT+0700 (ICT)][DDK]
+-Faculty: C340301KT-Current: 0-Benchmark: 0 
+
+
+ [Mon Aug 10 2015 14:00:19 GMT+0700 (ICT)][DDK]
+-Faculty: D340301KT-Current: 0-Benchmark: 0 
+
+
+ [Mon Aug 10 2015 14:00:19 GMT+0700 (ICT)][DDK]
+-Faculty: D620114KT-Current: 0-Benchmark: 0 
+
+
+ [Mon Aug 10 2015 14:00:19 GMT+0700 (ICT)][DDK]
+-Faculty: C340121KT-Current: 0-Benchmark: 0 
+
+
+ [Mon Aug 10 2015 14:00:19 GMT+0700 (ICT)][DDK]
+-Faculty: D340121KT-Current: 0-Benchmark: 0 
+
+
+ [Mon Aug 10 2015 14:00:19 GMT+0700 (ICT)][DDK]
+-Faculty: D580301KT-Current: 0-Benchmark: 0 
+
+
+ [Mon Aug 10 2015 14:00:19 GMT+0700 (ICT)][DDK]
+-Faculty: D520201KT-Current: 0-Benchmark: 0 
+
+
+ [Mon Aug 10 2015 14:00:19 GMT+0700 (ICT)][DDK]
+-Faculty: D580205KT-Current: 0-Benchmark: 0 
+
+
+ [Mon Aug 10 2015 14:00:19 GMT+0700 (ICT)][DDK]
+-Faculty: D140202KT-Current: 0-Benchmark: 0 
+
+
+ [Mon Aug 10 2015 14:00:19 GMT+0700 (ICT)][DDK]
+-Faculty: D340103KT-Current: 0-Benchmark: 0 
+
+
+ [Mon Aug 10 2015 14:00:19 GMT+0700 (ICT)][DDK]
+-Faculty: D340101KT-Current: 0-Benchmark: 0 
+
+
+ [Mon Aug 10 2015 14:00:19 GMT+0700 (ICT)][DDK]
+-Faculty: D140209KT-Current: 0-Benchmark: 0 
+
+
+ [Mon Aug 10 2015 14:00:19 GMT+0700 (ICT)][DDK]
+-Faculty: D340201KT-Current: 0-Benchmark: 0 
+
+
+ [Mon Aug 10 2015 14:00:19 GMT+0700 (ICT)][DDK]
+-Faculty: D720501-Current: 0-Benchmark: 15.25 
+
+
+ [Mon Aug 10 2015 14:00:19 GMT+0700 (ICT)][DDK]
+-Faculty: D720101-Current: 0-Benchmark: 26 
+
+
+ [Mon Aug 10 2015 14:00:19 GMT+0700 (ICT)][DDK]
+Final School check - faculty_final - 104faculty_choice - 159candidate_all - 10414candidates - 9009
+
+ [Mon Aug 10 2015 14:00:19 GMT+0700 (ICT)][DDK]
+- create matriculate list for School
+
+ [Mon Aug 10 2015 14:00:19 GMT+0700 (ICT)][DDK]
+-Faculty: D380107KT-Current: 0-Benchmark: 0 
+
+
+ [Mon Aug 10 2015 14:00:24 GMT+0700 (ICT)][DDK]
+- Candidate: 10414
+
+ [Mon Aug 10 2015 14:00:28 GMT+0700 (ICT)][DDK]
+- create matriculate list for School
+
+ [Mon Aug 10 2015 14:00:40 GMT+0700 (ICT)][DDK]
+-Faculty: D510202-More: 76-Benchmark: 17.75 
+
+
+ [Mon Aug 10 2015 14:00:40 GMT+0700 (ICT)][DDK]
+-Faculty: D510202LT-More: 1-Benchmark: 16.75 
+
+
+ [Mon Aug 10 2015 14:00:40 GMT+0700 (ICT)][DDK]
+-Faculty: D510105-More: 23-Benchmark: 18.25 
+
+
+ [Mon Aug 10 2015 14:00:40 GMT+0700 (ICT)][DDK]
+-Faculty: D580301-More: 19-Benchmark: 15 
+
+
+ [Mon Aug 10 2015 14:00:40 GMT+0700 (ICT)][DDK]
+-Faculty: D580205-More: 21-Benchmark: 14.25 
+
+
+ [Mon Aug 10 2015 14:00:40 GMT+0700 (ICT)][DDK]
+-Faculty: D520216-More: 8-Benchmark: 16.75 
+
+
+ [Mon Aug 10 2015 14:00:40 GMT+0700 (ICT)][DDK]
+-Faculty: D520201-More: 51-Benchmark: 14.25 
+
+
+ [Mon Aug 10 2015 14:00:40 GMT+0700 (ICT)][DDK]
+-Faculty: D520301-More: 29-Benchmark: 18 
+
+
+ [Mon Aug 10 2015 14:00:40 GMT+0700 (ICT)][DDK]
+-Faculty: D520122-More: 21-Benchmark: 18.25 
+
+
+ [Mon Aug 10 2015 14:00:40 GMT+0700 (ICT)][DDK]
+-Faculty: D580201-More: 25-Benchmark: 15 
+
+
+ [Mon Aug 10 2015 14:00:40 GMT+0700 (ICT)][DDK]
+-Faculty: D580201LT-More: 1-Benchmark: 21.75 
+
+
+ [Mon Aug 10 2015 14:00:40 GMT+0700 (ICT)][DDK]
+-Faculty: D520114-More: 12-Benchmark: 15.5 
+
+
+ [Mon Aug 10 2015 14:00:40 GMT+0700 (ICT)][DDK]
+-Faculty: D520114LT-More: 1-Benchmark: 16.5 
+
+
+ [Mon Aug 10 2015 14:00:40 GMT+0700 (ICT)][DDK]
+-Faculty: D520103-More: 88-Benchmark: 16.5 
+
+
+ [Mon Aug 10 2015 14:00:40 GMT+0700 (ICT)][DDK]
+-Faculty: D520604-More: 5-Benchmark: 17.75 
+
+
+ [Mon Aug 10 2015 14:00:40 GMT+0700 (ICT)][DDK]
+-Faculty: D520209-More: 69-Benchmark: 16 
+
+
+ [Mon Aug 10 2015 14:00:40 GMT+0700 (ICT)][DDK]
+-Faculty: D520320-More: 20-Benchmark: 16 
+
+
+ [Mon Aug 10 2015 14:00:40 GMT+0700 (ICT)][DDK]
+-Faculty: D520115-More: 69-Benchmark: 18 
+
+
+ [Mon Aug 10 2015 14:00:40 GMT+0700 (ICT)][DDK]
+-Faculty: D580208-More: 26-Benchmark: 18 
+
+
+ [Mon Aug 10 2015 14:00:40 GMT+0700 (ICT)][DDK]
+-Faculty: D510601-More: 26-Benchmark: 14.75 
+
+
+ [Mon Aug 10 2015 14:00:40 GMT+0700 (ICT)][DDK]
+-Faculty: D140214-More: 11-Benchmark: 18.25 
+
+
+ [Mon Aug 10 2015 14:00:40 GMT+0700 (ICT)][DDK]
+-Faculty: D340301LT-More: 1-Benchmark: 19.75 
+
+
+ [Mon Aug 10 2015 14:00:40 GMT+0700 (ICT)][DDK]
+-Faculty: D340121-More: 1-Benchmark: 18.5 
+
+
+ [Mon Aug 10 2015 14:00:40 GMT+0700 (ICT)][DDK]
+-Faculty: D340121LT-More: 1-Benchmark: 18.75 
+
+
+ [Mon Aug 10 2015 14:00:40 GMT+0700 (ICT)][DDK]
+-Faculty: D380101-More: 4-Benchmark: 15.25 
+
+
+ [Mon Aug 10 2015 14:00:40 GMT+0700 (ICT)][DDK]
+-Faculty: D380107-More: 2-Benchmark: 14.5 
+
+
+ [Mon Aug 10 2015 14:00:40 GMT+0700 (ICT)][DDK]
+-Faculty: D340115-More: 1-Benchmark: 17.75 
+
+
+ [Mon Aug 10 2015 14:00:40 GMT+0700 (ICT)][DDK]
+-Faculty: D340103LT-More: 1-Benchmark: 17.5 
+
+
+ [Mon Aug 10 2015 14:00:40 GMT+0700 (ICT)][DDK]
+-Faculty: D340107-More: 1-Benchmark: 17.5 
+
+
+ [Mon Aug 10 2015 14:00:40 GMT+0700 (ICT)][DDK]
+-Faculty: D340404-More: 1-Benchmark: 18.25 
+
+
+ [Mon Aug 10 2015 14:00:40 GMT+0700 (ICT)][DDK]
+-Faculty: D320101-More: 16-Benchmark: 12.25 
+
+
+ [Mon Aug 10 2015 14:00:41 GMT+0700 (ICT)][DDK]
+-Faculty: D760101-More: 19-Benchmark: 11.75 
+
+
+ [Mon Aug 10 2015 14:00:41 GMT+0700 (ICT)][DDK]
+-Faculty: D140205-More: 15-Benchmark: 11 
+
+
+ [Mon Aug 10 2015 14:00:41 GMT+0700 (ICT)][DDK]
+-Faculty: D140202-More: 26-Benchmark: 15.5 
+
+
+ [Mon Aug 10 2015 14:00:41 GMT+0700 (ICT)][DDK]
+-Faculty: D140219-More: 32-Benchmark: 15.25 
+
+
+ [Mon Aug 10 2015 14:00:41 GMT+0700 (ICT)][DDK]
+-Faculty: D140212-More: 5-Benchmark: 13.5 
+
+
+ [Mon Aug 10 2015 14:00:41 GMT+0700 (ICT)][DDK]
+-Faculty: D140218-More: 33-Benchmark: 14.75 
+
+
+ [Mon Aug 10 2015 14:00:41 GMT+0700 (ICT)][DDK]
+-Faculty: D140217-More: 32-Benchmark: 12.25 
+
+
+ [Mon Aug 10 2015 14:00:41 GMT+0700 (ICT)][DDK]
+-Faculty: D140213-More: 11-Benchmark: 11 
+
+
+ [Mon Aug 10 2015 14:00:41 GMT+0700 (ICT)][DDK]
+-Faculty: D140209-More: 13-Benchmark: 13.75 
+
+
+ [Mon Aug 10 2015 14:00:41 GMT+0700 (ICT)][DDK]
+-Faculty: D140211-More: 18-Benchmark: 15.25 
+
+
+ [Mon Aug 10 2015 14:00:41 GMT+0700 (ICT)][DDK]
+-Faculty: D310401-More: 5-Benchmark: 11.75 
+
+
+ [Mon Aug 10 2015 14:00:41 GMT+0700 (ICT)][DDK]
+-Faculty: D220113-More: 17-Benchmark: 12.25 
+
+
+ [Mon Aug 10 2015 14:00:41 GMT+0700 (ICT)][DDK]
+-Faculty: D220213-More: 45-Benchmark: 22.5 
+
+
+ [Mon Aug 10 2015 14:00:41 GMT+0700 (ICT)][DDK]
+-Faculty: D220201-More: 345-Benchmark: 20.5 
+
+
+ [Mon Aug 10 2015 14:00:41 GMT+0700 (ICT)][DDK]
+-Faculty: D220210-More: 44-Benchmark: 22.75 
+
+
+ [Mon Aug 10 2015 14:00:41 GMT+0700 (ICT)][DDK]
+-Faculty: D220209-More: 57-Benchmark: 22 
+
+
+ [Mon Aug 10 2015 14:00:41 GMT+0700 (ICT)][DDK]
+-Faculty: D220203-More: 44-Benchmark: 21.75 
+
+
+ [Mon Aug 10 2015 14:00:41 GMT+0700 (ICT)][DDK]
+-Faculty: D220204-More: 42-Benchmark: 22.5 
+
+
+ [Mon Aug 10 2015 14:00:41 GMT+0700 (ICT)][DDK]
+-Faculty: D220212-More: 83-Benchmark: 21.75 
+
+
+ [Mon Aug 10 2015 14:00:41 GMT+0700 (ICT)][DDK]
+-Faculty: D140231-More: 82-Benchmark: 19.25 
+
+
+ [Mon Aug 10 2015 14:00:41 GMT+0700 (ICT)][DDK]
+-Faculty: D140233-More: 4-Benchmark: 22 
+
+
+ [Mon Aug 10 2015 14:00:41 GMT+0700 (ICT)][DDK]
+-Faculty: D140234-More: 24-Benchmark: 21 
+
+
+ [Mon Aug 10 2015 14:00:41 GMT+0700 (ICT)][DDK]
+
+- remove candidates same for School
+
+ [Mon Aug 10 2015 14:01:43 GMT+0700 (ICT)][DDK]
+-Faculty: D420201-Current: 0-Benchmark: 19 
+
+
+ [Mon Aug 10 2015 14:01:43 GMT+0700 (ICT)][DDK]
+-Faculty: D420201LT-Current: 0-Benchmark: 0 
+
+
+ [Mon Aug 10 2015 14:01:43 GMT+0700 (ICT)][DDK]
+-Faculty: D480201-Current: 0-Benchmark: 20.75 
+
+
+ [Mon Aug 10 2015 14:01:43 GMT+0700 (ICT)][DDK]
+-Faculty: D480201CLC1-Current: 0-Benchmark: 21.75 
+
+
+ [Mon Aug 10 2015 14:01:43 GMT+0700 (ICT)][DDK]
+-Faculty: D480201CLC2-Current: 0-Benchmark: 20.75 
+
+
+ [Mon Aug 10 2015 14:01:43 GMT+0700 (ICT)][DDK]
+-Faculty: D480201LT-Current: 0-Benchmark: 19.75 
+
+
+ [Mon Aug 10 2015 14:01:43 GMT+0700 (ICT)][DDK]
+-Faculty: D540101-Current: 0-Benchmark: 19.75 
+
+
+ [Mon Aug 10 2015 14:01:43 GMT+0700 (ICT)][DDK]
+-Faculty: D540101LT-Current: 0-Benchmark: 19.75 
+
+
+ [Mon Aug 10 2015 14:01:43 GMT+0700 (ICT)][DDK]
+-Faculty: D510202-Current: 49-Benchmark: 19.75 
+
+
+ [Mon Aug 10 2015 14:01:43 GMT+0700 (ICT)][DDK]
+-Faculty: D510202LT-Current: 1-Benchmark: 16.75 
+
+
+ [Mon Aug 10 2015 14:01:43 GMT+0700 (ICT)][DDK]
+-Faculty: D510105-Current: 24-Benchmark: 18.75 
+
+
+ [Mon Aug 10 2015 14:01:43 GMT+0700 (ICT)][DDK]
+-Faculty: PFIEV-Current: 0-Benchmark: 42.75 
+
+
+ [Mon Aug 10 2015 14:01:43 GMT+0700 (ICT)][DDK]
+-Faculty: D905206-Current: 0-Benchmark: 30.25 
+
+
+ [Mon Aug 10 2015 14:01:43 GMT+0700 (ICT)][DDK]
+-Faculty: D905216-Current: 0-Benchmark: 24.5 
+
+
+ [Mon Aug 10 2015 14:01:43 GMT+0700 (ICT)][DDK]
+-Faculty: D580102-Current: 0-Benchmark: 22.75 
+
+
+ [Mon Aug 10 2015 14:01:43 GMT+0700 (ICT)][DDK]
+-Faculty: D580301-Current: 19-Benchmark: 18.75 
+
+
+ [Mon Aug 10 2015 14:01:43 GMT+0700 (ICT)][DDK]
+-Faculty: D580205-Current: 21-Benchmark: 18.25 
+
+
+ [Mon Aug 10 2015 14:01:43 GMT+0700 (ICT)][DDK]
+-Faculty: D580205CLC-Current: 0-Benchmark: 20.25 
+
+
+ [Mon Aug 10 2015 14:01:43 GMT+0700 (ICT)][DDK]
+-Faculty: D580205LT-Current: 0-Benchmark: 18.75 
+
+
+ [Mon Aug 10 2015 14:01:43 GMT+0700 (ICT)][DDK]
+-Faculty: D520201CLC-Current: 0-Benchmark: 22.25 
+
+
+ [Mon Aug 10 2015 14:01:43 GMT+0700 (ICT)][DDK]
+-Faculty: D520216-Current: 14-Benchmark: 18.5 
+
+
+ [Mon Aug 10 2015 14:01:43 GMT+0700 (ICT)][DDK]
+-Faculty: D520216CLC-Current: 0-Benchmark: 20.75 
+
+
+ [Mon Aug 10 2015 14:01:43 GMT+0700 (ICT)][DDK]
+-Faculty: D520201-Current: 31-Benchmark: 20 
+
+
+ [Mon Aug 10 2015 14:01:43 GMT+0700 (ICT)][DDK]
+-Faculty: D520201LT-Current: 0-Benchmark: 21.5 
+
+
+ [Mon Aug 10 2015 14:01:43 GMT+0700 (ICT)][DDK]
+-Faculty: D520301-Current: 19-Benchmark: 19.75 
+
+
+ [Mon Aug 10 2015 14:01:43 GMT+0700 (ICT)][DDK]
+-Faculty: D520301LT-Current: 0-Benchmark: 0 
+
+
+ [Mon Aug 10 2015 14:01:43 GMT+0700 (ICT)][DDK]
+-Faculty: D520122-Current: 19-Benchmark: 19 
+
+
+ [Mon Aug 10 2015 14:01:43 GMT+0700 (ICT)][DDK]
+-Faculty: D580202-Current: 0-Benchmark: 18.25 
+
+
+ [Mon Aug 10 2015 14:01:43 GMT+0700 (ICT)][DDK]
+-Faculty: D580201-Current: 38-Benchmark: 18.75 
+
+
+ [Mon Aug 10 2015 14:01:43 GMT+0700 (ICT)][DDK]
+-Faculty: D580201LT-Current: 1-Benchmark: 21.75 
+
+
+ [Mon Aug 10 2015 14:01:43 GMT+0700 (ICT)][DDK]
+-Faculty: D520114-Current: 20-Benchmark: 19 
+
+
+ [Mon Aug 10 2015 14:01:43 GMT+0700 (ICT)][DDK]
+-Faculty: D520114LT-Current: 0-Benchmark: 16.5 
+
+
+ [Mon Aug 10 2015 14:01:43 GMT+0700 (ICT)][DDK]
+-Faculty: D520103-Current: 36-Benchmark: 19.25 
+
+
+ [Mon Aug 10 2015 14:01:43 GMT+0700 (ICT)][DDK]
+-Faculty: D520103LT-Current: 0-Benchmark: 17 
+
+
+ [Mon Aug 10 2015 14:01:43 GMT+0700 (ICT)][DDK]
+-Faculty: D520604-Current: 9-Benchmark: 19 
+
+
+ [Mon Aug 10 2015 14:01:43 GMT+0700 (ICT)][DDK]
+-Faculty: D520209-Current: 52-Benchmark: 19 
+
+
+ [Mon Aug 10 2015 14:01:43 GMT+0700 (ICT)][DDK]
+-Faculty: D520209LT-Current: 0-Benchmark: 21.25 
+
+
+ [Mon Aug 10 2015 14:01:43 GMT+0700 (ICT)][DDK]
+-Faculty: D520320-Current: 12-Benchmark: 18.75 
+
+
+ [Mon Aug 10 2015 14:01:43 GMT+0700 (ICT)][DDK]
+-Faculty: D520320LT-Current: 0-Benchmark: 18 
+
+
+ [Mon Aug 10 2015 14:01:43 GMT+0700 (ICT)][DDK]
+-Faculty: D520115-Current: 47-Benchmark: 19.25 
+
+
+ [Mon Aug 10 2015 14:01:43 GMT+0700 (ICT)][DDK]
+-Faculty: D520115LT-Current: 0-Benchmark: 19.75 
+
+
+ [Mon Aug 10 2015 14:01:43 GMT+0700 (ICT)][DDK]
+-Faculty: D580208-Current: 23-Benchmark: 19.25 
+
+
+ [Mon Aug 10 2015 14:01:43 GMT+0700 (ICT)][DDK]
+-Faculty: D510601-Current: 25-Benchmark: 18.75 
+
+
+ [Mon Aug 10 2015 14:01:43 GMT+0700 (ICT)][DDK]
+-Faculty: D850101-Current: 1-Benchmark: 18.25 
+
+
+ [Mon Aug 10 2015 14:01:43 GMT+0700 (ICT)][DDK]
+-Faculty: D140214-Current: 10-Benchmark: 18.5 
+
+
+ [Mon Aug 10 2015 14:01:43 GMT+0700 (ICT)][DDK]
+-Faculty: D340405-Current: 0-Benchmark: 13.5 
+
+
+ [Mon Aug 10 2015 14:01:43 GMT+0700 (ICT)][DDK]
+-Faculty: D340405LT-Current: 0-Benchmark: 16 
+
+
+ [Mon Aug 10 2015 14:01:43 GMT+0700 (ICT)][DDK]
+-Faculty: D340301-Current: 0-Benchmark: 19 
+
+
+ [Mon Aug 10 2015 14:01:43 GMT+0700 (ICT)][DDK]
+-Faculty: D340301LT-Current: 0-Benchmark: 19.75 
+
+
+ [Mon Aug 10 2015 14:01:43 GMT+0700 (ICT)][DDK]
+-Faculty: D340302-Current: 0-Benchmark: 19 
+
+
+ [Mon Aug 10 2015 14:01:43 GMT+0700 (ICT)][DDK]
+-Faculty: D340120-Current: 0-Benchmark: 19.75 
+
+
+ [Mon Aug 10 2015 14:01:43 GMT+0700 (ICT)][DDK]
+-Faculty: D340121-Current: 1-Benchmark: 18.5 
+
+
+ [Mon Aug 10 2015 14:01:43 GMT+0700 (ICT)][DDK]
+-Faculty: D340121LT-Current: 0-Benchmark: 18.75 
+
+
+ [Mon Aug 10 2015 14:01:43 GMT+0700 (ICT)][DDK]
+-Faculty: D310101-Current: 0-Benchmark: 19 
+
+
+ [Mon Aug 10 2015 14:01:43 GMT+0700 (ICT)][DDK]
+-Faculty: D380101-Current: 4-Benchmark: 18 
+
+
+ [Mon Aug 10 2015 14:01:43 GMT+0700 (ICT)][DDK]
+-Faculty: D380107-Current: 2-Benchmark: 18.5 
+
+
+ [Mon Aug 10 2015 14:01:43 GMT+0700 (ICT)][DDK]
+-Faculty: D340115-Current: 1-Benchmark: 17.75 
+
+
+ [Mon Aug 10 2015 14:01:43 GMT+0700 (ICT)][DDK]
+-Faculty: D310205-Current: 0-Benchmark: 15.25 
+
+
+ [Mon Aug 10 2015 14:01:43 GMT+0700 (ICT)][DDK]
+-Faculty: D340103-Current: 0-Benchmark: 18.5 
+
+
+ [Mon Aug 10 2015 14:01:43 GMT+0700 (ICT)][DDK]
+-Faculty: D340103LT-Current: 1-Benchmark: 17.5 
+
+
+ [Mon Aug 10 2015 14:01:43 GMT+0700 (ICT)][DDK]
+-Faculty: D340101-Current: 0-Benchmark: 18.75 
+
+
+ [Mon Aug 10 2015 14:01:43 GMT+0700 (ICT)][DDK]
+-Faculty: D340107-Current: 1-Benchmark: 17.5 
+
+
+ [Mon Aug 10 2015 14:01:43 GMT+0700 (ICT)][DDK]
+-Faculty: D340404-Current: 1-Benchmark: 18.25 
+
+
+ [Mon Aug 10 2015 14:01:43 GMT+0700 (ICT)][DDK]
+-Faculty: D340201-Current: 0-Benchmark: 18.75 
+
+
+ [Mon Aug 10 2015 14:01:43 GMT+0700 (ICT)][DDK]
+-Faculty: D340201LT-Current: 0-Benchmark: 21.5 
+
+
+ [Mon Aug 10 2015 14:01:43 GMT+0700 (ICT)][DDK]
+-Faculty: D460201-Current: 0-Benchmark: 17.75 
+
+
+ [Mon Aug 10 2015 14:01:43 GMT+0700 (ICT)][DDK]
+-Faculty: D320101-Current: 27-Benchmark: 15.75 
+
+
+ [Mon Aug 10 2015 14:01:43 GMT+0700 (ICT)][DDK]
+-Faculty: D420201-Current: 0-Benchmark: 19 
+
+
+ [Mon Aug 10 2015 14:01:43 GMT+0700 (ICT)][DDK]
+-Faculty: D480201-Current: 0-Benchmark: 20.75 
+
+
+ [Mon Aug 10 2015 14:01:43 GMT+0700 (ICT)][DDK]
+-Faculty: D760101-Current: 12-Benchmark: 15.75 
+
+
+ [Mon Aug 10 2015 14:01:43 GMT+0700 (ICT)][DDK]
+-Faculty: D310501-Current: 0-Benchmark: 15 
+
+
+ [Mon Aug 10 2015 14:01:43 GMT+0700 (ICT)][DDK]
+-Faculty: D440217-Current: 0-Benchmark: 19 
+
+
+ [Mon Aug 10 2015 14:01:43 GMT+0700 (ICT)][DDK]
+-Faculty: D140205-Current: 11-Benchmark: 15.5 
+
+
+ [Mon Aug 10 2015 14:01:43 GMT+0700 (ICT)][DDK]
+-Faculty: D140201-Current: 0-Benchmark: 0 
+
+
+ [Mon Aug 10 2015 14:01:43 GMT+0700 (ICT)][DDK]
+-Faculty: D140202-Current: 11-Benchmark: 16.75 
+
+
+ [Mon Aug 10 2015 14:01:43 GMT+0700 (ICT)][DDK]
+-Faculty: D440112-Current: 0-Benchmark: 14.5 
+
+
+ [Mon Aug 10 2015 14:01:43 GMT+0700 (ICT)][DDK]
+-Faculty: D440301-Current: 0-Benchmark: 16.75 
+
+
+ [Mon Aug 10 2015 14:01:43 GMT+0700 (ICT)][DDK]
+-Faculty: D220310-Current: 0-Benchmark: 19.5 
+
+
+ [Mon Aug 10 2015 14:01:43 GMT+0700 (ICT)][DDK]
+-Faculty: D850101-Current: 1-Benchmark: 18.25 
+
+
+ [Mon Aug 10 2015 14:01:43 GMT+0700 (ICT)][DDK]
+-Faculty: C140221-Current: 0-Benchmark: 40.75 
+
+
+ [Mon Aug 10 2015 14:01:43 GMT+0700 (ICT)][DDK]
+-Faculty: D140219-Current: 18-Benchmark: 18 
+
+
+ [Mon Aug 10 2015 14:01:43 GMT+0700 (ICT)][DDK]
+-Faculty: D140212-Current: 7-Benchmark: 20 
+
+
+ [Mon Aug 10 2015 14:01:43 GMT+0700 (ICT)][DDK]
+-Faculty: D140218-Current: 16-Benchmark: 18 
+
+
+ [Mon Aug 10 2015 14:01:43 GMT+0700 (ICT)][DDK]
+-Faculty: D140217-Current: 22-Benchmark: 18 
+
+
+ [Mon Aug 10 2015 14:01:43 GMT+0700 (ICT)][DDK]
+-Faculty: D140213-Current: 11-Benchmark: 17.25 
+
+
+ [Mon Aug 10 2015 14:01:43 GMT+0700 (ICT)][DDK]
+-Faculty: D140210-Current: 0-Benchmark: 16 
+
+
+ [Mon Aug 10 2015 14:01:43 GMT+0700 (ICT)][DDK]
+-Faculty: D140209-Current: 14-Benchmark: 19.25 
+
+
+ [Mon Aug 10 2015 14:01:43 GMT+0700 (ICT)][DDK]
+-Faculty: D140211-Current: 11-Benchmark: 21 
+
+
+ [Mon Aug 10 2015 14:01:43 GMT+0700 (ICT)][DDK]
+-Faculty: D310401-Current: 6-Benchmark: 15 
+
+
+ [Mon Aug 10 2015 14:01:43 GMT+0700 (ICT)][DDK]
+-Faculty: D460112-Current: 0-Benchmark: 15.75 
+
+
+ [Mon Aug 10 2015 14:01:43 GMT+0700 (ICT)][DDK]
+-Faculty: D440102-Current: 0-Benchmark: 16.75 
+
+
+ [Mon Aug 10 2015 14:01:43 GMT+0700 (ICT)][DDK]
+-Faculty: D220340-Current: 0-Benchmark: 14.5 
+
+
+ [Mon Aug 10 2015 14:01:43 GMT+0700 (ICT)][DDK]
+-Faculty: D220330-Current: 0-Benchmark: 15 
+
+
+ [Mon Aug 10 2015 14:01:43 GMT+0700 (ICT)][DDK]
+-Faculty: D220113-Current: 11-Benchmark: 15.75 
+
+
+ [Mon Aug 10 2015 14:01:43 GMT+0700 (ICT)][DDK]
+-Faculty: D220213-Current: 38-Benchmark: 23.5 
+
+
+ [Mon Aug 10 2015 14:01:43 GMT+0700 (ICT)][DDK]
+-Faculty: D220201-Current: 256-Benchmark: 23 
+
+
+ [Mon Aug 10 2015 14:01:43 GMT+0700 (ICT)][DDK]
+-Faculty: D220210-Current: 31-Benchmark: 23.25 
+
+
+ [Mon Aug 10 2015 14:01:43 GMT+0700 (ICT)][DDK]
+-Faculty: D220202-Current: 0-Benchmark: 22.75 
+
+
+ [Mon Aug 10 2015 14:01:43 GMT+0700 (ICT)][DDK]
+-Faculty: D220209-Current: 34-Benchmark: 23.25 
+
+
+ [Mon Aug 10 2015 14:01:43 GMT+0700 (ICT)][DDK]
+-Faculty: D220203-Current: 40-Benchmark: 23.25 
+
+
+ [Mon Aug 10 2015 14:01:43 GMT+0700 (ICT)][DDK]
+-Faculty: D220204-Current: 32-Benchmark: 23.25 
+
+
+ [Mon Aug 10 2015 14:01:43 GMT+0700 (ICT)][DDK]
+-Faculty: D220212-Current: 64-Benchmark: 23.5 
+
+
+ [Mon Aug 10 2015 14:01:43 GMT+0700 (ICT)][DDK]
+-Faculty: D140231-Current: 32-Benchmark: 23.75 
+
+
+ [Mon Aug 10 2015 14:01:43 GMT+0700 (ICT)][DDK]
+-Faculty: D140233-Current: 4-Benchmark: 22.25 
+
+
+ [Mon Aug 10 2015 14:01:43 GMT+0700 (ICT)][DDK]
+-Faculty: D140234-Current: 12-Benchmark: 22.75 
+
+
+ [Mon Aug 10 2015 14:01:43 GMT+0700 (ICT)][DDK]
+-Faculty: C510102-Current: 0-Benchmark: 12 
+
+
+ [Mon Aug 10 2015 14:01:43 GMT+0700 (ICT)][DDK]
+-Faculty: C510301-Current: 0-Benchmark: 19 
+
+
+ [Mon Aug 10 2015 14:01:43 GMT+0700 (ICT)][DDK]
+-Faculty: C510301LT-Current: 0-Benchmark: 16.25 
+
+
+ [Mon Aug 10 2015 14:01:43 GMT+0700 (ICT)][DDK]
+-Faculty: C510302-Current: 0-Benchmark: 18.5 
+
+
+ [Mon Aug 10 2015 14:01:43 GMT+0700 (ICT)][DDK]
+-Faculty: C510302LT-Current: 0-Benchmark: 15.5 
+
+
+ [Mon Aug 10 2015 14:01:43 GMT+0700 (ICT)][DDK]
+-Faculty: C510401-Current: 0-Benchmark: 19 
+
+
+ [Mon Aug 10 2015 14:01:43 GMT+0700 (ICT)][DDK]
+-Faculty: C510101-Current: 0-Benchmark: 18.25 
+
+
+ [Mon Aug 10 2015 14:01:43 GMT+0700 (ICT)][DDK]
+-Faculty: C510205-Current: 0-Benchmark: 13.5 
+
+
+ [Mon Aug 10 2015 14:01:43 GMT+0700 (ICT)][DDK]
+-Faculty: C510205LT-Current: 0-Benchmark: 15.5 
+
+
+ [Mon Aug 10 2015 14:01:43 GMT+0700 (ICT)][DDK]
+-Faculty: C510201-Current: 0-Benchmark: 12.25 
+
+
+ [Mon Aug 10 2015 14:01:43 GMT+0700 (ICT)][DDK]
+-Faculty: C510201LT-Current: 0-Benchmark: 15.5 
+
+
+ [Mon Aug 10 2015 14:01:43 GMT+0700 (ICT)][DDK]
+-Faculty: C480201-Current: 0-Benchmark: 13 
+
+
+ [Mon Aug 10 2015 14:01:43 GMT+0700 (ICT)][DDK]
+-Faculty: C480201LT-Current: 0-Benchmark: 12.25 
+
+
+ [Mon Aug 10 2015 14:01:43 GMT+0700 (ICT)][DDK]
+-Faculty: C510406-Current: 0-Benchmark: 14.25 
+
+
+ [Mon Aug 10 2015 14:01:43 GMT+0700 (ICT)][DDK]
+-Faculty: C510203-Current: 0-Benchmark: 12.5 
+
+
+ [Mon Aug 10 2015 14:01:43 GMT+0700 (ICT)][DDK]
+-Faculty: C510104-Current: 0-Benchmark: 15.25 
+
+
+ [Mon Aug 10 2015 14:01:43 GMT+0700 (ICT)][DDK]
+-Faculty: C510104LT-Current: 0-Benchmark: 15.5 
+
+
+ [Mon Aug 10 2015 14:01:43 GMT+0700 (ICT)][DDK]
+-Faculty: C510206-Current: 0-Benchmark: 16.5 
+
+
+ [Mon Aug 10 2015 14:01:43 GMT+0700 (ICT)][DDK]
+-Faculty: C510103-Current: 0-Benchmark: 14 
+
+
+ [Mon Aug 10 2015 14:01:43 GMT+0700 (ICT)][DDK]
+-Faculty: C510103LT-Current: 0-Benchmark: 0 
+
+
+ [Mon Aug 10 2015 14:01:43 GMT+0700 (ICT)][DDK]
+-Faculty: C420201-Current: 0-Benchmark: 11 
+
+
+ [Mon Aug 10 2015 14:01:43 GMT+0700 (ICT)][DDK]
+-Faculty: C540102-Current: 0-Benchmark: 16 
+
+
+ [Mon Aug 10 2015 14:01:43 GMT+0700 (ICT)][DDK]
+-Faculty: C340405-Current: 0-Benchmark: 18.5 
+
+
+ [Mon Aug 10 2015 14:01:43 GMT+0700 (ICT)][DDK]
+-Faculty: C580302-Current: 0-Benchmark: 9.25 
+
+
+ [Mon Aug 10 2015 14:01:43 GMT+0700 (ICT)][DDK]
+-Faculty: C510304-Current: 0-Benchmark: 15.5 
+
+
+ [Mon Aug 10 2015 14:01:43 GMT+0700 (ICT)][DDK]
+-Faculty: C480201-Current: 0-Benchmark: 13 
+
+
+ [Mon Aug 10 2015 14:01:43 GMT+0700 (ICT)][DDK]
+-Faculty: C480201LT-Current: 0-Benchmark: 12.25 
+
+
+ [Mon Aug 10 2015 14:01:43 GMT+0700 (ICT)][DDK]
+-Faculty: C480104-Current: 0-Benchmark: 15.5 
+
+
+ [Mon Aug 10 2015 14:01:43 GMT+0700 (ICT)][DDK]
+-Faculty: C340301-Current: 0-Benchmark: 16 
+
+
+ [Mon Aug 10 2015 14:01:43 GMT+0700 (ICT)][DDK]
+-Faculty: C340301LT-Current: 0-Benchmark: 0 
+
+
+ [Mon Aug 10 2015 14:01:43 GMT+0700 (ICT)][DDK]
+-Faculty: C480101-Current: 0-Benchmark: 15.5 
+
+
+ [Mon Aug 10 2015 14:01:43 GMT+0700 (ICT)][DDK]
+-Faculty: C340115-Current: 0-Benchmark: 17.25 
+
+
+ [Mon Aug 10 2015 14:01:43 GMT+0700 (ICT)][DDK]
+-Faculty: C340101-Current: 0-Benchmark: 17.25 
+
+
+ [Mon Aug 10 2015 14:01:43 GMT+0700 (ICT)][DDK]
+-Faculty: C480202-Current: 0-Benchmark: 14.5 
+
+
+ [Mon Aug 10 2015 14:01:43 GMT+0700 (ICT)][DDK]
+-Faculty: C480102-Current: 0-Benchmark: 17.75 
+
+
+ [Mon Aug 10 2015 14:01:43 GMT+0700 (ICT)][DDK]
+-Faculty: C420201KT-Current: 0-Benchmark: 0 
+
+
+ [Mon Aug 10 2015 14:01:43 GMT+0700 (ICT)][DDK]
+-Faculty: D480201KT-Current: 0-Benchmark: 0 
+
+
+ [Mon Aug 10 2015 14:01:43 GMT+0700 (ICT)][DDK]
+-Faculty: C510102KT-Current: 0-Benchmark: 0 
+
+
+ [Mon Aug 10 2015 14:01:43 GMT+0700 (ICT)][DDK]
+-Faculty: D140202KT-Current: 0-Benchmark: 0 
+
+
+ [Mon Aug 10 2015 14:01:43 GMT+0700 (ICT)][DDK]
+-Faculty: C340301KT-Current: 0-Benchmark: 0 
+
+
+ [Mon Aug 10 2015 14:01:43 GMT+0700 (ICT)][DDK]
+-Faculty: D340301KT-Current: 0-Benchmark: 0 
+
+
+ [Mon Aug 10 2015 14:01:43 GMT+0700 (ICT)][DDK]
+-Faculty: D620114KT-Current: 0-Benchmark: 0 
+
+
+ [Mon Aug 10 2015 14:01:43 GMT+0700 (ICT)][DDK]
+-Faculty: C340121KT-Current: 0-Benchmark: 0 
+
+
+ [Mon Aug 10 2015 14:01:43 GMT+0700 (ICT)][DDK]
+-Faculty: D340121KT-Current: 0-Benchmark: 0 
+
+
+ [Mon Aug 10 2015 14:01:43 GMT+0700 (ICT)][DDK]
+-Faculty: D580301KT-Current: 0-Benchmark: 0 
+
+
+ [Mon Aug 10 2015 14:01:43 GMT+0700 (ICT)][DDK]
+-Faculty: D520201KT-Current: 0-Benchmark: 0 
+
+
+ [Mon Aug 10 2015 14:01:43 GMT+0700 (ICT)][DDK]
+-Faculty: D580205KT-Current: 0-Benchmark: 0 
+
+
+ [Mon Aug 10 2015 14:01:43 GMT+0700 (ICT)][DDK]
+-Faculty: D380107KT-Current: 0-Benchmark: 0 
+
+
+ [Mon Aug 10 2015 14:01:43 GMT+0700 (ICT)][DDK]
+-Faculty: D340103KT-Current: 0-Benchmark: 0 
+
+
+ [Mon Aug 10 2015 14:01:43 GMT+0700 (ICT)][DDK]
+-Faculty: D340101KT-Current: 0-Benchmark: 0 
+
+
+ [Mon Aug 10 2015 14:01:43 GMT+0700 (ICT)][DDK]
+-Faculty: D140209KT-Current: 0-Benchmark: 0 
+
+
+ [Mon Aug 10 2015 14:01:43 GMT+0700 (ICT)][DDK]
+-Faculty: D340201KT-Current: 0-Benchmark: 0 
+
+
+ [Mon Aug 10 2015 14:01:43 GMT+0700 (ICT)][DDK]
+-Faculty: D720501-Current: 0-Benchmark: 15.25 
+
+
+ [Mon Aug 10 2015 14:01:43 GMT+0700 (ICT)][DDK]
+-Faculty: D720101-Current: 0-Benchmark: 26 
+
+
+ [Mon Aug 10 2015 14:01:43 GMT+0700 (ICT)][DDK]
+Final School check - faculty_final - 104faculty_choice - 159candidate_all - 10414candidates - 9434
+
+ [Mon Aug 10 2015 14:01:43 GMT+0700 (ICT)][DDK]
+- create matriculate list for School
+
+ [Mon Aug 10 2015 14:01:44 GMT+0700 (ICT)][DDK]
+-Faculty: D480201-More: 13-Benchmark: 13.5 
+
+
+ [Mon Aug 10 2015 14:01:44 GMT+0700 (ICT)][DDK]
+-Faculty: D480201LT-More: 1-Benchmark: 15.5 
+
+
+ [Mon Aug 10 2015 14:01:44 GMT+0700 (ICT)][DDK]
+-Faculty: D510202-More: 91-Benchmark: 17.5 
+
+
+ [Mon Aug 10 2015 14:01:44 GMT+0700 (ICT)][DDK]
+-Faculty: D510105-More: 36-Benchmark: 18 
+
+
+ [Mon Aug 10 2015 14:01:44 GMT+0700 (ICT)][DDK]
+-Faculty: D580301-More: 19-Benchmark: 15 
+
+
+ [Mon Aug 10 2015 14:01:44 GMT+0700 (ICT)][DDK]
+-Faculty: D580205-More: 21-Benchmark: 14.25 
+
+
+ [Mon Aug 10 2015 14:01:44 GMT+0700 (ICT)][DDK]
+-Faculty: D520216-More: 8-Benchmark: 16.75 
+
+
+ [Mon Aug 10 2015 14:01:44 GMT+0700 (ICT)][DDK]
+-Faculty: D520201-More: 51-Benchmark: 14.25 
+
+
+ [Mon Aug 10 2015 14:01:44 GMT+0700 (ICT)][DDK]
+-Faculty: D520201LT-More: 1-Benchmark: 20.5 
+
+
+ [Mon Aug 10 2015 14:01:44 GMT+0700 (ICT)][DDK]
+-Faculty: D520301-More: 41-Benchmark: 17.5 
+
+
+ [Mon Aug 10 2015 14:01:44 GMT+0700 (ICT)][DDK]
+-Faculty: D520122-More: 31-Benchmark: 18.25 
+
+
+ [Mon Aug 10 2015 14:01:44 GMT+0700 (ICT)][DDK]
+-Faculty: D580201-More: 25-Benchmark: 15 
+
+
+ [Mon Aug 10 2015 14:01:44 GMT+0700 (ICT)][DDK]
+-Faculty: D520114-More: 12-Benchmark: 15.5 
+
+
+ [Mon Aug 10 2015 14:01:44 GMT+0700 (ICT)][DDK]
+-Faculty: D520114LT-More: 1-Benchmark: 16.5 
+
+
+ [Mon Aug 10 2015 14:01:44 GMT+0700 (ICT)][DDK]
+-Faculty: D520103-More: 92-Benchmark: 15.5 
+
+
+ [Mon Aug 10 2015 14:01:44 GMT+0700 (ICT)][DDK]
+-Faculty: D520604-More: 5-Benchmark: 17.75 
+
+
+ [Mon Aug 10 2015 14:01:44 GMT+0700 (ICT)][DDK]
+-Faculty: D520320-More: 20-Benchmark: 16 
+
+
+ [Mon Aug 10 2015 14:01:44 GMT+0700 (ICT)][DDK]
+-Faculty: D520209-More: 69-Benchmark: 16 
+
+
+ [Mon Aug 10 2015 14:01:44 GMT+0700 (ICT)][DDK]
+-Faculty: D520115-More: 103-Benchmark: 17.75 
+
+
+ [Mon Aug 10 2015 14:01:44 GMT+0700 (ICT)][DDK]
+-Faculty: D580208-More: 37-Benchmark: 17.25 
+
+
+ [Mon Aug 10 2015 14:01:44 GMT+0700 (ICT)][DDK]
+-Faculty: D510601-More: 26-Benchmark: 14.75 
+
+
+ [Mon Aug 10 2015 14:01:44 GMT+0700 (ICT)][DDK]
+-Faculty: D850101-More: 20-Benchmark: 15 
+
+
+ [Mon Aug 10 2015 14:01:44 GMT+0700 (ICT)][DDK]
+-Faculty: D140214-More: 40-Benchmark: 14.5 
+
+
+ [Mon Aug 10 2015 14:01:44 GMT+0700 (ICT)][DDK]
+-Faculty: D340301LT-More: 1-Benchmark: 19.75 
+
+
+ [Mon Aug 10 2015 14:01:44 GMT+0700 (ICT)][DDK]
+-Faculty: D340121-More: 1-Benchmark: 18.5 
+
+
+ [Mon Aug 10 2015 14:01:44 GMT+0700 (ICT)][DDK]
+-Faculty: D340121LT-More: 1-Benchmark: 18.75 
+
+
+ [Mon Aug 10 2015 14:01:44 GMT+0700 (ICT)][DDK]
+-Faculty: D380101-More: 4-Benchmark: 15.25 
+
+
+ [Mon Aug 10 2015 14:01:44 GMT+0700 (ICT)][DDK]
+-Faculty: D380107-More: 2-Benchmark: 14.5 
+
+
+ [Mon Aug 10 2015 14:01:44 GMT+0700 (ICT)][DDK]
+-Faculty: D340115-More: 1-Benchmark: 17.75 
+
+
+ [Mon Aug 10 2015 14:01:44 GMT+0700 (ICT)][DDK]
+-Faculty: D340107-More: 1-Benchmark: 17.5 
+
+
+ [Mon Aug 10 2015 14:01:44 GMT+0700 (ICT)][DDK]
+-Faculty: D340404-More: 1-Benchmark: 18.25 
+
+
+ [Mon Aug 10 2015 14:01:44 GMT+0700 (ICT)][DDK]
+-Faculty: D340201LT-More: 1-Benchmark: 19.75 
+
+
+ [Mon Aug 10 2015 14:01:44 GMT+0700 (ICT)][DDK]
+-Faculty: D320101-More: 16-Benchmark: 12.25 
+
+
+ [Mon Aug 10 2015 14:01:44 GMT+0700 (ICT)][DDK]
+-Faculty: D480201-More: 13-Benchmark: 13.5 
+
+
+ [Mon Aug 10 2015 14:01:44 GMT+0700 (ICT)][DDK]
+-Faculty: D760101-More: 19-Benchmark: 11.75 
+
+
+ [Mon Aug 10 2015 14:01:44 GMT+0700 (ICT)][DDK]
+-Faculty: D140205-More: 15-Benchmark: 11 
+
+
+ [Mon Aug 10 2015 14:01:44 GMT+0700 (ICT)][DDK]
+-Faculty: D140202-More: 49-Benchmark: 13.25 
+
+
+ [Mon Aug 10 2015 14:01:44 GMT+0700 (ICT)][DDK]
+-Faculty: D850101-More: 20-Benchmark: 15 
+
+
+ [Mon Aug 10 2015 14:01:44 GMT+0700 (ICT)][DDK]
+-Faculty: D140219-More: 32-Benchmark: 15.25 
+
+
+ [Mon Aug 10 2015 14:01:44 GMT+0700 (ICT)][DDK]
+-Faculty: D140212-More: 5-Benchmark: 13.5 
+
+
+ [Mon Aug 10 2015 14:01:44 GMT+0700 (ICT)][DDK]
+-Faculty: D140218-More: 34-Benchmark: 14.75 
+
+
+ [Mon Aug 10 2015 14:01:44 GMT+0700 (ICT)][DDK]
+-Faculty: D140217-More: 28-Benchmark: 14 
+
+
+ [Mon Aug 10 2015 14:01:44 GMT+0700 (ICT)][DDK]
+-Faculty: D140213-More: 11-Benchmark: 11 
+
+
+ [Mon Aug 10 2015 14:01:44 GMT+0700 (ICT)][DDK]
+-Faculty: D140209-More: 13-Benchmark: 13.75 
+
+
+ [Mon Aug 10 2015 14:01:44 GMT+0700 (ICT)][DDK]
+-Faculty: D140211-More: 18-Benchmark: 15.25 
+
+
+ [Mon Aug 10 2015 14:01:44 GMT+0700 (ICT)][DDK]
+-Faculty: D310401-More: 5-Benchmark: 11.75 
+
+
+ [Mon Aug 10 2015 14:01:44 GMT+0700 (ICT)][DDK]
+-Faculty: D220113-More: 17-Benchmark: 12.25 
+
+
+ [Mon Aug 10 2015 14:01:44 GMT+0700 (ICT)][DDK]
+-Faculty: D220213-More: 42-Benchmark: 22.75 
+
+
+ [Mon Aug 10 2015 14:01:44 GMT+0700 (ICT)][DDK]
+-Faculty: D220201-More: 384-Benchmark: 20.25 
+
+
+ [Mon Aug 10 2015 14:01:44 GMT+0700 (ICT)][DDK]
+-Faculty: D220210-More: 69-Benchmark: 22.5 
+
+
+ [Mon Aug 10 2015 14:01:44 GMT+0700 (ICT)][DDK]
+-Faculty: D220202-More: 70-Benchmark: 19.5 
+
+
+ [Mon Aug 10 2015 14:01:44 GMT+0700 (ICT)][DDK]
+-Faculty: D220209-More: 66-Benchmark: 22 
+
+
+ [Mon Aug 10 2015 14:01:44 GMT+0700 (ICT)][DDK]
+-Faculty: D220203-More: 30-Benchmark: 22 
+
+
+ [Mon Aug 10 2015 14:01:44 GMT+0700 (ICT)][DDK]
+-Faculty: D220204-More: 73-Benchmark: 22 
+
+
+ [Mon Aug 10 2015 14:01:44 GMT+0700 (ICT)][DDK]
+-Faculty: D220212-More: 71-Benchmark: 21.75 
+
+
+ [Mon Aug 10 2015 14:01:44 GMT+0700 (ICT)][DDK]
+-Faculty: D140231-More: 108-Benchmark: 15.75 
+
+
+ [Mon Aug 10 2015 14:01:44 GMT+0700 (ICT)][DDK]
+-Faculty: D140233-More: 26-Benchmark: 21.25 
+
+
+ [Mon Aug 10 2015 14:01:44 GMT+0700 (ICT)][DDK]
+-Faculty: D140234-More: 18-Benchmark: 21.75 
+
+
+ [Mon Aug 10 2015 14:01:44 GMT+0700 (ICT)][DDK]
+
+- remove candidates same for School
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: D420201-Current: 0-Benchmark: 19 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: D420201LT-Current: 0-Benchmark: 0 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: D480201-Current: 27-Benchmark: 17.25 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: D480201CLC1-Current: 0-Benchmark: 21.75 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: D480201CLC2-Current: 0-Benchmark: 20.75 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: D480201LT-Current: 0-Benchmark: 15.5 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: D540101-Current: 0-Benchmark: 19.75 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: D540101LT-Current: 0-Benchmark: 19.75 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: D510202-Current: 84-Benchmark: 19.75 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: D510202LT-Current: 0-Benchmark: 16.75 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: D510105-Current: 34-Benchmark: 18.75 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: PFIEV-Current: 0-Benchmark: 42.75 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: D905206-Current: 0-Benchmark: 30.25 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: D905216-Current: 0-Benchmark: 24.5 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: D580102-Current: 0-Benchmark: 22.75 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: D580301-Current: 20-Benchmark: 18.75 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: D580205-Current: 22-Benchmark: 18.25 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: D580205CLC-Current: 0-Benchmark: 20.25 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: D580205LT-Current: 0-Benchmark: 18.75 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: D520201CLC-Current: 0-Benchmark: 22.25 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: D520216-Current: 8-Benchmark: 18.5 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: D520216CLC-Current: 0-Benchmark: 20.75 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: D520201-Current: 53-Benchmark: 20 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: D520201LT-Current: 0-Benchmark: 20.5 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: D520301-Current: 38-Benchmark: 19.75 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: D520301LT-Current: 0-Benchmark: 0 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: D520122-Current: 27-Benchmark: 19 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: D580202-Current: 0-Benchmark: 18.25 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: D580201-Current: 25-Benchmark: 18.75 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: D580201LT-Current: 0-Benchmark: 21.75 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: D520114-Current: 12-Benchmark: 19 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: D520114LT-Current: 1-Benchmark: 16.5 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: D520103-Current: 94-Benchmark: 19.25 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: D520103LT-Current: 0-Benchmark: 17 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: D520604-Current: 5-Benchmark: 19 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: D520209-Current: 74-Benchmark: 19 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: D520209LT-Current: 0-Benchmark: 21.25 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: D520320-Current: 25-Benchmark: 18.75 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: D520320LT-Current: 0-Benchmark: 18 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: D520115-Current: 92-Benchmark: 19.25 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: D520115LT-Current: 0-Benchmark: 19.75 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: D580208-Current: 30-Benchmark: 19.25 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: D510601-Current: 31-Benchmark: 18.75 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: D850101-Current: 40-Benchmark: 18.25 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: D140214-Current: 32-Benchmark: 18.5 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: D340405-Current: 0-Benchmark: 13.5 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: D340405LT-Current: 0-Benchmark: 16 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: D340301-Current: 0-Benchmark: 19 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: D340301LT-Current: 2-Benchmark: 19.75 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: D340302-Current: 0-Benchmark: 19 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: D340120-Current: 0-Benchmark: 19.75 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: D340121-Current: 1-Benchmark: 18.5 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: D340121LT-Current: 1-Benchmark: 18.75 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: D310101-Current: 0-Benchmark: 19 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: D380101-Current: 4-Benchmark: 18 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: D380107-Current: 2-Benchmark: 18.5 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: D340115-Current: 1-Benchmark: 17.75 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: D310205-Current: 0-Benchmark: 15.25 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: D340103-Current: 0-Benchmark: 18.5 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: D340103LT-Current: 0-Benchmark: 17.5 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: D340101-Current: 0-Benchmark: 18.75 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: D340107-Current: 1-Benchmark: 17.5 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: D340404-Current: 1-Benchmark: 18.25 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: D340201-Current: 0-Benchmark: 18.75 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: D340201LT-Current: 0-Benchmark: 19.75 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: D460201-Current: 0-Benchmark: 17.75 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: D320101-Current: 16-Benchmark: 15.75 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: D420201-Current: 0-Benchmark: 19 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: D480201-Current: 27-Benchmark: 17.25 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: D760101-Current: 21-Benchmark: 15.75 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: D310501-Current: 0-Benchmark: 15 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: D440217-Current: 0-Benchmark: 19 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: D140205-Current: 18-Benchmark: 15.5 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: D140201-Current: 0-Benchmark: 0 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: D140202-Current: 28-Benchmark: 16.75 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: D440112-Current: 0-Benchmark: 14.5 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: D440301-Current: 0-Benchmark: 16.75 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: D220310-Current: 0-Benchmark: 19.5 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: D850101-Current: 40-Benchmark: 18.25 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: C140221-Current: 0-Benchmark: 40.75 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: D140219-Current: 32-Benchmark: 18 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: D140212-Current: 5-Benchmark: 20 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: D140218-Current: 33-Benchmark: 18 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: D140217-Current: 28-Benchmark: 18 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: D140213-Current: 11-Benchmark: 17.25 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: D140210-Current: 0-Benchmark: 16 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: D140209-Current: 15-Benchmark: 19.25 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: D140211-Current: 18-Benchmark: 21 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: D310401-Current: 6-Benchmark: 15 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: D460112-Current: 0-Benchmark: 15.75 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: D440102-Current: 0-Benchmark: 16.75 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: D220340-Current: 0-Benchmark: 14.5 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: D220330-Current: 0-Benchmark: 15 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: D220113-Current: 18-Benchmark: 15.75 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: D220213-Current: 43-Benchmark: 23.5 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: D220201-Current: 357-Benchmark: 23 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: D220210-Current: 60-Benchmark: 23.25 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: D220202-Current: 20-Benchmark: 21.25 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: D220209-Current: 65-Benchmark: 23.5 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: D220203-Current: 33-Benchmark: 23.25 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: D220204-Current: 69-Benchmark: 23.25 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: D220212-Current: 74-Benchmark: 23.5 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: D140231-Current: 86-Benchmark: 23.75 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: D140233-Current: 18-Benchmark: 22.25 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: D140234-Current: 20-Benchmark: 22.75 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: C510102-Current: 0-Benchmark: 12 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: C510301-Current: 0-Benchmark: 19 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: C510301LT-Current: 0-Benchmark: 16.25 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: C510302-Current: 0-Benchmark: 18.5 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: C510302LT-Current: 0-Benchmark: 15.5 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: C510401-Current: 0-Benchmark: 19 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: C510101-Current: 0-Benchmark: 18.25 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: C510205-Current: 0-Benchmark: 13.5 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: C510205LT-Current: 0-Benchmark: 15.5 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: C510201-Current: 0-Benchmark: 12.25 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: C510201LT-Current: 0-Benchmark: 15.5 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: C480201-Current: 0-Benchmark: 13 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: C480201LT-Current: 0-Benchmark: 12.25 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: C510406-Current: 0-Benchmark: 14.25 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: C510203-Current: 0-Benchmark: 12.5 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: C510104-Current: 0-Benchmark: 15.25 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: C510104LT-Current: 0-Benchmark: 15.5 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: C510206-Current: 0-Benchmark: 16.5 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: C510103-Current: 0-Benchmark: 14 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: C510103LT-Current: 0-Benchmark: 0 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: C420201-Current: 0-Benchmark: 11 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: C540102-Current: 0-Benchmark: 16 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: C340405-Current: 0-Benchmark: 18.5 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: C580302-Current: 0-Benchmark: 9.25 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: C510304-Current: 0-Benchmark: 15.5 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: C480201-Current: 0-Benchmark: 13 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: C480201LT-Current: 0-Benchmark: 12.25 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: C480104-Current: 0-Benchmark: 15.5 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: C340301-Current: 0-Benchmark: 16 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: C340301LT-Current: 0-Benchmark: 0 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: C480101-Current: 0-Benchmark: 15.5 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: C340115-Current: 0-Benchmark: 17.25 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: C340101-Current: 0-Benchmark: 17.25 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: C480202-Current: 0-Benchmark: 14.5 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: C480102-Current: 0-Benchmark: 17.75 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: C420201KT-Current: 0-Benchmark: 0 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: D480201KT-Current: 0-Benchmark: 0 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: C510102KT-Current: 0-Benchmark: 0 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: D140202KT-Current: 0-Benchmark: 0 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: C340301KT-Current: 0-Benchmark: 0 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: D340301KT-Current: 0-Benchmark: 0 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: D620114KT-Current: 0-Benchmark: 0 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: C340121KT-Current: 0-Benchmark: 0 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: D340121KT-Current: 0-Benchmark: 0 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: D580301KT-Current: 0-Benchmark: 0 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: D520201KT-Current: 0-Benchmark: 0 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: D580205KT-Current: 0-Benchmark: 0 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: D380107KT-Current: 0-Benchmark: 0 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: D340103KT-Current: 0-Benchmark: 0 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: D340101KT-Current: 0-Benchmark: 0 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: D140209KT-Current: 0-Benchmark: 0 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: D340201KT-Current: 0-Benchmark: 0 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: D720501-Current: 0-Benchmark: 15.25 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: D720101-Current: 0-Benchmark: 26 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+Final School check - faculty_final - 104faculty_choice - 159candidate_all - 10414candidates - 9581
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+- create matriculate list for School
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: D480201-More: 11-Benchmark: 13.5 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: D480201LT-More: 1-Benchmark: 15.5 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: D510202-More: 13-Benchmark: 16.5 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: D510105-More: 26-Benchmark: 16.5 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: D580301-More: 1-Benchmark: 16.5 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: D580205-More: 4-Benchmark: 16.5 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: D520201-More: 4-Benchmark: 16.25 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: D520201LT-More: 1-Benchmark: 20.5 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: D520301-More: 22-Benchmark: 16.25 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: D520122-More: 23-Benchmark: 16.25 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: D580201LT-More: 1-Benchmark: 21.5 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: D520209-More: 7-Benchmark: 16 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: D520103-More: 14-Benchmark: 16.25 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: D520320-More: 6-Benchmark: 16 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: D520115-More: 58-Benchmark: 16 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: D510601-More: 7-Benchmark: 15.75 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: D580208-More: 17-Benchmark: 14.5 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: D850101-More: 10-Benchmark: 15 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: D140214-More: 16-Benchmark: 14.5 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: D340103LT-More: 1-Benchmark: 16.75 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: D340201LT-More: 1-Benchmark: 19.75 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: D480201-More: 11-Benchmark: 13.5 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: D760101-More: 4-Benchmark: 11.75 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: D140205-More: 4-Benchmark: 11 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: D140202-More: 32-Benchmark: 12.5 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: D850101-More: 10-Benchmark: 15 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: D140219-More: 16-Benchmark: 12.25 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: D140218-More: 10-Benchmark: 12.25 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: D140217-More: 3-Benchmark: 12.25 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: D140213-More: 2-Benchmark: 11 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: D140211-More: 3-Benchmark: 18 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: D220113-More: 5-Benchmark: 13.25 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: D220213-More: 37-Benchmark: 21.5 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: D220201-More: 255-Benchmark: 14.25 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: D220210-More: 40-Benchmark: 21.25 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: D220202-More: 50-Benchmark: 20.25 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: D220209-More: 35-Benchmark: 21.25 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: D220203-More: 37-Benchmark: 21 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: D220204-More: 36-Benchmark: 21.25 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: D220212-More: 61-Benchmark: 21 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: D140231-More: 54-Benchmark: 17.5 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: D140233-More: 12-Benchmark: 21 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+-Faculty: D140234-More: 10-Benchmark: 20.25 
+
+
+ [Mon Aug 10 2015 14:02:56 GMT+0700 (ICT)][DDK]
+
+- remove candidates same for School
+
+ [Mon Aug 10 2015 14:04:04 GMT+0700 (ICT)][DDK]
+-Faculty: D420201-Current: 0-Benchmark: 19 
+
+
+ [Mon Aug 10 2015 14:04:04 GMT+0700 (ICT)][DDK]
+-Faculty: D420201LT-Current: 0-Benchmark: 0 
+
+
+ [Mon Aug 10 2015 14:04:04 GMT+0700 (ICT)][DDK]
+-Faculty: D480201-Current: 22-Benchmark: 17.25 
+
+
+ [Mon Aug 10 2015 14:04:04 GMT+0700 (ICT)][DDK]
+-Faculty: D480201CLC1-Current: 0-Benchmark: 21.75 
+
+
+ [Mon Aug 10 2015 14:04:04 GMT+0700 (ICT)][DDK]
+-Faculty: D480201CLC2-Current: 0-Benchmark: 20.75 
+
+
+ [Mon Aug 10 2015 14:04:04 GMT+0700 (ICT)][DDK]
+-Faculty: D480201LT-Current: 1-Benchmark: 15.5 
+
+
+ [Mon Aug 10 2015 14:04:04 GMT+0700 (ICT)][DDK]
+-Faculty: D540101-Current: 0-Benchmark: 19.75 
+
+
+ [Mon Aug 10 2015 14:04:04 GMT+0700 (ICT)][DDK]
+-Faculty: D540101LT-Current: 0-Benchmark: 19.75 
+
+
+ [Mon Aug 10 2015 14:04:04 GMT+0700 (ICT)][DDK]
+-Faculty: D510202-Current: 13-Benchmark: 18.25 
+
+
+ [Mon Aug 10 2015 14:04:04 GMT+0700 (ICT)][DDK]
+-Faculty: D510202LT-Current: 0-Benchmark: 16.75 
+
+
+ [Mon Aug 10 2015 14:04:04 GMT+0700 (ICT)][DDK]
+-Faculty: D510105-Current: 20-Benchmark: 18.25 
+
+
+ [Mon Aug 10 2015 14:04:04 GMT+0700 (ICT)][DDK]
+-Faculty: PFIEV-Current: 0-Benchmark: 42.75 
+
+
+ [Mon Aug 10 2015 14:04:04 GMT+0700 (ICT)][DDK]
+-Faculty: D905206-Current: 0-Benchmark: 30.25 
+
+
+ [Mon Aug 10 2015 14:04:04 GMT+0700 (ICT)][DDK]
+-Faculty: D905216-Current: 0-Benchmark: 24.5 
+
+
+ [Mon Aug 10 2015 14:04:04 GMT+0700 (ICT)][DDK]
+-Faculty: D580102-Current: 0-Benchmark: 22.75 
+
+
+ [Mon Aug 10 2015 14:04:04 GMT+0700 (ICT)][DDK]
+-Faculty: D580301-Current: 1-Benchmark: 16.5 
+
+
+ [Mon Aug 10 2015 14:04:04 GMT+0700 (ICT)][DDK]
+-Faculty: D580205-Current: 5-Benchmark: 17 
+
+
+ [Mon Aug 10 2015 14:04:04 GMT+0700 (ICT)][DDK]
+-Faculty: D580205CLC-Current: 0-Benchmark: 20.25 
+
+
+ [Mon Aug 10 2015 14:04:04 GMT+0700 (ICT)][DDK]
+-Faculty: D580205LT-Current: 0-Benchmark: 18.75 
+
+
+ [Mon Aug 10 2015 14:04:04 GMT+0700 (ICT)][DDK]
+-Faculty: D520201CLC-Current: 0-Benchmark: 22.25 
+
+
+ [Mon Aug 10 2015 14:04:04 GMT+0700 (ICT)][DDK]
+-Faculty: D520216-Current: 0-Benchmark: 18.5 
+
+
+ [Mon Aug 10 2015 14:04:04 GMT+0700 (ICT)][DDK]
+-Faculty: D520216CLC-Current: 0-Benchmark: 20.75 
+
+
+ [Mon Aug 10 2015 14:04:04 GMT+0700 (ICT)][DDK]
+-Faculty: D520201-Current: 6-Benchmark: 17 
+
+
+ [Mon Aug 10 2015 14:04:04 GMT+0700 (ICT)][DDK]
+-Faculty: D520201LT-Current: 1-Benchmark: 20.5 
+
+
+ [Mon Aug 10 2015 14:04:04 GMT+0700 (ICT)][DDK]
+-Faculty: D520301-Current: 22-Benchmark: 18.25 
+
+
+ [Mon Aug 10 2015 14:04:04 GMT+0700 (ICT)][DDK]
+-Faculty: D520301LT-Current: 0-Benchmark: 0 
+
+
+ [Mon Aug 10 2015 14:04:04 GMT+0700 (ICT)][DDK]
+-Faculty: D520122-Current: 18-Benchmark: 18.25 
+
+
+ [Mon Aug 10 2015 14:04:04 GMT+0700 (ICT)][DDK]
+-Faculty: D580202-Current: 0-Benchmark: 18.25 
+
+
+ [Mon Aug 10 2015 14:04:04 GMT+0700 (ICT)][DDK]
+-Faculty: D580201-Current: 0-Benchmark: 18.75 
+
+
+ [Mon Aug 10 2015 14:04:04 GMT+0700 (ICT)][DDK]
+-Faculty: D580201LT-Current: 0-Benchmark: 21.5 
+
+
+ [Mon Aug 10 2015 14:04:04 GMT+0700 (ICT)][DDK]
+-Faculty: D520114-Current: 0-Benchmark: 19 
+
+
+ [Mon Aug 10 2015 14:04:04 GMT+0700 (ICT)][DDK]
+-Faculty: D520114LT-Current: 0-Benchmark: 16.5 
+
+
+ [Mon Aug 10 2015 14:04:04 GMT+0700 (ICT)][DDK]
+-Faculty: D520103-Current: 15-Benchmark: 19 
+
+
+ [Mon Aug 10 2015 14:04:04 GMT+0700 (ICT)][DDK]
+-Faculty: D520103LT-Current: 0-Benchmark: 17 
+
+
+ [Mon Aug 10 2015 14:04:04 GMT+0700 (ICT)][DDK]
+-Faculty: D520604-Current: 0-Benchmark: 19 
+
+
+ [Mon Aug 10 2015 14:04:04 GMT+0700 (ICT)][DDK]
+-Faculty: D520209-Current: 9-Benchmark: 17.75 
+
+
+ [Mon Aug 10 2015 14:04:04 GMT+0700 (ICT)][DDK]
+-Faculty: D520209LT-Current: 0-Benchmark: 21.25 
+
+
+ [Mon Aug 10 2015 14:04:04 GMT+0700 (ICT)][DDK]
+-Faculty: D520320-Current: 8-Benchmark: 17.75 
+
+
+ [Mon Aug 10 2015 14:04:04 GMT+0700 (ICT)][DDK]
+-Faculty: D520320LT-Current: 0-Benchmark: 18 
+
+
+ [Mon Aug 10 2015 14:04:04 GMT+0700 (ICT)][DDK]
+-Faculty: D520115-Current: 40-Benchmark: 18.75 
+
+
+ [Mon Aug 10 2015 14:04:04 GMT+0700 (ICT)][DDK]
+-Faculty: D520115LT-Current: 0-Benchmark: 19.75 
+
+
+ [Mon Aug 10 2015 14:04:04 GMT+0700 (ICT)][DDK]
+-Faculty: D580208-Current: 18-Benchmark: 18 
+
+
+ [Mon Aug 10 2015 14:04:04 GMT+0700 (ICT)][DDK]
+-Faculty: D510601-Current: 9-Benchmark: 17.75 
+
+
+ [Mon Aug 10 2015 14:04:04 GMT+0700 (ICT)][DDK]
+-Faculty: D850101-Current: 20-Benchmark: 17.75 
+
+
+ [Mon Aug 10 2015 14:04:04 GMT+0700 (ICT)][DDK]
+-Faculty: D140214-Current: 21-Benchmark: 18.25 
+
+
+ [Mon Aug 10 2015 14:04:04 GMT+0700 (ICT)][DDK]
+-Faculty: D340405-Current: 0-Benchmark: 13.5 
+
+
+ [Mon Aug 10 2015 14:04:04 GMT+0700 (ICT)][DDK]
+-Faculty: D340405LT-Current: 0-Benchmark: 16 
+
+
+ [Mon Aug 10 2015 14:04:04 GMT+0700 (ICT)][DDK]
+-Faculty: D340301-Current: 0-Benchmark: 19 
+
+
+ [Mon Aug 10 2015 14:04:04 GMT+0700 (ICT)][DDK]
+-Faculty: D340301LT-Current: 0-Benchmark: 19.75 
+
+
+ [Mon Aug 10 2015 14:04:04 GMT+0700 (ICT)][DDK]
+-Faculty: D340302-Current: 0-Benchmark: 19 
+
+
+ [Mon Aug 10 2015 14:04:04 GMT+0700 (ICT)][DDK]
+-Faculty: D340120-Current: 0-Benchmark: 19.75 
+
+
+ [Mon Aug 10 2015 14:04:04 GMT+0700 (ICT)][DDK]
+-Faculty: D340121-Current: 0-Benchmark: 18.5 
+
+
+ [Mon Aug 10 2015 14:04:04 GMT+0700 (ICT)][DDK]
+-Faculty: D340121LT-Current: 0-Benchmark: 18.75 
+
+
+ [Mon Aug 10 2015 14:04:04 GMT+0700 (ICT)][DDK]
+-Faculty: D310101-Current: 0-Benchmark: 19 
+
+
+ [Mon Aug 10 2015 14:04:04 GMT+0700 (ICT)][DDK]
+-Faculty: D380101-Current: 0-Benchmark: 18 
+
+
+ [Mon Aug 10 2015 14:04:04 GMT+0700 (ICT)][DDK]
+-Faculty: D380107-Current: 0-Benchmark: 18.5 
+
+
+ [Mon Aug 10 2015 14:04:04 GMT+0700 (ICT)][DDK]
+-Faculty: D340115-Current: 0-Benchmark: 17.75 
+
+
+ [Mon Aug 10 2015 14:04:04 GMT+0700 (ICT)][DDK]
+-Faculty: D310205-Current: 0-Benchmark: 15.25 
+
+
+ [Mon Aug 10 2015 14:04:04 GMT+0700 (ICT)][DDK]
+-Faculty: D340103-Current: 0-Benchmark: 18.5 
+
+
+ [Mon Aug 10 2015 14:04:04 GMT+0700 (ICT)][DDK]
+-Faculty: D340103LT-Current: 0-Benchmark: 16.75 
+
+
+ [Mon Aug 10 2015 14:04:04 GMT+0700 (ICT)][DDK]
+-Faculty: D340101-Current: 0-Benchmark: 18.75 
+
+
+ [Mon Aug 10 2015 14:04:04 GMT+0700 (ICT)][DDK]
+-Faculty: D340107-Current: 0-Benchmark: 17.5 
+
+
+ [Mon Aug 10 2015 14:04:04 GMT+0700 (ICT)][DDK]
+-Faculty: D340404-Current: 0-Benchmark: 18.25 
+
+
+ [Mon Aug 10 2015 14:04:04 GMT+0700 (ICT)][DDK]
+-Faculty: D340201-Current: 0-Benchmark: 18.75 
+
+
+ [Mon Aug 10 2015 14:04:04 GMT+0700 (ICT)][DDK]
+-Faculty: D340201LT-Current: 1-Benchmark: 19.75 
+
+
+ [Mon Aug 10 2015 14:04:04 GMT+0700 (ICT)][DDK]
+-Faculty: D460201-Current: 0-Benchmark: 17.75 
+
+
+ [Mon Aug 10 2015 14:04:04 GMT+0700 (ICT)][DDK]
+-Faculty: D320101-Current: 0-Benchmark: 15.75 
+
+
+ [Mon Aug 10 2015 14:04:04 GMT+0700 (ICT)][DDK]
+-Faculty: D420201-Current: 0-Benchmark: 19 
+
+
+ [Mon Aug 10 2015 14:04:04 GMT+0700 (ICT)][DDK]
+-Faculty: D480201-Current: 22-Benchmark: 17.25 
+
+
+ [Mon Aug 10 2015 14:04:04 GMT+0700 (ICT)][DDK]
+-Faculty: D760101-Current: 4-Benchmark: 14.5 
+
+
+ [Mon Aug 10 2015 14:04:04 GMT+0700 (ICT)][DDK]
+-Faculty: D310501-Current: 0-Benchmark: 15 
+
+
+ [Mon Aug 10 2015 14:04:04 GMT+0700 (ICT)][DDK]
+-Faculty: D440217-Current: 0-Benchmark: 19 
+
+
+ [Mon Aug 10 2015 14:04:04 GMT+0700 (ICT)][DDK]
+-Faculty: D140205-Current: 4-Benchmark: 14.5 
+
+
+ [Mon Aug 10 2015 14:04:04 GMT+0700 (ICT)][DDK]
+-Faculty: D140201-Current: 0-Benchmark: 0 
+
+
+ [Mon Aug 10 2015 14:04:04 GMT+0700 (ICT)][DDK]
+-Faculty: D140202-Current: 27-Benchmark: 16 
+
+
+ [Mon Aug 10 2015 14:04:04 GMT+0700 (ICT)][DDK]
+-Faculty: D440112-Current: 0-Benchmark: 14.5 
+
+
+ [Mon Aug 10 2015 14:04:04 GMT+0700 (ICT)][DDK]
+-Faculty: D440301-Current: 0-Benchmark: 16.75 
+
+
+ [Mon Aug 10 2015 14:04:04 GMT+0700 (ICT)][DDK]
+-Faculty: D220310-Current: 0-Benchmark: 19.5 
+
+
+ [Mon Aug 10 2015 14:04:04 GMT+0700 (ICT)][DDK]
+-Faculty: D850101-Current: 20-Benchmark: 17.75 
+
+
+ [Mon Aug 10 2015 14:04:04 GMT+0700 (ICT)][DDK]
+-Faculty: C140221-Current: 0-Benchmark: 40.75 
+
+
+ [Mon Aug 10 2015 14:04:04 GMT+0700 (ICT)][DDK]
+-Faculty: D140219-Current: 7-Benchmark: 16.25 
+
+
+ [Mon Aug 10 2015 14:04:04 GMT+0700 (ICT)][DDK]
+-Faculty: D140212-Current: 0-Benchmark: 20 
+
+
+ [Mon Aug 10 2015 14:04:04 GMT+0700 (ICT)][DDK]
+-Faculty: D140218-Current: 13-Benchmark: 15.25 
+
+
+ [Mon Aug 10 2015 14:04:04 GMT+0700 (ICT)][DDK]
+-Faculty: D140217-Current: 5-Benchmark: 14 
+
+
+ [Mon Aug 10 2015 14:04:04 GMT+0700 (ICT)][DDK]
+-Faculty: D140213-Current: 2-Benchmark: 14 
+
+
+ [Mon Aug 10 2015 14:04:04 GMT+0700 (ICT)][DDK]
+-Faculty: D140210-Current: 0-Benchmark: 16 
+
+
+ [Mon Aug 10 2015 14:04:04 GMT+0700 (ICT)][DDK]
+-Faculty: D140209-Current: 0-Benchmark: 19.25 
+
+
+ [Mon Aug 10 2015 14:04:04 GMT+0700 (ICT)][DDK]
+-Faculty: D140211-Current: 3-Benchmark: 19.25 
+
+
+ [Mon Aug 10 2015 14:04:04 GMT+0700 (ICT)][DDK]
+-Faculty: D310401-Current: 0-Benchmark: 15 
+
+
+ [Mon Aug 10 2015 14:04:04 GMT+0700 (ICT)][DDK]
+-Faculty: D460112-Current: 0-Benchmark: 15.75 
+
+
+ [Mon Aug 10 2015 14:04:04 GMT+0700 (ICT)][DDK]
+-Faculty: D440102-Current: 0-Benchmark: 16.75 
+
+
+ [Mon Aug 10 2015 14:04:04 GMT+0700 (ICT)][DDK]
+-Faculty: D220340-Current: 0-Benchmark: 14.5 
+
+
+ [Mon Aug 10 2015 14:04:04 GMT+0700 (ICT)][DDK]
+-Faculty: D220330-Current: 0-Benchmark: 15 
+
+
+ [Mon Aug 10 2015 14:04:04 GMT+0700 (ICT)][DDK]
+-Faculty: D220113-Current: 6-Benchmark: 14.5 
+
+
+ [Mon Aug 10 2015 14:04:04 GMT+0700 (ICT)][DDK]
+-Faculty: D220213-Current: 29-Benchmark: 23.5 
+
+
+ [Mon Aug 10 2015 14:04:04 GMT+0700 (ICT)][DDK]
+-Faculty: D220201-Current: 163-Benchmark: 21.5 
+
+
+ [Mon Aug 10 2015 14:04:04 GMT+0700 (ICT)][DDK]
+-Faculty: D220210-Current: 19-Benchmark: 22.75 
+
+
+ [Mon Aug 10 2015 14:04:04 GMT+0700 (ICT)][DDK]
+-Faculty: D220202-Current: 57-Benchmark: 21.25 
+
+
+ [Mon Aug 10 2015 14:04:04 GMT+0700 (ICT)][DDK]
+-Faculty: D220209-Current: 31-Benchmark: 23.5 
+
+
+ [Mon Aug 10 2015 14:04:04 GMT+0700 (ICT)][DDK]
+-Faculty: D220203-Current: 30-Benchmark: 22.5 
+
+
+ [Mon Aug 10 2015 14:04:04 GMT+0700 (ICT)][DDK]
+-Faculty: D220204-Current: 31-Benchmark: 22.5 
+
+
+ [Mon Aug 10 2015 14:04:04 GMT+0700 (ICT)][DDK]
+-Faculty: D220212-Current: 52-Benchmark: 22.25 
+
+
+ [Mon Aug 10 2015 14:04:04 GMT+0700 (ICT)][DDK]
+-Faculty: D140231-Current: 73-Benchmark: 21.75 
+
+
+ [Mon Aug 10 2015 14:04:04 GMT+0700 (ICT)][DDK]
+-Faculty: D140233-Current: 14-Benchmark: 22 
+
+
+ [Mon Aug 10 2015 14:04:04 GMT+0700 (ICT)][DDK]
+-Faculty: D140234-Current: 8-Benchmark: 22.5 
+
+
+ [Mon Aug 10 2015 14:04:04 GMT+0700 (ICT)][DDK]
+-Faculty: C510102-Current: 0-Benchmark: 12 
+
+
+ [Mon Aug 10 2015 14:04:04 GMT+0700 (ICT)][DDK]
+-Faculty: C510301-Current: 0-Benchmark: 19 
+
+
+ [Mon Aug 10 2015 14:04:04 GMT+0700 (ICT)][DDK]
+-Faculty: C510301LT-Current: 0-Benchmark: 16.25 
+
+
+ [Mon Aug 10 2015 14:04:04 GMT+0700 (ICT)][DDK]
+-Faculty: C510302-Current: 0-Benchmark: 18.5 
+
+
+ [Mon Aug 10 2015 14:04:04 GMT+0700 (ICT)][DDK]
+-Faculty: C510302LT-Current: 0-Benchmark: 15.5 
+
+
+ [Mon Aug 10 2015 14:04:04 GMT+0700 (ICT)][DDK]
+-Faculty: C510401-Current: 0-Benchmark: 19 
+
+
+ [Mon Aug 10 2015 14:04:04 GMT+0700 (ICT)][DDK]
+-Faculty: C510101-Current: 0-Benchmark: 18.25 
+
+
+ [Mon Aug 10 2015 14:04:04 GMT+0700 (ICT)][DDK]
+-Faculty: C510205-Current: 0-Benchmark: 13.5 
+
+
+ [Mon Aug 10 2015 14:04:04 GMT+0700 (ICT)][DDK]
+-Faculty: C510205LT-Current: 0-Benchmark: 15.5 
+
+
+ [Mon Aug 10 2015 14:04:04 GMT+0700 (ICT)][DDK]
+-Faculty: C510201-Current: 0-Benchmark: 12.25 
+
+
+ [Mon Aug 10 2015 14:04:04 GMT+0700 (ICT)][DDK]
+-Faculty: C510201LT-Current: 0-Benchmark: 15.5 
+
+
+ [Mon Aug 10 2015 14:04:04 GMT+0700 (ICT)][DDK]
+-Faculty: C480201-Current: 0-Benchmark: 13 
+
+
+ [Mon Aug 10 2015 14:04:04 GMT+0700 (ICT)][DDK]
+-Faculty: C480201LT-Current: 0-Benchmark: 12.25 
+
+
+ [Mon Aug 10 2015 14:04:04 GMT+0700 (ICT)][DDK]
+-Faculty: C510406-Current: 0-Benchmark: 14.25 
+
+
+ [Mon Aug 10 2015 14:04:04 GMT+0700 (ICT)][DDK]
+-Faculty: C510203-Current: 0-Benchmark: 12.5 
+
+
+ [Mon Aug 10 2015 14:04:04 GMT+0700 (ICT)][DDK]
+-Faculty: C510104-Current: 0-Benchmark: 15.25 
+
+
+ [Mon Aug 10 2015 14:04:04 GMT+0700 (ICT)][DDK]
+-Faculty: C510104LT-Current: 0-Benchmark: 15.5 
+
+
+ [Mon Aug 10 2015 14:04:04 GMT+0700 (ICT)][DDK]
+-Faculty: C510206-Current: 0-Benchmark: 16.5 
+
+
+ [Mon Aug 10 2015 14:04:04 GMT+0700 (ICT)][DDK]
+-Faculty: C510103-Current: 0-Benchmark: 14 
+
+
+ [Mon Aug 10 2015 14:04:04 GMT+0700 (ICT)][DDK]
+-Faculty: C510103LT-Current: 0-Benchmark: 0 
+
+
+ [Mon Aug 10 2015 14:04:04 GMT+0700 (ICT)][DDK]
+-Faculty: C420201-Current: 0-Benchmark: 11 
+
+
+ [Mon Aug 10 2015 14:04:04 GMT+0700 (ICT)][DDK]
+-Faculty: C540102-Current: 0-Benchmark: 16 
+
+
+ [Mon Aug 10 2015 14:04:04 GMT+0700 (ICT)][DDK]
+-Faculty: C340405-Current: 0-Benchmark: 18.5 
+
+
+ [Mon Aug 10 2015 14:04:04 GMT+0700 (ICT)][DDK]
+-Faculty: C580302-Current: 0-Benchmark: 9.25 
+
+
+ [Mon Aug 10 2015 14:04:04 GMT+0700 (ICT)][DDK]
+-Faculty: C510304-Current: 0-Benchmark: 15.5 
+
+
+ [Mon Aug 10 2015 14:04:04 GMT+0700 (ICT)][DDK]
+-Faculty: C480201-Current: 0-Benchmark: 13 
+
+
+ [Mon Aug 10 2015 14:04:04 GMT+0700 (ICT)][DDK]
+-Faculty: C480201LT-Current: 0-Benchmark: 12.25 
+
+
+ [Mon Aug 10 2015 14:04:04 GMT+0700 (ICT)][DDK]
+-Faculty: C480104-Current: 0-Benchmark: 15.5 
+
+
+ [Mon Aug 10 2015 14:04:04 GMT+0700 (ICT)][DDK]
+-Faculty: C340301-Current: 0-Benchmark: 16 
+
+
+ [Mon Aug 10 2015 14:04:04 GMT+0700 (ICT)][DDK]
+-Faculty: C340301LT-Current: 0-Benchmark: 0 
+
+
+ [Mon Aug 10 2015 14:04:04 GMT+0700 (ICT)][DDK]
+-Faculty: C480101-Current: 0-Benchmark: 15.5 
+
+
+ [Mon Aug 10 2015 14:04:04 GMT+0700 (ICT)][DDK]
+-Faculty: C340115-Current: 0-Benchmark: 17.25 
+
+
+ [Mon Aug 10 2015 14:04:04 GMT+0700 (ICT)][DDK]
+-Faculty: C340101-Current: 0-Benchmark: 17.25 
+
+
+ [Mon Aug 10 2015 14:04:04 GMT+0700 (ICT)][DDK]
+-Faculty: C480202-Current: 0-Benchmark: 14.5 
+
+
+ [Mon Aug 10 2015 14:04:04 GMT+0700 (ICT)][DDK]
+-Faculty: C480102-Current: 0-Benchmark: 17.75 
+
+
+ [Mon Aug 10 2015 14:04:04 GMT+0700 (ICT)][DDK]
+-Faculty: C420201KT-Current: 0-Benchmark: 0 
+
+
+ [Mon Aug 10 2015 14:04:04 GMT+0700 (ICT)][DDK]
+-Faculty: D480201KT-Current: 0-Benchmark: 0 
+
+
+ [Mon Aug 10 2015 14:04:04 GMT+0700 (ICT)][DDK]
+-Faculty: C510102KT-Current: 0-Benchmark: 0 
+
+
+ [Mon Aug 10 2015 14:04:04 GMT+0700 (ICT)][DDK]
+-Faculty: D140202KT-Current: 0-Benchmark: 0 
+
+
+ [Mon Aug 10 2015 14:04:04 GMT+0700 (ICT)][DDK]
+-Faculty: C340301KT-Current: 0-Benchmark: 0 
+
+
+ [Mon Aug 10 2015 14:04:04 GMT+0700 (ICT)][DDK]
+-Faculty: D340301KT-Current: 0-Benchmark: 0 
+
+
+ [Mon Aug 10 2015 14:04:04 GMT+0700 (ICT)][DDK]
+-Faculty: D620114KT-Current: 0-Benchmark: 0 
+
+
+ [Mon Aug 10 2015 14:04:04 GMT+0700 (ICT)][DDK]
+-Faculty: C340121KT-Current: 0-Benchmark: 0 
+
+
+ [Mon Aug 10 2015 14:04:04 GMT+0700 (ICT)][DDK]
+-Faculty: D340121KT-Current: 0-Benchmark: 0 
+
+
+ [Mon Aug 10 2015 14:04:04 GMT+0700 (ICT)][DDK]
+-Faculty: D580301KT-Current: 0-Benchmark: 0 
+
+
+ [Mon Aug 10 2015 14:04:04 GMT+0700 (ICT)][DDK]
+-Faculty: D520201KT-Current: 0-Benchmark: 0 
+
+
+ [Mon Aug 10 2015 14:04:04 GMT+0700 (ICT)][DDK]
+-Faculty: D580205KT-Current: 0-Benchmark: 0 
+
+
+ [Mon Aug 10 2015 14:04:04 GMT+0700 (ICT)][DDK]
+-Faculty: D380107KT-Current: 0-Benchmark: 0 
+
+
+ [Mon Aug 10 2015 14:04:04 GMT+0700 (ICT)][DDK]
+-Faculty: D340103KT-Current: 0-Benchmark: 0 
+
+
+ [Mon Aug 10 2015 14:04:04 GMT+0700 (ICT)][DDK]
+-Faculty: D340101KT-Current: 0-Benchmark: 0 
+
+
+ [Mon Aug 10 2015 14:04:04 GMT+0700 (ICT)][DDK]
+-Faculty: D140209KT-Current: 0-Benchmark: 0 
+
+
+ [Mon Aug 10 2015 14:04:04 GMT+0700 (ICT)][DDK]
+-Faculty: D340201KT-Current: 0-Benchmark: 0 
+
+
+ [Mon Aug 10 2015 14:04:04 GMT+0700 (ICT)][DDK]
+-Faculty: D720501-Current: 0-Benchmark: 15.25 
+
+
+ [Mon Aug 10 2015 14:04:04 GMT+0700 (ICT)][DDK]
+-Faculty: D720101-Current: 0-Benchmark: 26 
+
+
+ [Mon Aug 10 2015 14:04:04 GMT+0700 (ICT)][DDK]
+Final School check - faculty_final - 104faculty_choice - 159candidate_all - 10414candidates - 9724
+
+ [Mon Aug 10 2015 14:04:04 GMT+0700 (ICT)][DDK]
+- create matriculate list for School
+
+ [Mon Aug 10 2015 14:04:04 GMT+0700 (ICT)][DDK]
+-Faculty: D510202-More: 3-Benchmark: 17 
+
+
+ [Mon Aug 10 2015 14:04:04 GMT+0700 (ICT)][DDK]
+-Faculty: D510105-More: 12-Benchmark: 14.5 
+
+
+ [Mon Aug 10 2015 14:04:04 GMT+0700 (ICT)][DDK]
+-Faculty: D520301-More: 9-Benchmark: 16 
+
+
+ [Mon Aug 10 2015 14:04:04 GMT+0700 (ICT)][DDK]
+-Faculty: D520122-More: 11-Benchmark: 16 
+
+
+ [Mon Aug 10 2015 14:04:04 GMT+0700 (ICT)][DDK]
+-Faculty: D580201LT-More: 1-Benchmark: 21.5 
+
+
+ [Mon Aug 10 2015 14:04:04 GMT+0700 (ICT)][DDK]
+-Faculty: D520115-More: 26-Benchmark: 14.5 
+
+
+ [Mon Aug 10 2015 14:04:04 GMT+0700 (ICT)][DDK]
+-Faculty: D140214-More: 6-Benchmark: 14.5 
+
+
+ [Mon Aug 10 2015 14:04:04 GMT+0700 (ICT)][DDK]
+-Faculty: D580208-More: 6-Benchmark: 14.5 
+
+
+ [Mon Aug 10 2015 14:04:04 GMT+0700 (ICT)][DDK]
+-Faculty: D340301LT-More: 1-Benchmark: 19 
+
+
+ [Mon Aug 10 2015 14:04:04 GMT+0700 (ICT)][DDK]
+-Faculty: D340103LT-More: 1-Benchmark: 16.75 
+
+
+ [Mon Aug 10 2015 14:04:04 GMT+0700 (ICT)][DDK]
+-Faculty: D340121LT-More: 1-Benchmark: 16.75 
+
+
+ [Mon Aug 10 2015 14:04:04 GMT+0700 (ICT)][DDK]
+-Faculty: D140202-More: 22-Benchmark: 10 
+
+
+ [Mon Aug 10 2015 14:04:04 GMT+0700 (ICT)][DDK]
+-Faculty: D140219-More: 6-Benchmark: 12.25 
+
+
+ [Mon Aug 10 2015 14:04:04 GMT+0700 (ICT)][DDK]
+-Faculty: D140218-More: 5-Benchmark: 12.25 
+
+
+ [Mon Aug 10 2015 14:04:04 GMT+0700 (ICT)][DDK]
+-Faculty: D140217-More: 2-Benchmark: 12.25 
+
+
+ [Mon Aug 10 2015 14:04:04 GMT+0700 (ICT)][DDK]
+-Faculty: D220213-More: 51-Benchmark: 20.75 
+
+
+ [Mon Aug 10 2015 14:04:04 GMT+0700 (ICT)][DDK]
+-Faculty: D220201-More: 134-Benchmark: 14.25 
+
+
+ [Mon Aug 10 2015 14:04:04 GMT+0700 (ICT)][DDK]
+-Faculty: D220210-More: 81-Benchmark: 19.75 
+
+
+ [Mon Aug 10 2015 14:04:04 GMT+0700 (ICT)][DDK]
+-Faculty: D220202-More: 13-Benchmark: 20.75 
+
+
+ [Mon Aug 10 2015 14:04:04 GMT+0700 (ICT)][DDK]
+-Faculty: D220209-More: 69-Benchmark: 18.25 
+
+
+ [Mon Aug 10 2015 14:04:04 GMT+0700 (ICT)][DDK]
+-Faculty: D220203-More: 40-Benchmark: 20.25 
+
+
+ [Mon Aug 10 2015 14:04:04 GMT+0700 (ICT)][DDK]
+-Faculty: D220204-More: 74-Benchmark: 19.5 
+
+
+ [Mon Aug 10 2015 14:04:04 GMT+0700 (ICT)][DDK]
+-Faculty: D220212-More: 83-Benchmark: 19.5 
+
+
+ [Mon Aug 10 2015 14:04:04 GMT+0700 (ICT)][DDK]
+-Faculty: D140231-More: 29-Benchmark: 15 
+
+
+ [Mon Aug 10 2015 14:04:04 GMT+0700 (ICT)][DDK]
+-Faculty: D140233-More: 16-Benchmark: 20.5 
+
+
+ [Mon Aug 10 2015 14:04:04 GMT+0700 (ICT)][DDK]
+-Faculty: D140234-More: 22-Benchmark: 19.25 
+
+
+ [Mon Aug 10 2015 14:04:04 GMT+0700 (ICT)][DDK]
+
+- remove candidates same for School
+
+ [Mon Aug 10 2015 14:05:09 GMT+0700 (ICT)][DDK]
+-Faculty: D420201-Current: 0-Benchmark: 19 
+
+
+ [Mon Aug 10 2015 14:05:09 GMT+0700 (ICT)][DDK]
+-Faculty: D420201LT-Current: 0-Benchmark: 0 
+
+
+ [Mon Aug 10 2015 14:05:09 GMT+0700 (ICT)][DDK]
+-Faculty: D480201-Current: 0-Benchmark: 17.25 
+
+
+ [Mon Aug 10 2015 14:05:09 GMT+0700 (ICT)][DDK]
+-Faculty: D480201CLC1-Current: 0-Benchmark: 21.75 
+
+
+ [Mon Aug 10 2015 14:05:09 GMT+0700 (ICT)][DDK]
+-Faculty: D480201CLC2-Current: 0-Benchmark: 20.75 
+
+
+ [Mon Aug 10 2015 14:05:09 GMT+0700 (ICT)][DDK]
+-Faculty: D480201LT-Current: 0-Benchmark: 15.5 
+
+
+ [Mon Aug 10 2015 14:05:09 GMT+0700 (ICT)][DDK]
+-Faculty: D540101-Current: 0-Benchmark: 19.75 
+
+
+ [Mon Aug 10 2015 14:05:09 GMT+0700 (ICT)][DDK]
+-Faculty: D540101LT-Current: 0-Benchmark: 19.75 
+
+
+ [Mon Aug 10 2015 14:05:09 GMT+0700 (ICT)][DDK]
+-Faculty: D510202-Current: 3-Benchmark: 17.75 
+
+
+ [Mon Aug 10 2015 14:05:09 GMT+0700 (ICT)][DDK]
+-Faculty: D510202LT-Current: 0-Benchmark: 16.75 
+
+
+ [Mon Aug 10 2015 14:05:09 GMT+0700 (ICT)][DDK]
+-Faculty: D510105-Current: 11-Benchmark: 18 
+
+
+ [Mon Aug 10 2015 14:05:09 GMT+0700 (ICT)][DDK]
+-Faculty: PFIEV-Current: 0-Benchmark: 42.75 
+
+
+ [Mon Aug 10 2015 14:05:09 GMT+0700 (ICT)][DDK]
+-Faculty: D905206-Current: 0-Benchmark: 30.25 
+
+
+ [Mon Aug 10 2015 14:05:09 GMT+0700 (ICT)][DDK]
+-Faculty: D905216-Current: 0-Benchmark: 24.5 
+
+
+ [Mon Aug 10 2015 14:05:09 GMT+0700 (ICT)][DDK]
+-Faculty: D580102-Current: 0-Benchmark: 22.75 
+
+
+ [Mon Aug 10 2015 14:05:09 GMT+0700 (ICT)][DDK]
+-Faculty: D580301-Current: 0-Benchmark: 16.5 
+
+
+ [Mon Aug 10 2015 14:05:09 GMT+0700 (ICT)][DDK]
+-Faculty: D580205-Current: 0-Benchmark: 17 
+
+
+ [Mon Aug 10 2015 14:05:09 GMT+0700 (ICT)][DDK]
+-Faculty: D580205CLC-Current: 0-Benchmark: 20.25 
+
+
+ [Mon Aug 10 2015 14:05:09 GMT+0700 (ICT)][DDK]
+-Faculty: D580205LT-Current: 0-Benchmark: 18.75 
+
+
+ [Mon Aug 10 2015 14:05:09 GMT+0700 (ICT)][DDK]
+-Faculty: D520201CLC-Current: 0-Benchmark: 22.25 
+
+
+ [Mon Aug 10 2015 14:05:09 GMT+0700 (ICT)][DDK]
+-Faculty: D520216-Current: 0-Benchmark: 18.5 
+
+
+ [Mon Aug 10 2015 14:05:09 GMT+0700 (ICT)][DDK]
+-Faculty: D520216CLC-Current: 0-Benchmark: 20.75 
+
+
+ [Mon Aug 10 2015 14:05:09 GMT+0700 (ICT)][DDK]
+-Faculty: D520201-Current: 0-Benchmark: 17 
+
+
+ [Mon Aug 10 2015 14:05:09 GMT+0700 (ICT)][DDK]
+-Faculty: D520201LT-Current: 0-Benchmark: 20.5 
+
+
+ [Mon Aug 10 2015 14:05:09 GMT+0700 (ICT)][DDK]
+-Faculty: D520301-Current: 9-Benchmark: 17.75 
+
+
+ [Mon Aug 10 2015 14:05:09 GMT+0700 (ICT)][DDK]
+-Faculty: D520301LT-Current: 0-Benchmark: 0 
+
+
+ [Mon Aug 10 2015 14:05:09 GMT+0700 (ICT)][DDK]
+-Faculty: D520122-Current: 10-Benchmark: 17.75 
+
+
+ [Mon Aug 10 2015 14:05:09 GMT+0700 (ICT)][DDK]
+-Faculty: D580202-Current: 0-Benchmark: 18.25 
+
+
+ [Mon Aug 10 2015 14:05:09 GMT+0700 (ICT)][DDK]
+-Faculty: D580201-Current: 0-Benchmark: 18.75 
+
+
+ [Mon Aug 10 2015 14:05:09 GMT+0700 (ICT)][DDK]
+-Faculty: D580201LT-Current: 1-Benchmark: 21.5 
+
+
+ [Mon Aug 10 2015 14:05:09 GMT+0700 (ICT)][DDK]
+-Faculty: D520114-Current: 0-Benchmark: 19 
+
+
+ [Mon Aug 10 2015 14:05:09 GMT+0700 (ICT)][DDK]
+-Faculty: D520114LT-Current: 0-Benchmark: 16.5 
+
+
+ [Mon Aug 10 2015 14:05:09 GMT+0700 (ICT)][DDK]
+-Faculty: D520103-Current: 0-Benchmark: 19 
+
+
+ [Mon Aug 10 2015 14:05:09 GMT+0700 (ICT)][DDK]
+-Faculty: D520103LT-Current: 0-Benchmark: 17 
+
+
+ [Mon Aug 10 2015 14:05:09 GMT+0700 (ICT)][DDK]
+-Faculty: D520604-Current: 0-Benchmark: 19 
+
+
+ [Mon Aug 10 2015 14:05:09 GMT+0700 (ICT)][DDK]
+-Faculty: D520209-Current: 0-Benchmark: 17.75 
+
+
+ [Mon Aug 10 2015 14:05:09 GMT+0700 (ICT)][DDK]
+-Faculty: D520209LT-Current: 0-Benchmark: 21.25 
+
+
+ [Mon Aug 10 2015 14:05:09 GMT+0700 (ICT)][DDK]
+-Faculty: D520320-Current: 0-Benchmark: 17.75 
+
+
+ [Mon Aug 10 2015 14:05:09 GMT+0700 (ICT)][DDK]
+-Faculty: D520320LT-Current: 0-Benchmark: 18 
+
+
+ [Mon Aug 10 2015 14:05:09 GMT+0700 (ICT)][DDK]
+-Faculty: D520115-Current: 26-Benchmark: 18 
+
+
+ [Mon Aug 10 2015 14:05:09 GMT+0700 (ICT)][DDK]
+-Faculty: D520115LT-Current: 0-Benchmark: 19.75 
+
+
+ [Mon Aug 10 2015 14:05:09 GMT+0700 (ICT)][DDK]
+-Faculty: D580208-Current: 6-Benchmark: 17.75 
+
+
+ [Mon Aug 10 2015 14:05:09 GMT+0700 (ICT)][DDK]
+-Faculty: D510601-Current: 0-Benchmark: 17.75 
+
+
+ [Mon Aug 10 2015 14:05:09 GMT+0700 (ICT)][DDK]
+-Faculty: D850101-Current: 0-Benchmark: 17.75 
+
+
+ [Mon Aug 10 2015 14:05:09 GMT+0700 (ICT)][DDK]
+-Faculty: D140214-Current: 7-Benchmark: 17.5 
+
+
+ [Mon Aug 10 2015 14:05:09 GMT+0700 (ICT)][DDK]
+-Faculty: D340405-Current: 0-Benchmark: 13.5 
+
+
+ [Mon Aug 10 2015 14:05:09 GMT+0700 (ICT)][DDK]
+-Faculty: D340405LT-Current: 0-Benchmark: 16 
+
+
+ [Mon Aug 10 2015 14:05:09 GMT+0700 (ICT)][DDK]
+-Faculty: D340301-Current: 0-Benchmark: 19 
+
+
+ [Mon Aug 10 2015 14:05:09 GMT+0700 (ICT)][DDK]
+-Faculty: D340301LT-Current: 0-Benchmark: 19 
+
+
+ [Mon Aug 10 2015 14:05:09 GMT+0700 (ICT)][DDK]
+-Faculty: D340302-Current: 0-Benchmark: 19 
+
+
+ [Mon Aug 10 2015 14:05:09 GMT+0700 (ICT)][DDK]
+-Faculty: D340120-Current: 0-Benchmark: 19.75 
+
+
+ [Mon Aug 10 2015 14:05:09 GMT+0700 (ICT)][DDK]
+-Faculty: D340121-Current: 0-Benchmark: 18.5 
+
+
+ [Mon Aug 10 2015 14:05:09 GMT+0700 (ICT)][DDK]
+-Faculty: D340121LT-Current: 0-Benchmark: 16.75 
+
+
+ [Mon Aug 10 2015 14:05:09 GMT+0700 (ICT)][DDK]
+-Faculty: D310101-Current: 0-Benchmark: 19 
+
+
+ [Mon Aug 10 2015 14:05:09 GMT+0700 (ICT)][DDK]
+-Faculty: D380101-Current: 0-Benchmark: 18 
+
+
+ [Mon Aug 10 2015 14:05:09 GMT+0700 (ICT)][DDK]
+-Faculty: D380107-Current: 0-Benchmark: 18.5 
+
+
+ [Mon Aug 10 2015 14:05:09 GMT+0700 (ICT)][DDK]
+-Faculty: D340115-Current: 0-Benchmark: 17.75 
+
+
+ [Mon Aug 10 2015 14:05:09 GMT+0700 (ICT)][DDK]
+-Faculty: D310205-Current: 0-Benchmark: 15.25 
+
+
+ [Mon Aug 10 2015 14:05:09 GMT+0700 (ICT)][DDK]
+-Faculty: D340103-Current: 0-Benchmark: 18.5 
+
+
+ [Mon Aug 10 2015 14:05:09 GMT+0700 (ICT)][DDK]
+-Faculty: D340103LT-Current: 2-Benchmark: 16.75 
+
+
+ [Mon Aug 10 2015 14:05:09 GMT+0700 (ICT)][DDK]
+-Faculty: D340101-Current: 0-Benchmark: 18.75 
+
+
+ [Mon Aug 10 2015 14:05:09 GMT+0700 (ICT)][DDK]
+-Faculty: D340107-Current: 0-Benchmark: 17.5 
+
+
+ [Mon Aug 10 2015 14:05:09 GMT+0700 (ICT)][DDK]
+-Faculty: D340404-Current: 0-Benchmark: 18.25 
+
+
+ [Mon Aug 10 2015 14:05:09 GMT+0700 (ICT)][DDK]
+-Faculty: D340201-Current: 0-Benchmark: 18.75 
+
+
+ [Mon Aug 10 2015 14:05:09 GMT+0700 (ICT)][DDK]
+-Faculty: D340201LT-Current: 0-Benchmark: 19.75 
+
+
+ [Mon Aug 10 2015 14:05:09 GMT+0700 (ICT)][DDK]
+-Faculty: D460201-Current: 0-Benchmark: 17.75 
+
+
+ [Mon Aug 10 2015 14:05:09 GMT+0700 (ICT)][DDK]
+-Faculty: D320101-Current: 0-Benchmark: 15.75 
+
+
+ [Mon Aug 10 2015 14:05:09 GMT+0700 (ICT)][DDK]
+-Faculty: D420201-Current: 0-Benchmark: 19 
+
+
+ [Mon Aug 10 2015 14:05:09 GMT+0700 (ICT)][DDK]
+-Faculty: D480201-Current: 0-Benchmark: 17.25 
+
+
+ [Mon Aug 10 2015 14:05:09 GMT+0700 (ICT)][DDK]
+-Faculty: D760101-Current: 0-Benchmark: 14.5 
+
+
+ [Mon Aug 10 2015 14:05:09 GMT+0700 (ICT)][DDK]
+-Faculty: D310501-Current: 0-Benchmark: 15 
+
+
+ [Mon Aug 10 2015 14:05:09 GMT+0700 (ICT)][DDK]
+-Faculty: D440217-Current: 0-Benchmark: 19 
+
+
+ [Mon Aug 10 2015 14:05:09 GMT+0700 (ICT)][DDK]
+-Faculty: D140205-Current: 0-Benchmark: 14.5 
+
+
+ [Mon Aug 10 2015 14:05:09 GMT+0700 (ICT)][DDK]
+-Faculty: D140201-Current: 0-Benchmark: 0 
+
+
+ [Mon Aug 10 2015 14:05:09 GMT+0700 (ICT)][DDK]
+-Faculty: D140202-Current: 17-Benchmark: 15.25 
+
+
+ [Mon Aug 10 2015 14:05:09 GMT+0700 (ICT)][DDK]
+-Faculty: D440112-Current: 0-Benchmark: 14.5 
+
+
+ [Mon Aug 10 2015 14:05:09 GMT+0700 (ICT)][DDK]
+-Faculty: D440301-Current: 0-Benchmark: 16.75 
+
+
+ [Mon Aug 10 2015 14:05:09 GMT+0700 (ICT)][DDK]
+-Faculty: D220310-Current: 0-Benchmark: 19.5 
+
+
+ [Mon Aug 10 2015 14:05:09 GMT+0700 (ICT)][DDK]
+-Faculty: D850101-Current: 0-Benchmark: 17.75 
+
+
+ [Mon Aug 10 2015 14:05:09 GMT+0700 (ICT)][DDK]
+-Faculty: C140221-Current: 0-Benchmark: 40.75 
+
+
+ [Mon Aug 10 2015 14:05:09 GMT+0700 (ICT)][DDK]
+-Faculty: D140219-Current: 6-Benchmark: 14.75 
+
+
+ [Mon Aug 10 2015 14:05:09 GMT+0700 (ICT)][DDK]
+-Faculty: D140212-Current: 0-Benchmark: 20 
+
+
+ [Mon Aug 10 2015 14:05:09 GMT+0700 (ICT)][DDK]
+-Faculty: D140218-Current: 5-Benchmark: 14.5 
+
+
+ [Mon Aug 10 2015 14:05:09 GMT+0700 (ICT)][DDK]
+-Faculty: D140217-Current: 2-Benchmark: 13.75 
+
+
+ [Mon Aug 10 2015 14:05:09 GMT+0700 (ICT)][DDK]
+-Faculty: D140213-Current: 0-Benchmark: 14 
+
+
+ [Mon Aug 10 2015 14:05:09 GMT+0700 (ICT)][DDK]
+-Faculty: D140210-Current: 0-Benchmark: 16 
+
+
+ [Mon Aug 10 2015 14:05:09 GMT+0700 (ICT)][DDK]
+-Faculty: D140209-Current: 0-Benchmark: 19.25 
+
+
+ [Mon Aug 10 2015 14:05:09 GMT+0700 (ICT)][DDK]
+-Faculty: D140211-Current: 0-Benchmark: 19.25 
+
+
+ [Mon Aug 10 2015 14:05:09 GMT+0700 (ICT)][DDK]
+-Faculty: D310401-Current: 0-Benchmark: 15 
+
+
+ [Mon Aug 10 2015 14:05:09 GMT+0700 (ICT)][DDK]
+-Faculty: D460112-Current: 0-Benchmark: 15.75 
+
+
+ [Mon Aug 10 2015 14:05:09 GMT+0700 (ICT)][DDK]
+-Faculty: D440102-Current: 0-Benchmark: 16.75 
+
+
+ [Mon Aug 10 2015 14:05:09 GMT+0700 (ICT)][DDK]
+-Faculty: D220340-Current: 0-Benchmark: 14.5 
+
+
+ [Mon Aug 10 2015 14:05:09 GMT+0700 (ICT)][DDK]
+-Faculty: D220330-Current: 0-Benchmark: 15 
+
+
+ [Mon Aug 10 2015 14:05:09 GMT+0700 (ICT)][DDK]
+-Faculty: D220113-Current: 0-Benchmark: 14.5 
+
+
+ [Mon Aug 10 2015 14:05:09 GMT+0700 (ICT)][DDK]
+-Faculty: D220213-Current: 43-Benchmark: 22.5 
+
+
+ [Mon Aug 10 2015 14:05:09 GMT+0700 (ICT)][DDK]
+-Faculty: D220201-Current: 155-Benchmark: 20.5 
+
+
+ [Mon Aug 10 2015 14:05:09 GMT+0700 (ICT)][DDK]
+-Faculty: D220210-Current: 59-Benchmark: 22 
+
+
+ [Mon Aug 10 2015 14:05:09 GMT+0700 (ICT)][DDK]
+-Faculty: D220202-Current: 38-Benchmark: 21.25 
+
+
+ [Mon Aug 10 2015 14:05:09 GMT+0700 (ICT)][DDK]
+-Faculty: D220209-Current: 47-Benchmark: 22 
+
+
+ [Mon Aug 10 2015 14:05:09 GMT+0700 (ICT)][DDK]
+-Faculty: D220203-Current: 34-Benchmark: 22 
+
+
+ [Mon Aug 10 2015 14:05:09 GMT+0700 (ICT)][DDK]
+-Faculty: D220204-Current: 54-Benchmark: 22 
+
+
+ [Mon Aug 10 2015 14:05:09 GMT+0700 (ICT)][DDK]
+-Faculty: D220212-Current: 64-Benchmark: 21.75 
+
+
+ [Mon Aug 10 2015 14:05:09 GMT+0700 (ICT)][DDK]
+-Faculty: D140231-Current: 26-Benchmark: 19.25 
+
+
+ [Mon Aug 10 2015 14:05:09 GMT+0700 (ICT)][DDK]
+-Faculty: D140233-Current: 11-Benchmark: 21.5 
+
+
+ [Mon Aug 10 2015 14:05:09 GMT+0700 (ICT)][DDK]
+-Faculty: D140234-Current: 13-Benchmark: 21 
+
+
+ [Mon Aug 10 2015 14:05:09 GMT+0700 (ICT)][DDK]
+-Faculty: C510102-Current: 0-Benchmark: 12 
+
+
+ [Mon Aug 10 2015 14:05:09 GMT+0700 (ICT)][DDK]
+-Faculty: C510301-Current: 0-Benchmark: 19 
+
+
+ [Mon Aug 10 2015 14:05:09 GMT+0700 (ICT)][DDK]
+-Faculty: C510301LT-Current: 0-Benchmark: 16.25 
+
+
+ [Mon Aug 10 2015 14:05:09 GMT+0700 (ICT)][DDK]
+-Faculty: C510302-Current: 0-Benchmark: 18.5 
+
+
+ [Mon Aug 10 2015 14:05:09 GMT+0700 (ICT)][DDK]
+-Faculty: C510302LT-Current: 0-Benchmark: 15.5 
+
+
+ [Mon Aug 10 2015 14:05:09 GMT+0700 (ICT)][DDK]
+-Faculty: C510401-Current: 0-Benchmark: 19 
+
+
+ [Mon Aug 10 2015 14:05:09 GMT+0700 (ICT)][DDK]
+-Faculty: C510101-Current: 0-Benchmark: 18.25 
+
+
+ [Mon Aug 10 2015 14:05:09 GMT+0700 (ICT)][DDK]
+-Faculty: C510205-Current: 0-Benchmark: 13.5 
+
+
+ [Mon Aug 10 2015 14:05:09 GMT+0700 (ICT)][DDK]
+-Faculty: C510205LT-Current: 0-Benchmark: 15.5 
+
+
+ [Mon Aug 10 2015 14:05:09 GMT+0700 (ICT)][DDK]
+-Faculty: C510201-Current: 0-Benchmark: 12.25 
+
+
+ [Mon Aug 10 2015 14:05:09 GMT+0700 (ICT)][DDK]
+-Faculty: C510201LT-Current: 0-Benchmark: 15.5 
+
+
+ [Mon Aug 10 2015 14:05:09 GMT+0700 (ICT)][DDK]
+-Faculty: C480201-Current: 0-Benchmark: 13 
+
+
+ [Mon Aug 10 2015 14:05:09 GMT+0700 (ICT)][DDK]
+-Faculty: C480201LT-Current: 0-Benchmark: 12.25 
+
+
+ [Mon Aug 10 2015 14:05:09 GMT+0700 (ICT)][DDK]
+-Faculty: C510406-Current: 0-Benchmark: 14.25 
+
+
+ [Mon Aug 10 2015 14:05:09 GMT+0700 (ICT)][DDK]
+-Faculty: C510203-Current: 0-Benchmark: 12.5 
+
+
+ [Mon Aug 10 2015 14:05:09 GMT+0700 (ICT)][DDK]
+-Faculty: C510104-Current: 0-Benchmark: 15.25 
+
+
+ [Mon Aug 10 2015 14:05:09 GMT+0700 (ICT)][DDK]
+-Faculty: C510104LT-Current: 0-Benchmark: 15.5 
+
+
+ [Mon Aug 10 2015 14:05:09 GMT+0700 (ICT)][DDK]
+-Faculty: C510206-Current: 0-Benchmark: 16.5 
+
+
+ [Mon Aug 10 2015 14:05:09 GMT+0700 (ICT)][DDK]
+-Faculty: C510103-Current: 0-Benchmark: 14 
+
+
+ [Mon Aug 10 2015 14:05:09 GMT+0700 (ICT)][DDK]
+-Faculty: C510103LT-Current: 0-Benchmark: 0 
+
+
+ [Mon Aug 10 2015 14:05:09 GMT+0700 (ICT)][DDK]
+-Faculty: C420201-Current: 0-Benchmark: 11 
+
+
+ [Mon Aug 10 2015 14:05:09 GMT+0700 (ICT)][DDK]
+-Faculty: C540102-Current: 0-Benchmark: 16 
+
+
+ [Mon Aug 10 2015 14:05:09 GMT+0700 (ICT)][DDK]
+-Faculty: C340405-Current: 0-Benchmark: 18.5 
+
+
+ [Mon Aug 10 2015 14:05:09 GMT+0700 (ICT)][DDK]
+-Faculty: C580302-Current: 0-Benchmark: 9.25 
+
+
+ [Mon Aug 10 2015 14:05:09 GMT+0700 (ICT)][DDK]
+-Faculty: C510304-Current: 0-Benchmark: 15.5 
+
+
+ [Mon Aug 10 2015 14:05:09 GMT+0700 (ICT)][DDK]
+-Faculty: C480201-Current: 0-Benchmark: 13 
+
+
+ [Mon Aug 10 2015 14:05:09 GMT+0700 (ICT)][DDK]
+-Faculty: C480201LT-Current: 0-Benchmark: 12.25 
+
+
+ [Mon Aug 10 2015 14:05:09 GMT+0700 (ICT)][DDK]
+-Faculty: C480104-Current: 0-Benchmark: 15.5 
+
+
+ [Mon Aug 10 2015 14:05:09 GMT+0700 (ICT)][DDK]
+-Faculty: C340301-Current: 0-Benchmark: 16 
+
+
+ [Mon Aug 10 2015 14:05:09 GMT+0700 (ICT)][DDK]
+-Faculty: C340301LT-Current: 0-Benchmark: 0 
+
+
+ [Mon Aug 10 2015 14:05:09 GMT+0700 (ICT)][DDK]
+-Faculty: C480101-Current: 0-Benchmark: 15.5 
+
+
+ [Mon Aug 10 2015 14:05:09 GMT+0700 (ICT)][DDK]
+-Faculty: C340115-Current: 0-Benchmark: 17.25 
+
+
+ [Mon Aug 10 2015 14:05:09 GMT+0700 (ICT)][DDK]
+-Faculty: C340101-Current: 0-Benchmark: 17.25 
+
+
+ [Mon Aug 10 2015 14:05:09 GMT+0700 (ICT)][DDK]
+-Faculty: C480202-Current: 0-Benchmark: 14.5 
+
+
+ [Mon Aug 10 2015 14:05:09 GMT+0700 (ICT)][DDK]
+-Faculty: C480102-Current: 0-Benchmark: 17.75 
+
+
+ [Mon Aug 10 2015 14:05:09 GMT+0700 (ICT)][DDK]
+-Faculty: C420201KT-Current: 0-Benchmark: 0 
+
+
+ [Mon Aug 10 2015 14:05:09 GMT+0700 (ICT)][DDK]
+-Faculty: D480201KT-Current: 0-Benchmark: 0 
+
+
+ [Mon Aug 10 2015 14:05:09 GMT+0700 (ICT)][DDK]
+-Faculty: C510102KT-Current: 0-Benchmark: 0 
+
+
+ [Mon Aug 10 2015 14:05:09 GMT+0700 (ICT)][DDK]
+-Faculty: D140202KT-Current: 0-Benchmark: 0 
+
+
+ [Mon Aug 10 2015 14:05:09 GMT+0700 (ICT)][DDK]
+-Faculty: C340301KT-Current: 0-Benchmark: 0 
+
+
+ [Mon Aug 10 2015 14:05:09 GMT+0700 (ICT)][DDK]
+-Faculty: D340301KT-Current: 0-Benchmark: 0 
+
+
+ [Mon Aug 10 2015 14:05:09 GMT+0700 (ICT)][DDK]
+-Faculty: D620114KT-Current: 0-Benchmark: 0 
+
+
+ [Mon Aug 10 2015 14:05:09 GMT+0700 (ICT)][DDK]
+-Faculty: C340121KT-Current: 0-Benchmark: 0 
+
+
+ [Mon Aug 10 2015 14:05:09 GMT+0700 (ICT)][DDK]
+-Faculty: D340121KT-Current: 0-Benchmark: 0 
+
+
+ [Mon Aug 10 2015 14:05:09 GMT+0700 (ICT)][DDK]
+-Faculty: D580301KT-Current: 0-Benchmark: 0 
+
+
+ [Mon Aug 10 2015 14:05:09 GMT+0700 (ICT)][DDK]
+-Faculty: D520201KT-Current: 0-Benchmark: 0 
+
+
+ [Mon Aug 10 2015 14:05:09 GMT+0700 (ICT)][DDK]
+-Faculty: D580205KT-Current: 0-Benchmark: 0 
+
+
+ [Mon Aug 10 2015 14:05:09 GMT+0700 (ICT)][DDK]
+-Faculty: D380107KT-Current: 0-Benchmark: 0 
+
+
+ [Mon Aug 10 2015 14:05:09 GMT+0700 (ICT)][DDK]
+-Faculty: D340103KT-Current: 0-Benchmark: 0 
+
+
+ [Mon Aug 10 2015 14:05:09 GMT+0700 (ICT)][DDK]
+-Faculty: D340101KT-Current: 0-Benchmark: 0 
+
+
+ [Mon Aug 10 2015 14:05:09 GMT+0700 (ICT)][DDK]
+-Faculty: D140209KT-Current: 0-Benchmark: 0 
+
+
+ [Mon Aug 10 2015 14:05:09 GMT+0700 (ICT)][DDK]
+-Faculty: D340201KT-Current: 0-Benchmark: 0 
+
+
+ [Mon Aug 10 2015 14:05:09 GMT+0700 (ICT)][DDK]
+-Faculty: D720501-Current: 0-Benchmark: 15.25 
+
+
+ [Mon Aug 10 2015 14:05:09 GMT+0700 (ICT)][DDK]
+-Faculty: D720101-Current: 0-Benchmark: 26 
+
+
+ [Mon Aug 10 2015 14:05:09 GMT+0700 (ICT)][DDK]
+Final School check - faculty_final - 104faculty_choice - 159candidate_all - 10414candidates - 9799
+
+ [Mon Aug 10 2015 14:05:09 GMT+0700 (ICT)][DDK]
+- create matriculate list for School
+
+ [Mon Aug 10 2015 14:05:09 GMT+0700 (ICT)][DDK]
+-Faculty: D510202-More: 1-Benchmark: 17 
+
+
+ [Mon Aug 10 2015 14:05:09 GMT+0700 (ICT)][DDK]
+-Faculty: D510105-More: 2-Benchmark: 16 
+
+
+ [Mon Aug 10 2015 14:05:09 GMT+0700 (ICT)][DDK]
+-Faculty: D520201LT-More: 1-Benchmark: 18.25 
+
+
+ [Mon Aug 10 2015 14:05:09 GMT+0700 (ICT)][DDK]
+-Faculty: D520301-More: 1-Benchmark: 16 
+
+
+ [Mon Aug 10 2015 14:05:09 GMT+0700 (ICT)][DDK]
+-Faculty: D520122-More: 3-Benchmark: 16 
+
+
+ [Mon Aug 10 2015 14:05:09 GMT+0700 (ICT)][DDK]
+-Faculty: D520115-More: 4-Benchmark: 16 
+
+
+ [Mon Aug 10 2015 14:05:09 GMT+0700 (ICT)][DDK]
+-Faculty: D340301LT-More: 1-Benchmark: 19 
+
+
+ [Mon Aug 10 2015 14:05:09 GMT+0700 (ICT)][DDK]
+-Faculty: D340121LT-More: 1-Benchmark: 16.75 
+
+
+ [Mon Aug 10 2015 14:05:09 GMT+0700 (ICT)][DDK]
+-Faculty: D340201LT-More: 1-Benchmark: 19 
+
+
+ [Mon Aug 10 2015 14:05:09 GMT+0700 (ICT)][DDK]
+-Faculty: D140202-More: 9-Benchmark: 10 
+
+
+ [Mon Aug 10 2015 14:05:09 GMT+0700 (ICT)][DDK]
+-Faculty: D140219-More: 1-Benchmark: 14.75 
+
+
+ [Mon Aug 10 2015 14:05:09 GMT+0700 (ICT)][DDK]
+-Faculty: D220213-More: 37-Benchmark: 20.25 
+
+
+ [Mon Aug 10 2015 14:05:09 GMT+0700 (ICT)][DDK]
+-Faculty: D220201-More: 80-Benchmark: 14.25 
+
+
+ [Mon Aug 10 2015 14:05:09 GMT+0700 (ICT)][DDK]
+-Faculty: D220210-More: 41-Benchmark: 19.75 
+
+
+ [Mon Aug 10 2015 14:05:09 GMT+0700 (ICT)][DDK]
+-Faculty: D220202-More: 32-Benchmark: 18.75 
+
+
+ [Mon Aug 10 2015 14:05:09 GMT+0700 (ICT)][DDK]
+-Faculty: D220209-More: 53-Benchmark: 16.75 
+
+
+ [Mon Aug 10 2015 14:05:09 GMT+0700 (ICT)][DDK]
+-Faculty: D220203-More: 36-Benchmark: 19.25 
+
+
+ [Mon Aug 10 2015 14:05:09 GMT+0700 (ICT)][DDK]
+-Faculty: D220204-More: 51-Benchmark: 19 
+
+
+ [Mon Aug 10 2015 14:05:09 GMT+0700 (ICT)][DDK]
+-Faculty: D220212-More: 71-Benchmark: 17.75 
+
+
+ [Mon Aug 10 2015 14:05:09 GMT+0700 (ICT)][DDK]
+-Faculty: D140231-More: 5-Benchmark: 15 
+
+
+ [Mon Aug 10 2015 14:05:09 GMT+0700 (ICT)][DDK]
+-Faculty: D140234-More: 17-Benchmark: 19.25 
+
+
+ [Mon Aug 10 2015 14:05:09 GMT+0700 (ICT)][DDK]
+-Faculty: D140233-More: 19-Benchmark: 19.75 
+
+
+ [Mon Aug 10 2015 14:05:09 GMT+0700 (ICT)][DDK]
+
+- remove candidates same for School
+
+ [Mon Aug 10 2015 14:06:22 GMT+0700 (ICT)][DDK]
+-Faculty: D420201-Current: 0-Benchmark: 19 
+
+
+ [Mon Aug 10 2015 14:06:22 GMT+0700 (ICT)][DDK]
+-Faculty: D420201LT-Current: 0-Benchmark: 0 
+
+
+ [Mon Aug 10 2015 14:06:22 GMT+0700 (ICT)][DDK]
+-Faculty: D480201-Current: 0-Benchmark: 17.25 
+
+
+ [Mon Aug 10 2015 14:06:22 GMT+0700 (ICT)][DDK]
+-Faculty: D480201CLC1-Current: 0-Benchmark: 21.75 
+
+
+ [Mon Aug 10 2015 14:06:22 GMT+0700 (ICT)][DDK]
+-Faculty: D480201CLC2-Current: 0-Benchmark: 20.75 
+
+
+ [Mon Aug 10 2015 14:06:22 GMT+0700 (ICT)][DDK]
+-Faculty: D480201LT-Current: 0-Benchmark: 15.5 
+
+
+ [Mon Aug 10 2015 14:06:22 GMT+0700 (ICT)][DDK]
+-Faculty: D540101-Current: 0-Benchmark: 19.75 
+
+
+ [Mon Aug 10 2015 14:06:22 GMT+0700 (ICT)][DDK]
+-Faculty: D540101LT-Current: 0-Benchmark: 19.75 
+
+
+ [Mon Aug 10 2015 14:06:22 GMT+0700 (ICT)][DDK]
+-Faculty: D510202-Current: 1-Benchmark: 17 
+
+
+ [Mon Aug 10 2015 14:06:22 GMT+0700 (ICT)][DDK]
+-Faculty: D510202LT-Current: 0-Benchmark: 16.75 
+
+
+ [Mon Aug 10 2015 14:06:22 GMT+0700 (ICT)][DDK]
+-Faculty: D510105-Current: 2-Benchmark: 16 
+
+
+ [Mon Aug 10 2015 14:06:22 GMT+0700 (ICT)][DDK]
+-Faculty: PFIEV-Current: 0-Benchmark: 42.75 
+
+
+ [Mon Aug 10 2015 14:06:22 GMT+0700 (ICT)][DDK]
+-Faculty: D905206-Current: 0-Benchmark: 30.25 
+
+
+ [Mon Aug 10 2015 14:06:22 GMT+0700 (ICT)][DDK]
+-Faculty: D905216-Current: 0-Benchmark: 24.5 
+
+
+ [Mon Aug 10 2015 14:06:22 GMT+0700 (ICT)][DDK]
+-Faculty: D580102-Current: 0-Benchmark: 22.75 
+
+
+ [Mon Aug 10 2015 14:06:22 GMT+0700 (ICT)][DDK]
+-Faculty: D580301-Current: 0-Benchmark: 16.5 
+
+
+ [Mon Aug 10 2015 14:06:22 GMT+0700 (ICT)][DDK]
+-Faculty: D580205-Current: 0-Benchmark: 17 
+
+
+ [Mon Aug 10 2015 14:06:22 GMT+0700 (ICT)][DDK]
+-Faculty: D580205CLC-Current: 0-Benchmark: 20.25 
+
+
+ [Mon Aug 10 2015 14:06:22 GMT+0700 (ICT)][DDK]
+-Faculty: D580205LT-Current: 0-Benchmark: 18.75 
+
+
+ [Mon Aug 10 2015 14:06:22 GMT+0700 (ICT)][DDK]
+-Faculty: D520201CLC-Current: 0-Benchmark: 22.25 
+
+
+ [Mon Aug 10 2015 14:06:22 GMT+0700 (ICT)][DDK]
+-Faculty: D520216-Current: 0-Benchmark: 18.5 
+
+
+ [Mon Aug 10 2015 14:06:22 GMT+0700 (ICT)][DDK]
+-Faculty: D520216CLC-Current: 0-Benchmark: 20.75 
+
+
+ [Mon Aug 10 2015 14:06:22 GMT+0700 (ICT)][DDK]
+-Faculty: D520201-Current: 0-Benchmark: 17 
+
+
+ [Mon Aug 10 2015 14:06:22 GMT+0700 (ICT)][DDK]
+-Faculty: D520201LT-Current: 0-Benchmark: 18.25 
+
+
+ [Mon Aug 10 2015 14:06:22 GMT+0700 (ICT)][DDK]
+-Faculty: D520301-Current: 1-Benchmark: 16 
+
+
+ [Mon Aug 10 2015 14:06:22 GMT+0700 (ICT)][DDK]
+-Faculty: D520301LT-Current: 0-Benchmark: 0 
+
+
+ [Mon Aug 10 2015 14:06:22 GMT+0700 (ICT)][DDK]
+-Faculty: D520122-Current: 3-Benchmark: 17.5 
+
+
+ [Mon Aug 10 2015 14:06:22 GMT+0700 (ICT)][DDK]
+-Faculty: D580202-Current: 0-Benchmark: 18.25 
+
+
+ [Mon Aug 10 2015 14:06:22 GMT+0700 (ICT)][DDK]
+-Faculty: D580201-Current: 0-Benchmark: 18.75 
+
+
+ [Mon Aug 10 2015 14:06:22 GMT+0700 (ICT)][DDK]
+-Faculty: D580201LT-Current: 0-Benchmark: 21.5 
+
+
+ [Mon Aug 10 2015 14:06:22 GMT+0700 (ICT)][DDK]
+-Faculty: D520114-Current: 0-Benchmark: 19 
+
+
+ [Mon Aug 10 2015 14:06:22 GMT+0700 (ICT)][DDK]
+-Faculty: D520114LT-Current: 0-Benchmark: 16.5 
+
+
+ [Mon Aug 10 2015 14:06:22 GMT+0700 (ICT)][DDK]
+-Faculty: D520103-Current: 0-Benchmark: 19 
+
+
+ [Mon Aug 10 2015 14:06:22 GMT+0700 (ICT)][DDK]
+-Faculty: D520103LT-Current: 0-Benchmark: 17 
+
+
+ [Mon Aug 10 2015 14:06:22 GMT+0700 (ICT)][DDK]
+-Faculty: D520604-Current: 0-Benchmark: 19 
+
+
+ [Mon Aug 10 2015 14:06:22 GMT+0700 (ICT)][DDK]
+-Faculty: D520209-Current: 0-Benchmark: 17.75 
+
+
+ [Mon Aug 10 2015 14:06:22 GMT+0700 (ICT)][DDK]
+-Faculty: D520209LT-Current: 0-Benchmark: 21.25 
+
+
+ [Mon Aug 10 2015 14:06:22 GMT+0700 (ICT)][DDK]
+-Faculty: D520320-Current: 0-Benchmark: 17.75 
+
+
+ [Mon Aug 10 2015 14:06:22 GMT+0700 (ICT)][DDK]
+-Faculty: D520320LT-Current: 0-Benchmark: 18 
+
+
+ [Mon Aug 10 2015 14:06:22 GMT+0700 (ICT)][DDK]
+-Faculty: D520115-Current: 4-Benchmark: 17.5 
+
+
+ [Mon Aug 10 2015 14:06:22 GMT+0700 (ICT)][DDK]
+-Faculty: D520115LT-Current: 0-Benchmark: 19.75 
+
+
+ [Mon Aug 10 2015 14:06:22 GMT+0700 (ICT)][DDK]
+-Faculty: D580208-Current: 0-Benchmark: 17.75 
+
+
+ [Mon Aug 10 2015 14:06:22 GMT+0700 (ICT)][DDK]
+-Faculty: D510601-Current: 0-Benchmark: 17.75 
+
+
+ [Mon Aug 10 2015 14:06:22 GMT+0700 (ICT)][DDK]
+-Faculty: D850101-Current: 0-Benchmark: 17.75 
+
+
+ [Mon Aug 10 2015 14:06:22 GMT+0700 (ICT)][DDK]
+-Faculty: D140214-Current: 0-Benchmark: 17.5 
+
+
+ [Mon Aug 10 2015 14:06:22 GMT+0700 (ICT)][DDK]
+-Faculty: D340405-Current: 0-Benchmark: 13.5 
+
+
+ [Mon Aug 10 2015 14:06:22 GMT+0700 (ICT)][DDK]
+-Faculty: D340405LT-Current: 0-Benchmark: 16 
+
+
+ [Mon Aug 10 2015 14:06:22 GMT+0700 (ICT)][DDK]
+-Faculty: D340301-Current: 0-Benchmark: 19 
+
+
+ [Mon Aug 10 2015 14:06:22 GMT+0700 (ICT)][DDK]
+-Faculty: D340301LT-Current: 1-Benchmark: 19 
+
+
+ [Mon Aug 10 2015 14:06:22 GMT+0700 (ICT)][DDK]
+-Faculty: D340302-Current: 0-Benchmark: 19 
+
+
+ [Mon Aug 10 2015 14:06:22 GMT+0700 (ICT)][DDK]
+-Faculty: D340120-Current: 0-Benchmark: 19.75 
+
+
+ [Mon Aug 10 2015 14:06:22 GMT+0700 (ICT)][DDK]
+-Faculty: D340121-Current: 0-Benchmark: 18.5 
+
+
+ [Mon Aug 10 2015 14:06:22 GMT+0700 (ICT)][DDK]
+-Faculty: D340121LT-Current: 1-Benchmark: 16.75 
+
+
+ [Mon Aug 10 2015 14:06:22 GMT+0700 (ICT)][DDK]
+-Faculty: D310101-Current: 0-Benchmark: 19 
+
+
+ [Mon Aug 10 2015 14:06:22 GMT+0700 (ICT)][DDK]
+-Faculty: D380101-Current: 0-Benchmark: 18 
+
+
+ [Mon Aug 10 2015 14:06:22 GMT+0700 (ICT)][DDK]
+-Faculty: D380107-Current: 0-Benchmark: 18.5 
+
+
+ [Mon Aug 10 2015 14:06:22 GMT+0700 (ICT)][DDK]
+-Faculty: D340115-Current: 0-Benchmark: 17.75 
+
+
+ [Mon Aug 10 2015 14:06:22 GMT+0700 (ICT)][DDK]
+-Faculty: D310205-Current: 0-Benchmark: 15.25 
+
+
+ [Mon Aug 10 2015 14:06:22 GMT+0700 (ICT)][DDK]
+-Faculty: D340103-Current: 0-Benchmark: 18.5 
+
+
+ [Mon Aug 10 2015 14:06:22 GMT+0700 (ICT)][DDK]
+-Faculty: D340103LT-Current: 0-Benchmark: 16.75 
+
+
+ [Mon Aug 10 2015 14:06:22 GMT+0700 (ICT)][DDK]
+-Faculty: D340101-Current: 0-Benchmark: 18.75 
+
+
+ [Mon Aug 10 2015 14:06:22 GMT+0700 (ICT)][DDK]
+-Faculty: D340107-Current: 0-Benchmark: 17.5 
+
+
+ [Mon Aug 10 2015 14:06:22 GMT+0700 (ICT)][DDK]
+-Faculty: D340404-Current: 0-Benchmark: 18.25 
+
+
+ [Mon Aug 10 2015 14:06:22 GMT+0700 (ICT)][DDK]
+-Faculty: D340201-Current: 0-Benchmark: 18.75 
+
+
+ [Mon Aug 10 2015 14:06:22 GMT+0700 (ICT)][DDK]
+-Faculty: D340201LT-Current: 1-Benchmark: 19 
+
+
+ [Mon Aug 10 2015 14:06:22 GMT+0700 (ICT)][DDK]
+-Faculty: D460201-Current: 0-Benchmark: 17.75 
+
+
+ [Mon Aug 10 2015 14:06:22 GMT+0700 (ICT)][DDK]
+-Faculty: D320101-Current: 0-Benchmark: 15.75 
+
+
+ [Mon Aug 10 2015 14:06:22 GMT+0700 (ICT)][DDK]
+-Faculty: D420201-Current: 0-Benchmark: 19 
+
+
+ [Mon Aug 10 2015 14:06:22 GMT+0700 (ICT)][DDK]
+-Faculty: D480201-Current: 0-Benchmark: 17.25 
+
+
+ [Mon Aug 10 2015 14:06:22 GMT+0700 (ICT)][DDK]
+-Faculty: D760101-Current: 0-Benchmark: 14.5 
+
+
+ [Mon Aug 10 2015 14:06:22 GMT+0700 (ICT)][DDK]
+-Faculty: D310501-Current: 0-Benchmark: 15 
+
+
+ [Mon Aug 10 2015 14:06:22 GMT+0700 (ICT)][DDK]
+-Faculty: D440217-Current: 0-Benchmark: 19 
+
+
+ [Mon Aug 10 2015 14:06:22 GMT+0700 (ICT)][DDK]
+-Faculty: D140205-Current: 0-Benchmark: 14.5 
+
+
+ [Mon Aug 10 2015 14:06:22 GMT+0700 (ICT)][DDK]
+-Faculty: D140201-Current: 0-Benchmark: 0 
+
+
+ [Mon Aug 10 2015 14:06:22 GMT+0700 (ICT)][DDK]
+-Faculty: D140202-Current: 9-Benchmark: 13.25 
+
+
+ [Mon Aug 10 2015 14:06:22 GMT+0700 (ICT)][DDK]
+-Faculty: D440112-Current: 0-Benchmark: 14.5 
+
+
+ [Mon Aug 10 2015 14:06:22 GMT+0700 (ICT)][DDK]
+-Faculty: D440301-Current: 0-Benchmark: 16.75 
+
+
+ [Mon Aug 10 2015 14:06:22 GMT+0700 (ICT)][DDK]
+-Faculty: D220310-Current: 0-Benchmark: 19.5 
+
+
+ [Mon Aug 10 2015 14:06:22 GMT+0700 (ICT)][DDK]
+-Faculty: D850101-Current: 0-Benchmark: 17.75 
+
+
+ [Mon Aug 10 2015 14:06:22 GMT+0700 (ICT)][DDK]
+-Faculty: C140221-Current: 0-Benchmark: 40.75 
+
+
+ [Mon Aug 10 2015 14:06:22 GMT+0700 (ICT)][DDK]
+-Faculty: D140219-Current: 1-Benchmark: 14.75 
+
+
+ [Mon Aug 10 2015 14:06:22 GMT+0700 (ICT)][DDK]
+-Faculty: D140212-Current: 0-Benchmark: 20 
+
+
+ [Mon Aug 10 2015 14:06:22 GMT+0700 (ICT)][DDK]
+-Faculty: D140218-Current: 0-Benchmark: 14.5 
+
+
+ [Mon Aug 10 2015 14:06:22 GMT+0700 (ICT)][DDK]
+-Faculty: D140217-Current: 0-Benchmark: 13.75 
+
+
+ [Mon Aug 10 2015 14:06:22 GMT+0700 (ICT)][DDK]
+-Faculty: D140213-Current: 0-Benchmark: 14 
+
+
+ [Mon Aug 10 2015 14:06:22 GMT+0700 (ICT)][DDK]
+-Faculty: D140210-Current: 0-Benchmark: 16 
+
+
+ [Mon Aug 10 2015 14:06:22 GMT+0700 (ICT)][DDK]
+-Faculty: D140209-Current: 0-Benchmark: 19.25 
+
+
+ [Mon Aug 10 2015 14:06:22 GMT+0700 (ICT)][DDK]
+-Faculty: D140211-Current: 0-Benchmark: 19.25 
+
+
+ [Mon Aug 10 2015 14:06:22 GMT+0700 (ICT)][DDK]
+-Faculty: D310401-Current: 0-Benchmark: 15 
+
+
+ [Mon Aug 10 2015 14:06:22 GMT+0700 (ICT)][DDK]
+-Faculty: D460112-Current: 0-Benchmark: 15.75 
+
+
+ [Mon Aug 10 2015 14:06:22 GMT+0700 (ICT)][DDK]
+-Faculty: D440102-Current: 0-Benchmark: 16.75 
+
+
+ [Mon Aug 10 2015 14:06:22 GMT+0700 (ICT)][DDK]
+-Faculty: D220340-Current: 0-Benchmark: 14.5 
+
+
+ [Mon Aug 10 2015 14:06:22 GMT+0700 (ICT)][DDK]
+-Faculty: D220330-Current: 0-Benchmark: 15 
+
+
+ [Mon Aug 10 2015 14:06:22 GMT+0700 (ICT)][DDK]
+-Faculty: D220113-Current: 0-Benchmark: 14.5 
+
+
+ [Mon Aug 10 2015 14:06:22 GMT+0700 (ICT)][DDK]
+-Faculty: D220213-Current: 29-Benchmark: 22.25 
+
+
+ [Mon Aug 10 2015 14:06:22 GMT+0700 (ICT)][DDK]
+-Faculty: D220201-Current: 86-Benchmark: 20.25 
+
+
+ [Mon Aug 10 2015 14:06:22 GMT+0700 (ICT)][DDK]
+-Faculty: D220210-Current: 41-Benchmark: 22 
+
+
+ [Mon Aug 10 2015 14:06:22 GMT+0700 (ICT)][DDK]
+-Faculty: D220202-Current: 23-Benchmark: 20.25 
+
+
+ [Mon Aug 10 2015 14:06:22 GMT+0700 (ICT)][DDK]
+-Faculty: D220209-Current: 46-Benchmark: 20.75 
+
+
+ [Mon Aug 10 2015 14:06:22 GMT+0700 (ICT)][DDK]
+-Faculty: D220203-Current: 32-Benchmark: 21.25 
+
+
+ [Mon Aug 10 2015 14:06:22 GMT+0700 (ICT)][DDK]
+-Faculty: D220204-Current: 50-Benchmark: 21.75 
+
+
+ [Mon Aug 10 2015 14:06:22 GMT+0700 (ICT)][DDK]
+-Faculty: D220212-Current: 57-Benchmark: 21.5 
+
+
+ [Mon Aug 10 2015 14:06:22 GMT+0700 (ICT)][DDK]
+-Faculty: D140231-Current: 5-Benchmark: 16.75 
+
+
+ [Mon Aug 10 2015 14:06:22 GMT+0700 (ICT)][DDK]
+-Faculty: D140233-Current: 14-Benchmark: 21 
+
+
+ [Mon Aug 10 2015 14:06:22 GMT+0700 (ICT)][DDK]
+-Faculty: D140234-Current: 20-Benchmark: 20.75 
+
+
+ [Mon Aug 10 2015 14:06:22 GMT+0700 (ICT)][DDK]
+-Faculty: C510102-Current: 0-Benchmark: 12 
+
+
+ [Mon Aug 10 2015 14:06:22 GMT+0700 (ICT)][DDK]
+-Faculty: C510301-Current: 0-Benchmark: 19 
+
+
+ [Mon Aug 10 2015 14:06:22 GMT+0700 (ICT)][DDK]
+-Faculty: C510301LT-Current: 0-Benchmark: 16.25 
+
+
+ [Mon Aug 10 2015 14:06:22 GMT+0700 (ICT)][DDK]
+-Faculty: C510302-Current: 0-Benchmark: 18.5 
+
+
+ [Mon Aug 10 2015 14:06:22 GMT+0700 (ICT)][DDK]
+-Faculty: C510302LT-Current: 0-Benchmark: 15.5 
+
+
+ [Mon Aug 10 2015 14:06:22 GMT+0700 (ICT)][DDK]
+-Faculty: C510401-Current: 0-Benchmark: 19 
+
+
+ [Mon Aug 10 2015 14:06:22 GMT+0700 (ICT)][DDK]
+-Faculty: C510101-Current: 0-Benchmark: 18.25 
+
+
+ [Mon Aug 10 2015 14:06:22 GMT+0700 (ICT)][DDK]
+-Faculty: C510205-Current: 0-Benchmark: 13.5 
+
+
+ [Mon Aug 10 2015 14:06:22 GMT+0700 (ICT)][DDK]
+-Faculty: C510205LT-Current: 0-Benchmark: 15.5 
+
+
+ [Mon Aug 10 2015 14:06:22 GMT+0700 (ICT)][DDK]
+-Faculty: C510201-Current: 0-Benchmark: 12.25 
+
+
+ [Mon Aug 10 2015 14:06:22 GMT+0700 (ICT)][DDK]
+-Faculty: C510201LT-Current: 0-Benchmark: 15.5 
+
+
+ [Mon Aug 10 2015 14:06:22 GMT+0700 (ICT)][DDK]
+-Faculty: C480201-Current: 0-Benchmark: 13 
+
+
+ [Mon Aug 10 2015 14:06:22 GMT+0700 (ICT)][DDK]
+-Faculty: C480201LT-Current: 0-Benchmark: 12.25 
+
+
+ [Mon Aug 10 2015 14:06:22 GMT+0700 (ICT)][DDK]
+-Faculty: C510406-Current: 0-Benchmark: 14.25 
+
+
+ [Mon Aug 10 2015 14:06:22 GMT+0700 (ICT)][DDK]
+-Faculty: C510203-Current: 0-Benchmark: 12.5 
+
+
+ [Mon Aug 10 2015 14:06:22 GMT+0700 (ICT)][DDK]
+-Faculty: C510104-Current: 0-Benchmark: 15.25 
+
+
+ [Mon Aug 10 2015 14:06:22 GMT+0700 (ICT)][DDK]
+-Faculty: C510104LT-Current: 0-Benchmark: 15.5 
+
+
+ [Mon Aug 10 2015 14:06:22 GMT+0700 (ICT)][DDK]
+-Faculty: C510206-Current: 0-Benchmark: 16.5 
+
+
+ [Mon Aug 10 2015 14:06:22 GMT+0700 (ICT)][DDK]
+-Faculty: C510103-Current: 0-Benchmark: 14 
+
+
+ [Mon Aug 10 2015 14:06:22 GMT+0700 (ICT)][DDK]
+-Faculty: C510103LT-Current: 0-Benchmark: 0 
+
+
+ [Mon Aug 10 2015 14:06:22 GMT+0700 (ICT)][DDK]
+-Faculty: C420201-Current: 0-Benchmark: 11 
+
+
+ [Mon Aug 10 2015 14:06:22 GMT+0700 (ICT)][DDK]
+-Faculty: C540102-Current: 0-Benchmark: 16 
+
+
+ [Mon Aug 10 2015 14:06:22 GMT+0700 (ICT)][DDK]
+-Faculty: C340405-Current: 0-Benchmark: 18.5 
+
+
+ [Mon Aug 10 2015 14:06:22 GMT+0700 (ICT)][DDK]
+-Faculty: C580302-Current: 0-Benchmark: 9.25 
+
+
+ [Mon Aug 10 2015 14:06:22 GMT+0700 (ICT)][DDK]
+-Faculty: C510304-Current: 0-Benchmark: 15.5 
+
+
+ [Mon Aug 10 2015 14:06:22 GMT+0700 (ICT)][DDK]
+-Faculty: C480201-Current: 0-Benchmark: 13 
+
+
+ [Mon Aug 10 2015 14:06:22 GMT+0700 (ICT)][DDK]
+-Faculty: C480201LT-Current: 0-Benchmark: 12.25 
+
+
+ [Mon Aug 10 2015 14:06:22 GMT+0700 (ICT)][DDK]
+-Faculty: C480104-Current: 0-Benchmark: 15.5 
+
+
+ [Mon Aug 10 2015 14:06:22 GMT+0700 (ICT)][DDK]
+-Faculty: C340301-Current: 0-Benchmark: 16 
+
+
+ [Mon Aug 10 2015 14:06:22 GMT+0700 (ICT)][DDK]
+-Faculty: C340301LT-Current: 0-Benchmark: 0 
+
+
+ [Mon Aug 10 2015 14:06:22 GMT+0700 (ICT)][DDK]
+-Faculty: C480101-Current: 0-Benchmark: 15.5 
+
+
+ [Mon Aug 10 2015 14:06:22 GMT+0700 (ICT)][DDK]
+-Faculty: C340115-Current: 0-Benchmark: 17.25 
+
+
+ [Mon Aug 10 2015 14:06:22 GMT+0700 (ICT)][DDK]
+-Faculty: C340101-Current: 0-Benchmark: 17.25 
+
+
+ [Mon Aug 10 2015 14:06:22 GMT+0700 (ICT)][DDK]
+-Faculty: C480202-Current: 0-Benchmark: 14.5 
+
+
+ [Mon Aug 10 2015 14:06:22 GMT+0700 (ICT)][DDK]
+-Faculty: C480102-Current: 0-Benchmark: 17.75 
+
+
+ [Mon Aug 10 2015 14:06:22 GMT+0700 (ICT)][DDK]
+-Faculty: C420201KT-Current: 0-Benchmark: 0 
+
+
+ [Mon Aug 10 2015 14:06:22 GMT+0700 (ICT)][DDK]
+-Faculty: D480201KT-Current: 0-Benchmark: 0 
+
+
+ [Mon Aug 10 2015 14:06:22 GMT+0700 (ICT)][DDK]
+-Faculty: C510102KT-Current: 0-Benchmark: 0 
+
+
+ [Mon Aug 10 2015 14:06:22 GMT+0700 (ICT)][DDK]
+-Faculty: D140202KT-Current: 0-Benchmark: 0 
+
+
+ [Mon Aug 10 2015 14:06:22 GMT+0700 (ICT)][DDK]
+-Faculty: C340301KT-Current: 0-Benchmark: 0 
+
+
+ [Mon Aug 10 2015 14:06:22 GMT+0700 (ICT)][DDK]
+-Faculty: D340301KT-Current: 0-Benchmark: 0 
+
+
+ [Mon Aug 10 2015 14:06:22 GMT+0700 (ICT)][DDK]
+-Faculty: D620114KT-Current: 0-Benchmark: 0 
+
+
+ [Mon Aug 10 2015 14:06:22 GMT+0700 (ICT)][DDK]
+-Faculty: C340121KT-Current: 0-Benchmark: 0 
+
+
+ [Mon Aug 10 2015 14:06:22 GMT+0700 (ICT)][DDK]
+-Faculty: D340121KT-Current: 0-Benchmark: 0 
+
+
+ [Mon Aug 10 2015 14:06:22 GMT+0700 (ICT)][DDK]
+-Faculty: D580301KT-Current: 0-Benchmark: 0 
+
+
+ [Mon Aug 10 2015 14:06:22 GMT+0700 (ICT)][DDK]
+-Faculty: D520201KT-Current: 0-Benchmark: 0 
+
+
+ [Mon Aug 10 2015 14:06:22 GMT+0700 (ICT)][DDK]
+-Faculty: D580205KT-Current: 0-Benchmark: 0 
+
+
+ [Mon Aug 10 2015 14:06:22 GMT+0700 (ICT)][DDK]
+-Faculty: D380107KT-Current: 0-Benchmark: 0 
+
+
+ [Mon Aug 10 2015 14:06:22 GMT+0700 (ICT)][DDK]
+-Faculty: D340103KT-Current: 0-Benchmark: 0 
+
+
+ [Mon Aug 10 2015 14:06:22 GMT+0700 (ICT)][DDK]
+-Faculty: D340101KT-Current: 0-Benchmark: 0 
+
+
+ [Mon Aug 10 2015 14:06:22 GMT+0700 (ICT)][DDK]
+-Faculty: D140209KT-Current: 0-Benchmark: 0 
+
+
+ [Mon Aug 10 2015 14:06:22 GMT+0700 (ICT)][DDK]
+-Faculty: D340201KT-Current: 0-Benchmark: 0 
+
+
+ [Mon Aug 10 2015 14:06:22 GMT+0700 (ICT)][DDK]
+-Faculty: D720501-Current: 0-Benchmark: 15.25 
+
+
+ [Mon Aug 10 2015 14:06:22 GMT+0700 (ICT)][DDK]
+-Faculty: D720101-Current: 0-Benchmark: 26 
+
+
+ [Mon Aug 10 2015 14:06:22 GMT+0700 (ICT)][DDK]
+Final School check - faculty_final - 104faculty_choice - 159candidate_all - 10414candidates - 9839
+
+ [Mon Aug 10 2015 14:06:22 GMT+0700 (ICT)][DDK]
+- create matriculate list for School

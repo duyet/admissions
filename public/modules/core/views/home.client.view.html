@@ -1,13 +1,6 @@
 <section data-ng-controller="HomeController">
-	<div class="jumbotron text-center">
-		
-		<div class="row">
-			<p class="lead">
-				Chào mừng bạn đến với hệ thống truy vấn tuyển sinh
-			</p>
-			<p><i><small> Lưu ý: Tất cả các thông tin trên hệ thống chỉ mang tính chất tham khảo. Các thông tin được hệ thống "tự động tạo" ra với các dữ liệu đăng ký xét tuyển được các trường công bố, và được cập nhật liên tục. Hệ thống cung cấp miễn phí thông tin cho người dùng, nhằm người giúp dùng theo dõi tuyển sinh tiện lợi nhất trong đợt tuyển sinh Đại Học - Cao Đẳng 2014.</small></i></p>
-		</div>
-	</div>
+<section class="section">
+	<div class="container">
 	<form class="form-horizontal" data-ng-submit="query()">
 	<fieldset>
 	  <div class="form-group">
@@ -44,26 +37,30 @@
 	  <p class="text-center"><button type="submit" class="btn btn-primary">Tìm</button></p>
 	  </fieldset>
 	</form>
+	</div>
+</section>
+<section class="section">
+<div class="container">
 <div class="panel panel-default" data-ng-repeat="school in schools" data-ng-href="#!/schools/{{school._id}}">
           <div class="panel-heading">
           	<h4>{{school.name}}</h4>
           	<p>          		
-          		<a class="btn btn-default" role="button">
+          		<a class="btn btn-success" role="button">
           			Điểm sàn <span class="badge">{{school.smallest_benchmark}} - {{school.largest_benchmark}}</span>
           		</a>
-          		<a class="btn btn-default" role="button">
+          		<a class="btn btn-success" role="button">
           			Trúng tuyển <span class="badge">{{school.matriculated}}/{{school.quota}}</span>
           		</a>
-          		<a class="btn btn-default" role="button">
+          		<a class="btn btn-success" role="button">
           			Còn lại <span class="badge">{{school.quota - school.matriculated}}/{{school.quota}}</span>
           		</a>
-          		<a class="btn btn-default" role="button">
+          		<a class="btn btn-success" role="button">
           			Chỉ tiêu <span class="badge">{{school.quota}}</span>
           		</a>
-          		<a class="btn btn-default" role="button">
+          		<a class="btn btn-success" role="button">
           			Hồ sơ <span class="badge">{{school.resume}}</span>
           		</a>
-          		<a class="btn btn-default" role="button">
+          		<a class="btn btn-success" role="button">
           			Thí sinh <span class="badge">{{school.candidate}}</span>
           		</a>
           		<a class="btn btn-info" role="button" ng-click="view_school(school)">
@@ -140,4 +137,6 @@
 		    </div>
           </div>
         </div>
+       </div>
+</section>
 </section>

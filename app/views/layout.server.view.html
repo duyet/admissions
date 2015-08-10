@@ -41,16 +41,25 @@
 	<!--[if lt IE 9]>
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
+	<link href="http://fonts.googleapis.com/css?family=Montserrat:400,700&amp;subset=latin,vietnamese" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic&amp;subset=latin,vietnamese" rel="stylesheet" type="text/css">
 </head>
 
-<body class="ng-cloak">
-	<header data-ng-include="'/modules/core/views/header.client.view.html'" class="navbar navbar-fixed-top navbar-inverse"></header>
-	<section class="content">
-		<section class="container">
+<body class="ng-cloak index" id="page-top"><!--class="navbar navbar-fixed-top navbar-inverse"-->
+	<div data-ng-include="'/modules/core/views/header.client.view.html'" ></div>
+	<!-- <section class="content"> -->
+		<!-- <section class="container"> -->
 			{% block content %}{% endblock %}
-		</section>
-	</section>
+		<!-- </section> -->
+	<!-- </section> -->
+	<section class="section">
+<div class="container">
+<p class="skills"><i><small> Lưu ý: Tất cả các thông tin trên hệ thống chỉ mang tính chất tham khảo. Các thông tin được hệ thống "tự động tạo" ra với các dữ liệu đăng ký xét tuyển được các trường công bố, và được cập nhật liên tục. Hệ thống cung cấp miễn phí thông tin cho người dùng, nhằm người giúp dùng theo dõi tuyển sinh tiện lợi nhất trong đợt tuyển sinh Đại Học - Cao Đẳng 2015.</small></i></p>
+</div>
+</section>
 
+	
+	<footer data-ng-include="'/modules/core/views/footer.client.view.html'" class="text-center"></footer>
 	<!--Embedding The User Object-->
 	<script type="text/javascript">
 		var user = {{ user | json | safe }};

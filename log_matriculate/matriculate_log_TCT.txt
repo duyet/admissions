@@ -1,0 +1,17 @@
+
+
+ [Mon Aug 10 2015 15:16:14 GMT+0700 (ICT)][TCT]
+- Candidate: 9785
+
+ [Mon Aug 10 2015 15:16:14 GMT+0700 (ICT)][TCT]
+- create matriculate list for School
+
+ [Mon Aug 10 2015 15:16:22 GMT+0700 (ICT)][TCT]
+
+- remove candidates same for School
+
+ [Mon Aug 10 2015 15:16:22 GMT+0700 (ICT)][TCT]
+Final School check - faculty_final - 0faculty_choice - 0candidate_all - 9785candidates - 0
+
+ [Mon Aug 10 2015 15:16:22 GMT+0700 (ICT)][TCT]
+- Final School [TCT]

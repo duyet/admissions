@@ -64,7 +64,19 @@ var FacultySchema = new Schema({
 		trim: true
 	},
 	matriculate_list: [Schema.Types.Mixed],
+	matriculate:{
+		type: Number,
+		default: 0,
+		required: 'Please fill Faculty quota',
+		trim: true
+	},
 	candidate_apply: [Schema.Types.Mixed],
+	candidate:{
+		type: Number,
+		default: 0,
+		required: 'Please fill Faculty quota',
+		trim: true
+	},
 	// {
 	// 	type: Number,
 	// 	default: 0,
@@ -84,10 +96,10 @@ var FacultySchema = new Schema({
 		default: Date.now
 	},
 
-	user: {
-		type: Schema.ObjectId,
-		ref: 'User'
-	}
+	// user: {
+	// 	type: Schema.ObjectId,
+	// 	ref: 'User'
+	// }
 });
 
 mongoose.model('Faculty', FacultySchema);

@@ -14,6 +14,10 @@ module.exports = function(app) {
 		.all(apis.domatriculate);
 	app.route('/apis/viewschool')
 		.all(apis.viewschool);
+	app.route('/apis/viewfaculty')
+		.all(apis.viewfaculty);
+	app.route('/apis/findcandidates')
+		.all(apis.findcandidates);
 		
 //users.requiresLogin,
 	// app.route('/apis/:apiId')

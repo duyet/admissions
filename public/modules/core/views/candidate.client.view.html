@@ -1,0 +1,43 @@
+<section data-ng-controller="SchoolController" data-ng-init="findcandidates()">
+    <section class="section">
+        <div class="container">
+            <div class="page-header">
+                <h1>Hồ Sơ</h1>
+            </div>
+            
+            <div class="table-responsive">
+                <table class="table table-hover table-striped">
+                  <thead>
+                    <tr>
+                    <th>#</th>
+                    <th>Tên</th>
+                    <th>Số báo danh</th>
+                    <th>Trường</th>
+                    <th>Ngành</th>
+                    <th>Tổ hợp môn</th>
+                    <th>Ưu tiên</th>
+                    <th>Tổng điểm</th>              
+                    </tr>
+                  </thead>
+                  <tbody >
+
+                    <tr data-ng-repeat="candidate in candidates">
+                      <td scope="row">{{$index+1}}</td>
+                      <td>{{candidate.student_name}}</td>
+                      <td>{{candidate.student_id}}</td>
+                      <td>{{candidate.school_code}}</td>
+                      <td>{{candidate.faculty}}</td>
+                      <td>{{candidate.subject_group}}</td>
+                      <td>{{candidate.score_priority}}</td>
+                      <td>{{candidate.score_sum}}</td>                  
+                    </tr>
+                    
+                  </tbody>
+                </table>
+            </div>
+            <div class="alert alert-warning text-center" data-ng-hide="!schools.$resolved || schools.length">
+            	Không có thông tin Thí sinh!
+            </div>
+        <div>
+    </section>
+</section>

@@ -313,6 +313,68 @@ exports.viewschool = function(req, res) {
 	}
 	//school
 }
+exports.viewfaculty = function(req, res) {
+	if(_.has(req.body, 'school')){
+		Faculty
+		.find({school_code : req.body.school},{candidate_apply:0, candidate_check: 0, school_name : 0})
+		.exec(function(err, faculties) {
+			if (err) {
+				res.jsonp({
+					result:false, 
+					message:err.toString()
+				});
+			} else {
+				for(var x_index in faculties){
+					faculties[x_index].matriculate = _.size(faculties[x_index].matriculate_list);//.length
+					faculties[x_index].candidate = _.size(faculties[x_index].candidate_apply);//.length
+				}
+				res.jsonp({
+					result:true, 
+					record: faculties,
+					message:''
+				});
+			}
+		});
+	}else{
+		res.jsonp({
+			result:false, 
+			message:'Quá trình xử lý có một vấn đề. Vui lòng thử lại sau!'
+		});
+	}
+	//school
+}
+exports.findcandidates = function(req, res) {
+	//if(_.has(req.body, 'school')){
+		Candidate
+		.find({'$and' : [{faculty_code:{'$ne' : null}},{faculty_code:{'$ne' : ""}}]},{score_1:0, score_2: 0, score_3 : 0})
+		.limit(50)
+		.sort('-score_sum')
+		.exec(function(err, faculties) {
+			if (err) {
+				res.jsonp({
+					result:false, 
+					message:err.toString()
+				});
+			} else {
+				// for(var x_index in faculties){
+				// 	faculties[x_index].matriculate = _.size(faculties[x_index].matriculate_list);//.length
+				// 	faculties[x_index].candidate = _.size(faculties[x_index].candidate_apply);//.length
+				// }
+				res.jsonp({
+					result:true, 
+					record: faculties,
+					message:''
+				});
+			}
+		});
+	// }else{
+	// 	res.jsonp({
+	// 		result:false, 
+	// 		message:'Quá trình xử lý có một vấn đề. Vui lòng thử lại sau!'
+	// 	});
+	// }
+	//school
+}
 exports.matriculate = function(req, res) {
 	var school_code = 'QSC';
 	Candidate.aggregate( [ 
@@ -516,7 +578,7 @@ var matriculate = {
 					_this.remove_candidates_same(this_school.school);	
 				}else{
 					_this.save_to_database(this_school.school);	
-					// _this.remove_candidates_same(this_school.school);	
+					//_this.remove_candidates_same(this_school.school);	
 				}				
 			}
 		});

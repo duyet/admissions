@@ -1,0 +1,540 @@
+Mon Aug 10 2015 16:51:36 GMT+0700 (ICT) 
+
+
+ [Mon Aug 10 2015 16:51:36 GMT+0700 (ICT)][QSC]
+- init matriculate
+
+ [Mon Aug 10 2015 16:51:36 GMT+0700 (ICT)][QSC]
+- init init data faculty [QSC]
+
+ [Mon Aug 10 2015 16:51:36 GMT+0700 (ICT)][QSC]
+- Start School [QSC]
+
+ [Mon Aug 10 2015 16:51:39 GMT+0700 (ICT)][QSC]
+- Candidate: 641
+
+ [Mon Aug 10 2015 16:51:39 GMT+0700 (ICT)][QSC]
+- create matriculate list for School
+
+ [Mon Aug 10 2015 16:51:40 GMT+0700 (ICT)][QSC]
+-Faculty: D480103_CLC-More: 80-Benchmark: 19.5 
+
+
+ [Mon Aug 10 2015 16:51:40 GMT+0700 (ICT)][QSC]
+-Faculty: D480104_TMDT-More: 50-Benchmark: 18.5 
+
+
+ [Mon Aug 10 2015 16:51:40 GMT+0700 (ICT)][QSC]
+-Faculty: D480104_CTTT-More: 10-Benchmark: 19.5 
+
+
+ [Mon Aug 10 2015 16:51:40 GMT+0700 (ICT)][QSC]
+-Faculty: D480104_CLC-More: 21-Benchmark: 16.75 
+
+
+ [Mon Aug 10 2015 16:51:40 GMT+0700 (ICT)][QSC]
+-Faculty: D520214_CLC-More: 37-Benchmark: 16.75 
+
+
+ [Mon Aug 10 2015 16:51:40 GMT+0700 (ICT)][QSC]
+-Faculty: D480101-More: 118-Benchmark: 22 
+
+
+ [Mon Aug 10 2015 16:51:40 GMT+0700 (ICT)][QSC]
+-Faculty: D480102-More: 116-Benchmark: 22 
+
+
+ [Mon Aug 10 2015 16:51:40 GMT+0700 (ICT)][QSC]
+-Faculty: D480103-More: 95-Benchmark: 22.75 
+
+
+ [Mon Aug 10 2015 16:51:40 GMT+0700 (ICT)][QSC]
+-Faculty: D480201-More: 85-Benchmark: 22.25 
+
+
+ [Mon Aug 10 2015 16:51:40 GMT+0700 (ICT)][QSC]
+-Faculty: D480104-More: 44-Benchmark: 22.5 
+
+
+ [Mon Aug 10 2015 16:51:40 GMT+0700 (ICT)][QSC]
+-Faculty: D480299-More: 89-Benchmark: 22.25 
+
+
+ [Mon Aug 10 2015 16:51:40 GMT+0700 (ICT)][QSC]
+-Faculty: D520214-More: 72-Benchmark: 22.25 
+
+
+ [Mon Aug 10 2015 16:51:40 GMT+0700 (ICT)][QSC]
+
+- remove candidates same for School
+
+ [Mon Aug 10 2015 16:51:40 GMT+0700 (ICT)][QSC]
+-Faculty: D480103_CLC-Current: 14-Benchmark: 24.25 
+
+
+ [Mon Aug 10 2015 16:51:40 GMT+0700 (ICT)][QSC]
+-Faculty: D480104_TMDT-Current: 13-Benchmark: 24.25 
+
+
+ [Mon Aug 10 2015 16:51:40 GMT+0700 (ICT)][QSC]
+-Faculty: D480104_CTTT-Current: 4-Benchmark: 23.25 
+
+
+ [Mon Aug 10 2015 16:51:40 GMT+0700 (ICT)][QSC]
+-Faculty: D480104_CLC-Current: 8-Benchmark: 22.5 
+
+
+ [Mon Aug 10 2015 16:51:40 GMT+0700 (ICT)][QSC]
+-Faculty: D520214_CLC-Current: 21-Benchmark: 22.75 
+
+
+ [Mon Aug 10 2015 16:51:40 GMT+0700 (ICT)][QSC]
+-Faculty: D480101-Current: 77-Benchmark: 25.25 
+
+
+ [Mon Aug 10 2015 16:51:40 GMT+0700 (ICT)][QSC]
+-Faculty: D480102-Current: 87-Benchmark: 26 
+
+
+ [Mon Aug 10 2015 16:51:40 GMT+0700 (ICT)][QSC]
+-Faculty: D480103-Current: 33-Benchmark: 27.5 
+
+
+ [Mon Aug 10 2015 16:51:40 GMT+0700 (ICT)][QSC]
+-Faculty: D480104-Current: 39-Benchmark: 27.5 
+
+
+ [Mon Aug 10 2015 16:51:40 GMT+0700 (ICT)][QSC]
+-Faculty: D480201-Current: 70-Benchmark: 25.5 
+
+
+ [Mon Aug 10 2015 16:51:40 GMT+0700 (ICT)][QSC]
+-Faculty: D480299-Current: 51-Benchmark: 27.5 
+
+
+ [Mon Aug 10 2015 16:51:40 GMT+0700 (ICT)][QSC]
+-Faculty: D520214-Current: 60-Benchmark: 26 
+
+
+ [Mon Aug 10 2015 16:51:40 GMT+0700 (ICT)][QSC]
+Final School check - faculty_final - 9faculty_choice - 12candidate_all - 641candidates - 340
+
+ [Mon Aug 10 2015 16:51:40 GMT+0700 (ICT)][QSC]
+- create matriculate list for School
+
+ [Mon Aug 10 2015 16:51:40 GMT+0700 (ICT)][QSC]
+-Faculty: D480103_CLC-More: 43-Benchmark: 16.5 
+
+
+ [Mon Aug 10 2015 16:51:40 GMT+0700 (ICT)][QSC]
+-Faculty: D480104_TMDT-More: 36-Benchmark: 18 
+
+
+ [Mon Aug 10 2015 16:51:40 GMT+0700 (ICT)][QSC]
+-Faculty: D480104_CTTT-More: 4-Benchmark: 19.5 
+
+
+ [Mon Aug 10 2015 16:51:40 GMT+0700 (ICT)][QSC]
+-Faculty: D480104_CLC-More: 5-Benchmark: 17.5 
+
+
+ [Mon Aug 10 2015 16:51:40 GMT+0700 (ICT)][QSC]
+-Faculty: D520214_CLC-More: 13-Benchmark: 16.75 
+
+
+ [Mon Aug 10 2015 16:51:40 GMT+0700 (ICT)][QSC]
+-Faculty: D480101-More: 53-Benchmark: 21.5 
+
+
+ [Mon Aug 10 2015 16:51:40 GMT+0700 (ICT)][QSC]
+-Faculty: D480102-More: 33-Benchmark: 21.75 
+
+
+ [Mon Aug 10 2015 16:51:40 GMT+0700 (ICT)][QSC]
+-Faculty: D480103-More: 67-Benchmark: 21.5 
+
+
+ [Mon Aug 10 2015 16:51:40 GMT+0700 (ICT)][QSC]
+-Faculty: D480104-More: 11-Benchmark: 22 
+
+
+ [Mon Aug 10 2015 16:51:40 GMT+0700 (ICT)][QSC]
+-Faculty: D480299-More: 39-Benchmark: 21.75 
+
+
+ [Mon Aug 10 2015 16:51:40 GMT+0700 (ICT)][QSC]
+-Faculty: D480201-More: 20-Benchmark: 22 
+
+
+ [Mon Aug 10 2015 16:51:40 GMT+0700 (ICT)][QSC]
+-Faculty: D520214-More: 20-Benchmark: 22 
+
+
+ [Mon Aug 10 2015 16:51:40 GMT+0700 (ICT)][QSC]
+
+- remove candidates same for School
+
+ [Mon Aug 10 2015 16:51:41 GMT+0700 (ICT)][QSC]
+-Faculty: D480103_CLC-Current: 34-Benchmark: 24 
+
+
+ [Mon Aug 10 2015 16:51:41 GMT+0700 (ICT)][QSC]
+-Faculty: D480104_TMDT-Current: 43-Benchmark: 22 
+
+
+ [Mon Aug 10 2015 16:51:41 GMT+0700 (ICT)][QSC]
+-Faculty: D480104_CTTT-Current: 4-Benchmark: 21.5 
+
+
+ [Mon Aug 10 2015 16:51:41 GMT+0700 (ICT)][QSC]
+-Faculty: D480104_CLC-Current: 6-Benchmark: 21.25 
+
+
+ [Mon Aug 10 2015 16:51:41 GMT+0700 (ICT)][QSC]
+-Faculty: D520214_CLC-Current: 17-Benchmark: 22 
+
+
+ [Mon Aug 10 2015 16:51:41 GMT+0700 (ICT)][QSC]
+-Faculty: D480101-Current: 58-Benchmark: 23 
+
+
+ [Mon Aug 10 2015 16:51:41 GMT+0700 (ICT)][QSC]
+-Faculty: D480102-Current: 32-Benchmark: 22.25 
+
+
+ [Mon Aug 10 2015 16:51:41 GMT+0700 (ICT)][QSC]
+-Faculty: D480103-Current: 7-Benchmark: 25.75 
+
+
+ [Mon Aug 10 2015 16:51:41 GMT+0700 (ICT)][QSC]
+-Faculty: D480104-Current: 9-Benchmark: 22.25 
+
+
+ [Mon Aug 10 2015 16:51:41 GMT+0700 (ICT)][QSC]
+-Faculty: D480201-Current: 15-Benchmark: 22.5 
+
+
+ [Mon Aug 10 2015 16:51:41 GMT+0700 (ICT)][QSC]
+-Faculty: D480299-Current: 34-Benchmark: 24.25 
+
+
+ [Mon Aug 10 2015 16:51:41 GMT+0700 (ICT)][QSC]
+-Faculty: D520214-Current: 19-Benchmark: 22.5 
+
+
+ [Mon Aug 10 2015 16:51:41 GMT+0700 (ICT)][QSC]
+Final School check - faculty_final - 9faculty_choice - 12candidate_all - 641candidates - 406
+
+ [Mon Aug 10 2015 16:51:41 GMT+0700 (ICT)][QSC]
+- create matriculate list for School
+
+ [Mon Aug 10 2015 16:51:41 GMT+0700 (ICT)][QSC]
+-Faculty: D480103_CLC-More: 6-Benchmark: 16.5 
+
+
+ [Mon Aug 10 2015 16:51:41 GMT+0700 (ICT)][QSC]
+-Faculty: D480104_TMDT-More: 1-Benchmark: 18 
+
+
+ [Mon Aug 10 2015 16:51:41 GMT+0700 (ICT)][QSC]
+-Faculty: D480101-More: 72-Benchmark: 20.75 
+
+
+ [Mon Aug 10 2015 16:51:41 GMT+0700 (ICT)][QSC]
+-Faculty: D480102-More: 88-Benchmark: 20.25 
+
+
+ [Mon Aug 10 2015 16:51:41 GMT+0700 (ICT)][QSC]
+-Faculty: D480103-More: 93-Benchmark: 20.25 
+
+
+ [Mon Aug 10 2015 16:51:41 GMT+0700 (ICT)][QSC]
+-Faculty: D480104-More: 41-Benchmark: 21 
+
+
+ [Mon Aug 10 2015 16:51:41 GMT+0700 (ICT)][QSC]
+-Faculty: D480201-More: 75-Benchmark: 20.75 
+
+
+ [Mon Aug 10 2015 16:51:41 GMT+0700 (ICT)][QSC]
+-Faculty: D480299-More: 56-Benchmark: 20.75 
+
+
+ [Mon Aug 10 2015 16:51:41 GMT+0700 (ICT)][QSC]
+-Faculty: D520214-More: 61-Benchmark: 20.75 
+
+
+ [Mon Aug 10 2015 16:51:41 GMT+0700 (ICT)][QSC]
+
+- remove candidates same for School
+
+ [Mon Aug 10 2015 16:51:41 GMT+0700 (ICT)][QSC]
+-Faculty: D480103_CLC-Current: 6-Benchmark: 19.5 
+
+
+ [Mon Aug 10 2015 16:51:41 GMT+0700 (ICT)][QSC]
+-Faculty: D480104_TMDT-Current: 1-Benchmark: 18 
+
+
+ [Mon Aug 10 2015 16:51:41 GMT+0700 (ICT)][QSC]
+-Faculty: D480104_CTTT-Current: 0-Benchmark: 21.5 
+
+
+ [Mon Aug 10 2015 16:51:41 GMT+0700 (ICT)][QSC]
+-Faculty: D480104_CLC-Current: 0-Benchmark: 21.25 
+
+
+ [Mon Aug 10 2015 16:51:41 GMT+0700 (ICT)][QSC]
+-Faculty: D520214_CLC-Current: 0-Benchmark: 22 
+
+
+ [Mon Aug 10 2015 16:51:41 GMT+0700 (ICT)][QSC]
+-Faculty: D480101-Current: 62-Benchmark: 21.75 
+
+
+ [Mon Aug 10 2015 16:51:41 GMT+0700 (ICT)][QSC]
+-Faculty: D480102-Current: 65-Benchmark: 21.75 
+
+
+ [Mon Aug 10 2015 16:51:41 GMT+0700 (ICT)][QSC]
+-Faculty: D480103-Current: 32-Benchmark: 22.75 
+
+
+ [Mon Aug 10 2015 16:51:41 GMT+0700 (ICT)][QSC]
+-Faculty: D480104-Current: 38-Benchmark: 21.75 
+
+
+ [Mon Aug 10 2015 16:51:41 GMT+0700 (ICT)][QSC]
+-Faculty: D480201-Current: 52-Benchmark: 22.25 
+
+
+ [Mon Aug 10 2015 16:51:41 GMT+0700 (ICT)][QSC]
+-Faculty: D480299-Current: 40-Benchmark: 21.75 
+
+
+ [Mon Aug 10 2015 16:51:41 GMT+0700 (ICT)][QSC]
+-Faculty: D520214-Current: 52-Benchmark: 21.75 
+
+
+ [Mon Aug 10 2015 16:51:41 GMT+0700 (ICT)][QSC]
+Final School check - faculty_final - 9faculty_choice - 12candidate_all - 641candidates - 551
+
+ [Mon Aug 10 2015 16:51:41 GMT+0700 (ICT)][QSC]
+- create matriculate list for School
+
+ [Mon Aug 10 2015 16:51:41 GMT+0700 (ICT)][QSC]
+-Faculty: D480101-More: 68-Benchmark: 15.25 
+
+
+ [Mon Aug 10 2015 16:51:41 GMT+0700 (ICT)][QSC]
+-Faculty: D480102-More: 55-Benchmark: 15.25 
+
+
+ [Mon Aug 10 2015 16:51:41 GMT+0700 (ICT)][QSC]
+-Faculty: D480103-More: 55-Benchmark: 16.25 
+
+
+ [Mon Aug 10 2015 16:51:41 GMT+0700 (ICT)][QSC]
+-Faculty: D480104-More: 12-Benchmark: 20.25 
+
+
+ [Mon Aug 10 2015 16:51:41 GMT+0700 (ICT)][QSC]
+-Faculty: D480201-More: 38-Benchmark: 20 
+
+
+ [Mon Aug 10 2015 16:51:41 GMT+0700 (ICT)][QSC]
+-Faculty: D480299-More: 50-Benchmark: 14.75 
+
+
+ [Mon Aug 10 2015 16:51:41 GMT+0700 (ICT)][QSC]
+-Faculty: D520214-More: 28-Benchmark: 20 
+
+
+ [Mon Aug 10 2015 16:51:41 GMT+0700 (ICT)][QSC]
+
+- remove candidates same for School
+
+ [Mon Aug 10 2015 16:51:42 GMT+0700 (ICT)][QSC]
+-Faculty: D480103_CLC-Current: 0-Benchmark: 19.5 
+
+
+ [Mon Aug 10 2015 16:51:42 GMT+0700 (ICT)][QSC]
+-Faculty: D480104_TMDT-Current: 0-Benchmark: 18 
+
+
+ [Mon Aug 10 2015 16:51:42 GMT+0700 (ICT)][QSC]
+-Faculty: D480104_CTTT-Current: 0-Benchmark: 21.5 
+
+
+ [Mon Aug 10 2015 16:51:42 GMT+0700 (ICT)][QSC]
+-Faculty: D480104_CLC-Current: 0-Benchmark: 21.25 
+
+
+ [Mon Aug 10 2015 16:51:42 GMT+0700 (ICT)][QSC]
+-Faculty: D520214_CLC-Current: 0-Benchmark: 22 
+
+
+ [Mon Aug 10 2015 16:51:42 GMT+0700 (ICT)][QSC]
+-Faculty: D480101-Current: 47-Benchmark: 20.75 
+
+
+ [Mon Aug 10 2015 16:51:42 GMT+0700 (ICT)][QSC]
+-Faculty: D480102-Current: 42-Benchmark: 20.75 
+
+
+ [Mon Aug 10 2015 16:51:42 GMT+0700 (ICT)][QSC]
+-Faculty: D480103-Current: 36-Benchmark: 21.25 
+
+
+ [Mon Aug 10 2015 16:51:42 GMT+0700 (ICT)][QSC]
+-Faculty: D480104-Current: 11-Benchmark: 20.75 
+
+
+ [Mon Aug 10 2015 16:51:42 GMT+0700 (ICT)][QSC]
+-Faculty: D480201-Current: 29-Benchmark: 20.75 
+
+
+ [Mon Aug 10 2015 16:51:42 GMT+0700 (ICT)][QSC]
+-Faculty: D480299-Current: 30-Benchmark: 21.25 
+
+
+ [Mon Aug 10 2015 16:51:42 GMT+0700 (ICT)][QSC]
+-Faculty: D520214-Current: 23-Benchmark: 21.25 
+
+
+ [Mon Aug 10 2015 16:51:42 GMT+0700 (ICT)][QSC]
+Final School check - faculty_final - 9faculty_choice - 12candidate_all - 641candidates - 639
+
+ [Mon Aug 10 2015 16:51:42 GMT+0700 (ICT)][QSC]
+- create matriculate list for School
+
+ [Mon Aug 10 2015 16:51:42 GMT+0700 (ICT)][QSC]
+-Faculty: D480101-More: 8-Benchmark: 14.75 
+
+
+ [Mon Aug 10 2015 16:51:42 GMT+0700 (ICT)][QSC]
+-Faculty: D480102-More: 3-Benchmark: 18.25 
+
+
+ [Mon Aug 10 2015 16:51:42 GMT+0700 (ICT)][QSC]
+-Faculty: D480103-More: 4-Benchmark: 19 
+
+
+ [Mon Aug 10 2015 16:51:42 GMT+0700 (ICT)][QSC]
+-Faculty: D480104-More: 10-Benchmark: 18.5 
+
+
+ [Mon Aug 10 2015 16:51:42 GMT+0700 (ICT)][QSC]
+-Faculty: D480201-More: 12-Benchmark: 14.75 
+
+
+ [Mon Aug 10 2015 16:51:42 GMT+0700 (ICT)][QSC]
+-Faculty: D480299-More: 2-Benchmark: 14.75 
+
+
+ [Mon Aug 10 2015 16:51:42 GMT+0700 (ICT)][QSC]
+-Faculty: D520214-More: 11-Benchmark: 14.75 
+
+
+ [Mon Aug 10 2015 16:51:42 GMT+0700 (ICT)][QSC]
+
+- remove candidates same for School
+
+ [Mon Aug 10 2015 16:51:42 GMT+0700 (ICT)][QSC]
+-Faculty: D480103_CLC-Current: 0-Benchmark: 19.5 
+
+
+ [Mon Aug 10 2015 16:51:42 GMT+0700 (ICT)][QSC]
+-Faculty: D480104_TMDT-Current: 0-Benchmark: 18 
+
+
+ [Mon Aug 10 2015 16:51:42 GMT+0700 (ICT)][QSC]
+-Faculty: D480104_CTTT-Current: 0-Benchmark: 21.5 
+
+
+ [Mon Aug 10 2015 16:51:42 GMT+0700 (ICT)][QSC]
+-Faculty: D480104_CLC-Current: 0-Benchmark: 21.25 
+
+
+ [Mon Aug 10 2015 16:51:42 GMT+0700 (ICT)][QSC]
+-Faculty: D520214_CLC-Current: 0-Benchmark: 22 
+
+
+ [Mon Aug 10 2015 16:51:42 GMT+0700 (ICT)][QSC]
+-Faculty: D480101-Current: 13-Benchmark: 20 
+
+
+ [Mon Aug 10 2015 16:51:42 GMT+0700 (ICT)][QSC]
+-Faculty: D480102-Current: 4-Benchmark: 19.75 
+
+
+ [Mon Aug 10 2015 16:51:42 GMT+0700 (ICT)][QSC]
+-Faculty: D480103-Current: 7-Benchmark: 20 
+
+
+ [Mon Aug 10 2015 16:51:42 GMT+0700 (ICT)][QSC]
+-Faculty: D480104-Current: 7-Benchmark: 20.75 
+
+
+ [Mon Aug 10 2015 16:51:42 GMT+0700 (ICT)][QSC]
+-Faculty: D480201-Current: 5-Benchmark: 20 
+
+
+ [Mon Aug 10 2015 16:51:42 GMT+0700 (ICT)][QSC]
+-Faculty: D480299-Current: 3-Benchmark: 16.75 
+
+
+ [Mon Aug 10 2015 16:51:42 GMT+0700 (ICT)][QSC]
+-Faculty: D520214-Current: 9-Benchmark: 20 
+
+
+ [Mon Aug 10 2015 16:51:42 GMT+0700 (ICT)][QSC]
+Final School check - faculty_final - 9faculty_choice - 12candidate_all - 641candidates - 641
+
+ [Mon Aug 10 2015 16:51:42 GMT+0700 (ICT)][QSC]
+- Final School [QSC]
+
+ [Mon Aug 10 2015 16:51:42 GMT+0700 (ICT)][QSC]
+Save -QSC - D520214_CLC - Mon Aug 10 2015 16:51:42 GMT+0700 (ICT)
+
+ [Mon Aug 10 2015 16:51:42 GMT+0700 (ICT)][QSC]
+Save -QSC - D480104_CTTT - Mon Aug 10 2015 16:51:42 GMT+0700 (ICT)
+
+ [Mon Aug 10 2015 16:51:42 GMT+0700 (ICT)][QSC]
+Save -QSC - D480104_CLC - Mon Aug 10 2015 16:51:42 GMT+0700 (ICT)
+
+ [Mon Aug 10 2015 16:51:42 GMT+0700 (ICT)][QSC]
+Save -QSC - D480103_CLC - Mon Aug 10 2015 16:51:42 GMT+0700 (ICT)
+
+ [Mon Aug 10 2015 16:51:42 GMT+0700 (ICT)][QSC]
+Save -QSC - D480104_TMDT - Mon Aug 10 2015 16:51:42 GMT+0700 (ICT)
+
+ [Mon Aug 10 2015 16:51:42 GMT+0700 (ICT)][QSC]
+Save -QSC - D480201 - Mon Aug 10 2015 16:51:42 GMT+0700 (ICT)
+
+ [Mon Aug 10 2015 16:51:42 GMT+0700 (ICT)][QSC]
+Save -QSC - D480103 - Mon Aug 10 2015 16:51:42 GMT+0700 (ICT)
+
+ [Mon Aug 10 2015 16:51:42 GMT+0700 (ICT)][QSC]
+Save -QSC - D480104 - Mon Aug 10 2015 16:51:42 GMT+0700 (ICT)
+
+ [Mon Aug 10 2015 16:51:42 GMT+0700 (ICT)][QSC]
+Save -QSC - D480102 - Mon Aug 10 2015 16:51:42 GMT+0700 (ICT)
+
+ [Mon Aug 10 2015 16:51:42 GMT+0700 (ICT)][QSC]
+Save -QSC - D520214 - Mon Aug 10 2015 16:51:42 GMT+0700 (ICT)
+
+ [Mon Aug 10 2015 16:51:42 GMT+0700 (ICT)][QSC]
+Save -QSC - D480101 - Mon Aug 10 2015 16:51:42 GMT+0700 (ICT)
+
+ [Mon Aug 10 2015 16:51:42 GMT+0700 (ICT)][QSC]
+Save -QSC - D480299 - Mon Aug 10 2015 16:51:42 GMT+0700 (ICT)
+
+ [Mon Aug 10 2015 16:51:42 GMT+0700 (ICT)][QSC]
+- save school database
+
+ [Mon Aug 10 2015 16:51:42 GMT+0700 (ICT)][QSC]
+- save school success
+
+ [Mon Aug 10 2015 16:51:42 GMT+0700 (ICT)][QSC]
+- save school success final
