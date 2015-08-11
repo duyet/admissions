@@ -4,11 +4,12 @@ angular.module('core').controller('HomeController', ['$scope', '$stateParams',
 	'$location', '$http', 'Authentication', 'Subjectgroups', 'Subjects', 'Schools',
 	function($scope, $stateParams, $location, $http, Authentication, Subjectgroups, 
 		Subjects, Schools) {
-
 		// Homepage Comming soon 
+
 		return $location.path("candidate");
 
-		$scope.score = {score_priority: 0};
+		//$scope.score = {score_priority: 0};
+		$scope.score = {};//score_priority: 0
 		$scope.authentication = Authentication;
 		$scope.subjectgroups = Subjectgroups.query(function (data) {
 			$scope.subject_group = data[0];
@@ -16,15 +17,15 @@ angular.module('core').controller('HomeController', ['$scope', '$stateParams',
 		$scope.subjects = Subjects.query();
 		$scope.schools = Schools.query();
 		
-		$scope.query = function() {
-			var data = {score: $scope.score, subjectgroup : $scope.subject_group}
-			$http({method: 'POST', url: 'apis/query', async:false,data:data}).success(function(data, status, headers, config) {		
-					console.log(data);
-			}).error(function(data, status, headers, config) {
-				window.alert("Server has experienced a problem. please try again after some time!");
-				console.log(data);
-			});
-		};
+		// $scope.query = function() {
+		// 	var data = {score: $scope.score, subjectgroup : $scope.subject_group}
+		// 	$http({method: 'POST', url: 'apis/query', async:false,data:data}).success(function(data, status, headers, config) {		
+		// 			console.log(data);
+		// 	}).error(function(data, status, headers, config) {
+		// 		window.alert("Server has experienced a problem. please try again after some time!");
+		// 		console.log(data);
+		// 	});
+		// };
 		$scope.view_table = null;
 		$scope.view_table_faculty = function (faculty) {
 			if($scope.view_table == faculty){
@@ -36,7 +37,6 @@ angular.module('core').controller('HomeController', ['$scope', '$stateParams',
 		}
 		$scope.view_school = function (school) {
 			school.faculty = 'load';
-			// document.getElementById("matriculate-"+school._id).innerHTML = "<span class='glyphicon glyphicon-refresh'></span> Đang Tính";
 			var data = {school: school.code}
 			$http({method: 'POST', url: 'apis/viewschool', async:false,data:data})
 			.success(function(data, status, headers, config) {		
@@ -61,6 +61,28 @@ angular.module('core').controller('HomeController', ['$scope', '$stateParams',
 				// school.doing = 2;
 				// document.getElementById("matriculate-"+school._id).innerHTML = "<span class='glyphicon glyphicon-remove'></span> Lỗi";
 				console.log(data);
+			});
+		}
+		$scope.opportunity = function (school) {
+			loading_page.loading();
+			var data = {
+				subject_group: $scope.subject_group,
+				score: $scope.score,
+			}
+			$http({method: 'POST', url: 'apis/opportunity', async:false,data:data})
+			.success(function(data, status, headers, config) {
+					console.log(data);
+					if(data.result){
+						$scope.schools = data.record;
+						
+					}else{
+						window.alert(data.message);						
+					}
+					loading_page.hide();
+			}).error(function(data, status, headers, config) {
+				window.alert("Server has experienced a problem. please try again after some time!");		
+				console.log(data);
+				loading_page.hide();
 			});
 		}
 	}

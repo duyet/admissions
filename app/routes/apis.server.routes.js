@@ -5,9 +5,9 @@ module.exports = function(app) {
 	var apis = require('../../app/controllers/apis.server.controller');
 
 	// Apis Routes
-	app.route('/apis')
-		.get(apis.list)
-		.post(apis.create);
+	// app.route('/apis')
+	// 	.get(apis.list)
+	// 	.post(apis.create);
 	app.route('/apis/query')
 		.all(apis.matriculate);
 	app.route('/apis/matriculate')
@@ -18,6 +18,11 @@ module.exports = function(app) {
 		.all(apis.viewfaculty);
 	app.route('/apis/findcandidates')
 		.all(apis.findcandidates);
+	app.route('/apis/initialization')
+		.all(apis.initialization);
+	app.route('/apis/opportunity')
+		.all(apis.opportunity);
+		
 		
 //users.requiresLogin,
 	// app.route('/apis/:apiId')
@@ -26,5 +31,5 @@ module.exports = function(app) {
 	// 	.delete(users.requiresLogin, apis.hasAuthorization, apis.delete);
 
 	// Finish by binding the Api middleware
-	app.param('apiId', apis.apiByID);
+	// app.param('apiId', apis.apiByID);
 };

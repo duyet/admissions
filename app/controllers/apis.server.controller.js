@@ -47,25 +47,76 @@ School.find().exec(function(err, school) {
 });
 exports.opportunity = function(req, res) { 
 	// create_faculty_list();
+	console.log(_.has(req.body, 'subject_group'), _.has(req.body, 'score'));
+	if(_.has(req.body, 'subject_group') && _.has(req.body, 'score')){
 
-	var subject1 = req.body.subjectgroup.subject1
-	var subject2 = req.body.subjectgroup.subject2
-	var subject3 = req.body.subjectgroup.subject3
+		var subject1 = req.body.subject_group.subject1;
+		var subject2 = req.body.subject_group.subject2;
+		var subject3 = req.body.subject_group.subject3;
 
-	var shuffle = shuffle_func(subject1, subject2, subject3);
+		var shuffle = shuffle_func(subject1, subject2, subject3);
 
-	var score_priority = req.body.score.score_priority
-	var score_1 = req.body.score.score_1
-	var score_2 = req.body.score.score_2
-	var score_3 = req.body.score.score_3
+		var score_priority = req.body.score.score_priority;
+		var score_1 = req.body.score.score_1;
+		var score_2 = req.body.score.score_2;
+		var score_3 = req.body.score.score_3;
 
-	var faculty = _.remove(facultyFull, function(object) {
-			return shuffle.indexOf(object.subject_group) === -1;
+		var faculty_array = [];
+		for(var s_index in shuffle){
+
+			var faculty = _.remove(facultyFull, function(object) {
+				return object.subject_group.indexOf(shuffle[s_index]) === -1;
+			});
+
+			var faculty_code = _.map(faculty, function (object) {
+				return object.school_code +'-'+object.code;
+			});
+			faculty_array = faculty_array.concat(faculty_code);
+		}
+		var faculty_condition =  _.uniq(faculty_array);
+		
+		res.jsonp(faculty_condition);
+		var condition_score = score_priority + score_1 + score_2 + score_3;
+			//console.log(shuffle_facultys);
+		Candidate.aggregate(
+	  	{ $match : {school_faculty : {$in : shuffle_facultys},  score_final: { $gt: condition_score  } } }, 
+		{ $group: { _id: { school_code:  "$school_code" , faculty_code:  "$faculty_code" } , total: { $sum: 1}}}, 
+		{ $project: { _id: 1, total: 1 , school_faculty: { $concat: [ "$_id.school_code", "-", "$_id.faculty_code" ] }}}
+		  //, { $project: { itemDescription: { $concat: [ "$item", " - ", "$description" ] } } }
+		  , function (err, logs) {
+		  	if (err) {
+			  	//console.log(err);
+				return res.status(400).send({
+					message: errorHandler.getErrorMessage(err)
+				});
+			} else {
+
+				var school = [];
+				for (var i in logs) {
+
+					for (var x = 0; 
+						x < facultyFull.length && (
+							facultyFull[x].code !== logs[i]._id.faculty_code 
+							&& facultyFull[x].school_code !== logs[i]._id.school_code
+							); x++) {};
+						
+					if(facultyFull[x] === undefined){
+						//console.log(logs[i]);
+					}
+					if(facultyFull[x] !== undefined && parseInt(logs[i].total) < parseInt(facultyFull[x].quota)){
+						logs[i].faculty = facultyFull[x];
+						// for (var x = 0; x < schoolAll.length && schoolAll[x].code !== logs[i]._id.school_code; x++) {};
+						// logs[i].school = schoolAll[x];
+						school.push(logs[i]);
+					}
+					
+				};
+				res.jsonp(school);
+			}
 		});
-	var faculty_code = _.map(faculty, function (faculty) {
-		return object.school_code +'-'+object.code;
-	});
-	res.jsonp(faculty_code);
+
+	}
+	
 	// for (var i in facultyFull) {
 	// 	// var facultyFull
 	// 	var faculty = facultyFull[i];
@@ -109,44 +160,7 @@ exports.opportunity = function(req, res) {
 	// 			shuffle_facultys.push(facultys[i].school_code + '-' + facultys[i].code);
 	// 		}
 	
-	// 		//console.log(shuffle_facultys);
-	// 				Candidate.aggregate(
-	// 		  		{ $match : {school_faculty : {$in : shuffle_facultys},  score_sum: { $gt: req.body.score.score_sum  } } }
-	// 			  , 
-	// 			  { $group: { _id: { school_code:  "$school_code" , faculty_code:  "$faculty_code" } , total: { $sum: 1}}}
-	// 			  , { $project: { _id: 1, total: 1 , school_faculty: { $concat: [ "$_id.school_code", "-", "$_id.faculty_code" ] }}}
-	// 			  //, { $project: { itemDescription: { $concat: [ "$item", " - ", "$description" ] } } }
-	// 			  , function (err, logs) {
-	// 			  	if (err) {
-	// 				  	//console.log(err);
-	// 					return res.status(400).send({
-	// 						message: errorHandler.getErrorMessage(err)
-	// 					});
-	// 				} else {
 
-	// 					var school = [];
-	// 					for (var i in logs) {
-
-	// 						for (var x = 0; 
-	// 							x < facultyFull.length && (
-	// 								facultyFull[x].code !== logs[i]._id.faculty_code 
-	// 								&& facultyFull[x].school_code !== logs[i]._id.school_code
-	// 								); x++) {};
-								
-	// 						if(facultyFull[x] === undefined){
-	// 							//console.log(logs[i]);
-	// 						}
-	// 						if(facultyFull[x] !== undefined && parseInt(logs[i].total) < parseInt(facultyFull[x].quota)){
-	// 							logs[i].faculty = facultyFull[x];
-	// 							// for (var x = 0; x < schoolAll.length && schoolAll[x].code !== logs[i]._id.school_code; x++) {};
-	// 							// logs[i].school = schoolAll[x];
-	// 							school.push(logs[i]);
-	// 						}
-							
-	// 					};
-	// 					res.jsonp(school);
-	// 				}
-	// 			});
 	// 	}
 	// });
 
