@@ -1,4 +1,4 @@
-<section data-ng-controller="SchoolController" data-ng-init="findcandidates()">
+<section data-ng-controller="CandidateController" data-ng-init="findcandidates()">
     <section class="section first">
     <div class="container">
         
@@ -19,20 +19,15 @@
 
             <nav class="pull-right" ng-show="pagination > 0">
               <ul  class="pagination">
-                <li>
-                  <a href="#" aria-label="Previous">
+                <li  ng-class="{'disabled' : pagination_active <= 1 }">
+                  <a ng-click="addPreviousPagination()" aria-label="Previous"  >
                     <span aria-hidden="true">&laquo;</span>
                   </a>
                 </li>
-                <!-- <li class="active"><a href="#">1</a></li> -->
-                <li ng-repeat="a in range(pagination) track by $index" ng-class="{'active' : pagination_active === $index + 1}">
-                <a ng-click="addPagination($index+1)" ng-show="$index < 20">{{$index+1}}</a>
-                <a ng-click="addPagination($index+1)" ng-show="$index == 20"> ... </a>
-                </li>
-                
+                <li><a>{{pagination_active}}/{{pagination}}</a></li>                
                 <li>
-                <li>
-                  <a href="#" aria-label="Next">
+                <li ng-class="{'disabled' : pagination_active >= pagination }">
+                  <a ng-click="addNextPagination()" aria-label="Next" >
                     <span aria-hidden="true">&raquo;</span>
                   </a>
                 </li>
@@ -110,20 +105,15 @@
             </div>
             <nav class="pull-right" ng-show="pagination > 0">
               <ul  class="pagination">
-                <li>
-                  <a href="#" aria-label="Previous">
+                <li  ng-class="{'disabled' : pagination_active <= 1 }">
+                  <a ng-click="addPreviousPagination()" aria-label="Previous"  >
                     <span aria-hidden="true">&laquo;</span>
                   </a>
                 </li>
-                <!-- <li class="active"><a href="#">1</a></li> -->
-                <li ng-repeat="a in range(pagination) track by $index" ng-class="{'active' : pagination_active === $index + 1}">
-                <a ng-click="addPagination($index+1)" ng-show="$index < 20">{{$index+1}}</a>
-                <a ng-click="addPagination($index+1)" ng-show="$index == 20"> ... </a>
-                </li>
-                
+                <li><a>{{pagination_active}}/{{pagination}}</a></li>                
                 <li>
-                <li>
-                  <a href="#" aria-label="Next">
+                <li ng-class="{'disabled' : pagination_active >= pagination }">
+                  <a ng-click="addNextPagination()" aria-label="Next" >
                     <span aria-hidden="true">&raquo;</span>
                   </a>
                 </li>
