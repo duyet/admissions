@@ -27,17 +27,23 @@ var loading_button = {
 	load_error : "<span class='glyphicon glyphicon-remove'></span>",
 	loading : function (button) {
 		var button_html = document.getElementById(button);
-		button_html.className = "btn btn-loading";
+		var className = button_html.className.replace("btn-default", "");
+		className = className.replace("btn-primary", "");
+		className = className.replace("btn-success", "");
+		className = className.replace("btn-info", "");
+		className = className.replace("btn-danger", "");
+		className = className.replace("btn-warning", "");
+		button_html.className = className + " btn-loading disabled";
 		button_html.innerHTML = this.load_icon;
 	},
 	success : function(button) {
 		var button_html = document.getElementById(button);
-		button_html.className = "btn btn-success"; 
+		button_html.className = button_html.className.replace("btn-loading", "btn-success disabled"); 
 		button_html.innerHTML = this.load_success;
 	},
 	error :function (button) {
 		var button_html = document.getElementById(button);
-		button_html.className = "btn btn-danger";
+		button_html.className = button_html.className.replace("btn-loading", "btn-danger disabled"); 
 		button_html.innerHTML = this.load_error;
 	},
 }
@@ -58,3 +64,4 @@ var loading_page = {
 	},
 }
 loading_page.init();
+loading_page.hide();
