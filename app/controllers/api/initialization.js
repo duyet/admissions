@@ -96,7 +96,7 @@ module.exports = {
 	//init matriculate function
 	init_initialization : function (school) {
 		var _this = this;
-		this.log(school,'- init matriculate');
+		this.log(school,'- init initialization');
 		var faculty_choice =  _.uniq(_.filter(this.facultyFull, function(object) {
 				  return object.school_code === school;
 				}));

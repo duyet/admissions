@@ -139,7 +139,7 @@ module.exports = {
 			school_code: school_code,
 			student_id : { '$nin': this_school.has_candidate }
 		})
-		.sort('-score_sum')
+		.sort('-score_final')
 		.exec(function(err, candidates) {
 			if (err) {
 				_this.log(school_code,'- Query Faculty But ERROR - '+ err.toString());
@@ -169,7 +169,7 @@ module.exports = {
 							faculty_current.matriculate_list = faculty_current.matriculate_list.concat(faculty_candidate);
 							if(faculty_candidate.length > 0){
 								faculty_current.benchmark = faculty_current.matriculate_list[
-									faculty_current.matriculate_list.length -1].score_sum
+									faculty_current.matriculate_list.length -1].score_final
 							}
 							// -----Working faculty													
 							_this.log(school_code, 
@@ -235,14 +235,14 @@ module.exports = {
 			var faculty_candidate = get_faculty_same(candidates_matriculated, 
 					this_school.faculty_choice[y_index].code);
 				faculty_candidate.sort(compare_faculty_candidate_priority);
-				faculty_candidate = _.sortBy(faculty_candidate, 'score_sum');
+				faculty_candidate = _.sortBy(faculty_candidate, 'score_final');
 				
 				
 			var faculty_current = this_school.faculty_choice[y_index];
 
 				faculty_current.current = faculty_candidate.length;
 				if(faculty_candidate.length > 0){
-					faculty_current.benchmark = faculty_candidate[faculty_candidate.length -1].score_sum
+					faculty_current.benchmark = faculty_candidate[faculty_candidate.length -1].
 				}
 				this.log(school_code,
 					'-Faculty: '+this_school.faculty_choice[y_index].code +
@@ -358,9 +358,9 @@ function get_faculty_same (list, value) {
 }
 
 function compare_faculty_candidate_priority(candidate_a,candidate_b) {
-	if (candidate_a.score_sum < candidate_b.score_sum)
+	if (candidate_a.score_final < candidate_b.score_final)
     	return 1;
-	if (candidate_a.score_sum > candidate_b.score_sum)
+	if (candidate_a.score_final > candidate_b.score_final)
     	return -1;
 	return 0;
 }

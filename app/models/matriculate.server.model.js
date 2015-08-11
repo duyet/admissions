@@ -42,7 +42,7 @@ var MatriculateSchema = new Schema({
 		//required: 'Please fill Candidate name',
 		trim: true
 	},
-	score_sum: {
+	score_final: {
 		type: Number,
 		default: 0,
 		//required: 'Please fill Candidate name',
