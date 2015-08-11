@@ -73,7 +73,10 @@ exports.delete = function(req, res) {
  * List of Schools
  */
 exports.list = function(req, res) { 
-	School.find({status : 1}).sort('-created').populate('user', 'displayName').exec(function(err, schools) {
+	School.find({status : 1})
+	.sort('-code')
+	.populate('user', 'displayName')
+	.exec(function(err, schools) {
 		if (err) {
 			return res.status(400).send({
 				message: errorHandler.getErrorMessage(err)
@@ -88,7 +91,9 @@ exports.list = function(req, res) {
  * School middleware
  */
 exports.schoolByID = function(req, res, next, id) { 
-	School.findById(id).populate('user', 'displayName').exec(function(err, school) {
+	School.findById(id)
+	.populate('user', 'displayName')
+	.exec(function(err, school) {
 		if (err) return next(err);
 		if (! school) return next(new Error('Failed to load School ' + id));
 		req.school = school ;
