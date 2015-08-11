@@ -73,7 +73,9 @@ exports.delete = function(req, res) {
  * List of Subjects
  */
 exports.list = function(req, res) { 
-	Subject.find().sort('-created').populate('user', 'displayName').exec(function(err, subjects) {
+	Subject.find({status:1}).sort('name')
+	// .populate('user', 'displayName')
+	.exec(function(err, subjects) {
 		if (err) {
 			return res.status(400).send({
 				message: errorHandler.getErrorMessage(err)

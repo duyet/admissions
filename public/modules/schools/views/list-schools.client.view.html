@@ -1,8 +1,8 @@
-<section data-ng-controller="SchoolsController" data-ng-init="find()">
+<!-- <section data-ng-controller="SchoolsController" data-ng-init="find()">
     <div class="page-header">
         <h1>Schools</h1>
     </div>
-    <div class="list-group">
+    <div class="list-group"> -->
         <!-- <a  class="list-group-item">
 			<small class="list-group-item-text">
 				Posted on
@@ -12,7 +12,7 @@
 			</small>
 			
         </a> -->
-        <div class="panel panel-default" data-ng-repeat="school in schools" data-ng-href="#!/schools/{{school._id}}">
+<!--         <div class="panel panel-default" data-ng-repeat="school in schools" data-ng-href="#!/schools/{{school._id}}">
           <div class="panel-body">
             <p>
                 <strong data-ng-bind="school.name"></strong>
@@ -37,4 +37,72 @@
     <div class="alert alert-warning text-center" data-ng-hide="!schools.$resolved || schools.length">
     	No Schools yet, why don't you <a href="/#!/schools/create">create one</a>?
     </div>
+</section> -->
+<div class="loader">
+  <svg class="circular">
+    <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="5" stroke-miterlimit="10"/>
+  </svg>
+</div>
+<section data-ng-controller="SchoolsController" data-ng-init="find()">
+    <section class="section">
+        <div class="container">
+            <div class="page-header">
+                <h1>Trường</h1>
+            </div>
+            
+            <div class="">
+                <table class="table table-hover table-striped">
+                  <thead>
+                    <tr>
+                      <th>#</th>
+                      <th>Tên</th>
+                      <th>Điểm sàn</th>
+                      <th>Trúng tuyển</th>
+                    <th>Còn lại</th>
+                    <th>Chỉ tiêu</th>
+                    <th>Hồ sơ</th>
+                    <th>Thí sinh</th>                    
+                    <th width="2%">Điểm chuẩn</th>
+                    <th width="2%">Khởi tại</th>
+                 </tr>
+                  </thead>
+                  <tbody data-ng-repeat="school in schools">
+
+                    <tr >
+                      <td scope="row">{{$index+1}}</td>
+                      <td>{{school.name}}</td>
+                      <td>{{school.smallest_benchmark}} - {{school.largest_benchmark}}</td>
+                      <td>{{school.matriculated}}/{{school.quota}}</td>
+                      <td>{{school.quota - school.matriculated}}/{{school.quota}}</td>
+                      <td>{{school.quota}}</td>
+                      <td>{{school.resume}}</td>
+                      <td>{{school.candidate}}</td>
+                      <td>
+                          <a class="btn btn-success btn-sm" id="matriculate-{{school._id}}" 
+                            ng-click="matriculate(school)"
+                            ng-class="{'btn-warning' : school.doing == 0,'btn-success' : school.doing == 1,'btn-danger' : school.doing == 2}"
+
+                            >
+                                <span class="glyphicon glyphicon-th-list" aria-hidden="true"></span>            
+                            </a>
+                        <td>
+                          <a class="btn btn-success btn-sm" id="initialization-{{school._id}}" 
+                            ng-click="initialization(school)"
+                            ng-class="{'btn-warning' : school.doing == 0,'btn-success' : school.doing == 1,'btn-danger' : school.doing == 2}"
+
+                            >
+                                <span class="glyphicon glyphicon-download" aria-hidden="true"></span>         
+                        
+                            </a>
+                        </td>
+                    </tr>                    
+                  </tbody>
+                </table>
+            </div>
+            <div class="alert alert-warning text-center" data-ng-hide="!schools.$resolved || schools.length">
+                Chưa  có thông tin các trường!
+            </div>
+        <div>
+    </section>
 </section>
+

@@ -10,81 +10,6 @@ var mongoose = require('mongoose'),
 	Faculty = mongoose.model('Faculty'),
 	_ = require('lodash');
 
-/**
- * Create a Api
- */
-exports.create = function(req, res) {
-	var api = new Api(req.body);
-	api.user = req.user;
-
-	api.save(function(err) {
-		if (err) {
-			return res.status(400).send({
-				message: errorHandler.getErrorMessage(err)
-			});
-		} else {
-			res.jsonp(api);
-		}
-	});
-};
-
-/**
- * Show the current Api
- */
-exports.read = function(req, res) {
-	res.jsonp(req.api);
-};
-
-/**
- * Update a Api
- */
-exports.update = function(req, res) {
-	var api = req.api ;
-
-	api = _.extend(api , req.body);
-
-	api.save(function(err) {
-		if (err) {
-			return res.status(400).send({
-				message: errorHandler.getErrorMessage(err)
-			});
-		} else {
-			res.jsonp(api);
-		}
-	});
-};
-
-/**
- * Delete an Api
- */
-exports.delete = function(req, res) {
-	var api = req.api ;
-
-	api.remove(function(err) {
-		if (err) {
-			return res.status(400).send({
-				message: errorHandler.getErrorMessage(err)
-			});
-		} else {
-			res.jsonp(api);
-		}
-	});
-};
-
-/**
- * List of Apis
- */
-exports.list = function(req, res) { 
-	Api.find().sort('-created').populate('user', 'displayName').exec(function(err, apis) {
-		if (err) {
-			return res.status(400).send({
-				message: errorHandler.getErrorMessage(err)
-			});
-		} else {
-			res.jsonp(apis);
-		}
-	});
-};
 
 /**
  * Api middleware
@@ -120,7 +45,7 @@ var schoolAll;
 School.find().exec(function(err, school) {
 	schoolAll = school ;
 });
-exports.query = function(req, res) { 
+exports.opportunity = function(req, res) { 
 	// create_faculty_list();
 
 	var subject1 = req.body.subjectgroup.subject1
@@ -129,46 +54,43 @@ exports.query = function(req, res) {
 
 	var shuffle = shuffle_func(subject1, subject2, subject3);
 
-	for (var i in facultyFull) {
-		// var facultyFull
-		var faculty = facultyFull[i];
-		Candidate.aggregate([
-		    { $project: {
-		    	student_name:1,
-		    	student_id:1,
-		    	school_code:1,
-		    	faculty_code:1,
-		    	subject_group: 1,
-		    	priority: 1,		    	
-		        score_sum: 1,
-		        score_priority: 1,
-		        score_total: {$add: ['$score_sum', '$score_priority']}}},
+	var score_priority = req.body.score.score_priority
+	var score_1 = req.body.score.score_1
+	var score_2 = req.body.score.score_2
+	var score_3 = req.body.score.score_3
 
-		    // Filter the docs to just those where sum < 20
-		    { $match: {
-		    	school_code: {$eq : faculty.school_code} , 
-		    	faculty_code: {$eq : faculty.code}  ,
-		    	score_total: {$gte: req.body.score.score_sum}
-		    }},
-		    //{ $limit : facultyFull[i].quota },
-		    //{ $sort : { score_total : -1} }
-
-		], function(err, result) {
-			// if(result.length > 0){
-			// 	faculty.matriculate_list = result;
-			// 	////console.log(facultyFull[i]);
-			// 	faculty.save(function(err) {
-			// 		if (err) {
-			// 			//console.log(err);
-			// 		} else {
-			// 		//	//console.log(facultyFull[i]);
-			// 		}
-			// 	});
-			// }
-			//if (result[0]) //console.log("============> ", faculty, " ==> ", result[0]);
+	var faculty = _.remove(facultyFull, function(object) {
+			return shuffle.indexOf(object.subject_group) === -1;
 		});
-	};
+	var faculty_code = _.map(faculty, function (faculty) {
+		return object.school_code +'-'+object.code;
+	});
+	res.jsonp(faculty_code);
+	// for (var i in facultyFull) {
+	// 	// var facultyFull
+	// 	var faculty = facultyFull[i];
+	// 	Candidate.aggregate([
+	// 	    { $project: {
+	// 	    	student_name:1,
+	// 	    	student_id:1,
+	// 	    	school_code:1,
+	// 	    	faculty_code:1,
+	// 	    	subject_group: 1,
+	// 	    	priority: 1,		    	
+	// 	        score_sum: 1,
+	// 	        score_priority: 1,
+	// 	        score_total: {$add: ['$score_sum', '$score_priority']}}},
 
+	// 	    // Filter the docs to just those where sum < 20
+	// 	    { $match: {
+	// 	    	school_code: {$eq : faculty.school_code} , 
+	// 	    	faculty_code: {$eq : faculty.code}  ,
+	// 	    	score_total: {$gte: req.body.score.score_sum}
+	// 	    }},
+	// 	], function(err, result) {
+	// 	});
+	// };
+// }
 	// create_matriculate_list(req.body.score);
 	// Faculty.find({
 	// 	subject_group: { $in: shuffle },
@@ -265,8 +187,25 @@ function shuffle_func (subject1, subject2, subject3) {
 exports.domatriculate = function(req, res) {
 	if(_.has(req.body, 'school')){
 		// initialization.run_matriculate(req.body.school, res);
-		var matriculate = require('../../app/controllers/api/initialization');
+		var matriculate = require('../../app/controllers/api/matriculate');
 		matriculate.init(req.body.school, res, facultyFull);
+	}else{
+		res.jsonp({
+			result:false, 
+			message:'Quá trình xử lý có một vấn đề. Vui lòng thử lại sau!'
+		});
+	}
+	//school
+}
+/**
+ * matriculate a Api
+ */
+
+exports.initialization = function(req, res) {
+	if(_.has(req.body, 'school')){
+		// initialization.run_matriculate(req.body.school, res);
+		var initialization = require('../../app/controllers/api/initialization');
+		initialization.init(req.body.school, res, facultyFull);
 	}else{
 		res.jsonp({
 			result:false, 
@@ -379,7 +318,7 @@ exports.findcandidates = function(req, res) {
 		.find(conditions,{score_1:0, score_2: 0, score_3 : 0})
 		.skip(pageNumber > 1 ? ((pageNumber-1)*nPerPage) : 0).limit(nPerPage)
 		.limit(nPerPage)
-		.sort('-score_sum')
+		.sort('-score_final')
 		.exec(function(err, faculties) {
 			if (err) {
 				res.jsonp({
@@ -414,7 +353,7 @@ exports.findcandidates = function(req, res) {
 							student_name: faculties[x_index].student_name,
 							student_id: faculties[x_index].student_id,
 							faculty_code: faculties[x_index].faculty_code,
-							score_sum: faculties[x_index].score_sum,
+							score_final: faculties[x_index].score_final,
 							score_priority: faculties[x_index].score_priority,
 							priority: faculties[x_index].priority
 						});

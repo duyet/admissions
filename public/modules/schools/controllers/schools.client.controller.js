@@ -66,34 +66,40 @@ angular.module('schools').controller('SchoolsController', ['$scope', '$statePara
 
 		// matriculate
 		$scope.matriculate = function(school) {
-			school.doing = 0;
-			// $scope.school = Schools.get({ 
-			// 	schoolId: $stateParams.schoolId
-			// });
-			document.getElementById("matriculate-"+school._id).innerHTML = "<span class='glyphicon glyphicon-refresh'></span> Đang Tính";
+			loading_button.loading("matriculate-"+school._id);
 			var data = {school: school.code}
 			$http({method: 'POST', url: 'apis/matriculate', async:false,data:data})
-			.success(function(data, status, headers, config) {		
-					// $scope.alldesign = data.design;
-					// $scope.allmeasures = data.measure;
-					// $scope.allproduct = data.product;
+			.success(function(data, status, headers, config) {			
 					console.log(data);
 					if(data.result){
-						school.doing = 1;
-						document.getElementById("matriculate-"+school._id).innerHTML = "<span class='glyphicon glyphicon-ok'></span> Thành công";
+						loading_button.success("matriculate-"+school._id);
 					}else{
 						window.alert(data.message);
-						school.doing = 2;
-						document.getElementById("matriculate-"+school._id).innerHTML = "<span class='glyphicon glyphicon-remove'></span> Lỗi";
-					}
-					
+						loading_button.error("matriculate-"+school._id);
+					}					
 					// loading('hide');
 			}).error(function(data, status, headers, config) {
 				window.alert("Server has experienced a problem. please try again after some time!");
-				//loading('hide');
-				school.doing = 2;
-				document.getElementById("matriculate-"+school._id).innerHTML = "<span class='glyphicon glyphicon-remove'></span> Lỗi";
+				loading_button.error("matriculate-"+school._id);		
 				console.log(data);
+			});
+		};
+		// matriculate
+		$scope.initialization = function(school) {
+			loading_button.loading("initialization-"+school._id);
+			var data = {school: school.code}
+			$http({method: 'POST', url: 'apis/initialization', async:false,data:data})
+			.success(function(data, status, headers, config) {		
+					if(data.result){
+						loading_button.success("initialization-"+school._id);
+					}else{
+						window.alert(data.message);
+						loading_button.error("initialization-"+school._id);
+					
+					}
+			}).error(function(data, status, headers, config) {
+				window.alert("Server has experienced a problem. please try again after some time!");
+				loading_button.error("initialization-"+school._id);
 			});
 		};
 	}
