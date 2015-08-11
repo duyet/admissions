@@ -4,6 +4,10 @@ angular.module('core').controller('HomeController', ['$scope', '$stateParams',
 	'$location', '$http', 'Authentication', 'Subjectgroups', 'Subjects', 'Schools',
 	function($scope, $stateParams, $location, $http, Authentication, Subjectgroups, 
 		Subjects, Schools) {
+
+		// Homepage Comming soon 
+		return $location.path("candidate");
+
 		$scope.score = {score_priority: 0};
 		$scope.authentication = Authentication;
 		$scope.subjectgroups = Subjectgroups.query(function (data) {
