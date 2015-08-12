@@ -54,52 +54,36 @@ var FacultySchema = new Schema({
 	current: {
 		type: Number,
 		default: 0,
-		required: 'Please fill Faculty quota',
+		// required: 'Please fill Faculty quota',
 		trim: true
 	},
 	benchmark: {
 		type: Number,
 		default: 0,
-		required: 'Please fill Faculty quota',
+		// required: 'Please fill Faculty quota',
 		trim: true
 	},
 	matriculate_list: [Schema.Types.Mixed],
 	matriculate:{
 		type: Number,
 		default: 0,
-		required: 'Please fill Faculty quota',
+		// required: 'Please fill Faculty quota',
 		trim: true
 	},
 	candidate_apply: Schema.Types.Mixed,
 	candidate:{
 		type: Number,
 		default: 0,
-		required: 'Please fill Faculty quota',
+		// required: 'Please fill Faculty quota',
 		trim: true
 	},
-	// {
-	// 	type: Number,
-	// 	default: 0,
-	// 	required: 'Please fill Faculty quota',
-	// 	trim: true
-	// },
 	candidate_check: [Schema.Types.Mixed],
-	//{
-	//	type: [Candidate],
-		//ref: 'Candidate'
-		//required: 'Please fill Faculty quota',
-		//trim: true
-	//},
 
 	created: {
 		type: Date,
 		default: Date.now
 	},
 
-	// user: {
-	// 	type: Schema.ObjectId,
-	// 	ref: 'User'
-	// }
 });
-
+FacultySchema.index({school_code: 1, code: 1}, {unique: true});
 mongoose.model('Faculty', FacultySchema);

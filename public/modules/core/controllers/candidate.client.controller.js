@@ -29,26 +29,18 @@ angular.module('core').controller('CandidateController', ['$scope', '$stateParam
 			console.log(data);
 			$http({method: 'POST', url: 'apis/viewfaculty', async:false,data:data})
 			.success(function(data, status, headers, config) {		
-					console.log(data);
+					//console.log(data);
 					if(data.result){
 						$scope.faculties = data.record;
 						$scope.view_striped = school.code;
 						$scope.findcandidates();
-						// school.doing = 1;
-						// document.getElementById("matriculate-"+school._id).innerHTML = "<span class='glyphicon glyphicon-ok'></span> Thành công";
 					}else{
 						window.alert(data.message);
-						// school.doing = 2;
-						// document.getElementById("matriculate-"+school._id).innerHTML = "<span class='glyphicon glyphicon-remove'></span> Lỗi";
 					}
 					
 					// loading('hide');
 			}).error(function(data, status, headers, config) {
 				window.alert("Server has experienced a problem. please try again after some time!");
-				//loading('hide');
-				// school.doing = 2;
-				// document.getElementById("matriculate-"+school._id).innerHTML = "<span class='glyphicon glyphicon-remove'></span> Lỗi";
-				console.log(data);
 			});
 		}
 		$scope.addFaculty = function (faculty) {		
@@ -136,6 +128,7 @@ angular.module('core').controller('CandidateController', ['$scope', '$stateParam
 	        return new Array(n);
 	    };
 		$scope.findcandidates = function () {
+			loading_page.loading();
 			var data = {
 				conditions: $scope.conditions, 
 				pagination_active : $scope.pagination_active
@@ -150,33 +143,20 @@ angular.module('core').controller('CandidateController', ['$scope', '$stateParam
 			console.log(data);
 			$http({method: 'POST', url: 'apis/findcandidates', async:false,data:data})
 			.success(function(data, status, headers, config) {		
-					// $scope.alldesign = data.design;
-					// $scope.allmeasures = data.measure;
-					// $scope.allproduct = data.product;
-					console.log(data);
+					//console.log(data);
 					if(data.result){
 						$scope.candidates = data.record;
 						$scope.pagination = data.length;
 						$scope.pagination_active = data.pagination_active;
 						$scope.pagination_count = data.pagination_active > 1 ? ((data.pagination_active-1)*50) : 0;
-						// $scope.faculties = data.faculties;
-						// $scope.schools = data.schools;
-						// $scope.subjectgroups = data.subjectgroups;
-						// school.doing = 1;
-						// document.getElementById("matriculate-"+school._id).innerHTML = "<span class='glyphicon glyphicon-ok'></span> Thành công";
 					}else{
 						window.alert(data.message);
-						// school.doing = 2;
-						// document.getElementById("matriculate-"+school._id).innerHTML = "<span class='glyphicon glyphicon-remove'></span> Lỗi";
 					}
-					
-					// loading('hide');
+					loading_page.hide();
 			}).error(function(data, status, headers, config) {
 				window.alert("Server has experienced a problem. please try again after some time!");
-				//loading('hide');
-				// school.doing = 2;
-				// document.getElementById("matriculate-"+school._id).innerHTML = "<span class='glyphicon glyphicon-remove'></span> Lỗi";
-				console.log(data);
+				//console.log(data);
+				loading_page.hide();
 			});
 			
 		}
