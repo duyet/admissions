@@ -1,9 +1,17 @@
+
+
+
 <section data-ng-controller="CandidateController" data-ng-init="findcandidates()">
     <section class="section first">
     <div class="container">
         
             <div class="page-header">
                 <h1>Hồ Sơ</h1>
+
+		<!-- Go to www.addthis.com/dashboard to customize your tools -->
+		<div class="addthis_native_toolbox"></div>
+
+		Đang xây dựng chức năng dự báo điểm chuẩn. Bạn nào thiếu điểm đến <a href="/#!/contacts">trang contact</a> và để lại thông tin của mình nhé.
             </div>
             <p>             
               <a class="btn btn-default mr-10" role="button" ng-repeat="condition in conditions" ng-click="removeCondition(condition)">
@@ -17,7 +25,7 @@
               </span>
             </div><!-- /input-group -->
 
-            <nav class="pull-right" ng-show="pagination > 0">
+           <div class="row"> <nav class="pull-right" ng-show="pagination > 0">
               <ul  class="pagination">
                 <li  ng-class="{'disabled' : pagination_active <= 1 }">
                   <a ng-click="addPreviousPagination()" aria-label="Previous"  >
@@ -32,7 +40,7 @@
                   </a>
                 </li>
               </ul>
-            </nav>
+            </nav></div>
 
             <div class="">
                 <table class="table table-hover table-striped">
