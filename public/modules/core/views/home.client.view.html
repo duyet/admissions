@@ -45,7 +45,7 @@
 	</form>
 	</div>
 </section>
-<section class="section">
+<section class="section" ng-show="schools.length > 0 ">
 <div class="container">
 <div class="panel panel-default" data-ng-repeat="school in schools" data-ng-href="#!/schools/{{school._id}}">
           <div class="panel-heading">
@@ -132,17 +132,46 @@
 				    </table>
           		</div>
 		      </div>
-		      <!-- <a href="#" class="list-group-item">
-		        <h4 class="list-group-item-heading">List group item heading</h4>
-		        <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
-		      </a>
-		      <a href="#" class="list-group-item">
-		        <h4 class="list-group-item-heading">List group item heading</h4>
-		        <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
-		      </a> -->
 		    </div>
           </div>
         </div>
        </div>
+</section>
+<section class="section" ng-show="facultys.length > 0">
+
+	<div class="container">
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<p>Cơ hội cho những thí sinh có tổ hợp môn <span class="label label-success">{{subject_group.subject_group}}</span> với tổng điểm chưa nhân hệ số <span class="label label-warning">{{score.score_1 + score.score_2 + score.score_3 + score.score_priority}}</span></p>
+				<p><i>{{opportunity_string}}</i></p>
+			</div>
+		</div>
+		<div class="panel panel-default" data-ng-repeat="faculty in facultys">
+			<div class="panel-heading">
+	          	<h4>{{faculty.name}} - {{faculty.school_name}}</h4>
+	          	<p>          		
+	          		<a class="btn btn-default" role="button" ng-class="{'btn-success' : faculty.opportunity > 0, 'btn-primary' : faculty.opportunity == 0, 'btn-warning' : faculty.opportunity < 0 }">
+	          			Cơ hội <span class="badge">{{faculty.opportunity| number:2}}%</span>
+	          		</a>
+	          		<a class="btn btn-primary" role="button">
+	          			Vị trí <span class="badge">{{faculty.index}}</span>
+	          		</a>
+	          		<a class="btn btn-primary" role="button">
+	          			Còn lại <span class="badge">{{faculty.remain}}</span>
+	          		</a>
+	          		<a class="btn btn-default" role="button">
+	          			Chỉ tiêu <span class="badge">{{faculty.quota}}</span>
+	          		</a>
+	          		<a class="btn btn-default" role="button">
+	          			Hồ sơ <span class="badge">{{faculty.candidate_apply}}</span>
+	          		</a>
+	          		<!-- <a class="btn btn-info" role="button" ng-click="view_table_faculty(faculty.code)">
+	          			Xem danh sách <span class="glyphicon glyphicon-list"></span>
+	          		</a> -->
+	          		
+	          	</p>
+	        </div>
+		</div>
+	</div>
 </section>
 </section>

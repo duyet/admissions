@@ -47,7 +47,7 @@ School.find().exec(function(err, school) {
 });
 exports.opportunity = function(req, res) { 
 	// create_faculty_list();
-	console.log(_.has(req.body, 'subject_group'), _.has(req.body, 'score'));
+	//console.log(_.has(req.body, 'subject_group'), _.has(req.body, 'score'));
 	if(_.has(req.body, 'subject_group') && _.has(req.body, 'score')){
 
 		var subject1 = req.body.subject_group.subject1;
@@ -61,61 +61,114 @@ exports.opportunity = function(req, res) {
 		var score_2 = req.body.score.score_2;
 		var score_3 = req.body.score.score_3;
 
-		var faculty_array = [];
-		for(var s_index in shuffle){
-
-			var faculty = _.remove(facultyFull, function(object) {
-				return object.subject_group.indexOf(shuffle[s_index]) === -1;
-			});
-
-			var faculty_code = _.map(faculty, function (object) {
-				return object.school_code +'-'+object.code;
-			});
-			faculty_array = faculty_array.concat(faculty_code);
-		}
-		var faculty_condition =  _.uniq(faculty_array);
-		
-		res.jsonp(faculty_condition);
 		var condition_score = score_priority + score_1 + score_2 + score_3;
-			//console.log(shuffle_facultys);
+		
 		Candidate.aggregate(
-	  	{ $match : {school_faculty : {$in : shuffle_facultys},  score_final: { $gt: condition_score  } } }, 
-		{ $group: { _id: { school_code:  "$school_code" , faculty_code:  "$faculty_code" } , total: { $sum: 1}}}, 
-		{ $project: { _id: 1, total: 1 , school_faculty: { $concat: [ "$_id.school_code", "-", "$_id.faculty_code" ] }}}
-		  //, { $project: { itemDescription: { $concat: [ "$item", " - ", "$description" ] } } }
-		  , function (err, logs) {
-		  	if (err) {
-			  	//console.log(err);
-				return res.status(400).send({
-					message: errorHandler.getErrorMessage(err)
-				});
-			} else {
+			{ $match : {
+				score_final: { $gte: condition_score  } } 
+			}, //
+			{ $group: { _id: { school_code:  "$school_code" , faculty_code:  "$faculty_code" } 
+				, total: { $sum: 1}}
+			}, 
+			{ $project: { 
+				_id: 1, 
+				total: 1 ,  
+				school_faculty: { $concat: [ "$_id.school_code", "-", "$_id.faculty_code" ] }}
+			},
+			{ $match : {total : {$gt : 0}, } }, 						
+			//{ $match : {school_faculty : {$in : condition_faculty}, } }, 						
+			function (err, candidates) {
+			  	if (err) {
+				  	console.log('Faculty.aggregate',err);
+				  	res.jsonp({
+						result:false, 
+						//record: candidates.length,
+						message: err.toString()
+					});
+					// return res.status(400).send({
+					// 	message: errorHandler.getErrorMessage(err)
+					// });
+				} else {
+					// console.log('\n ---> candidates : \n',candidates);
+					var condition_faculty = _.pluck(candidates, 'school_faculty');
+					console.log('\n ---> condition_faculty : \n',condition_faculty);
 
-				var school = [];
-				for (var i in logs) {
-
-					for (var x = 0; 
-						x < facultyFull.length && (
-							facultyFull[x].code !== logs[i]._id.faculty_code 
-							&& facultyFull[x].school_code !== logs[i]._id.school_code
-							); x++) {};
-						
-					if(facultyFull[x] === undefined){
-						//console.log(logs[i]);
-					}
-					if(facultyFull[x] !== undefined && parseInt(logs[i].total) < parseInt(facultyFull[x].quota)){
-						logs[i].faculty = facultyFull[x];
-						// for (var x = 0; x < schoolAll.length && schoolAll[x].code !== logs[i]._id.school_code; x++) {};
-						// logs[i].school = schoolAll[x];
-						school.push(logs[i]);
-					}
-					
-				};
-				res.jsonp(school);
+					Faculty.aggregate(
+						{ $project: { 
+							name: 1,
+							code: 1,
+							school_name: 1,
+							school_code: 1,
+							subject_group: 1,
+							quota: 1,
+							current: 1,
+							benchmark: 1, 
+							matriculate : 1, 
+							candidate_apply : 1, 
+							school_faculty: { $concat: [ "$school_code", "-", "$code" ] }}
+						},
+						{ $match : {
+								subject_group : {$in : shuffle},// } ,
+								school_faculty : {$in : condition_faculty}
+							}
+						}, 
+						function (err, facultys) {
+						  	if (err) {
+						  		console.log('Faculty.aggregate',err);
+						  		res.jsonp({
+									result:false, 
+									message: err.toString()
+								});
+						  	}else{
+						  		console.log('\n ---> facultys: \n',facultys);
+						  		var record = []
+						  		for(var f_index in facultys){
+						  			var candidate =  _.filter(candidates, function(object) {
+									  return object.school_faculty == facultys[f_index].school_faculty;
+									});
+						  			record.push(
+						  				_.merge({
+						  					index : candidate[0].total, 
+						  					remain : facultys[f_index].quota -  candidate[0].total,
+						  					opportunity : ((facultys[f_index].quota -  candidate[0].total)/facultys[f_index].quota)*100
+						  				}, facultys[f_index])
+						  			)
+						  		}
+						  		res.jsonp({
+									result:true, 
+									record: _.sortByOrder(record, ['opportunity'],['desc']),
+									message: ''
+								});
+						  	}
+						}
+					);
+				}
 			}
-		});
+		);
 
 	}
+
+
+// {
+// 						  					total: candidate[0].total
+// 						  				}, 
+// 						  				{
+// 						  					name: facultys[f_index].name,
+// 											code: facultys[f_index].code,
+// 											school_name: facultys[f_index].school_name,
+// 											school_code: facultys[f_index].school_code,
+// 											subject_group: facultys[f_index].subject_group,
+// 											quota: facultys[f_index].quota,
+// 											current: facultys[f_index].current,
+// 											benchmark: facultys[f_index].benchmark, 
+// 											// matriculate_list: 1 , 
+// 											matriculate : facultys[f_index].matriculate, 
+// 											candidate_apply : facultys[f_index].candidate_apply, 
+
+// 						  				}
+
+
+
 	
 	// for (var i in facultyFull) {
 	// 	// var facultyFull
