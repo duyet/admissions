@@ -1,0 +1,56 @@
+HƯỚNG DẪN NHẬP LIỆU CHO HỆ THỐNG
+
+*Một số lưu ý:
+- Các môn thi nhập theo các môn : Toán,Văn,Sử,ĐịaLý,Hóa,Sinh,Anh,Nga,Pháp,Trung,Đức,Nhật
+Ví dụ: Vật lý, vật lý, Vật Lý, Vật lí, vật lí, Vật Lí, ... Thì nhập "Lý"
+- Chỉ nhập các trường dữ liệu : 
+"Số Báo Danh" : sbd,
+"Họ Tên" :  hoten,
+"Mã Trường" : ma_truong,
+"Mã Ngành" : ma_nganh,
+"Tổ Hợp Môn" : to_hop_mon,
+"STT Nguyện Vọng" : stt_nguyenvong -> Hiện thì mỗi bạn thí sinh sẽ được quyền xét tuyển 4 ngành tại cùng 1 trường, và sẽ được đánh thứ tự ưu tiên cho các ngành từ 1 đến 4
+"Điểm Ưu Tiên" : diem_uu_tien,
+"Điểm Tổng" : diem_tong,
+Trong đó "Điểm Tổng" là tổng điểm các môn (nếu có hệ số thì nhân luôn), "Điểm Ưu Tiên" là tổng điểm ưu tiên.
+
+- Nhập mã ngành:
+Hiện các trường có một số trường tuyển nhiều ngành nhưng lại trùng mã ngành. Thì các bạn thêm chử viết tắt vào các mã ngành trùng lập. Và đảm bảo mã ngành ở ở sheet đầu tiên và ở sheet thứ 2 trùng khớp là được.
+Ví dụ: trường ĐH CNTT có các ngành:
+- Hệ thống thông tin - D480104 thì nhập D480104
+- Thương mại điện tử (ngành Hệ thống Thông tin) - D480104 thì nhập D480104_tmdt
+- Hệ thống thông tin chương trình tiên tiến - D480104 thì nhập D480104_cttt
+- Hệ thống thông tin chương trình chất lượng cao - D480104 thì nhập D480104_clc
+
+- Cung cấp thông liên hệ:ở sheet thứ 2 các bạn vui lòng cung cấp thông tin.
+Người nhập:
+Email:
+Facebook:
+Link dữ liệu: -> Hiện thì cứ mỗi 3 ngày các trường sẽ nhập liệu một lần, nên Pong sẽ dựa vào link này để kiểm tra. Nếu như trường này có thể nhập tự động thì những lần sau hệ thống sẽ tự cập nhật.
+Trường đang nhập liệu:
+Ngày cập nhật: Ngày mà trường công bố danh sách, lấy danh sách có công bố gần hiện tại nhất 
+
+*Các bước nhập liệu 
+- Bước 1: vào link "https://drive.google.com/folderview?id=0B1bydF_prA9wflJIZ0RrN2dOdVE0dGNYeHhXNHpiWU1nalU0MU0zUDNfVW85T2RQOXUycWM&usp=sharing"
+- Bước 2: Mở file "Đại học & Học viện" để xem các trường và học viện cần nhập liệu. Bạn chọn trường chưa đánh "x" ở "Đã nhập" để nhập liệu. Sau đó bạn đánh dấu "x" và điền tên bạn vào trường bạn chọn. Các bạn ưu tiên nhập liệu các trường dùng file Excle or Word or PDF. Còn các trường hiển thị bằng web thì bạn dán link vào, Team sẽ nhập nó tự động
+- Bước 3: Bạn tiến hành tạo bảng sao file "samples" và đỗi thành tên trường mà bạn chọn (theo ví dụ : [Tên bạn] [Mã Trường] - [Tên Trường] =>[Pong Pi] QSC - Trường Đại học Công nghệ Thông tin - ĐHQG TP.HCM). Click chuột phải vào file sẽ thấy "Tạo bản sao"
+- Bước 4: Mở file bằng trình duyệt. Và bạn vui lòng search google trang Tuyển Sinh 2015 của trường đó để nhập liệu.
+- Bước 5: ở sheet đầu tiên bạn nhậu danh sách thí sinh xét tuyển
+- Bước 6: ở sheet thứ 2 bạn nhậu danh sách thông tin các ngành xét tuyển.
+
+*Các tình hướng xử lý thường gặp:
+1. File PDF: bạn mở file PDF bằng Microsoft Office 2013 thì bạn có thể copy và past vào. Nếu không có Microsoft Office 2013 thì bạ có thể bõ qua
+2. Các bạn ưu tiên nhập liệu các trường dùng file Excle or Word or PDF. Còn các trường hiển thị bằng web thì bạn dán link vào, Team sẽ nhập nó tự động 
+Trong quá trình nhập liệu thì có vấn đề thì các bạn vui lòng inbox or gửi cho Pong nha!
+- Facebook:  https://www.facebook.com/eroshaly
+- Email: Eroshaly@gmail,com
+- Skype: Eroshaly
+- Phone: 0919914766
+
+Các tình huống sẽ được cập nhật thường xuyên!
+
+Cảm ơn các bạn đã đóng góp vào hệ thống tuyển sinh năm nay! Với các thông tin này sẽ rất hữu ích cho các thí sinh! 
+
+Tự động 
+Người nhập 
+Đã nhập
