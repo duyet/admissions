@@ -2,9 +2,9 @@
 
 module.exports = {
 	app: {
-		title: 'admissions',
+		title: 'Admissions - Hệ thống truy vấn tuyển sinh',
 		description: 'The app for admissions 2015 at HCM',
-		keywords: 'admissions'
+		keywords: 'Admissions, Hệ thống truy vấn tuyển sinh'
 	},
 	port: process.env.PORT || 3000,
 	templateEngine: 'swig',
