@@ -3,7 +3,7 @@
 module.exports = {
 	db: 'mongodb://localhost/admissions-dev',
 	app: {
-		title: 'admissions - Development Environment'
+		title: 'Admissions - Hệ thống truy vấn tuyển sinh'
 	},
 	facebook: {
 		clientID: process.env.FACEBOOK_ID || 'APP_ID',
