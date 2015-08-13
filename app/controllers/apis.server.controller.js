@@ -55,6 +55,7 @@ exports.opportunity = function(req, res) {
 		var subject3 = req.body.subject_group.subject3;
 
 		var shuffle = shuffle_func(subject1, subject2, subject3);
+		
 
 		var score_priority = req.body.score.score_priority;
 		var score_1 = req.body.score.score_1;
@@ -62,22 +63,41 @@ exports.opportunity = function(req, res) {
 		var score_3 = req.body.score.score_3;
 
 		var condition_score = score_priority + score_1 + score_2 + score_3;
+
+		var sectoritem = [];
+		if(_.has(req.body, 'sectoritem')){
+			for(var s_index in req.body.sectoritem){
+				var item = RegExp(req.body.sectoritem[s_index], 'i');
+				sectoritem.push(item);
+			}
+			// sectoritem = req.body.sectoritem;
+		}
 		
-		Candidate.aggregate(
-			{ $match : {
-				score_final: { $gte: condition_score  } } 
-			}, //
-			{ $group: { _id: { school_code:  "$school_code" , faculty_code:  "$faculty_code" } 
-				, total: { $sum: 1}}
-			}, 
+		//console.log('\n ---> subject opportunity : \n',req.body.subject_group, '\n condition_score', condition_score, '\n shuffle', shuffle);
+		console.log('\n ---> sectoritem : \n',sectoritem);
+		Faculty.aggregate(
 			{ $project: { 
-				_id: 1, 
-				total: 1 ,  
-				school_faculty: { $concat: [ "$_id.school_code", "-", "$_id.faculty_code" ] }}
+				name: 1,
+				code: 1,
+				school_name: 1,
+				school_code: 1,
+				subject_group: 1,
+				quota: 1,
+				current: 1,
+				benchmark: 1, 
+				matriculate : 1, 
+				candidate_apply : 1, 
+				school_faculty: { $concat: [ "$school_code", "-", "$code" ] }}
 			},
-			{ $match : {total : {$gt : 0}, } }, 						
-			//{ $match : {school_faculty : {$in : condition_faculty}, } }, 						
-			function (err, candidates) {
+			{ $match : {
+					subject_group : {$in : shuffle},// } ,
+					quota :{ $gt: 0  },
+					code : {$in : sectoritem}
+					//school_faculty : {$in : condition_faculty}
+				}
+			}, 
+			function (err, facultys) {
+		
 			  	if (err) {
 				  	console.log('Faculty.aggregate',err);
 				  	res.jsonp({
@@ -89,30 +109,26 @@ exports.opportunity = function(req, res) {
 					// 	message: errorHandler.getErrorMessage(err)
 					// });
 				} else {
-					// console.log('\n ---> candidates : \n',candidates);
-					var condition_faculty = _.pluck(candidates, 'school_faculty');
-					console.log('\n ---> condition_faculty : \n',condition_faculty);
-
-					Faculty.aggregate(
-						{ $project: { 
-							name: 1,
-							code: 1,
-							school_name: 1,
-							school_code: 1,
-							subject_group: 1,
-							quota: 1,
-							current: 1,
-							benchmark: 1, 
-							matriculate : 1, 
-							candidate_apply : 1, 
-							school_faculty: { $concat: [ "$school_code", "-", "$code" ] }}
-						},
+					//console.log('\n ---> candidates : \n',facultys);
+					// var condition_faculty = _.pluck(candidates, 'school_faculty');
+					var condition_faculty = _.pluck(facultys, 'school_faculty');
+					//console.log('\n ---> condition_faculty : \n',facultys);
+					Candidate.aggregate(
 						{ $match : {
-								subject_group : {$in : shuffle},// } ,
-								school_faculty : {$in : condition_faculty}
-							}
+							score_final: { $gte: condition_score  } } 
+						}, //
+						{ $group: { _id: { school_code:  "$school_code" , faculty_code:  "$faculty_code" } 
+							, total: { $sum: 1}}
 						}, 
-						function (err, facultys) {
+						{ $project: { 
+							_id: 1, 
+							total: 1 ,  
+							school_faculty: { $concat: [ "$_id.school_code", "-", "$_id.faculty_code" ] }}
+						},
+						//{ $match : {total : {$gt : }, } }, 						
+						{ $match : {school_faculty : {$in : condition_faculty}, } }, 						
+						function (err, candidates) {
+					
 						  	if (err) {
 						  		console.log('Faculty.aggregate',err);
 						  		res.jsonp({
@@ -120,17 +136,23 @@ exports.opportunity = function(req, res) {
 									message: err.toString()
 								});
 						  	}else{
-						  		console.log('\n ---> facultys: \n',facultys);
+						  		//console.log('\n ---> facultys: \n',facultys.length);
 						  		var record = []
 						  		for(var f_index in facultys){
 						  			var candidate =  _.filter(candidates, function(object) {
 									  return object.school_faculty == facultys[f_index].school_faculty;
 									});
+									var total = 1;
+									if(candidate.length > 0){
+										total = candidate[0].total;
+									}else{
+
+									}
 						  			record.push(
 						  				_.merge({
-						  					index : candidate[0].total, 
-						  					remain : facultys[f_index].quota -  candidate[0].total,
-						  					opportunity : ((facultys[f_index].quota -  candidate[0].total)/facultys[f_index].quota)*100
+						  					index : total, 
+						  					remain : facultys[f_index].quota -  total,
+						  					opportunity : ((facultys[f_index].quota -  total)/facultys[f_index].quota)*100
 						  				}, facultys[f_index])
 						  			)
 						  		}

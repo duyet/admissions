@@ -2,8 +2,9 @@
 
 angular.module('core').controller('HomeController', ['$scope', '$stateParams',
 	'$location', '$http', 'Authentication', 'Subjectgroups', 'Subjects', 'Schools',
+	'Sectoritems', 'Sectors',
 	function($scope, $stateParams, $location, $http, Authentication, Subjectgroups, 
-		Subjects, Schools) {
+		Subjects, Schools, Sectoritems, Sectors) {
 
 		$scope.score = {
 			score_1 : Math.floor(Math.random()*(7-5+1)+5),
@@ -19,6 +20,12 @@ angular.module('core').controller('HomeController', ['$scope', '$stateParams',
 		});
 		$scope.subjects = Subjects.query();
 		$scope.schools = Schools.query();
+
+		$scope.sectoritems = Sectoritems.query();
+		$scope.sectoritem = {};
+		$scope.sectors = Sectors.query();
+		$scope.sector = {};
+
 		$scope.opportunity_string_array = [
 			'Tương lai có rất nhiều tên: Với kẻ yếu, nó là Điều không thể đạt được. Đối với người hay sợ hãi, nó là Điều chưa biết. Với ai dũng cảm, nó là Cơ hội. Victor Hugo',
 			'Cho dù có lúc ước mơ bị che mờ, bị vùi dập trong những thử thách của cuộc sống khiến bạn không còn muốn nghĩ về nó nữa. Nhưng bạn đừng bao giờ từ bỏ nó, vì đó chính là ý nghĩa thực sự của cuộc sống, là điều cần thiết tạo nên sức mạnh cho bạn.',
@@ -78,13 +85,35 @@ angular.module('core').controller('HomeController', ['$scope', '$stateParams',
 		}
 		$scope.message = '';
 		$scope.opportunity = function (school) {			
-			
-			if($scope.score.score_1 + $scope.score.score_2 + $scope.score.score_3 + $scope.score.score_priority < 15 ){
-				$scope.message = 'Hệ thống tạm thời chỉ xử lý dữ liệu xét tuyển Đại Học. Bạn vui lòng nhập điểm với tổng chưa nhân hệ số từ 15đ trở lên!';
-			}else{
+			function opportunity_api (subject_group,score, first) {
+				// var sector = '';
+				// if($scope.sector){
+				// 	sector = $scope.sector.code;
+				// }
+				var sectoritem = [];
+				if($scope.sectoritem && Object.keys($scope.sectoritem).length > 0){
+					//console.log('$scope.sectoritem',$scope.sectoritem);
+					sectoritem.push($scope.sectoritem.code);// = [req.body.sector.code;
+				}
+				console.log('$scope.sectoritem',$scope.sectoritem,$scope.sector != null);
+				if($scope.sector != null){
+					if(sectoritem.length <= 0 && Object.keys($scope.sector).length > 0){
+						console.log('sector items length');
+						for(var x in $scope.sectoritems){
+							if( $scope.sectoritems[x].sector_code === $scope.sector.code){
+								sectoritem.push($scope.sectoritems[x].code);
+							}
+							
+						}
+					}
+				}
+
+				
 				var data = {
-					subject_group: $scope.subject_group,
-					score: $scope.score,
+					subject_group:subject_group ,
+					sectoritem:sectoritem ,
+					// sector:sector ,
+					score: score,
 				}
 				loading_page.loading();
 				$scope.facultys = [];
@@ -92,19 +121,140 @@ angular.module('core').controller('HomeController', ['$scope', '$stateParams',
 				$scope.opportunity_string = $scope.opportunity_string_array[Math.floor(Math.random()*($scope.opportunity_string_array.length - 1-0+1)+0)];
 				$http({method: 'POST', url: 'apis/opportunity', async:false,data:data})
 				.success(function(data, status, headers, config) {
-					//console.log(data);
 					if(data.result){
-						$scope.facultys = data.record;
+						if(first){
+							$scope.facultys = data.record;
+						}else{
+							$scope.facultys = $scope.facultys.concat(data.record);
+						}						//children = hege.concat(stale);
 						
 					}else{
-						window.alert(data.message);						
+						if(first){
+							window.alert(data.message);		
+						}				
 					}
+					console.log(data);
 					loading_page.hide();
 				}).error(function(data, status, headers, config) {
-					window.alert("Server has experienced a problem. please try again after some time!");		
-					//console.log(data);
+					if(first){
+						window.alert("Server has experienced a problem. please try again after some time!");
+					}		
 					loading_page.hide();
 				});
+			}
+			$scope.message = '';
+			if($scope.score.score_1 + $scope.score.score_2 + $scope.score.score_3 + $scope.score.score_priority < 15 ){
+				$scope.message = 'Hệ thống tạm thời chỉ xử lý dữ liệu xét tuyển Đại Học. Bạn vui lòng nhập điểm với tổng chưa nhân hệ số từ 15đ trở lên!';
+			}else{
+				opportunity_api (
+					$scope.subject_group,
+					$scope.score, true);
+
+				//X2 subject1
+				opportunity_api (				
+					{
+						subject1 : $scope.subject_group.subject1+'X2',
+						subject2 : $scope.subject_group.subject2,
+						subject3 : $scope.subject_group.subject3,
+					}, {
+						score_1 : $scope.score.score_1*2,
+						score_2 : $scope.score.score_2,
+						score_3 : $scope.score.score_3,
+						score_priority : $scope.score.score_priority,
+					},
+					false
+				);
+				
+				//X2 subject2
+				opportunity_api (					
+					{
+						subject1 : $scope.subject_group.subject1,
+						subject2 : $scope.subject_group.subject2+'X2',
+						subject3 : $scope.subject_group.subject3,
+					}, {
+						score_1 : $scope.score.score_1,
+						score_2 : $scope.score.score_2*2,
+						score_3 : $scope.score.score_3,
+						score_priority : $scope.score.score_priority,
+					},
+					false
+				);
+
+				//X2 subject3
+				opportunity_api (					
+					{
+						subject1 : $scope.subject_group.subject1,
+						subject2 : $scope.subject_group.subject2,
+						subject3 : $scope.subject_group.subject3+'X2',
+					}, {
+						score_1 : $scope.score.score_1,
+						score_2 : $scope.score.score_2,
+						score_3 : $scope.score.score_3*2,
+						score_priority : $scope.score.score_priority,
+					},
+					false
+				);
+
+				//X2 subject1 subject2
+				opportunity_api (					
+					{
+						subject1 : $scope.subject_group.subject1+'X2',
+						subject2 : $scope.subject_group.subject2+'X2',
+						subject3 : $scope.subject_group.subject3,
+					}, {
+						score_1 : $scope.score.score_1*2,
+						score_2 : $scope.score.score_2*2,
+						score_3 : $scope.score.score_3,
+						score_priority : $scope.score.score_priority,
+					},
+					false
+				);
+
+				//X2 subject1 subject3
+				opportunity_api (					
+					{
+						subject1 : $scope.subject_group.subject1+'X2',
+						subject2 : $scope.subject_group.subject2,
+						subject3 : $scope.subject_group.subject3+'X2',
+					}, {
+						score_1 : $scope.score.score_1*2,
+						score_2 : $scope.score.score_2,
+						score_3 : $scope.score.score_3*2,
+						score_priority : $scope.score.score_priority,
+					},
+					false
+				);
+
+				//X2 subject2 subject3
+				opportunity_api (					
+					{
+						subject1 : $scope.subject_group.subject1,
+						subject2 : $scope.subject_group.subject2+'X2',
+						subject3 : $scope.subject_group.subject3+'X2',
+					}, {
+						score_1 : $scope.score.score_1,
+						score_2 : $scope.score.score_2*2,
+						score_3 : $scope.score.score_3*2,
+						score_priority : $scope.score.score_priority,
+					},
+					false
+				);
+
+				//X2 subject1 subject2 subject3
+				opportunity_api (					
+					{
+						subject1 : $scope.subject_group.subject1+'X2',
+						subject2 : $scope.subject_group.subject2+'X2',
+						subject3 : $scope.subject_group.subject3+'X2',
+					}, {
+						score_1 : $scope.score.score_1*2,
+						score_2 : $scope.score.score_2*2,
+						score_3 : $scope.score.score_3*2,
+						score_priority : $scope.score.score_priority,
+					},
+					false
+				);
+
 			}
 		}
 		

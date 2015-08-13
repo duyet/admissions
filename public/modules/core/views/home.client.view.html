@@ -1,6 +1,6 @@
 <section data-ng-controller="HomeController">
 <section class="section">
-	<div class="container">
+	<div class="">
 	<form class="form-horizontal">
 	<fieldset>
 	  <div class="form-group">
@@ -21,6 +21,40 @@
 		    <a data-ng-repeat="subject in subjects" class="btn btn-default" ng-class="{'btn-info': subject_group.subject_group.lastIndexOf(subject.subject) !== -1}" style="margin:4px">{{subject.subject}}</a>
 		</div>
 	  </div>
+	  <div class="form-group">
+	    <label class="col-sm-2 control-label" for="sector">Ngành</label>
+	    <div class="col-sm-10">
+	    	<div class="row">
+	    		<div class="col-sm-6">
+				    <select 
+					    data-ng-model="sector" 
+					    id="sector" 
+					    class="form-control" 
+					    ng-change="sectoritem = {}"
+					    data-ng-options=" '['+item.code +'] '+item.name for item in sectors"
+				    >
+				    <option value=""> --- Tất cả Nhóm Ngành ---</option>
+					</select>
+				</div>
+				<div class="col-sm-6">
+					<select 
+					    data-ng-model="sectoritem" 
+					    id="sectoritem" 
+					    class="form-control" 
+					    data-ng-options=" '['+item.code +'] '+item.name for item in sectoritems | filter: {sector_code: sector.code}"
+				    >
+				    <option value=""> --- Tất cả Ngành ---</option>
+					</select>
+				</div>
+			</div>
+		</div>
+	  </div>
+	  <!-- <div class="form-group">
+	    <label class="col-sm-2 control-label" for="sectoritem">Ngành</label>
+	    <div class="col-sm-10">
+		    
+		</div>
+	  </div> -->
 	  <div class="form-group">
 			<label class="col-sm-2 control-label" for="score_priority">Kết quả thi</label>
 			<div class="col-sm-10">
@@ -51,7 +85,7 @@
 
 </section>
 <section class="section" ng-show="schools.length > 0 ">
-<div class="container">
+<div class="">
 <div class="panel panel-default" data-ng-repeat="school in schools" data-ng-href="#!/schools/{{school._id}}">
           <div class="panel-heading">
           	<h4>{{school.name}}</h4>
@@ -144,21 +178,22 @@
 </section>
 <section class="section" ng-show="facultys.length > 0">
 
-	<div class="container">
+	<div class="">
 		<div class="panel panel-default">
 			<div class="panel-heading">
-				<p>Cơ hội cho những thí sinh có tổ hợp môn <span class="label label-success">{{subject_group.subject_group}}</span> với tổng điểm chưa nhân hệ số <span class="label label-warning">{{score.score_1 + score.score_2 + score.score_3 + score.score_priority}}</span></p>
+				<p>- Cơ hội cho những thí sinh có tổ hợp môn <span class="label label-success">{{subject_group.subject_group}}</span> với tổng điểm chưa nhân hệ số <span class="label label-warning">{{score.score_1 + score.score_2 + score.score_3 + score.score_priority}}</span></p>
+				<p>- Với các môn trong các tổ hợp có thêm ký tự <span class="label label-primary">X</span> thì đó chính là các tổ hợp được các trường áp dụng nhân hệ số. Ví dụ <span class="label label-default">Toán-Văn-AnhX2</span> thì có nghĩa là trong tổ hợp này, môn <span class="label label-primary">Anh</span> được <span class="label label-primary">nhân hệ số 2</span><p>
 				<p><i>{{opportunity_string}}</i></p>
 			</div>
 		</div>
-		<div class="panel panel-default" data-ng-repeat="faculty in facultys">
+		<div class="panel panel-default" data-ng-repeat="faculty in facultys | orderBy:['-opportunity', 'index'] ">
 			<div class="panel-heading">
 	          	<h4>{{faculty.name}} - {{faculty.school_name}}</h4>
 	          	<p>          		
-	          		<a class="btn btn-default" role="button" ng-class="{'btn-success' : faculty.opportunity > 0, 'btn-primary' : faculty.opportunity == 0, 'btn-warning' : faculty.opportunity < 0 }">
+	          		<a class="btn btn-default" role="button" ng-class="{'btn-success' : faculty.opportunity > 0, 'btn-primary' : faculty.opportunity == 0, 'btn-danger' : faculty.opportunity < 0 }">
 	          			Cơ hội <span class="badge">{{faculty.opportunity| number:2}}%</span>
 	          		</a>
-	          		<a class="btn btn-primary" role="button">
+	          		<a class="btn btn-warning" role="button">
 	          			Vị trí <span class="badge">{{faculty.index}}</span>
 	          		</a>
 	          		<a class="btn btn-primary" role="button">
@@ -170,10 +205,18 @@
 	          		<a class="btn btn-default" role="button">
 	          			Hồ sơ <span class="badge">{{faculty.candidate_apply}}</span>
 	          		</a>
+	          		
+	          		
 	          		<!-- <a class="btn btn-info" role="button" ng-click="view_table_faculty(faculty.code)">
 	          			Xem danh sách <span class="glyphicon glyphicon-list"></span>
 	          		</a> -->
 	          		
+	          	</p>
+	          	<p>
+	          		
+	          		<!-- <a class="btn btn-primary" role="button"> -->
+	          			Tổ hợp <span ng-repeat="subject_group in faculty.subject_group"><span class="label label-primary" >{{subject_group}}</span>&nbsp;</span>
+	          		<!-- </a> -->
 	          	</p>
 	        </div>
 		</div>
