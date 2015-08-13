@@ -3,8 +3,9 @@
 module.exports = {
 	app: {
 		title: 'Admissions - Hệ thống truy vấn tuyển sinh',
-		description: 'The app for admissions 2015 at HCM',
-		keywords: 'Admissions, Hệ thống truy vấn tuyển sinh'
+		description: 'Admissions là hệ thống truy vấn tuyển sinh ĐH-CĐ 2015, '+
+		'hỗ trợ tra cứu thông tin tuyển sinh, thông tin hồ sơ xét tuyển, tỉ lệ đậu rớt các trường ĐH-CĐ 2015. ',
+		keywords: 'Admissions, Hệ thống truy vấn tuyển sinh, tra cứu, thông tin tuyển sinh, tỉ lệ đậu rớt, các trường ĐH-CĐ 2015'
 	},
 	port: process.env.PORT || 3000,
 	templateEngine: 'swig',
