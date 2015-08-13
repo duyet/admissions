@@ -21,10 +21,24 @@ angular.module('core').controller('HomeController', ['$scope', '$stateParams',
 		$scope.subjects = Subjects.query();
 		$scope.schools = Schools.query();
 
-		$scope.sectoritems = Sectoritems.query();
 		$scope.sectoritem = {};
-		$scope.sectors = Sectors.query();
+		$scope.sectoritems = Sectoritems.query(function (data) {
+			for(var x in data){
+				if(data[x].sector_code == 'D48'){
+					$scope.sectoritem = data[x];
+				}
+			}
+		});
+		
 		$scope.sector = {};
+		$scope.sectors = Sectors.query(function (data) {
+			for(var x in data){
+				if(data[x].code == 'D48'){
+					$scope.sector = data[x];
+				}
+			}
+		});
+		
 
 		$scope.opportunity_string_array = [
 			'Tương lai có rất nhiều tên: Với kẻ yếu, nó là Điều không thể đạt được. Đối với người hay sợ hãi, nó là Điều chưa biết. Với ai dũng cảm, nó là Cơ hội. Victor Hugo',
@@ -95,10 +109,10 @@ angular.module('core').controller('HomeController', ['$scope', '$stateParams',
 					//console.log('$scope.sectoritem',$scope.sectoritem);
 					sectoritem.push($scope.sectoritem.code);// = [req.body.sector.code;
 				}
-				console.log('$scope.sectoritem',$scope.sectoritem,$scope.sector != null);
+				//console.log('$scope.sectoritem',$scope.sectoritem,$scope.sector != null);
 				if($scope.sector != null){
 					if(sectoritem.length <= 0 && Object.keys($scope.sector).length > 0){
-						console.log('sector items length');
+						//console.log('sector items length');
 						for(var x in $scope.sectoritems){
 							if( $scope.sectoritems[x].sector_code === $scope.sector.code){
 								sectoritem.push($scope.sectoritems[x].code);
@@ -112,9 +126,9 @@ angular.module('core').controller('HomeController', ['$scope', '$stateParams',
 				var data = {
 					subject_group:subject_group ,
 					sectoritem:sectoritem ,
-					// sector:sector ,
 					score: score,
 				}
+				console.log(data);
 				loading_page.loading();
 				$scope.facultys = [];
 				$scope.schools = [];
@@ -133,7 +147,7 @@ angular.module('core').controller('HomeController', ['$scope', '$stateParams',
 							window.alert(data.message);		
 						}				
 					}
-					console.log(data);
+					//console.log(data);
 					loading_page.hide();
 				}).error(function(data, status, headers, config) {
 					if(first){
