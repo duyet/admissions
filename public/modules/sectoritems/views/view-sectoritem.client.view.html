@@ -1,0 +1,21 @@
+<section data-ng-controller="SectoritemsController" data-ng-init="findOne()">
+	<div class="page-header">
+		<h1 data-ng-bind="sectoritem.name"></h1>
+	</div>
+	<div class="pull-right" data-ng-show="((authentication.user) && (authentication.user._id == sectoritem.user._id))">
+		<a class="btn btn-primary" href="/#!/sectoritems/{{sectoritem._id}}/edit">
+			<i class="glyphicon glyphicon-edit"></i>
+		</a>
+		<a class="btn btn-primary" data-ng-click="remove();">
+			<i class="glyphicon glyphicon-trash"></i>
+		</a>
+	</div>
+	<small>
+		<em class="text-muted">
+			Posted on
+			<span data-ng-bind="sectoritem.created | date:'mediumDate'"></span>
+			by
+			<span data-ng-bind="sectoritem.user.displayName"></span>
+		</em>
+	</small>
+</section>
