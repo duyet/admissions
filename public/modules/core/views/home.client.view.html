@@ -26,23 +26,23 @@
 			<div class="col-sm-10">
 			  	<div class="row">
 			  		<div class="col-sm-3">
-			  			<input data-ng-model="score.score_1" name="score_1" id="score_1" type="number" step="0.01" class="form-control" placeholder="{{ subject_group ? 'Điểm môn ' + subject_group.subject1 : 'Điểm môn 1'}}" required	>
+			  			<input data-ng-model="score.score_1" name="score_1" id="score_1" type="number" step="0.01" class="form-control" placeholder="{{ subject_group ? 'Điểm môn ' + subject_group.subject1 : 'Điểm môn 1'}}" max="10" min="1" required	>
 			  		</div>
 			  		<div class="col-sm-3">
-			  			<input data-ng-model="score.score_2" name="score_2" id="score_2" type="number" step="0.01" class="form-control" placeholder="{{ subject_group ? 'Điểm môn ' + subject_group.subject2 : 'Điểm môn 2'}}" required	>
+			  			<input data-ng-model="score.score_2" name="score_2" id="score_2" type="number" step="0.01" class="form-control" placeholder="{{ subject_group ? 'Điểm môn ' + subject_group.subject2 : 'Điểm môn 2'}}" max="10" min="1" required	>
 			  		</div>
 			  		<div class="col-sm-3">
-			  			<input data-ng-model="score.score_3" name="score_3" id="score_3" type="number" step="0.01" class="form-control" placeholder="{{ subject_group ? 'Điểm môn ' + subject_group.subject3 : 'Điểm môn 3'}}" required	>
+			  			<input data-ng-model="score.score_3" name="score_3" id="score_3" type="number" step="0.01" class="form-control" placeholder="{{ subject_group ? 'Điểm môn ' + subject_group.subject3 : 'Điểm môn 3'}}" max="10" min="1" required	>
 			  		</div>
 			  		<div class="col-sm-3">
-			  			<input data-ng-model="score.score_priority" name="score_priority" id="score_priority" type="number" step="0.01" class="form-control" placeholder="Điểm Ưu Tiên" required	>
+			  			<input data-ng-model="score.score_priority" name="score_priority" id="score_priority" max="10" min="0" type="number" step="0.01" class="form-control" placeholder="Điểm Ưu Tiên" required	>
 			  		</div>
 			  	</div>
 		  	</div>
 	  </div>
 	  <p class="text-center"><button type="submit" ng-click="opportunity()" class="btn btn-primary">Cơ hội</button></p>
-
-	  <p class="text-center"><div class="addthis_native_toolbox"></div></p>
+	  <alert ng-show="message.length > 0" type="danger" >{{message}}</alert>
+	  <!-- <p class="text-center"><div class="addthis_native_toolbox"></div></p> -->
 	  </fieldset>
 	</form>
 	</div>

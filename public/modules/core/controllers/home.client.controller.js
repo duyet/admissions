@@ -6,9 +6,9 @@ angular.module('core').controller('HomeController', ['$scope', '$stateParams',
 		Subjects, Schools) {
 
 		$scope.score = {
-			score_1 : Math.floor(Math.random()*(7-3+1)+3),
-			score_2 : Math.floor(Math.random()*(7-3+1)+3), 
-			score_3 : Math.floor(Math.random()*(7-3+1)+3), 
+			score_1 : Math.floor(Math.random()*(7-5+1)+5),
+			score_2 : Math.floor(Math.random()*(7-5+1)+5), 
+			score_3 : Math.floor(Math.random()*(7-5+1)+5), 
 			score_priority : Math.floor(Math.random()*(3-0+1)+0),
 		};
 
@@ -76,31 +76,36 @@ angular.module('core').controller('HomeController', ['$scope', '$stateParams',
 				// console.log(data);
 			});
 		}
-		
-		$scope.opportunity = function (school) {
-			loading_page.loading();
-			var data = {
-				subject_group: $scope.subject_group,
-				score: $scope.score,
-			}
-			$scope.facultys = [];
-			$scope.schools = [];
-			$scope.opportunity_string = $scope.opportunity_string_array[Math.floor(Math.random()*($scope.opportunity_string_array.length - 1-0+1)+0)];
-			$http({method: 'POST', url: 'apis/opportunity', async:false,data:data})
-			.success(function(data, status, headers, config) {
-				//console.log(data);
-				if(data.result){
-					$scope.facultys = data.record;
-					
-				}else{
-					window.alert(data.message);						
+		$scope.message = '';
+		$scope.opportunity = function (school) {			
+			
+			if($scope.score.score_1 + $scope.score.score_2 + $scope.score.score_3 + $scope.score.score_priority < 15 ){
+				$scope.message = 'Hệ thống tạm thời chỉ xử lý dữ liệu xét tuyển Đại Học. Bạn vui lòng nhập điểm với tổng chưa nhân hệ số từ 15đ trở lên!';
+			}else{
+				var data = {
+					subject_group: $scope.subject_group,
+					score: $scope.score,
 				}
-				loading_page.hide();
-			}).error(function(data, status, headers, config) {
-				window.alert("Server has experienced a problem. please try again after some time!");		
-				//console.log(data);
-				loading_page.hide();
-			});
+				loading_page.loading();
+				$scope.facultys = [];
+				$scope.schools = [];
+				$scope.opportunity_string = $scope.opportunity_string_array[Math.floor(Math.random()*($scope.opportunity_string_array.length - 1-0+1)+0)];
+				$http({method: 'POST', url: 'apis/opportunity', async:false,data:data})
+				.success(function(data, status, headers, config) {
+					//console.log(data);
+					if(data.result){
+						$scope.facultys = data.record;
+						
+					}else{
+						window.alert(data.message);						
+					}
+					loading_page.hide();
+				}).error(function(data, status, headers, config) {
+					window.alert("Server has experienced a problem. please try again after some time!");		
+					//console.log(data);
+					loading_page.hide();
+				});
+			}
 		}
 		
 	}
