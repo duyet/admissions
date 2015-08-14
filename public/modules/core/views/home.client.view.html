@@ -190,9 +190,9 @@
           <div class="panel-body">
           	<h5>{{school.name}}</h5>
           	<p>  
-          	<span class="label label-success" >{{school.quota | number : 0}}</span> Chỉ tiêu  <br> 
-          	<span class="label label-warning" ng-show="school.candidate > 0">{{school.candidate | number : 0}}</span>  Thí sinh <br>    		
-          	<span class="label label-primary" ng-show="school.resume > 0">{{school.resume | number : 0}}</span>  Hồ sơ <br>      		
+          	<span ng-show="school.quota > 0"><span class="label label-success" >{{school.quota | number : 0}}</span> Chỉ tiêu  <br> </span>
+          	<span ng-show="school.candidate > 0"><span class="label label-warning" >{{school.candidate | number : 0}}</span>  Thí sinh <br></span>    		
+          	<span ng-show="school.resume > 0"><span class="label label-primary" >{{school.resume | number : 0}}</span>  Hồ sơ <br></span>      		
           	      		
           		
           		
