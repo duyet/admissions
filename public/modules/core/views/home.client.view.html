@@ -190,20 +190,22 @@
 			<div class="panel-heading">
 	          	<h4>{{faculty.name}} - {{faculty.school_name}}</h4>
 	          	<p>          		
-	          		<a class="btn btn-default" role="button" ng-class="{'btn-success' : faculty.opportunity > 0, 'btn-primary' : faculty.opportunity == 0, 'btn-danger' : faculty.opportunity < 0 }">
-	          			Cơ hội <span class="badge">{{faculty.opportunity| number:2}}%</span>
-	          		</a>
-	          		<a class="btn btn-warning" role="button">
-	          			Vị trí <span class="badge">{{faculty.index}}/{{faculty.candidate_apply}}</span>
-	          		</a>
-	          		<a class="btn btn-primary" role="button">
-	          			Số chỉ tiêu còn thiếu <span class="badge">{{faculty.remain}}</span>
-	          		</a>
 	          		<a class="btn btn-default" role="button">
 	          			Chỉ tiêu <span class="badge">{{faculty.quota}}</span>
 	          		</a>
-	          		
-	          		
+
+	          		<a class="btn btn-warning" role="button">
+	          			Vị trí <span class="badge">{{faculty.index}}</span>
+	          		</a>
+
+	          		<a class="btn btn-primary" role="button">
+	          			Số hồ sơ <span class="badge">{{faculty.candidate_apply}}</span>
+	          		</a>
+
+	          		<!--a class="btn btn-default" role="button" ng-class="{'btn-success' : faculty.opportunity > 0, 'btn-primary' : faculty.opportunity == 0, 'btn-danger' : faculty.opportunity < 0 }">
+	          			Cơ hội <span class="badge">{{faculty.opportunity| number:2}}%</span>
+	          		</a-->
+	          			          		
 	          		<!-- <a class="btn btn-info" role="button" ng-click="view_table_faculty(faculty.code)">
 	          			Xem danh sách <span class="glyphicon glyphicon-list"></span>
 	          		</a> -->
