@@ -20,39 +20,11 @@ angular.module('core').controller('HomeController', ['$scope', '$stateParams',
 		});
 		$scope.subjects = Subjects.query();
 		$scope.schools = Schools.query();
-
-// <<<<<<< Updated upstream
-
+		
+		$scope.sectoritems = Sectoritems.query();
 		$scope.sectoritem = {};
-		$scope.sectoritems = Sectoritems.query(function (data) {
-			for(var x in data){
-				if(data[x].sector_code == 'D48'){
-					$scope.sectoritem = data[x];
-				}
-			}
-		});
-		
+		$scope.sectors = Sectors.query();
 		$scope.sector = {};
-		$scope.sectors = Sectors.query(function (data) {
-			for(var x in data){
-				if(data[x].code == 'D48'){
-					$scope.sector = data[x];
-				}
-			}
-		});
-		
-
-		// $scope.sectoritems = Sectoritems.query();
-		// $scope.sectoritem = {};
-		// $scope.sectors = Sectors.query();
-		// $scope.sector = {};
-
-// =======
-// 		$scope.sectoritems = Sectoritems.query();
-// 		$scope.sectoritem = {};
-// 		$scope.sectors = Sectors.query();
-// 		$scope.sector = {};
-// >>>>>>> Stashed changes
 
 		$scope.opportunity_string_array = [
 			'Tương lai có rất nhiều tên: Với kẻ yếu, nó là Điều không thể đạt được. Đối với người hay sợ hãi, nó là Điều chưa biết. Với ai dũng cảm, nó là Cơ hội. Victor Hugo',
@@ -114,53 +86,20 @@ angular.module('core').controller('HomeController', ['$scope', '$stateParams',
 		$scope.message = '';
 		$scope.opportunity = function (school) {			
 			function opportunity_api (subject_group,score, first) {
-				// var sector = '';
-				// if($scope.sector){
-				// 	sector = $scope.sector.code;
-				// }
 				var sectoritem = [];
 				if($scope.sectoritem && Object.keys($scope.sectoritem).length > 0){
-					//console.log('$scope.sectoritem',$scope.sectoritem);
-					sectoritem.push($scope.sectoritem.code);// = [req.body.sector.code;
+					sectoritem.push($scope.sectoritem.code);
 				}
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-				//console.log('$scope.sectoritem',$scope.sectoritem,$scope.sector != null);
-				if($scope.sector != null){
-					if(sectoritem.length <= 0 && Object.keys($scope.sector).length > 0){
-						//console.log('sector items length');
-=======
-=======
->>>>>>> Stashed changes
-				console.log('$scope.sectoritem',$scope.sectoritem,$scope.sector != null);
-				if($scope.sector != null){
-					if(sectoritem.length <= 0 && Object.keys($scope.sector).length > 0){
-						console.log('sector items length');
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
 						for(var x in $scope.sectoritems){
 							if( $scope.sectoritems[x].sector_code === $scope.sector.code){
-								sectoritem.push($scope.sectoritems[x].code);
+								if($scope.sectoritems[x].code)
+									sectoritem.push($scope.sectoritems[x].code);
 							}
 							
-						}
-					}
-				}
-
-				
+						}				
 				var data = {
 					subject_group:subject_group ,
 					sectoritem:sectoritem ,
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-=======
-					// sector:sector ,
->>>>>>> Stashed changes
-=======
-					// sector:sector ,
->>>>>>> Stashed changes
 					score: score,
 				}
 				console.log(data);
@@ -175,22 +114,13 @@ angular.module('core').controller('HomeController', ['$scope', '$stateParams',
 							$scope.facultys = data.record;
 						}else{
 							$scope.facultys = $scope.facultys.concat(data.record);
-						}						//children = hege.concat(stale);
+						}						
 						
 					}else{
 						if(first){
 							window.alert(data.message);		
 						}				
 					}
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-					//console.log(data);
-=======
-					console.log(data);
->>>>>>> Stashed changes
-=======
-					console.log(data);
->>>>>>> Stashed changes
 					loading_page.hide();
 				}).error(function(data, status, headers, config) {
 					if(first){
