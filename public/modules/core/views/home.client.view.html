@@ -189,7 +189,11 @@
 		<div class="panel panel-default" data-ng-repeat="faculty in facultys | orderBy:['-opportunity', 'index'] ">
 			<div class="panel-heading">
 	          	<h4>{{faculty.name}} - {{faculty.school_name}}</h4>
-	          	<p>          		
+	          	<p> 
+	          		<a class="btn btn-default" role="button" ng-class="{'btn-success' : faculty.opportunity > 0, 'btn-primary' : faculty.opportunity == 0, 'btn-danger' : faculty.opportunity < 0 }">
+	          			Cơ hội <span class="badge">{{faculty.opportunity| number:2}}%</span>
+	          		</a>
+
 	          		<a class="btn btn-default" role="button">
 	          			Chỉ tiêu <span class="badge">{{faculty.quota}}</span>
 	          		</a>
