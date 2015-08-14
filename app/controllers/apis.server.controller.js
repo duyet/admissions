@@ -5,6 +5,7 @@
  */
 var mongoose = require('mongoose'),
 	errorHandler = require('./errors.server.controller'),
+	Statistic = mongoose.model('Statistic'),
 	Candidate = mongoose.model('Candidate'),
 	School = mongoose.model('School'),
 	Faculty = mongoose.model('Faculty'),
@@ -409,8 +410,177 @@ exports.initschoolsfortest = function(req, res) {
  * initschools
  */
 exports.initschools = function(req, res) {
+	function set_school_no_active (callback) {
+		School.update(
+			{},
+			{ status : 0,},
+			{ multi: true }, 
+			function (err, numberAffected, raw) {
+				callback();
+		});
+	}
+	function set_school_active (school_code,callback) {
+		School.update( 
+			{code :{$in : school_code}}, 
+			{ status : 1, modified : new Date(new Date().setDate(new Date().getDate()-2))}, 
+			{ multi: true }, 
+			function (err, numberAffected, raw) {
+				callback();
+		});
+	}
+	function set_faculty_statistic () {
+		Candidate.aggregate( 
+			{ $group: { _id: { school_code:  "$school_code" , faculty_code:  "$faculty_code" } }}, 
+			{ $project: { 
+				_id: 1, 
+				school_faculty: { $concat: [ "$_id.school_code", "-", "$_id.faculty_code" ] }}
+			},		
+			function (err, candidates) {
+		
+			  	if (err) {
+					// return res.status(400).send({
+					// 	message: errorHandler.getErrorMessage(err)
+					// });
+			  	}else{
+			  		Statistic.findOne({key : 'faculty'})
+			  		.exec(function(err, statistic) {
+						if (err) {
+							return res.status(400).send({
+								message: errorHandler.getErrorMessage(err)
+							});
+						} else {
+							console.log('statistic' , statistic, _.isEmpty(statistic));
+							if(_.isEmpty(statistic) === false){
+								statistic.value = candidates.length;
+								statistic.modified = new Date();
+								statistic.save();
+							}else{
+								var statistic = new Statistic({
+									key : 'faculty',
+									value : candidates.length,
+									name : 'Ngành', 
+									view : 1,
+									modified : new Date(),
+								});
+								statistic.save();
+
+							}
+						}
+					});
+
+			  	}
+			}
+		);
+	}
+	function set_school_statistic () {
+		Candidate.aggregate( 
+			{ $group: { _id: { school_code:  "$school_code"  } }}, 		
+			function (err, candidates) {
+			  	if (err) {
+			  	}else{
+			  		Statistic.findOne({key : 'school'})
+			  		.exec(function(err, statistic) {
+						if (err) {
+							return res.status(400).send({
+								message: errorHandler.getErrorMessage(err)
+							});
+						} else {
+							console.log('statistic' , statistic, _.isEmpty(statistic));
+							if(_.isEmpty(statistic)  === false ){
+								statistic.value = candidates.length;
+								statistic.modified = new Date();
+								statistic.save();
+							}else{
+								var statistic = new Statistic({
+									key : 'school',
+									name: 'Trường',
+									view : 0,
+									value : candidates.length,
+									modified : new Date(),
+								});
+								statistic.save();
+							}
+						}
+					});
+
+			  	}
+			}
+		);
+	}
+	function set_candidate_statistic () {
+		Candidate.count()
+		.exec(function(err, candidates) {
+			if (err) {
+			}else{
+				Statistic.findOne({key : 'student'})
+		  		.exec(function(err, statistic) {
+					if (err) {
+						return res.status(400).send({
+							message: errorHandler.getErrorMessage(err)
+						});
+					} else {
+						console.log('candidate' , statistic, _.isEmpty(statistic));
+						if(_.isEmpty(statistic)  === false ){
+							statistic.value = candidates;
+							statistic.modified = new Date();
+							statistic.save();
+						}else{
+							var statistic = new Statistic({
+								key : 'candidate',
+								name : 'Hồ sơ',
+								view : 3,
+								value : candidates,
+								modified : new Date(),
+							});
+							statistic.save();
+						}
+					}
+				});
+
+											
+			}
+		});
+	}
+	function set_student_statistic () {
+		Candidate.find({},{student_id: 1})
+		.exec(function(err, candidates) {
+			if (err) {
+			}else{
+				var candidate_all = _.uniq(candidates, 'student_id');
+				Statistic.findOne({key : 'student'})
+		  		.exec(function(err, statistic) {
+					if (err) {
+						return res.status(400).send({
+							message: errorHandler.getErrorMessage(err)
+						});
+					} else {
+						console.log('student' , statistic, _.isEmpty(statistic));
+						if(_.isEmpty(statistic)  === false ){
+							statistic.value = candidate_all.length;
+							statistic.modified = new Date();
+							statistic.save();
+						}else{
+							var statistic = new Statistic({
+								key : 'student',
+								name : 'Thí sinh',
+								view : 2,
+								value : candidate_all.length,
+								modified : new Date(),
+							});
+							statistic.save();
+						}
+					}
+				});
+											
+			}
+		});
+	}
+	set_faculty_statistic();
+	set_school_statistic();
+	set_candidate_statistic();
+	set_student_statistic();
 	Faculty.aggregate(
-		{ $group: { _id: { school_code:  "$school_code" } // , faculty_code:  "$faculty_code"
+		{ $group: { _id: { school_code:  "$school_code" }
 						, total: { $sum: 1}}
 					},  
 		{ $project: { 
@@ -421,27 +591,12 @@ exports.initschools = function(req, res) {
 		  	if (err) {
 		  	}else{
 		  		var school_code = _.pluck(facultys,'school_code');
-		  		School.update( 
-					{code :{$in : school_code}}, 
-					{ status : 1, modified : new Date(new Date().setDate(new Date().getDate()-2))}, 
-					{ multi: true }, 
-					function (err, numberAffected, raw) {
-						console.log('initschools');
-						if(err){
-							res.jsonp({
-								result:false, 
-								message: err.toString()
-							});
-						}else{
-							var initialization = require('../../app/controllers/api/initialization');
-							initialization.init(res);
-							// res.jsonp({
-							// 	result:true, 
-							// 	message: ''
-							// });
-						}
-				})
-		  		
+		  		set_school_no_active(function() {
+		  			set_school_active(school_code, function () {
+			  			var initialization = require('../../app/controllers/api/initialization');
+			  			initialization.init(res);
+			  		})	
+		  		});		  		
 		  	}
 		}
 	);

@@ -1,0 +1,19 @@
+<section data-ng-controller="StatisticsController" data-ng-init="find()">
+    <div class="page-header">
+        <h1>Statistics</h1>
+    </div>
+    <div class="list-group">
+        <a data-ng-repeat="statistic in statistics" data-ng-href="#!/statistics/{{statistic._id}}" class="list-group-item">
+			<small class="list-group-item-text">
+				Posted on
+				<span data-ng-bind="statistic.created | date:'medium'"></span>
+				by
+				<span data-ng-bind="statistic.user.displayName"></span>
+			</small>
+			<h4 class="list-group-item-heading" data-ng-bind="statistic.name"></h4>
+        </a>
+    </div>
+    <div class="alert alert-warning text-center" data-ng-hide="!statistics.$resolved || statistics.length">
+    	No Statistics yet, why don't you <a href="/#!/statistics/create">create one</a>?
+    </div>
+</section>

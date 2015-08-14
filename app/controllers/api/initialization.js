@@ -134,7 +134,7 @@ module.exports = {
 						{ modified : new Date(new Date().setDate(new Date().getDate()-2))}, 
 						{ multi: true }, 
 						function (err, numberAffected, raw) {
-							console.log('initschools');
+							//console.log('initschools');
 							if(err){
 								_this.init_data();
 							}else{
@@ -142,7 +142,7 @@ module.exports = {
 							}
 					})
 				}else{
-					console.log('initschools school:', school.code);
+					//console.log('initschools school:', school.code);
 					_this.init_log(school.code);
 					_this.init_initialization(school.code);
 				}
