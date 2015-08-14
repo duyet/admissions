@@ -151,7 +151,7 @@ module.exports = {
 					})
 				}else{
 					console.log('initschools school:', school.code);
-					this.init_log(school.code);
+					_this.init_log(school.code);
 					_this.init_initialization(school.code);
 				}
 				
