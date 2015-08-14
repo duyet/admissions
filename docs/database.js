@@ -1,5 +1,6 @@
 192.168.26.22
-
+pm2 restart 0
+grunt build
 db.schools.update(
 	{ code : {$in: ["DDP", "DDY", "DDQ","DDS","DDK", "DDF"]}},    
 	{ $set: { status : 1 } },    

@@ -43,7 +43,7 @@ module.exports = {
 			//this.schoolAll = schoolAll;
 			this.log_file = "/home/eroshaly/admissions/log_matriculate/matriculate_log_initialization_";
 			this.log_file_test = "/home/eroshaly/admissions/log_matriculate/matriculate_log_initialization_";
-			this.init_log('initschools');
+			
 			
 			this.init_data();
 			this.log('- Start School ');
@@ -151,6 +151,7 @@ module.exports = {
 					})
 				}else{
 					console.log('initschools school:', school.code);
+					this.init_log(school.code);
 					_this.init_initialization(school.code);
 				}
 				
