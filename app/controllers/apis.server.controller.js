@@ -75,6 +75,22 @@ exports.opportunity = function(req, res) {
 		
 		//console.log('\n ---> subject opportunity : \n',req.body.subject_group, '\n condition_score', condition_score, '\n shuffle', shuffle);
 		console.log('\n ---> sectoritem : \n',sectoritem);
+		var match = { $match : {
+					subject_group : {$in : shuffle},// } ,
+					quota :{ $gt: 0  },
+					code : {$in : sectoritem}
+					//school_faculty : {$in : condition_faculty}
+				}
+			};
+		if(sectoritem.length === 0){
+			match = { $match : {
+					subject_group : {$in : shuffle},// } ,
+					quota :{ $gt: 0  },
+					// code : {$in : sectoritem}
+					//school_faculty : {$in : condition_faculty}
+				}
+			};
+		}
 		Faculty.aggregate(
 			{ $project: { 
 				name: 1,
@@ -89,13 +105,14 @@ exports.opportunity = function(req, res) {
 				candidate_apply : 1, 
 				school_faculty: { $concat: [ "$school_code", "-", "$code" ] }}
 			},
-			{ $match : {
-					subject_group : {$in : shuffle},// } ,
-					quota :{ $gt: 0  },
-					code : {$in : sectoritem}
-					//school_faculty : {$in : condition_faculty}
-				}
-			}, 
+			match,
+			// { $match : {
+			// 		subject_group : {$in : shuffle},// } ,
+			// 		quota :{ $gt: 0  },
+			// 		code : {$in : sectoritem}
+			// 		//school_faculty : {$in : condition_faculty}
+			// 	}
+			// }, 
 			function (err, facultys) {
 		
 			  	if (err) {

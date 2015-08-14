@@ -20,7 +20,7 @@ angular.module('core').controller('HomeController', ['$scope', '$stateParams',
 		});
 		$scope.subjects = Subjects.query();
 		$scope.schools = Schools.query();
-
+		
 		$scope.sectoritems = Sectoritems.query();
 		$scope.sectoritem = {};
 		$scope.sectors = Sectors.query();
@@ -86,35 +86,23 @@ angular.module('core').controller('HomeController', ['$scope', '$stateParams',
 		$scope.message = '';
 		$scope.opportunity = function (school) {			
 			function opportunity_api (subject_group,score, first) {
-				// var sector = '';
-				// if($scope.sector){
-				// 	sector = $scope.sector.code;
-				// }
 				var sectoritem = [];
 				if($scope.sectoritem && Object.keys($scope.sectoritem).length > 0){
-					//console.log('$scope.sectoritem',$scope.sectoritem);
-					sectoritem.push($scope.sectoritem.code);// = [req.body.sector.code;
+					sectoritem.push($scope.sectoritem.code);
 				}
-				console.log('$scope.sectoritem',$scope.sectoritem,$scope.sector != null);
-				if($scope.sector != null){
-					if(sectoritem.length <= 0 && Object.keys($scope.sector).length > 0){
-						console.log('sector items length');
 						for(var x in $scope.sectoritems){
 							if( $scope.sectoritems[x].sector_code === $scope.sector.code){
-								sectoritem.push($scope.sectoritems[x].code);
+								if($scope.sectoritems[x].code)
+									sectoritem.push($scope.sectoritems[x].code);
 							}
 							
-						}
-					}
-				}
-
-				
+						}				
 				var data = {
 					subject_group:subject_group ,
 					sectoritem:sectoritem ,
-					// sector:sector ,
 					score: score,
 				}
+				console.log(data);
 				loading_page.loading();
 				$scope.facultys = [];
 				$scope.schools = [];
@@ -126,14 +114,13 @@ angular.module('core').controller('HomeController', ['$scope', '$stateParams',
 							$scope.facultys = data.record;
 						}else{
 							$scope.facultys = $scope.facultys.concat(data.record);
-						}						//children = hege.concat(stale);
+						}						
 						
 					}else{
 						if(first){
 							window.alert(data.message);		
 						}				
 					}
-					console.log(data);
 					loading_page.hide();
 				}).error(function(data, status, headers, config) {
 					if(first){
