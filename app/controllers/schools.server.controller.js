@@ -73,9 +73,9 @@ exports.delete = function(req, res) {
  * List of Schools
  */
 exports.list = function(req, res) { 
-	School.find({status : 1})
+	School.find({status : 1, resume: {$gt : 0}, candidate: {$gt : 0}})
 	.sort('-code')
-	.populate('user', 'displayName')
+//	.populate('user', 'displayName')
 	.exec(function(err, schools) {
 		if (err) {
 			return res.status(400).send({

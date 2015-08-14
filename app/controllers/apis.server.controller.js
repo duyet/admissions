@@ -445,11 +445,11 @@ exports.initschools = function(req, res) {
 			  		Statistic.findOne({key : 'faculty'})
 			  		.exec(function(err, statistic) {
 						if (err) {
-							return res.status(400).send({
-								message: errorHandler.getErrorMessage(err)
-							});
+							// return res.status(400).send({
+							// 	message: errorHandler.getErrorMessage(err)
+							// });
 						} else {
-							console.log('statistic' , statistic, _.isEmpty(statistic));
+							//console.log('statistic' , statistic, _.isEmpty(statistic));
 							if(_.isEmpty(statistic) === false){
 								statistic.value = candidates.length;
 								statistic.modified = new Date();
@@ -481,11 +481,11 @@ exports.initschools = function(req, res) {
 			  		Statistic.findOne({key : 'school'})
 			  		.exec(function(err, statistic) {
 						if (err) {
-							return res.status(400).send({
-								message: errorHandler.getErrorMessage(err)
-							});
+							// return res.status(400).send({
+							// 	message: errorHandler.getErrorMessage(err)
+							// });
 						} else {
-							console.log('statistic' , statistic, _.isEmpty(statistic));
+							//console.log('statistic' , statistic, _.isEmpty(statistic));
 							if(_.isEmpty(statistic)  === false ){
 								statistic.value = candidates.length;
 								statistic.modified = new Date();
@@ -515,11 +515,11 @@ exports.initschools = function(req, res) {
 				Statistic.findOne({key : 'student'})
 		  		.exec(function(err, statistic) {
 					if (err) {
-						return res.status(400).send({
-							message: errorHandler.getErrorMessage(err)
-						});
+						// return res.status(400).send({
+						// 	message: errorHandler.getErrorMessage(err)
+						// });
 					} else {
-						console.log('candidate' , statistic, _.isEmpty(statistic));
+						//console.log('candidate' , statistic, _.isEmpty(statistic));
 						if(_.isEmpty(statistic)  === false ){
 							statistic.value = candidates;
 							statistic.modified = new Date();
@@ -528,7 +528,7 @@ exports.initschools = function(req, res) {
 							var statistic = new Statistic({
 								key : 'candidate',
 								name : 'Hồ sơ',
-								view : 3,
+								view : 4,
 								value : candidates,
 								modified : new Date(),
 							});
@@ -550,11 +550,11 @@ exports.initschools = function(req, res) {
 				Statistic.findOne({key : 'student'})
 		  		.exec(function(err, statistic) {
 					if (err) {
-						return res.status(400).send({
-							message: errorHandler.getErrorMessage(err)
-						});
+						// return res.status(400).send({
+						// 	message: errorHandler.getErrorMessage(err)
+						// });
 					} else {
-						console.log('student' , statistic, _.isEmpty(statistic));
+						//console.log('student' , statistic, _.isEmpty(statistic));
 						if(_.isEmpty(statistic)  === false ){
 							statistic.value = candidate_all.length;
 							statistic.modified = new Date();
@@ -563,7 +563,7 @@ exports.initschools = function(req, res) {
 							var statistic = new Statistic({
 								key : 'student',
 								name : 'Thí sinh',
-								view : 2,
+								view : 3,
 								value : candidate_all.length,
 								modified : new Date(),
 							});
@@ -581,15 +581,45 @@ exports.initschools = function(req, res) {
 	set_student_statistic();
 	Faculty.aggregate(
 		{ $group: { _id: { school_code:  "$school_code" }
-						, total: { $sum: 1}}
+						, total: { $sum: '$quota'}}
 					},  
 		{ $project: { 
 			school_code: "$_id.school_code",
+			total : 1
 		}
 		},
 		function (err, facultys) {
+			//console.log(facultys)
 		  	if (err) {
+		  		console.log(err)
 		  	}else{
+		  		var quota = _.sum(facultys, function(object) {
+				  return object.total;
+				});
+				Statistic.findOne({key : 'quota'})
+		  		.exec(function(err, statistic) {
+					if (err) {
+						// return res.status(400).send({
+						// 	message: errorHandler.getErrorMessage(err)
+						// });
+					} else {
+						//console.log('student' , statistic, _.isEmpty(statistic));
+						if(_.isEmpty(statistic)  === false ){
+							statistic.value = quota;
+							statistic.modified = new Date();
+							statistic.save();
+						}else{
+							var statistic = new Statistic({
+								key : 'quota',
+								name : 'Chỉ tiêu',
+								view : 2,
+								value : quota,
+								modified : new Date(),
+							});
+							statistic.save();
+						}
+					}
+				});
 		  		var school_code = _.pluck(facultys,'school_code');
 		  		set_school_no_active(function() {
 		  			set_school_active(school_code, function () {

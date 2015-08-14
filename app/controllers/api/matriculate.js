@@ -38,8 +38,8 @@ module.exports = {
 		this.res = res;
 		this.facultyFull = facultyFull;
 		//this.school_code = school;
-		this.log_file = "/home/eroshaly/admissions/log_matriculate/matriculate_log_";
-		this.log_file_test = "/home/eroshaly/admissions/log_matriculate/matriculate_log_";
+		this.log_file = "log_matriculate/matriculate_log_";
+		this.log_file_test = "log_matriculate/matriculate_log_";
 		this.init_log(school);
 		this.init_matriculate(school);
 		this.log(school,'- Start School ['+school+']');

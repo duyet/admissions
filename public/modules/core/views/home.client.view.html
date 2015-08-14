@@ -1,4 +1,7 @@
 <section data-ng-controller="HomeController">
+
+<div class="row">
+		<div class="col-sm-9">
 <section class="section">
 	<div class="">
 	<form class="form-horizontal">
@@ -84,106 +87,19 @@
 	</div>
 
 </section>
-<section class="section" ng-show="schools.length > 0 ">
-<div class="">
-<div class="panel panel-default" data-ng-repeat="school in schools" data-ng-href="#!/schools/{{school._id}}">
-          <div class="panel-heading">
-          	<h4>{{school.name}}</h4>
-          	<p>          		
-          		<a class="btn btn-success" role="button">
-          			Điểm sàn <span class="badge">{{school.smallest_benchmark}} - {{school.largest_benchmark}}</span>
-          		</a>
-          		<a class="btn btn-success" role="button">
-          			Trúng tuyển <span class="badge">{{school.matriculated}}/{{school.quota}}</span>
-          		</a>
-          		<a class="btn btn-success" role="button">
-          			Còn lại <span class="badge">{{school.quota - school.matriculated}}/{{school.quota}}</span>
-          		</a>
-          		<a class="btn btn-success" role="button">
-          			Chỉ tiêu <span class="badge">{{school.quota}}</span>
-          		</a>
-          		<a class="btn btn-success" role="button">
-          			Hồ sơ <span class="badge">{{school.resume}}</span>
-          		</a>
-          		<a class="btn btn-success" role="button">
-          			Thí sinh <span class="badge">{{school.candidate}}</span>
-          		</a>
-          		<a class="btn btn-info" role="button" ng-click="view_school(school)">
-          			Xem chi tiết <span class="glyphicon glyphicon-th"></span>
-          		</a>
-          		
-          	</p>
-            <p><small class="list-group-item-text">
-                Posted on
-                <span data-ng-bind="school.created | date:'short'"></span>
-                - Modified
-                <span data-ng-bind="school.modified | date:'short'"></span>
-            </small></p>
-          </div>
-          <div class="panel-body" ng-show="school.faculty.length > 0">
-          	<p>- [Điểm sàn] [Trúng tuyển] được hệ thống tính dựa trên <strong>Nguyên tắc xét tuyển</strong> sau: Xét toàn bộ các nguyện vọng cùng lúc, nếu một thí sinh trúng tuyển vào nhiều hơn một nguyện vọng, nguyện vọng nào có ưu tiên cao hơn sẽ được giữ lại (trúng tuyển), các nguyện vọng còn lại sẽ bị loại bỏ. </p>
-          	<p>- [Thí sinh] là tổng số lượng thí sinh đăng ký xét tuyển tại trường. </p>
-          	<p>- [Hồ sơ] là tổng số lượng nguyện vọng mà thí sinh đã đăng ký xét tuyển (vì một thí sinh có thể đăng ký nhiều nguyện vọng tại một trường). </p>
-          	<p><strong>{{school.name}}</strong> có tất cả <strong>{{school.faculty_list.length}}</strong> ngành, với các thông tin như sau:</p>
-          	<div class="list-group">
-		      <div href="#" class="list-group-item" ng-repeat="faculty in school.faculty | orderBy :'code'" >
-		        <h4 class="list-group-item-heading">{{faculty.name}}</h4>
-		        <p class="list-group-item-text">
-			        <a class="btn btn-default" role="button">
-	          			Điểm sàn <span class="badge">{{faculty.benchmark}}</span>
-	          		</a>
-	          		<a class="btn btn-default" role="button">
-	          			Trúng tuyển <span class="badge">{{faculty.matriculate_list.length}}/{{faculty.quota}}</span>
-	          		</a>
-	          		<a class="btn btn-default" role="button">
-	          			Còn lại <span class="badge">{{faculty.quota - faculty.matriculate_list.length}}/{{faculty.quota}}</span>
-	          		</a>
-	          		<a class="btn btn-default" role="button">
-	          			Chỉ tiêu <span class="badge">{{faculty.quota}}</span>
-	          		</a>
-	          		<a class="btn btn-default" role="button">
-	          			Hồ sơ <span class="badge">{{faculty.candidate_apply.length}}</span>
-	          		</a>
-	          		<a class="btn btn-info" role="button" ng-click="view_table_faculty(faculty.code)">
-	          			Xem danh sách <span class="glyphicon glyphicon-list"></span>
-	          		</a>
-          		</p>
-          		<div class="table-responsive" ng-show="view_table == faculty.code">
-          			<table class="table table-hover">
-				      <thead>
-				        <tr>
-				          <th>#</th>
-				          <th>Họ và tên thí sinhe</th>
-				          <th>Số báo danh</th>
-				          <th>Kết quả thi</th>					    
-					        <th>Thứ tự nguyện vọng</th>
-				        </tr>
-				      </thead>
-				      <tbody>
-				        <tr ng-repeat="candidate in faculty.matriculate_list">
-				          <th scope="row">{{$index+1}}</th>
-				          <td>{{candidate.student_name}}</td>
-				          <td>{{candidate.student_id}}</td>
-				          <td>{{candidate.score_final}}</td>
-				          <td>{{candidate.priority}}</td>
-				        </tr>				        
-				      </tbody>
-				    </table>
-          		</div>
-		      </div>
-		    </div>
-          </div>
-        </div>
-       </div>
-</section>
-<section class="section" ng-show="facultys.length > 0">
+
+
+
+			<section  ng-show="facultys.length > 0">
 
 	<div class="">
+
 		<div class="panel panel-default">
 			<div class="panel-heading">
-				<p>- Cơ hội cho những thí sinh xét tuyển theo tổ hợp môn <span class="label label-success">{{subject_group.subject_group}}</span> với tổng điểm <span class="label label-warning">{{score.score_1 + score.score_2 + score.score_3 + score.score_priority}}</span> chưa nhân hệ số</p>
+				<p>- Cơ hội cho những thí sinh xét tuyển theo tổ hợp môn <span class="label label-success">{{subject_group.subject_group}}</span> với tổng điểm <span class="label label-warning">{{score.score_1 + score.score_2 + score.score_3 + score.score_priority | number : 2}}</span> chưa nhân hệ số</p>
 				<p>- Với những tổ hợp có nhân hệ số, hệ số được ghi phía sau của tên môn tương ứng. Ví dụ <span class="label label-default">Toán-Văn-AnhX2</span> có nghĩa môn <span class="label label-primary">Anh</span> được <span class="label label-primary">nhân hệ số 2</span><p>
 				<p><i>{{opportunity_string}}</i></p>
+				
 			</div>
 		</div>
 		<div class="panel panel-default" data-ng-repeat="faculty in facultys | orderBy:['-opportunity', 'index'] ">
@@ -228,4 +144,68 @@
 <div class="alert alert-warning text-center" data-ng-show="facultys.length ==0">
 	Chúng tôi chưa tìm thấy <span class="label label-default">cơ hội</span> dành cho bạn. Bạn vui lòng thử lại với các thông tin khác
 </div>
+
+		</div>	
+		<div class="col-sm-3">
+		<section class="section">
+			<section  data-ng-controller="StatisticsController" data-ng-init="find()">
+				<div class="panel panel-default">
+					<div class="panel-body">
+						<p data-ng-repeat="statistic in statistics">
+						
+							<span 
+
+							ng-class="{
+							'label-primary' : statistic.key == 'candidate',
+							'label-warning' : statistic.key == 'student',
+							'label-danger' : statistic.key == 'school',
+							'label-success' : statistic.key == 'faculty',
+
+							}"
+							data-ng-bind="statistic.value | number : 0" class="label label-default" ></span> <span data-ng-bind="statistic.name" ></span>
+			        	</p>
+
+					</div>
+				</div>
+			   
+			    
+			</section>
+			<section  data-ng-controller="SchoolsController" data-ng-init="find()">
+				<!-- <div class="panel panel-default">
+					<div class="panel-body">
+						<p data-ng-repeat="school in schools">						
+							 <span data-ng-bind="school.name" ></span>
+			        	</p>
+
+					</div>
+				</div> -->
+				<div class="panel panel-default">
+			<div class="panel-body">
+			<h5>Chú thích</h5>
+			<p><span class="label label-success">Hồ Sơ</span> là tổng số nguyện vọng thí sinh nộp vào. <span class="label label-success">Thí sinh</span> là tổng số bạn đã nộp hồ sơ xét tuyển</p>
+			</div>
+			</div>
+
+				<div class="panel panel-default" data-ng-repeat="school in schools" >
+          <div class="panel-body">
+          	<h5>{{school.name}}</h5>
+          	<p>  
+          	<span class="label label-success" >{{school.quota | number : 0}}</span> Chỉ tiêu  <br> 
+          	<span class="label label-warning" >{{school.candidate | number : 0}}</span>  Thí sinh <br>    		
+          	<span class="label label-primary" >{{school.resume | number : 0}}</span>  Hồ sơ <br>      		
+          	      		
+          		
+          		
+          	</p>
+            
+          </div>
+ 
+        </div>
+			   
+			    
+			</section>
 </section>
+		</div>
+	</div>
+
+	</section>

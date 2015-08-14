@@ -73,7 +73,7 @@ exports.delete = function(req, res) {
  * List of Statistics
  */
 exports.list = function(req, res) { 
-	Statistic.find({key : {$in : ['faculty', 'school', 'candidate', 'student']}})
+	Statistic.find({key : {$in : ['faculty', 'school', 'candidate', 'student', 'quota']}})
 	.sort('view')
 	.populate('user', 'displayName')
 	.exec(function(err, statistics) {

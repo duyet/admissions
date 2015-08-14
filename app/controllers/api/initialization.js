@@ -14,7 +14,7 @@ var mongoose = require('mongoose'),
 
 
 var initialization_list = [];
-
+//console.log(require('path').dirname(require.main.filename));
 module.exports = {
 	log : function (school_code,message) {
 		require('fs').appendFile(this.log_file+school_code+".txt"
