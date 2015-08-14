@@ -36,13 +36,13 @@ module.exports = {
 		}
 		require('fs').writeFile(this.log_file+school_code+"_test.txt",(Date())+' \n');
 	},
-	init : function (res, facultyFull) {
+	init : function (res) {
 			var _this = this
 			this.res = res;
-			this.facultyFull = facultyFull;
+			// this.facultyFull = facultyFull;facultyFull
 			//this.schoolAll = schoolAll;
-			this.log_file = "/home/eroshaly/admissions/log_matriculate/matriculate_log_initialization_";
-			this.log_file_test = "/home/eroshaly/admissions/log_matriculate/matriculate_log_initialization_";
+			this.log_file = "log_matriculate/matriculate_log_initialization_";
+			this.log_file_test = "log_matriculate/matriculate_log_initialization_";
 			
 			
 			this.init_data();
@@ -137,16 +137,8 @@ module.exports = {
 							console.log('initschools');
 							if(err){
 								_this.init_data();
-								// res.jsonp({
-								// 	result:false, 
-								// 	message: err.toString()
-								// });
 							}else{
 								_this.init_data();
-								// res.jsonp({
-								// 	result:true, 
-								// 	message: ''
-								// });
 							}
 					})
 				}else{

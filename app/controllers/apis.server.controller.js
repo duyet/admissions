@@ -409,8 +409,43 @@ exports.initschoolsfortest = function(req, res) {
  * initschools
  */
 exports.initschools = function(req, res) {
-	var initialization = require('../../app/controllers/api/initialization');
-		initialization.init(res, facultyFull);
+	Faculty.aggregate(
+		{ $group: { _id: { school_code:  "$school_code" } // , faculty_code:  "$faculty_code"
+						, total: { $sum: 1}}
+					},  
+		{ $project: { 
+			school_code: "$_id.school_code",
+		}
+		},
+		function (err, facultys) {
+		  	if (err) {
+		  	}else{
+		  		var school_code = _.pluck(facultys,'school_code');
+		  		School.update( 
+					{code :{$in : school_code}}, 
+					{ status : 1, modified : new Date(new Date().setDate(new Date().getDate()-2))}, 
+					{ multi: true }, 
+					function (err, numberAffected, raw) {
+						console.log('initschools');
+						if(err){
+							res.jsonp({
+								result:false, 
+								message: err.toString()
+							});
+						}else{
+							var initialization = require('../../app/controllers/api/initialization');
+							initialization.init(res);
+							// res.jsonp({
+							// 	result:true, 
+							// 	message: ''
+							// });
+						}
+				})
+		  		
+		  	}
+		}
+	);
+	
 };
 
 
