@@ -474,7 +474,9 @@ exports.initschools = function(req, res) {
 	}
 	function set_school_statistic () {
 		Candidate.aggregate( 
-			{ $group: { _id: { school_code:  "$school_code"  } }}, 		
+			{$match : {school_code: {$ne: null}}},
+			{ $group: { _id: { school_code:  "$school_code"  } }}, 
+			{$project: {school_code: '$_id.school_code'}},		
 			function (err, candidates) {
 			  	if (err) {
 			  	}else{
@@ -485,7 +487,7 @@ exports.initschools = function(req, res) {
 							// 	message: errorHandler.getErrorMessage(err)
 							// });
 						} else {
-							//console.log('statistic' , statistic, _.isEmpty(statistic));
+							//console.log('school' , candidates);
 							if(_.isEmpty(statistic)  === false ){
 								statistic.value = candidates.length;
 								statistic.modified = new Date();
@@ -502,7 +504,15 @@ exports.initschools = function(req, res) {
 							}
 						}
 					});
-
+					console.log('school' , candidates);
+			  		var school_code = _.pluck(candidates,'school_code');
+			  		console.log('school' , school_code);
+			  		set_school_no_active(function() {
+			  			set_school_active(school_code, function () {
+				  			var initialization = require('../../app/controllers/api/initialization');
+				  			initialization.init(res);
+				  		})	
+			  		});	
 			  	}
 			}
 		);
@@ -620,13 +630,13 @@ exports.initschools = function(req, res) {
 						}
 					}
 				});
-		  		var school_code = _.pluck(facultys,'school_code');
-		  		set_school_no_active(function() {
-		  			set_school_active(school_code, function () {
-			  			var initialization = require('../../app/controllers/api/initialization');
-			  			initialization.init(res);
-			  		})	
-		  		});		  		
+		  		// var school_code = _.pluck(facultys,'school_code');
+		  		// set_school_no_active(function() {
+		  		// 	set_school_active(school_code, function () {
+			  	// 		var initialization = require('../../app/controllers/api/initialization');
+			  	// 		initialization.init(res);
+			  	// 	})	
+		  		// });		  		
 		  	}
 		}
 	);
