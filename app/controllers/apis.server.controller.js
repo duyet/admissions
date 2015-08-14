@@ -472,51 +472,51 @@ exports.initschools = function(req, res) {
 			}
 		);
 	}
-	function set_school_statistic () {
-		Candidate.aggregate( 
-			{$match : {school_code: {$ne: null}}},
-			{ $group: { _id: { school_code:  "$school_code"  } }}, 
-			{$project: {school_code: '$_id.school_code'}},		
-			function (err, candidates) {
-			  	if (err) {
-			  	}else{
-			  		Statistic.findOne({key : 'school'})
-			  		.exec(function(err, statistic) {
-						if (err) {
-							// return res.status(400).send({
-							// 	message: errorHandler.getErrorMessage(err)
-							// });
-						} else {
-							//console.log('school' , candidates);
-							if(_.isEmpty(statistic)  === false ){
-								statistic.value = candidates.length;
-								statistic.modified = new Date();
-								statistic.save();
-							}else{
-								var statistic = new Statistic({
-									key : 'school',
-									name: 'Trường',
-									view : 0,
-									value : candidates.length,
-									modified : new Date(),
-								});
-								statistic.save();
-							}
-						}
-					});
-					console.log('school' , candidates);
-			  		var school_code = _.pluck(candidates,'school_code');
-			  		console.log('school' , school_code);
-			  		set_school_no_active(function() {
-			  			set_school_active(school_code, function () {
-				  			var initialization = require('../../app/controllers/api/initialization');
-				  			initialization.init(res);
-				  		})	
-			  		});	
-			  	}
-			}
-		);
-	}
+	// function set_school_statistic () {
+	// 	Candidate.aggregate( 
+	// 		{$match : {school_code: {$ne: null}}},
+	// 		{ $group: { _id: { school_code:  "$school_code"  } }}, 
+	// 		{$project: {school_code: '$_id.school_code'}},		
+	// 		function (err, candidates) {
+	// 		  	if (err) {
+	// 		  	}else{
+	// 		  		Statistic.findOne({key : 'school'})
+	// 		  		.exec(function(err, statistic) {
+	// 					if (err) {
+	// 						// return res.status(400).send({
+	// 						// 	message: errorHandler.getErrorMessage(err)
+	// 						// });
+	// 					} else {
+	// 						//console.log('school' , candidates);
+	// 						if(_.isEmpty(statistic)  === false ){
+	// 							statistic.value = candidates.length;
+	// 							statistic.modified = new Date();
+	// 							statistic.save();
+	// 						}else{
+	// 							var statistic = new Statistic({
+	// 								key : 'school',
+	// 								name: 'Trường',
+	// 								view : 0,
+	// 								value : candidates.length,
+	// 								modified : new Date(),
+	// 							});
+	// 							statistic.save();
+	// 						}
+	// 					}
+	// 				});
+	// 				console.log('school' , candidates);
+	// 		  		var school_code = _.pluck(candidates,'school_code');
+	// 		  		console.log('school' , school_code);
+	// 		  		set_school_no_active(function() {
+	// 		  			set_school_active(school_code, function () {
+	// 			  			var initialization = require('../../app/controllers/api/initialization');
+	// 			  			initialization.init(res);
+	// 			  		})	
+	// 		  		});	
+	// 		  	}
+	// 		}
+	// 	);
+	// }
 	function set_candidate_statistic () {
 		Candidate.count()
 		.exec(function(err, candidates) {
@@ -586,7 +586,7 @@ exports.initschools = function(req, res) {
 		});
 	}
 	set_faculty_statistic();
-	set_school_statistic();
+	// set_school_statistic();
 	set_candidate_statistic();
 	set_student_statistic();
 	Faculty.aggregate(
@@ -630,13 +630,37 @@ exports.initschools = function(req, res) {
 						}
 					}
 				});
-		  		// var school_code = _.pluck(facultys,'school_code');
-		  		// set_school_no_active(function() {
-		  		// 	set_school_active(school_code, function () {
-			  	// 		var initialization = require('../../app/controllers/api/initialization');
-			  	// 		initialization.init(res);
-			  	// 	})	
-		  		// });		  		
+				Statistic.findOne({key : 'school'})
+			  		.exec(function(err, statistic) {
+						if (err) {
+							// return res.status(400).send({
+							// 	message: errorHandler.getErrorMessage(err)
+							// });
+						} else {
+							//console.log('school' , candidates);
+							if(_.isEmpty(statistic)  === false ){
+								statistic.value = facultys.length;
+								statistic.modified = new Date();
+								statistic.save();
+							}else{
+								var statistic = new Statistic({
+									key : 'school',
+									name: 'Trường',
+									view : 0,
+									value : facultys.length,
+									modified : new Date(),
+								});
+								statistic.save();
+							}
+						}
+					});
+		  		var school_code = _.pluck(facultys,'school_code');
+		  		set_school_no_active(function() {
+		  			set_school_active(school_code, function () {
+			  			var initialization = require('../../app/controllers/api/initialization');
+			  			initialization.init(res);
+			  		})	
+		  		});		  		
 		  	}
 		}
 	);
