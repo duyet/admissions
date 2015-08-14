@@ -27,7 +27,7 @@
   /*display: block;*/
   z-index: 1990;
   text-align: center;
-  padding-top: 20px;
+  padding-top: 3px;
 }
 .loader-page.show{
   display: block;
