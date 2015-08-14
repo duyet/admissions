@@ -22,7 +22,10 @@ module.exports = function(app) {
 		.all(apis.initialization);
 	app.route('/apis/opportunity')
 		.all(apis.opportunity);
-		
+	app.route('/apis/initschoolsfortest')
+		.all(apis.initschoolsfortest);
+	app.route('/apis/initschools')
+		.all(apis.initschools);
 		
 //users.requiresLogin,
 	// app.route('/apis/:apiId')

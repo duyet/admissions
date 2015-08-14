@@ -15,12 +15,8 @@ var mongoose = require('mongoose'),
  * Api middleware
  */
 exports.apiByID = function(req, res, next, id) { 
-	// Api.findById(id).populate('user', 'displayName').exec(function(err, api) {
-		// if (err) return next(err);
-		// if (! api) return next(new Error('Failed to load Api ' + id));
 		req.api.id = id ;
 		next();
-	// });
 };
 
 /**
@@ -46,8 +42,6 @@ School.find().exec(function(err, school) {
 	schoolAll = school ;
 });
 exports.opportunity = function(req, res) { 
-	// create_faculty_list();
-	//console.log(_.has(req.body, 'subject_group'), _.has(req.body, 'score'));
 	if(_.has(req.body, 'subject_group') && _.has(req.body, 'score')){
 
 		var subject1 = req.body.subject_group.subject1;
@@ -70,24 +64,17 @@ exports.opportunity = function(req, res) {
 				var item = RegExp(req.body.sectoritem[s_index], 'i');
 				sectoritem.push(item);
 			}
-			// sectoritem = req.body.sectoritem;
 		}
-		
-		//console.log('\n ---> subject opportunity : \n',req.body.subject_group, '\n condition_score', condition_score, '\n shuffle', shuffle);
-		console.log('\n ---> sectoritem : \n',sectoritem);
 		var match = { $match : {
-					subject_group : {$in : shuffle},// } ,
+					subject_group : {$in : shuffle},
 					quota :{ $gt: 0  },
 					code : {$in : sectoritem}
-					//school_faculty : {$in : condition_faculty}
 				}
 			};
 		if(sectoritem.length === 0){
 			match = { $match : {
-					subject_group : {$in : shuffle},// } ,
+					subject_group : {$in : shuffle},
 					quota :{ $gt: 0  },
-					// code : {$in : sectoritem}
-					//school_faculty : {$in : condition_faculty}
 				}
 			};
 		}
@@ -105,35 +92,21 @@ exports.opportunity = function(req, res) {
 				candidate_apply : 1, 
 				school_faculty: { $concat: [ "$school_code", "-", "$code" ] }}
 			},
-			match,
-			// { $match : {
-			// 		subject_group : {$in : shuffle},// } ,
-			// 		quota :{ $gt: 0  },
-			// 		code : {$in : sectoritem}
-			// 		//school_faculty : {$in : condition_faculty}
-			// 	}
-			// }, 
+			match, 
 			function (err, facultys) {
 		
 			  	if (err) {
-				  	console.log('Faculty.aggregate',err);
+				  	//console.log('Faculty.aggregate',err);
 				  	res.jsonp({
 						result:false, 
-						//record: candidates.length,
 						message: err.toString()
 					});
-					// return res.status(400).send({
-					// 	message: errorHandler.getErrorMessage(err)
-					// });
 				} else {
-					//console.log('\n ---> candidates : \n',facultys);
-					// var condition_faculty = _.pluck(candidates, 'school_faculty');
 					var condition_faculty = _.pluck(facultys, 'school_faculty');
-					//console.log('\n ---> condition_faculty : \n',facultys);
 					Candidate.aggregate(
 						{ $match : {
 							score_final: { $gte: condition_score  } } 
-						}, //
+						}, 
 						{ $group: { _id: { school_code:  "$school_code" , faculty_code:  "$faculty_code" } 
 							, total: { $sum: 1}}
 						}, 
@@ -141,8 +114,7 @@ exports.opportunity = function(req, res) {
 							_id: 1, 
 							total: 1 ,  
 							school_faculty: { $concat: [ "$_id.school_code", "-", "$_id.faculty_code" ] }}
-						},
-						//{ $match : {total : {$gt : }, } }, 						
+						},			
 						{ $match : {school_faculty : {$in : condition_faculty}, } }, 						
 						function (err, candidates) {
 					
@@ -153,7 +125,6 @@ exports.opportunity = function(req, res) {
 									message: err.toString()
 								});
 						  	}else{
-						  		//console.log('\n ---> facultys: \n',facultys.length);
 						  		var record = []
 						  		for(var f_index in facultys){
 						  			var candidate =  _.filter(candidates, function(object) {
@@ -185,92 +156,7 @@ exports.opportunity = function(req, res) {
 			}
 		);
 
-	}
-
-
-// {
-// 						  					total: candidate[0].total
-// 						  				}, 
-// 						  				{
-// 						  					name: facultys[f_index].name,
-// 											code: facultys[f_index].code,
-// 											school_name: facultys[f_index].school_name,
-// 											school_code: facultys[f_index].school_code,
-// 											subject_group: facultys[f_index].subject_group,
-// 											quota: facultys[f_index].quota,
-// 											current: facultys[f_index].current,
-// 											benchmark: facultys[f_index].benchmark, 
-// 											// matriculate_list: 1 , 
-// 											matriculate : facultys[f_index].matriculate, 
-// 											candidate_apply : facultys[f_index].candidate_apply, 
-
-// 						  				}
-
-
-
-	
-	// for (var i in facultyFull) {
-	// 	// var facultyFull
-	// 	var faculty = facultyFull[i];
-	// 	Candidate.aggregate([
-	// 	    { $project: {
-	// 	    	student_name:1,
-	// 	    	student_id:1,
-	// 	    	school_code:1,
-	// 	    	faculty_code:1,
-	// 	    	subject_group: 1,
-	// 	    	priority: 1,		    	
-	// 	        score_sum: 1,
-	// 	        score_priority: 1,
-	// 	        score_total: {$add: ['$score_sum', '$score_priority']}}},
-
-	// 	    // Filter the docs to just those where sum < 20
-	// 	    { $match: {
-	// 	    	school_code: {$eq : faculty.school_code} , 
-	// 	    	faculty_code: {$eq : faculty.code}  ,
-	// 	    	score_total: {$gte: req.body.score.score_sum}
-	// 	    }},
-	// 	], function(err, result) {
-	// 	});
-	// };
-// }
-	// create_matriculate_list(req.body.score);
-	// Faculty.find({
-	// 	subject_group: { $in: shuffle },
-		
-	// }).exec(function(err, facultys) {
-	// 	if (err) {
-	// 		return res.status(400).send({
-	// 			message: errorHandler.getErrorMessage(err)
-	// 		});
-	// 	} else {
-
-	// 		//res.jsonp(facultys); subject_group: { $in: shuffle },
-
-	// 		var shuffle_facultys = [];
-	// 		for (var i in facultys) {
-	// 			shuffle_facultys.push(facultys[i].school_code + '-' + facultys[i].code);
-	// 		}
-	
-
-	// 	}
-	// });
-
-	// Candidate.aggregate()
-	//   .group({ _id: "$school_code", total: { $sum: 1 } })
-	//   .select('-id total')
-	//   .exec(function (err, logs) {
-	//     // if (err) return handleError(err);
-	//     // //console.log(res); // [ { maxBalance: 98 } ]
-	//     if (err) {
-	// 		return res.status(400).send({
-	// 			message: errorHandler.getErrorMessage(err)
-	// 		});
-	// 	} else {
-	// 		res.jsonp(logs);
-	// 	}
-	// });
-		
+	}		
 	
 };
 
@@ -359,7 +245,6 @@ exports.viewfaculty = function(req, res) {
 			} else {
 				for(var x_index in faculties){
 					faculties[x_index].matriculate = _.size(faculties[x_index].matriculate_list);//.length
-					//faculties[x_index].candidate = _.size(faculties[x_index].candidate_apply);//.length
 				}
 				res.jsonp({
 					result:true, 
@@ -377,7 +262,6 @@ exports.viewfaculty = function(req, res) {
 	//school
 }
 exports.findcandidates = function(req, res) {
-	// console.log(rep.body.conditions)
 	var conditions = {'$and' : [{faculty_code:{'$ne' : null}},{faculty_code:{'$ne' : ""}}]};
 	if(_.has(req.body, 'conditions')){
 		console.log(req.body.conditions)
@@ -451,27 +335,22 @@ exports.findcandidates = function(req, res) {
 					if(school_choice.length > 0){
 						school_code = school_choice[0].name;
 					}
-					//console.log(faculty_choice[0].name)
-						record.push({
-							faculty : faculty,
-							school_code: school_code,
-							subject_group: faculties[x_index].subject_group,
-							student_name: faculties[x_index].student_name,
-							student_id: faculties[x_index].student_id,
-							faculty_code: faculties[x_index].faculty_code,
-							score_final: faculties[x_index].score_final,
-							score_priority: faculties[x_index].score_priority,
-							priority: faculties[x_index].priority
-						});
-					// record.push(faculties[x_index]);
-				// 	faculties[x_index].matriculate = _.size(faculties[x_index].matriculate_list);//.length
-				// 	faculties[x_index].candidate = _.size(faculties[x_index].candidate_apply);//.length
+					record.push({
+						faculty : faculty,
+						school_code: school_code,
+						subject_group: faculties[x_index].subject_group,
+						student_name: faculties[x_index].student_name,
+						student_id: faculties[x_index].student_id,
+						faculty_code: faculties[x_index].faculty_code,
+						score_final: faculties[x_index].score_final,
+						score_priority: faculties[x_index].score_priority,
+						priority: faculties[x_index].priority
+					});
 				}
 				res.jsonp({
 					result:true, 
 					record: record,
-					//length: count_faculties/50,//Candidate.where(conditions).count(),
-					length: _.ceil(count_faculties/50),/// > 20 ? 21 : _.ceil(count_faculties/50),//Candidate.where(conditions).count(),
+					length: _.ceil(count_faculties/50),
 					pagination_active: pageNumber,
 					message:''
 				});
@@ -479,13 +358,6 @@ exports.findcandidates = function(req, res) {
 		});
 			}
 		});
-	// }else{
-	// 	res.jsonp({
-	// 		result:false, 
-	// 		message:'Quá trình xử lý có một vấn đề. Vui lòng thử lại sau!'
-	// 	});
-	// }
-	//school
 }
 exports.matriculate = function(req, res) {
 	var school_code = 'QSC';
@@ -506,6 +378,40 @@ exports.matriculate = function(req, res) {
 	
 };
 
+/**
+ * initschoolsfortest
+ */
+exports.initschoolsfortest = function(req, res) {
+	console.log('initschools');
+	console.log(new Date(new Date().setDate(new Date().getDate()-1)));
+	console.log(new Date());
+	School.update( 
+		{status : 1}, 
+		{ modified : new Date(new Date().setDate(new Date().getDate()-2))}, 
+		{ multi: true }, 
+		function (err, numberAffected, raw) {
+			console.log('initschools');
+			if(err){
+				res.jsonp({
+					result:false, 
+					message: err.toString()
+				});
+			}else{
+				res.jsonp({
+					result:true, 
+					message: ''
+				});
+			}
+	})
+};
+
+/**
+ * initschools
+ */
+exports.initschools = function(req, res) {
+	var initialization = require('../../app/controllers/api/initialization');
+		initialization.init(res, facultyFull);
+};
 
 
 

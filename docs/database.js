@@ -1,3 +1,5 @@
+192.168.26.22
+
 db.schools.update(
 	{ code : {$in: ["DDP", "DDY", "DDQ","DDS","DDK", "DDF"]}},    
 	{ $set: { status : 1 } },    

@@ -26,44 +26,30 @@ var SchoolSchema = new Schema({
 	status:{
 		type: Number,
 		default: 0,
-		//required: 'Please fill School name',
-		//trim: true
 	},
 	resume:{
 		type: Number,
 		default: 0,
-		//required: 'Please fill School name',
-		//trim: true
 	},
 	candidate:{
 		type: Number,
 		default: 0,
-		//required: 'Please fill School name',
-		//trim: true
 	},
 	matriculated:{
 		type: Number,
 		default: 0,
-		//required: 'Please fill School name',
-		//trim: true
 	},
 	quota:{
 		type: Number,
 		default: 0,
-		//required: 'Please fill School name',
-		//trim: true
 	},
 	largest_benchmark:{
 		type: Number,
 		default: 0,
-		//required: 'Please fill School name',
-		//trim: true
 	},
 	smallest_benchmark:{
 		type: Number,
 		default: 0,
-		//required: 'Please fill School name',
-		//trim: true
 	},
 	created: {
 		type: Date,
@@ -73,10 +59,6 @@ var SchoolSchema = new Schema({
 		type: Date,
 		default: Date.now
 	},
-	// user: {
-	// 	type: Schema.ObjectId,
-	// 	ref: 'User'
-	// }
 });
 
 mongoose.model('School', SchoolSchema);
