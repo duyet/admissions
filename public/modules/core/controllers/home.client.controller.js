@@ -84,23 +84,25 @@ angular.module('core').controller('HomeController', ['$scope', '$stateParams',
 			});
 		}
 		$scope.message = '';
+		$scope.priority = 1;
 		$scope.opportunity = function (school) {			
 			function opportunity_api (subject_group,score, first) {
 				var sectoritem = [];
 				if($scope.sectoritem && Object.keys($scope.sectoritem).length > 0){
 					sectoritem.push($scope.sectoritem.code);
-				}
-						for(var x in $scope.sectoritems){
-							if( $scope.sectoritems[x].sector_code === $scope.sector.code){
-								if($scope.sectoritems[x].code)
-									sectoritem.push($scope.sectoritems[x].code);
-							}
-							
-						}				
+				}else{
+					for(var x in $scope.sectoritems){
+						if( $scope.sectoritems[x].sector_code === $scope.sector.code){
+							if($scope.sectoritems[x].code)
+								sectoritem.push($scope.sectoritems[x].code);
+						}							
+					}	
+				}			
 				var data = {
 					subject_group:subject_group ,
 					sectoritem:sectoritem ,
 					score: score,
+					priority: $scope.priority
 				}
 				console.log(data);
 				loading_page.loading();

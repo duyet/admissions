@@ -44,20 +44,30 @@ School.find().exec(function(err, school) {
 });
 exports.opportunity = function(req, res) { 
 	if(_.has(req.body, 'subject_group') && _.has(req.body, 'score')){
+		var faculty_match = { quota :{ $gt: 0  }};
 
-		var subject1 = req.body.subject_group.subject1;
-		var subject2 = req.body.subject_group.subject2;
-		var subject3 = req.body.subject_group.subject3;
-
-		var shuffle = shuffle_func(subject1, subject2, subject3);
+		var priority = [1,2,3,4];
+		if(!_.isEmpty(req.body.priority)){
+			priority = [parseInt(req.body.priority)];
+		}
+		console.log('isEmpty priority : ', priority);
 		
+		var shuffle = [];
+		
+		if(!_.isEmpty(req.body.subject_group)){
+			shuffle = shuffle_func(
+				req.body.subject_group.subject1, 
+				req.body.subject_group.subject2, 
+				req.body.subject_group.subject3
+			);
+			faculty_match = _.extend(faculty_match, {subject_group : {$in : shuffle}});
+		}
 
-		var score_priority = req.body.score.score_priority;
-		var score_1 = req.body.score.score_1;
-		var score_2 = req.body.score.score_2;
-		var score_3 = req.body.score.score_3;
-
-		var condition_score = score_priority + score_1 + score_2 + score_3;
+		var condition_score = req.body.score.score_priority 
+			+ req.body.score.score_1 
+			+ req.body.score.score_2 
+			+ req.body.score.score_3
+		;
 
 		var sectoritem = [];
 		if(_.has(req.body, 'sectoritem')){
@@ -66,19 +76,10 @@ exports.opportunity = function(req, res) {
 				sectoritem.push(item);
 			}
 		}
-		var match = { $match : {
-					subject_group : {$in : shuffle},
-					quota :{ $gt: 0  },
-					code : {$in : sectoritem}
-				}
-			};
-		if(sectoritem.length === 0){
-			match = { $match : {
-					subject_group : {$in : shuffle},
-					quota :{ $gt: 0  },
-				}
-			};
+		if(!_.isEmpty(sectoritem)){
+			faculty_match = _.extend(faculty_match,{code : {$in : sectoritem}});
 		}
+		console.log(faculty_match);
 		Faculty.aggregate(
 			{ $project: { 
 				name: 1,
@@ -93,11 +94,9 @@ exports.opportunity = function(req, res) {
 				candidate_apply : 1, 
 				school_faculty: { $concat: [ "$school_code", "-", "$code" ] }}
 			},
-			match, 
+			{ $match : faculty_match }, 
 			function (err, facultys) {
-		
 			  	if (err) {
-				  	//console.log('Faculty.aggregate',err);
 				  	res.jsonp({
 						result:false, 
 						message: err.toString()
@@ -106,7 +105,9 @@ exports.opportunity = function(req, res) {
 					var condition_faculty = _.pluck(facultys, 'school_faculty');
 					Candidate.aggregate(
 						{ $match : {
-							score_final: { $gte: condition_score  } } 
+								score_final: { $gte: condition_score  } ,
+								priority : { $in : priority},
+							} ,
 						}, 
 						{ $group: { _id: { school_code:  "$school_code" , faculty_code:  "$faculty_code" } 
 							, total: { $sum: 1}}
@@ -304,59 +305,55 @@ exports.findcandidates = function(req, res) {
 					message:err.toString()
 				});
 			} else {
-	//.count
-		Candidate
-		.find(conditions,{score_1:0, score_2: 0, score_3 : 0})
-		.skip(pageNumber > 1 ? ((pageNumber-1)*nPerPage) : 0).limit(nPerPage)
-		.limit(nPerPage)
-		.sort('-score_final')
-		.exec(function(err, faculties) {
-			if (err) {
-				res.jsonp({
-					result:false, 
-					message:err.toString()
-				});
-			} else {
-				var record = [];
-				for (var x_index = 0; x_index < faculties.length; x_index++) {
-				// 	Things[i]
-				// };
-				// for(var x_index = 0 ; in faculties){
-					var faculty_choice =  _.uniq(_.filter(facultyFull, function(object) {
-					  return object.code === faculties[x_index].faculty;
-					}));
-					var school_choice =  _.uniq(_.filter(schoolAll, function(object) {
-					  return object.code === faculties[x_index].school_code;
-					}));
-					var faculty = faculties[x_index].faculty
-					var school_code = faculties[x_index].school_code
-					if(faculty_choice.length > 0){
-						faculty = faculty_choice[0].name;
+				Candidate
+				.find(conditions,{score_1:0, score_2: 0, score_3 : 0})
+				.skip(pageNumber > 1 ? ((pageNumber-1)*nPerPage) : 0).limit(nPerPage)
+				.limit(nPerPage)
+				.sort('-score_final')
+				.exec(function(err, faculties) {
+					if (err) {
+						res.jsonp({
+							result:false, 
+							message:err.toString()
+						});
+					} else {
+						var record = [];
+						for (var x_index = 0; x_index < faculties.length; x_index++) {
+							var faculty_choice =  _.uniq(_.filter(facultyFull, function(object) {
+							  return object.code === faculties[x_index].faculty;
+							}));
+							var school_choice =  _.uniq(_.filter(schoolAll, function(object) {
+							  return object.code === faculties[x_index].school_code;
+							}));
+							var faculty = faculties[x_index].faculty
+							var school_code = faculties[x_index].school_code
+							if(faculty_choice.length > 0){
+								faculty = faculty_choice[0].name;
+							}
+							if(school_choice.length > 0){
+								school_code = school_choice[0].name;
+							}
+							record.push({
+								faculty : faculty,
+								school_code: school_code,
+								subject_group: faculties[x_index].subject_group,
+								student_name: faculties[x_index].student_name,
+								student_id: faculties[x_index].student_id,
+								faculty_code: faculties[x_index].faculty_code,
+								score_final: faculties[x_index].score_final,
+								score_priority: faculties[x_index].score_priority,
+								priority: faculties[x_index].priority
+							});
+						}
+						res.jsonp({
+							result:true, 
+							record: record,
+							length: _.ceil(count_faculties/50),
+							pagination_active: pageNumber,
+							message:''
+						});
 					}
-					if(school_choice.length > 0){
-						school_code = school_choice[0].name;
-					}
-					record.push({
-						faculty : faculty,
-						school_code: school_code,
-						subject_group: faculties[x_index].subject_group,
-						student_name: faculties[x_index].student_name,
-						student_id: faculties[x_index].student_id,
-						faculty_code: faculties[x_index].faculty_code,
-						score_final: faculties[x_index].score_final,
-						score_priority: faculties[x_index].score_priority,
-						priority: faculties[x_index].priority
-					});
-				}
-				res.jsonp({
-					result:true, 
-					record: record,
-					length: _.ceil(count_faculties/50),
-					pagination_active: pageNumber,
-					message:''
 				});
-			}
-		});
 			}
 		});
 }
@@ -438,18 +435,11 @@ exports.initschools = function(req, res) {
 			function (err, candidates) {
 		
 			  	if (err) {
-					// return res.status(400).send({
-					// 	message: errorHandler.getErrorMessage(err)
-					// });
 			  	}else{
 			  		Statistic.findOne({key : 'faculty'})
 			  		.exec(function(err, statistic) {
 						if (err) {
-							// return res.status(400).send({
-							// 	message: errorHandler.getErrorMessage(err)
-							// });
 						} else {
-							//console.log('statistic' , statistic, _.isEmpty(statistic));
 							if(_.isEmpty(statistic) === false){
 								statistic.value = candidates.length;
 								statistic.modified = new Date();
@@ -472,51 +462,6 @@ exports.initschools = function(req, res) {
 			}
 		);
 	}
-	// function set_school_statistic () {
-	// 	Candidate.aggregate( 
-	// 		{$match : {school_code: {$ne: null}}},
-	// 		{ $group: { _id: { school_code:  "$school_code"  } }}, 
-	// 		{$project: {school_code: '$_id.school_code'}},		
-	// 		function (err, candidates) {
-	// 		  	if (err) {
-	// 		  	}else{
-	// 		  		Statistic.findOne({key : 'school'})
-	// 		  		.exec(function(err, statistic) {
-	// 					if (err) {
-	// 						// return res.status(400).send({
-	// 						// 	message: errorHandler.getErrorMessage(err)
-	// 						// });
-	// 					} else {
-	// 						//console.log('school' , candidates);
-	// 						if(_.isEmpty(statistic)  === false ){
-	// 							statistic.value = candidates.length;
-	// 							statistic.modified = new Date();
-	// 							statistic.save();
-	// 						}else{
-	// 							var statistic = new Statistic({
-	// 								key : 'school',
-	// 								name: 'Trường',
-	// 								view : 0,
-	// 								value : candidates.length,
-	// 								modified : new Date(),
-	// 							});
-	// 							statistic.save();
-	// 						}
-	// 					}
-	// 				});
-	// 				console.log('school' , candidates);
-	// 		  		var school_code = _.pluck(candidates,'school_code');
-	// 		  		console.log('school' , school_code);
-	// 		  		set_school_no_active(function() {
-	// 		  			set_school_active(school_code, function () {
-	// 			  			var initialization = require('../../app/controllers/api/initialization');
-	// 			  			initialization.init(res);
-	// 			  		})	
-	// 		  		});	
-	// 		  	}
-	// 		}
-	// 	);
-	// }
 	function set_candidate_statistic () {
 		Candidate.count()
 		.exec(function(err, candidates) {
@@ -525,11 +470,7 @@ exports.initschools = function(req, res) {
 				Statistic.findOne({key : 'student'})
 		  		.exec(function(err, statistic) {
 					if (err) {
-						// return res.status(400).send({
-						// 	message: errorHandler.getErrorMessage(err)
-						// });
 					} else {
-						//console.log('candidate' , statistic, _.isEmpty(statistic));
 						if(_.isEmpty(statistic)  === false ){
 							statistic.value = candidates;
 							statistic.modified = new Date();
@@ -560,11 +501,7 @@ exports.initschools = function(req, res) {
 				Statistic.findOne({key : 'student'})
 		  		.exec(function(err, statistic) {
 					if (err) {
-						// return res.status(400).send({
-						// 	message: errorHandler.getErrorMessage(err)
-						// });
 					} else {
-						//console.log('student' , statistic, _.isEmpty(statistic));
 						if(_.isEmpty(statistic)  === false ){
 							statistic.value = candidate_all.length;
 							statistic.modified = new Date();
@@ -586,7 +523,6 @@ exports.initschools = function(req, res) {
 		});
 	}
 	set_faculty_statistic();
-	// set_school_statistic();
 	set_candidate_statistic();
 	set_student_statistic();
 	Faculty.aggregate(
@@ -599,7 +535,6 @@ exports.initschools = function(req, res) {
 		}
 		},
 		function (err, facultys) {
-			//console.log(facultys)
 		  	if (err) {
 		  		console.log(err)
 		  	}else{
@@ -609,11 +544,7 @@ exports.initschools = function(req, res) {
 				Statistic.findOne({key : 'quota'})
 		  		.exec(function(err, statistic) {
 					if (err) {
-						// return res.status(400).send({
-						// 	message: errorHandler.getErrorMessage(err)
-						// });
 					} else {
-						//console.log('student' , statistic, _.isEmpty(statistic));
 						if(_.isEmpty(statistic)  === false ){
 							statistic.value = quota;
 							statistic.modified = new Date();
@@ -633,11 +564,7 @@ exports.initschools = function(req, res) {
 				Statistic.findOne({key : 'school'})
 			  		.exec(function(err, statistic) {
 						if (err) {
-							// return res.status(400).send({
-							// 	message: errorHandler.getErrorMessage(err)
-							// });
 						} else {
-							//console.log('school' , candidates);
 							if(_.isEmpty(statistic)  === false ){
 								statistic.value = facultys.length;
 								statistic.modified = new Date();
