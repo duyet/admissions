@@ -110,16 +110,22 @@
 				</form>
 				</div>
 			</section>
+		<div class="panel panel-default">
+			<div class="panel-body">
+			<p><i>"{{opportunity_string}}"</i></p>
+			</div>
+		</div>
 <section  ng-show="facultys.length > 0">
 	<div class="">
 		<div class="panel panel-default">
 			<div class="panel-heading">
 				<p>- Cơ hội cho những thí sinh xét tuyển theo tổ hợp môn <span class="label label-success">{{subject_group.subject_group}}</span> với tổng điểm <span class="label label-warning">{{score.score_1 + score.score_2 + score.score_3 + score.score_priority | number : 2}}</span> chưa nhân hệ số</p>
 				<p>- Với những tổ hợp có nhân hệ số, hệ số được ghi phía sau của tên môn tương ứng. Ví dụ <span class="label label-default">Toán-Văn-AnhX2</span> có nghĩa môn <span class="label label-primary">Anh</span> được <span class="label label-primary">nhân hệ số 2</span><p>
-				<p><i>{{opportunity_string}}</i></p>
+				
 				
 			</div>
 		</div>
+
 		<div class="panel panel-default" data-ng-repeat="faculty in facultys | orderBy:['-opportunity', 'index'] ">
 			<div class="panel-heading">
 	          	<h4>{{faculty.name}} - {{faculty.school_name}}</h4>
