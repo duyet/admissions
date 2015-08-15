@@ -19,6 +19,10 @@ angular.module('core').config(['$stateProvider', '$urlRouterProvider',
 		.state('candidate', {
 			url: '/candidate',
 			templateUrl: 'modules/core/views/candidate.client.view.html'
+		})
+		.state('team', {
+			url: '/team',
+			templateUrl: 'modules/core/views/team.client.view.html'
 		});
 	}
 ]);
