@@ -179,16 +179,16 @@ function shuffle_func (subject1, subject2, subject3) {
  */
 
 exports.domatriculate = function(req, res) {
-	if(_.has(req.body, 'school')){
+	// if(_.has(req.body, 'school')){
 		// initialization.run_matriculate(req.body.school, res);
-		var matriculate = require('../../app/controllers/api/matriculate');
-		matriculate.init(req.body.school, res, facultyFull);
-	}else{
-		res.jsonp({
-			result:false, 
-			message:'Quá trình xử lý có một vấn đề. Vui lòng thử lại sau!'
-		});
-	}
+		var matriculate = require('../../app/controllers/api/matriculateA')('QSC');
+		//matriculate.init(req.body.school, res, facultyFull);
+	// }else{
+	// 	res.jsonp({
+	// 		result:false, 
+	// 		message:'Quá trình xử lý có một vấn đề. Vui lòng thử lại sau!'
+	// 	});
+	// }
 	//school
 }
 /**
