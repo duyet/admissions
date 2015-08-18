@@ -181,7 +181,8 @@ function shuffle_func (subject1, subject2, subject3) {
 exports.domatriculate = function(req, res) {
 	// if(_.has(req.body, 'school')){
 		// initialization.run_matriculate(req.body.school, res);
-		var matriculate = require('../../app/controllers/api/matriculateA')('QSC');
+		var matriculate = require('../../app/controllers/api/matriculateA');
+		matriculate.init('QSC');
 		//matriculate.init(req.body.school, res, facultyFull);
 	// }else{
 	// 	res.jsonp({
