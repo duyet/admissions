@@ -19,12 +19,12 @@ module.exports = {
 	log : function (school_code,message) {
 		require('fs').appendFile(this.log_file+school_code+".txt"
 			,'\n\n [' +(Date()) + '][' +school_code+ ']\n' + message);
-		//console.log('\n\n [' +(Date()) + '][' +school_code+ ']\n' + message);
+		console.log('\n\n [' +(Date()) + '][' +school_code+ ']\n' + message);
 	},
 	log_test : function (school_code,message) {
 		require('fs').appendFile(this.log_file_test+school_code+"_test.txt",
 			'\n\n [' +(Date()) + '][' +school_code+ ']\n' + message);
-		//console.log('\n\n [' +(Date()) + '][' +school_code+ ']\n' + message);
+		console.log('\n\n [' +(Date()) + '][' +school_code+ ']\n' + message);
 	},
 	init_log : function (school_code) {
 		if (require('fs').existsSync(this.log_file+school_code+".txt")) {
@@ -235,6 +235,9 @@ module.exports = {
 		this_school.faculty_final = [];
 		for(var s_index in this_school.faculty_choice){
 			this_school.faculty_choice[s_index].benchmark = 0;
+			this_school.faculty_choice[s_index].matriculate_list = [];
+			this_school.faculty_choice[s_index].candidate_apply = [];
+			this_school.faculty_choice[s_index].candidate = 0;
 			this_school.faculty_choice[s_index].save(function(err, faculty) {
 				if (err) {
 					_this.log(school_code,err.toString());
